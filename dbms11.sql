@@ -5,13 +5,6 @@ CREATE TABLE Employees (
     Department VARCHAR(50),
     Salary DECIMAL(10, 2)
 );
-CREATE TABLE Employees (
-    EmployeeID INT PRIMARY KEY,
-    Name VARCHAR(50),
-    Age INT,
-    Department VARCHAR(50),
-    Salary DECIMAL(10, 2)
-);
 
 INSERT INTO Employees (EmployeeID, Name, Age, Department, Salary)
 VALUES (1, 'Alice', 30, 'HR', 50000.00),
