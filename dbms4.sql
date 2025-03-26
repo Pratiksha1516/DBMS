@@ -10,3 +10,5 @@ INSERT INTO stud VALUES   ('ram', 5468762164);
 SELECT stud_name FROM stud WHERE stud_name LIKE '___a%';
 
 SELECT * FROM stud WHERE stud_name = 'ram';
+
+SELECT * FRROM stud WHERE stud_contact = 1100;
