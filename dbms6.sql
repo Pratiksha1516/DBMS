@@ -14,4 +14,5 @@ INSERT INTO customers VALUES (3, 'ghi', 'ghi@gmail.com', '1122334455', 'Chicago'
 SELECT * FROM customers 
 WHERE registration_date >= TO_DATE('2022-01-01', 'YYYY-MM-DD');
 
-
+SELECT * FROM  customer
+WHERE city = 'Chicago';
