@@ -16,3 +16,4 @@ select * from emp where emp_salary > 100000;
 
 select * from emp where emp_age > 20;   
 
+select * from emp where emp_age < 10;
