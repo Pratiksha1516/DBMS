@@ -13,5 +13,6 @@ INSERT INTO emp VALUES   (3, 'shiri', 20, 90000000, 'designing');
 select * from emp where emp_dep = 'full stack';
 
 select * from emp where emp_salary > 100000;
-    
+
+select * from emp where emp_age > 20;   
 
