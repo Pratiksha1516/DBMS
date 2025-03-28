@@ -9,7 +9,11 @@ insert into student(stud_name, number, sex) values
 ('ranveer', 2356, 'M'),
 ('Shree', 3456, 'F');
 
-seleect * from student;
+select * from student;
+
+select * 
+from stdent
+where sec = 'F';
 
 select count(*)
 from student
