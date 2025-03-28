@@ -9,6 +9,8 @@ insert into student(stud_name, number, sex) values
 ('ranveer', 2356, 'M'),
 ('Shree', 3456, 'F');
 
+seleect * from student;
+
 select count(*)
 from student
 where number > 3000;
