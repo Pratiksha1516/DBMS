@@ -14,7 +14,7 @@ insert into setB(element) values
 
 select * from setA;
 
-
+select * from setB;
 
 select count(element)
 from(
