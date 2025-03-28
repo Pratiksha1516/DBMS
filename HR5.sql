@@ -13,7 +13,7 @@ select * from student;
 
 select * 
 from stdent
-where sec = 'F';
+where sex = 'F';
 
 select count(*)
 from student
