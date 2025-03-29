@@ -27,3 +27,7 @@ from emp
 where emp_salary = 90000000;
 
 drop table emp
+
+select emp_dep
+from emp
+where emp_id = 2;
