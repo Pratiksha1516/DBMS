@@ -21,6 +21,9 @@ WHERE emp_salary = (SELECT MAX(emp_salary) FROM emp);
 select name
 from emp
 where emp_ dep = 'database';
-    
+
+select emp_age
+from emp
+where emp_salary = 90000000;
 
 drop table emp
