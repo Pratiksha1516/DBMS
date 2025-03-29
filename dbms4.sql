@@ -12,3 +12,7 @@ SELECT stud_name FROM stud WHERE stud_name LIKE '___a%';
 SELECT * FROM stud WHERE stud_name = 'ram';
 
 SELECT * FRROM stud WHERE stud_contact = 1100;
+
+select stud_name
+from stud
+where stud_contact = 5468762164;
