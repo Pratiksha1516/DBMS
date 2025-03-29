@@ -18,5 +18,9 @@ SELECT emp_name, emp_salary AS highest_salary
 FROM emp
 WHERE emp_salary = (SELECT MAX(emp_salary) FROM emp);
 
+select name
+from emp
+where emp_ dep = 'database';
+    
 
 drop table emp
