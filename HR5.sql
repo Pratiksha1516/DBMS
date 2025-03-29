@@ -18,3 +18,7 @@ where sex = 'F';
 select count(*)
 from student
 where number > 3000;
+
+select number
+from student
+where sex = 'F';
