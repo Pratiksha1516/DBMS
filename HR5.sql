@@ -22,3 +22,7 @@ where number > 3000;
 select number
 from student
 where sex = 'F';
+
+select sex
+from student
+where number = 2356;
