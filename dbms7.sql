@@ -35,4 +35,6 @@ from student s
 join Enrollment E on S.studentID = E.studentID
 where E.courseID = 101;
 
-
+SELECT Grade
+FROM Enrollment 
+WHERE EnrollmentID = 2;
