@@ -33,3 +33,5 @@ from emp
 where emp_id = 2;
 
 delete from emp where emp_id = 1;
+
+truncate table emp;
