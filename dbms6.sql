@@ -23,3 +23,7 @@ WHERE name = 'abc';
 SELECT CITY 
 FROM customer
 WHERE customer_id = 2;
+
+SELECT stration_date
+FROM customers
+WHERE name = 'def';
