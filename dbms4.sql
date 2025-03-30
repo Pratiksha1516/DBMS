@@ -19,3 +19,5 @@ from stud
 where stud_contact = 5468762164;
 
 truncate table stud;
+
+drop table stud;
