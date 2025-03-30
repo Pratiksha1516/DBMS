@@ -19,3 +19,7 @@ WHERE city = 'Chicago';
 
 SELECT * FROM custmoers
 WHERE name = 'abc';
+
+SELECT CITY 
+FROM customer
+WHERE customer_id = 2;
