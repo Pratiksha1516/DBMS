@@ -32,3 +32,6 @@ SELECT NAME
 FROM customers 
 WHERE customer_id = 3;
 
+SELECT phone
+FROM customers
+WHERE name = 'abc';
