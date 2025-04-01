@@ -23,3 +23,4 @@ from(
 	select element from setB
 ) AS UnionResult;
 
+drop table setA;
