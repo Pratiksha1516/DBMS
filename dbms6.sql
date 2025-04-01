@@ -27,3 +27,8 @@ WHERE customer_id = 2;
 SELECT stration_date
 FROM customers
 WHERE name = 'def';
+
+SELECT NAME
+FROM customers 
+WHERE customer_id = 3;
+
