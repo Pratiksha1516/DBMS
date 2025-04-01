@@ -24,3 +24,5 @@ from(
 ) AS UnionResult;
 
 drop table setA;
+
+drop table setB;
