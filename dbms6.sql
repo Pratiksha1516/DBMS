@@ -35,3 +35,7 @@ WHERE customer_id = 3;
 SELECT phone
 FROM customers
 WHERE name = 'abc';
+
+SELECT name
+FROM customers
+WHERE city = 'Chicago';
