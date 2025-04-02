@@ -18,3 +18,5 @@ FROM (
     EXCEPT
     SELECT element FROM setB
 ) AS DifferenceResult;
+
+drop table setA;
