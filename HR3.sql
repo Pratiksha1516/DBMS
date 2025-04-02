@@ -20,3 +20,5 @@ FROM (
 ) AS DifferenceResult;
 
 drop table setA;
+
+drop table setB;
