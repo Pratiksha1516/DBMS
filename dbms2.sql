@@ -23,3 +23,7 @@ select * from emp where emp_name like = '_____i%';
 select emp_age
 from emp
 where emp_name = 'prati';
+
+select emp_salary
+from emp
+where emp_id = 3;
