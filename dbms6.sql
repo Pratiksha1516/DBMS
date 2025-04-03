@@ -39,3 +39,7 @@ WHERE name = 'abc';
 SELECT name
 FROM customers
 WHERE city = 'Chicago';
+
+SELECT registration_date
+FROM customers
+WHERE customer_id = 2;
