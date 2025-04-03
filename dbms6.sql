@@ -43,3 +43,5 @@ WHERE city = 'Chicago';
 SELECT registration_date
 FROM customers
 WHERE customer_id = 2;
+
+truncate table customers;
