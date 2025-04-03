@@ -26,4 +26,8 @@ SELECT graduation_date
 FROM student
 WHERE name = 'prati';
 
+SELECT gpa
+FROM student
+WHERE name = 'Ran';
+
 drop table student
