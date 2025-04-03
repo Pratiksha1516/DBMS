@@ -45,3 +45,5 @@ FROM customers
 WHERE customer_id = 2;
 
 truncate table customers;
+
+drop table customers;
