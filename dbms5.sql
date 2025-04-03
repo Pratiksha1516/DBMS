@@ -22,4 +22,8 @@ SELECT * FROM student WHERE name LIKE 'P%';
 
 SELECT * FROM student ORDER BY gpa DESC;
 
+SELECT graduation_date
+FROM student
+WHERE name = 'prati';
+
 drop table student
