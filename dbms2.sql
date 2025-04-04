@@ -35,3 +35,7 @@ where emp_dep = 'database';
 select emp_salary
 from emp
 where emp_dep = 'full stack';
+
+select emp_name
+from emp
+where emp_id = 2;
