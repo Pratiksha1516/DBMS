@@ -39,3 +39,7 @@ where emp_dep = 'full stack';
 select emp_name
 from emp
 where emp_id = 2;
+
+select emp_age
+from emp
+where emp_name = 'shiri';
