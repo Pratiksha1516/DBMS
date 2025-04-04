@@ -43,3 +43,7 @@ where emp_id = 2;
 select emp_age
 from emp
 where emp_name = 'shiri';
+
+select emp_dep
+from emp
+where emp_id = 3;
