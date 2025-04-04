@@ -20,6 +20,9 @@ select * from emp where emp_age < 10;
 
 select * from emp where emp_name like = '_____i%';
 
+select * from emp
+where emp_name like = 's%___';
+
 select emp_age
 from emp
 where emp_name = 'prati';
