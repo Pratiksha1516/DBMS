@@ -28,9 +28,13 @@ SELECT * FROM Customer;
 
 SELECT fname, area FROM Customer;
 
-SELECT * FROM Customer WHERE fname LIKE '_a%';
+SELECT *
+FROM Customer
+WHERE fname LIKE '_a%';
 
-SELECT * FROM Customer WHERE area IN ('SA', 'BI', 'CH');
+SELECT * 
+FROM Customer 
+WHERE area IN ('SA', 'BI', 'CH');
 
 SELECT fname
 FROM Customer
