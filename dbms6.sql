@@ -48,6 +48,10 @@ SELECT city
 FROM customers
 WHERE name = 'ghi';
 
+SELECT phone
+FROM customers
+WHERE name = 'abc';
+
 truncate table customers;
 
 drop table customers;
