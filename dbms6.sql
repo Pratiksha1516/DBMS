@@ -44,6 +44,10 @@ SELECT registration_date
 FROM customers
 WHERE customer_id = 2;
 
+SELECT city
+FROM customers
+WHERE name = 'ghi';
+
 truncate table customers;
 
 drop table customers;
