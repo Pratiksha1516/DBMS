@@ -20,3 +20,4 @@ truncate table setA;
 truncate table setB;
 
 drop table setA;
+drop table setB;
