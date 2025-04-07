@@ -18,3 +18,5 @@ cross join setB;
 
 truncate table setA;
 truncate table setB;
+
+drop table setA;
