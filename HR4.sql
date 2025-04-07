@@ -17,3 +17,4 @@ FROM setA
 cross join setB;
 
 truncate table setA;
+truncate table setB;
