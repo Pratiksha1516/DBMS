@@ -26,8 +26,6 @@ select emp_age
 from emp
 where emp_salary = 90000000;
 
-drop table emp
-
 select emp_dep
 from emp
 where emp_id = 2;
@@ -35,3 +33,5 @@ where emp_id = 2;
 delete from emp where emp_id = 1;
 
 truncate table emp;
+
+drop table emp;
