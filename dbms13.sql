@@ -39,3 +39,7 @@ WHERE area IN ('SA', 'BI', 'CH');
 SELECT fname
 FROM Customer
 WHERE id = 'A03';
+
+SELECT area
+FROM customer
+WHERE id = 'A05';
