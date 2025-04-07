@@ -15,3 +15,5 @@ insert into setB(element) values
 SELECT COUNT(*)
 FROM setA
 cross join setB;
+
+truncate table setA;
