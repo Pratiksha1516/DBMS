@@ -48,3 +48,9 @@ where E.Grade = 'A';
 select Age 
 from Student
 where StudentID = 2;
+
+select S.name
+from student s
+join Enrollment E on S.studentID = E.studentID
+where E.courseID = 102;
+
