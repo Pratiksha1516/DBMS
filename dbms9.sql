@@ -44,3 +44,7 @@ from Customer;
 select Price
 from Product 
 where Laptop;
+
+select ProductName
+from Product
+where ProductID = 4;
