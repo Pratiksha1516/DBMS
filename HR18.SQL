@@ -24,3 +24,7 @@ SELECT CONCAT('There are a total of ', COUNT(*), ' ', LOWER(Occupation), 's.')
 FROM OCCUPATIONS
 GROUP BY Occupation
 ORDER BY COUNT(*), Occupation;
+
+SELECT Occupation 
+FROM OCCUPATIONS
+WHERE Name = 'Julia';
