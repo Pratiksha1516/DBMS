@@ -44,3 +44,7 @@ select S.Name
 from student S
 join Enrollment E on S.studentID = E.studentID
 where E.Grade = 'A';
+
+select Age 
+from Student
+where StudentID = 2;
