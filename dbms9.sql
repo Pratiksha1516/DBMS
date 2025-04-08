@@ -40,3 +40,7 @@ where Price = (select min(Price) from Product);
 
 select count(*) as TotalCustomers
 from Customer;
+
+select Price
+from Product 
+where Laptop;
