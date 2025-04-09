@@ -71,6 +71,10 @@ VALUES
 (5, 90.00, '2025-03-18', 'Online');  
 
 select * from Payment;
+
+select ReturnDate
+from Rental
+where CarID = 4;
   
 UPDATE Car SET Status = 'Rented' WHERE CarID = 1;
 UPDATE Car SET Status = 'Rented' WHERE CarID = 3;
