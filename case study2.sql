@@ -75,6 +75,10 @@ select * from Payment;
 select ReturnDate
 from Rental
 where CarID = 4;
+
+select PhoneNumber
+from Customer
+where CustomerID = 5;
   
 UPDATE Car SET Status = 'Rented' WHERE CarID = 1;
 UPDATE Car SET Status = 'Rented' WHERE CarID = 3;
