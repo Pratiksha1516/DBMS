@@ -27,7 +27,9 @@ drop table Submissions cascade;
 
 ALTER TABLE Submissions DROP CONSTRAINT submissions_score_fkey;
 
-
+select name
+from Hackers
+where hacker_id = 52348;
 
 INSERT INTO Hackers(hacker_id, name)
 VALUES
