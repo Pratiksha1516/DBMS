@@ -38,3 +38,7 @@ where E.courseID = 101;
 SELECT Grade
 FROM Enrollment 
 WHERE EnrollmentID = 2;
+
+SELECT Age
+FROM Student
+WHERE StudentID = 1;
