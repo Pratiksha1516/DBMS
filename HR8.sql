@@ -24,3 +24,7 @@ WHERE CountryCode = 'USA' AND Population > 100000;
 select NAME
 from CITY
 WHERE CountryCode = 'USA' and population > 120000;
+
+SELECT DISTRICT
+FROM CITY
+WHERE POPULATION > 100000;
