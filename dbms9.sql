@@ -48,3 +48,7 @@ where Laptop;
 select ProductName
 from Product
 where ProductID = 4;
+
+select ProductName
+from Product
+where ProductID = 2;
