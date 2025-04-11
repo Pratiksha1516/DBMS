@@ -58,5 +58,9 @@ GROUP BY b.Title
 ORDER BY BorrowCount DESC  
 LIMIT 1;
 
+SELECT BorrowDate
+FROM Borrow
+WHERE BorrowID = 3;
+
 DELETE FROM Member  
 WHERE MemberID NOT IN (SELECT DISTINCT MemberID FROM Borrow);
