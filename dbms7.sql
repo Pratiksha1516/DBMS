@@ -42,3 +42,7 @@ WHERE EnrollmentID = 2;
 SELECT Age
 FROM Student
 WHERE StudentID = 1;
+
+SELECT Semester
+FROM Enrollment
+WHERE EnrollmentID = 1;
