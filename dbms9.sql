@@ -43,7 +43,7 @@ from Customer;
 
 select Price
 from Product 
-where Laptop;
+where ProductName = 'Laptop';
 
 select ProductName
 from Product
@@ -56,3 +56,4 @@ where ProductID = 2;
 select Price
 from Product 
 where ProductID = 3 ;
+
