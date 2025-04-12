@@ -30,4 +30,9 @@ SELECT gpa
 FROM student
 WHERE name = 'Ran';
 
+SELECT graduation_date
+FROM student
+WHERE id = 2; 
+
+
 drop table student
