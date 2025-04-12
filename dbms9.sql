@@ -52,3 +52,7 @@ where ProductID = 4;
 select ProductName
 from Product
 where ProductID = 2;
+
+select Price
+from Product 
+where ProductID = 3 ;
