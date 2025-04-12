@@ -34,5 +34,8 @@ SELECT graduation_date
 FROM student
 WHERE id = 2; 
 
+SELECT department
+FROM student
+WHERE id = 3;
 
 drop table student
