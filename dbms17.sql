@@ -23,3 +23,6 @@ UPDATE Student1 SET Grade = 'B+' WHERE Name = 'ranveer';
 
 DELETE FROM Student1 WHERE Name = 'varsha';
 
+SELECT Grade
+FROM Student1
+WHERE StudentID = 3;
