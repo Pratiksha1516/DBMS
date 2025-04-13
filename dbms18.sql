@@ -25,3 +25,7 @@ select * from Employee1;
 SELECT Name
 FROM Employee1
 WHERE EmpID = 'klm';
+
+SELECT Salary
+FROM Employee1
+WHERE Name = 'def';
