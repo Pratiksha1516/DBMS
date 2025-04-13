@@ -22,8 +22,8 @@ where stud_contact = 5468762164;
 
 select stud_contact
 from stud
-where stud_name = 'ram';
+where stud_name = 'ram'; 
 
 truncate table stud;
-
+    
 drop table stud;
