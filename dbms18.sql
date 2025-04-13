@@ -21,3 +21,7 @@ SELECT MAX(Salary) FROM Employee1;
 DELETE FROM Employee1 WHERE Name = 'hij';
 
 select * from Employee1;
+
+SELECT Name
+FROM Employee1
+WHERE EmpID = 'klm';
