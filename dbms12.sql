@@ -42,5 +42,8 @@ SELECT E.Name, D.DeptName
 FROM Employees E
 LEFT JOIN Departments D ON E.Department = D.DeptName;
 
+SELECT Salary 
+FROM Employees
+WHERE Age > 33;
 
 DROP TABLE Employees;
