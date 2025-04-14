@@ -23,7 +23,6 @@ INSERT INTO Orders (CustomerID, Amount, OrderDate) VALUES
 
 SELECT * FROM Orders WHERE CustomerID = (SELECT CustomerID FROM Customer1 WHERE Name = 'Alice');
 
-
 SELECT CustomerID, SUM(Amount) AS TotalSpent FROM Orders GROUP BY CustomerID;
 
 SELECT CustomerID FROM Orders GROUP BY CustomerID HAVING SUM(Amount) > 2500;
@@ -31,3 +30,7 @@ SELECT CustomerID FROM Orders GROUP BY CustomerID HAVING SUM(Amount) > 2500;
 DELETE FROM Orders WHERE OrderDate < '2025-03-05';
 
 select * from Orders;
+
+SELECT Email
+FROM Customer1
+WHERE Name = 'Bob';
