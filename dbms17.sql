@@ -30,3 +30,8 @@ WHERE StudentID = 3;
 SELECT Age
 FROM Student1
 WHERE Name = 'ranveer';
+
+SELECT Grade
+FROM Student1
+WHERE Age < 22;
+
