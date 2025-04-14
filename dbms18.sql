@@ -29,3 +29,7 @@ WHERE EmpID = 'klm';
 SELECT Salary
 FROM Employee1
 WHERE Name = 'def';
+
+SELECT Department
+FROM Employee1
+WHERE Age > 30;
