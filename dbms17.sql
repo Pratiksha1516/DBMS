@@ -35,3 +35,6 @@ SELECT Grade
 FROM Student1
 WHERE Age < 22;
 
+SELECT Name
+FROM Student1
+WHERE Age < 21;
