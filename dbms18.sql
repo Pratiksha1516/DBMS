@@ -37,3 +37,7 @@ WHERE Age > 30;
 SELECT Salary
 FROM Employee1
 WHERE Age < 33;
+
+SELECT Name
+FROM Employee1
+WHERE Age = 30;
