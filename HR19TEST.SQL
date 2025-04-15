@@ -41,3 +41,7 @@ ON
 WHERE
 	(F.Gender = 'Male' AND F.Salary > 15000)OR
 	(F.Gender = 'Female' AND F.Salary > 20000);
+
+SELECT Gender
+FROM FacultyInformation
+WHERE Salary < 20000;
