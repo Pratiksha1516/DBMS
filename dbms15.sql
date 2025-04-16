@@ -75,6 +75,9 @@ SELECT e.Location, e.Ph_no, i.Salary_amount
 FROM Employee e JOIN Invoice i ON e.Emp_id = i.Emp_id
 WHERE e.Emp_id = 'a03';
 
+SELECT Location
+FROM Employee
+WHERE Emp_id = 'a04';
 -- 17. Delete all records from tables Employee and Invoice
 DELETE FROM Employee;
 DELETE FROM Invoice;
