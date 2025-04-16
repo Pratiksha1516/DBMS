@@ -66,6 +66,10 @@ SELECT Title
 FROM Book 
 WHERE Publisher = 'Harper Lee';
 
+SELECT Email
+FROM Member
+WHERE Name = 'Ranveer';
+
 DELETE FROM Member  
 WHERE MemberID NOT IN (SELECT DISTINCT MemberID FROM Borrow);
 
