@@ -19,11 +19,15 @@ INSERT INTO Customer1 (Name, Email) VALUES
 INSERT INTO Orders (CustomerID, Amount, OrderDate) VALUES
 (1, 2000, '2025-03-01'),
 (2, 1500, '2025-03-05'),
-(1, 3000, '2025-03-10');
+(3, 3000, '2025-03-10');
 
 SELECT Amount
 FROM Orders
 WHERE CustomerID = 2;
+
+SELECT OrderDate
+FROM Orders
+WHERE ustomerID = 3
 
 SELECT * FROM Orders WHERE CustomerID = (SELECT CustomerID FROM Customer1 WHERE Name = 'Alice');
 
