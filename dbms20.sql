@@ -21,7 +21,7 @@ CREATE TABLE Borrow (
     ReturnDate DATE
 );
 
-INSERT INTO Book (Title, Author, Publisher, Price) VALUES
+INSERT INTO Book (Title, Title, Publisher, Price) VALUES
 ('The Great Gatsby', 'F. Scott Fitzgerald', 'Scribner', 15.99),
 ('1984', 'George Orwell', 'Secker & Warburg', 12.50),
 ('To Kill a Mockingbird', 'Harper Lee', 'J.B. Lippincott & Co.', 18.75);
@@ -62,5 +62,11 @@ SELECT BorrowDate
 FROM Borrow
 WHERE BorrowID = 3;
 
+SELECT Title
+FROM Book 
+WHERE Publisher = 'Harper Lee';
+
 DELETE FROM Member  
 WHERE MemberID NOT IN (SELECT DISTINCT MemberID FROM Borrow);
+
+
