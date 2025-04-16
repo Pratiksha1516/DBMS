@@ -26,6 +26,10 @@ SELECT Name
 FROM Employee1
 WHERE EmpID = 'klm';
 
+SELECT Age
+FROM Employee1
+WHERE Salary < 50000;
+
 SELECT Salary
 FROM Employee1
 WHERE Name = 'def';
