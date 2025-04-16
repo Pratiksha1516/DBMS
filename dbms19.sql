@@ -21,6 +21,10 @@ INSERT INTO Orders (CustomerID, Amount, OrderDate) VALUES
 (2, 1500, '2025-03-05'),
 (1, 3000, '2025-03-10');
 
+SELECT Amount
+FROM Orders
+WHERE CustomerID = 2;
+
 SELECT * FROM Orders WHERE CustomerID = (SELECT CustomerID FROM Customer1 WHERE Name = 'Alice');
 
 SELECT CustomerID, SUM(Amount) AS TotalSpent FROM Orders GROUP BY CustomerID;
