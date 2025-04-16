@@ -22,6 +22,10 @@ DELETE FROM Employee1 WHERE Name = 'hij';
 
 select * from Employee1;
 
+SELECT Department
+FROM Employee1
+WHERE Salary < 60000;
+
 SELECT Name
 FROM Employee1
 WHERE EmpID = 'klm';
