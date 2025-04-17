@@ -36,7 +36,9 @@ INSERT INTO Borrow (MemberID, BookID, BorrowDate, ReturnDate) VALUES
 (2, 1, '2024-03-05', '2024-03-15'),  
 (3, 3, '2024-03-10', NULL);         
 
-
+SELECT Price
+FROM Book
+WHERE BookID = 3;
 
 SELECT b.Title, b.Author, br.BorrowDate, br.ReturnDate  
 FROM Borrow br  
