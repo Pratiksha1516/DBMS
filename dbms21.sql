@@ -15,6 +15,10 @@ select * from Fav;
 
 select Fav_thing
 from Fav
+where name = ' Prati';
+
+select Fav_thing
+from Fav
 where name = 'Shree';
 
 
