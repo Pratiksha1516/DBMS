@@ -13,7 +13,6 @@ values
 
 select * from Fav;
 
-drop table Fav;
 
 truncate table Fav;
 
@@ -24,3 +23,5 @@ where name = 'Ranveer';
 select name
 from Fav
 where Fav_thing = 'Travelling';
+
+drop table Fav;
