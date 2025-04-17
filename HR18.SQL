@@ -16,6 +16,10 @@ VALUES
 ('Jenny', 'Doctor'),
 ('Priya', 'Singer');
 
+SELECT Name
+FROM OCCUPATIONS
+WHERE Occupation = 'Singer';
+
 SELECT Occupation
 FROM OCCUPATIONS
 WHERE Name = 'Jane';
