@@ -37,6 +37,7 @@ INSERT INTO Borrow (MemberID, BookID, BorrowDate, ReturnDate) VALUES
 (3, 3, '2024-03-10', NULL);         
 
 
+
 SELECT b.Title, b.Author, br.BorrowDate, br.ReturnDate  
 FROM Borrow br  
 JOIN Book b ON br.BookID = b.BookID  
@@ -73,4 +74,5 @@ WHERE Name = 'Ranveer';
 DELETE FROM Member  
 WHERE MemberID NOT IN (SELECT DISTINCT MemberID FROM Borrow);
 
+TRUNCATE TABLE Book;
 
