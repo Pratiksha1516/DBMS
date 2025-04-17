@@ -16,6 +16,10 @@ VALUES
 ('Jenny', 'Doctor'),
 ('Priya', 'Singer');
 
+SELECT Occupation
+FROM OCCUPATIONS
+WHERE Name = 'Jane';
+
 SELECT CONCAT(Name, '(', SUBSTR(Occupation, 1, 1), ')')
 FROM OCCUPATIONS
 ORDER BY Name;
