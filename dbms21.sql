@@ -21,6 +21,9 @@ select Fav_thing
 from Fav
 where name = 'Shree';
 
+select name 
+from Fav
+where Fav_thing > 2;
 
 select Fav_thing
 from Fav
