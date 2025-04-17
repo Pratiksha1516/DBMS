@@ -13,7 +13,9 @@ values
 
 select * from Fav;
 
-select 
+select Fav_thing
+from Fav
+where name = 'Shree';
 
 
 select Fav_thing
