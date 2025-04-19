@@ -14,6 +14,10 @@ select emp_name from emp where emp_age < 26;
 
 select max(emp_salary) AS highest_salary from emp;
 
+select * 
+from emp
+limit 2;
+
 SELECT emp_name, emp_salary AS highest_salary
 FROM emp
 WHERE emp_salary = (SELECT MAX(emp_salary) FROM emp);
