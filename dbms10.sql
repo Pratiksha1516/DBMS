@@ -15,6 +15,10 @@ SELECT * FROM Employees;
 
 SELECT *
 FROM Employees
+WHERE Name = 'Bob' OR Department = 'IT';
+
+SELECT *
+FROM Employees
 WHERE Slary BETWEEN 50000  AND 80000;
 
 UPDATE Employees
