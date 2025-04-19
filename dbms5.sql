@@ -17,6 +17,10 @@ VALUES (3, 'prati', 'Mathematics', 'Science', 9.2, TO_DATE('2019-05-18', 'YYYY-M
 SELECT * FROM student;
 
 SELECT *
+FROM student
+WHERE gpa > 8 OR name = 'Pratiksha';
+
+SELECT *
 FROM student 
 WHERE gpa BETWEEN 8 TO 9.5;
     
