@@ -15,12 +15,22 @@ INSERT INTO student
 VALUES (3, 'prati', 'Mathematics', 'Science', 9.2, TO_DATE('2019-05-18', 'YYYY-MM-DD'));
 
 SELECT * FROM student;
+
+SELECT *
+FROM student 
+WHERE gpa BETWEEN 8 TO 9.5;
     
-SELECT * FROM student WHERE department = 'Engineering';
+SELECT * 
+FROM student 
+WHERE department = 'Engineering';
 
-SELECT * FROM student WHERE name LIKE 'P%';
+SELECT * 
+FROM student 
+WHERE name LIKE 'P%';
 
-SELECT * FROM student ORDER BY gpa DESC;
+SELECT * 
+FROM student 
+ORDER BY gpa DESC;
 
 SELECT graduation_date
 FROM student
