@@ -18,6 +18,10 @@ select *
 from emp
 order by emp_salary desc;
 
+select *
+from emp
+order by emp_id desc
+limit 2;
 
 select * 
 from emp
