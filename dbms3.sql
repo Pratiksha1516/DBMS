@@ -14,6 +14,11 @@ select emp_name from emp where emp_age < 26;
 
 select max(emp_salary) AS highest_salary from emp;
 
+select *
+from emp
+order by emp_salary desc;
+
+
 select * 
 from emp
 limit 2;
