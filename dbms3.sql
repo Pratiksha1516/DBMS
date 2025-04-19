@@ -16,6 +16,11 @@ select max(emp_salary) AS highest_salary from emp;
 
 select *
 from emp
+where emp_salary > 2000000
+limit 2;
+
+select *
+from emp
 order by emp_salary desc;
 
 select *
