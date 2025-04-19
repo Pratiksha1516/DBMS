@@ -30,6 +30,10 @@ INSERT INTO Course VALUES (102, 'Linear Algebra', 3);
 INSERT INTO Enrollment VALUES (1, 1, 101, 'Fall 2024', 'A');
 INSERT INTO Enrollment VALUES (2, 2, 102, 'Fall 2024', 'B');
 
+SELECT *
+FROM Student 
+WHERE Age > 20 OR Department = 'Mathematics';
+
 select S.name
 from student s
 join Enrollment E on S.studentID = E.studentID
