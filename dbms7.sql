@@ -50,3 +50,7 @@ WHERE StudentID = 1;
 SELECT Semester
 FROM Enrollment
 WHERE EnrollmentID = 1;
+
+UPDATE student2
+SET Age = 23
+WHERE EnrollmentID = 2;
