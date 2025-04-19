@@ -64,6 +64,8 @@ SELECT * FROM Invoice WHERE Salary_amount < 20000;
 -- 13. Change Ravi's phone number to 546120
 UPDATE Employee SET Ph_no = 546120 WHERE Name.Fname = 'ravi';
 
+UPDATE Employee SET Location = 'pune' WHERE Emp_id = 'a01'; 
+
 -- 14. Delete the record with Inv_no = 4
 DELETE FROM Invoice WHERE Inv_no = 4;
 
