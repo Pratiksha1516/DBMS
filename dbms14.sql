@@ -54,3 +54,6 @@ DELETE FROM Invoice WHERE Inv_no = 105;
 -- 10. Delete Customer and Invoice tables
 DROP TABLE IF EXISTS Invoice;
 DROP TABLE IF EXISTS Customer;
+
+ALTER TABLE Invoice
+ADD COLUMN E-mail VARCHAR(30);
