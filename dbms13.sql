@@ -43,3 +43,6 @@ WHERE id = 'A03';
 SELECT area
 FROM customer
 WHERE id = 'A05';
+
+ALTER TABLE Customer
+ADD COLUMN age INT;
