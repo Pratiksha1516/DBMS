@@ -51,9 +51,12 @@ UPDATE Customer SET Ph_no = '546120' WHERE fname = 'Ravi';
 -- 9. Delete the record with invoice no 105
 DELETE FROM Invoice WHERE Inv_no = 105;
 
--- 10. Delete Customer and Invoice tables
+ALTER TABLE Invoice
+ADD COLUMN E-mail VARCHAR(30);
+
+ALTER TABLE Customer
+ADD COLUMN age INT NOT NULL DEFAULT 22;
+
 DROP TABLE IF EXISTS Invoice;
 DROP TABLE IF EXISTS Customer;
 
-ALTER TABLE Invoice
-ADD COLUMN E-mail VARCHAR(30);
