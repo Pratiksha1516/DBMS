@@ -19,3 +19,6 @@ WHERE EmployeeID = 3;
 
 DELETE FROM Employees
 WHERE EmployeeID = 1;
+
+SELECT COUNT(EmployeeID)
+FROM Employees;
