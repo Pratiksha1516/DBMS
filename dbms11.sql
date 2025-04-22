@@ -22,3 +22,6 @@ WHERE EmployeeID = 1;
 
 SELECT COUNT(EmployeeID)
 FROM Employees;
+
+SELECT AVG(Age)
+FROM Employees;
