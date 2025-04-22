@@ -13,9 +13,6 @@ VALUES (1, 'Alice', 30, 'HR', 50000.00),
 
 SELECT * FROM Employees;
 
-SELECT MAX(Salary)
-FROM Employee;
-
 SELECT *
 FROM Employees
 WHERE Name = 'Bob' OR Department = 'IT';
@@ -83,6 +80,12 @@ CREATE VIEW IT_Department AS
 SELECT Name, Age, Salary
 FROM Employees
 WHERE Department = 'IT';
+
+SELECT MAX(Salary)
+FROM Employee;
+
+SELECT AVG(Salary)
+FROM Employee;
 
 
 
