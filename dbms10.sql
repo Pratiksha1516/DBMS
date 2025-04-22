@@ -87,5 +87,7 @@ FROM Employee;
 SELECT AVG(Salary)
 FROM Employee;
 
+SELECT MIN(Salary)
+FROM Employee;
 
 
