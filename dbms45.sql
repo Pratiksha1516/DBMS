@@ -1,50 +1,31 @@
-CREATE TABLE STUD(
+CREATE TABLE IF NOT EXISTS student(
 rollno INT PRIMARY KEY,
-name VARCHAR(20),
-marks INT 
+name VARCHAR(40),
+marks INT NOT NULL,
+grade VARCHAR(1),
+city VARCHAR(20)
 );
 
-INSERT INTO STUD
-(rollno, name, marks)
+INSERT INTO student
+(rollno, name, marks, grade, city)
 VALUES
-(101, 'anil', 78),
-(102, 'bhumika', 93),
-(103, 'chetan', 85),
-(104, 'dhruv', 96),
-(105, 'emanuel', 92),
-(106, 'farah', 82);
+(101, 'anil', 78, 'C', 'pune'),
+(102, 'bhumika', 93, 'A', 'Mumbai'),
+(103, 'chetan', 85, 'B', 'Mumbai'),
+(104, 'dhruv', 96, 'A', 'Delhi'),
+(105, 'emanuel', 92, 'B', 'Delhi'),
+(106, 'farah', 82, 'B', 'Delhi');
 
--- SUB QUERIES
---displaying names who took marks more than avg of that table
---step 1
-SELECT AVG(marks)
-FROM STUD;
+select * from student;
 
---step 2
-SELECT name
-FROM STUD
-WHERE marks > 87.6667;
+--views
+CREATE VIEW view1 AS
+SELECT rollno, name, marks FROM student;
 
-SELECT name			--this this sub query thi is dynamic in nature
-FROM STUD
-WHERE marks >(SELECT AVG(marks) FROM STUD);
+SELECT * FROM view1;
 
---display the names of those who has even roll no.
---step 1
-SELECT rollno		-- checking for even number
-FROM STUD
-WHERE rollno % 2 = 0;
+SELECT *
+FROM view1
+WHERE marks > 90;
 
---step2
-SELECT name
-FROM STUD
-WHERE rollno IN(102, 104, 106);		--this is static code
-
---combination of those two
-SELECT name, rollno
-FROM STUD
-WHERE rollno IN(
-	SELECT rollno		-- This is dynamic code
-	FROM STUD
-	WHERE rollno % 2 = 0);		
-
+DROP VIEW view1;
