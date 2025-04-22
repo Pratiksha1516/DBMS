@@ -13,6 +13,9 @@ VALUES (1, 'Alice', 30, 'HR', 50000.00),
 
 SELECT * FROM Employees;
 
+SELECT MAX(Salary)
+FROM Employee;
+
 SELECT *
 FROM Employees
 WHERE Name = 'Bob' OR Department = 'IT';
