@@ -54,6 +54,7 @@ VALUES
 (3, 'IT'), 
 (4,'Finance');
 
+--JOINS
 SELECT E.Name, D.DepartmentName
 FROM Employees E
 JOIN Departments D
@@ -95,11 +96,13 @@ SELECT Name,
        END AS SalaryCategory
 FROM Employees;
 
+--VIEW
 CREATE VIEW IT_Department AS
 SELECT Name, Age, Salary
 FROM Employees
 WHERE Department = 'IT';
 
+--AGGREGATE FUNCTIONS
 SELECT MAX(Salary)
 FROM Employee;
 
