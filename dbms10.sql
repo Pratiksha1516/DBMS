@@ -103,6 +103,9 @@ FROM Employees
 WHERE Department = 'IT';
 
 --AGGREGATE FUNCTIONS
+SELECT COUNT(Name)
+FROM Employees;
+
 SELECT MAX(Salary)
 FROM Employee;
 
