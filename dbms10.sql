@@ -21,8 +21,13 @@ SELECT *
 FROM Employees
 WHERE Slary BETWEEN 50000  AND 80000;
 
+--UPDATE
 UPDATE Employees
 SET Salary = 75000.00
+WHERE EmployeeID = 3;
+
+UPDATE Employees
+SET Department = 'ENC'
 WHERE EmployeeID = 3;
 
 DELETE FROM Employees
