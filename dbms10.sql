@@ -64,6 +64,17 @@ FROM Employees E
 INNER JOIN Departments D
 ON E.EmployeeID = D.DepartmentID;
 
+SELECT Name, Salary
+FROM Employees E
+LEFT JOIN Departments D
+ON E.EmployeeID = D.DepartmentID;
+
+SELECT Name, DepartmentName
+FROM Employees E
+LEFT JOIN Departments D
+ON E.EmployeeID = D.DepartmentID;
+
+
 SELECT Department, AVG(Salary) AS AverageSalary
 FROM Employees
 GROUP BY Department;
