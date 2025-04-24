@@ -49,13 +49,10 @@ CREATE TABLE Departments (
 );
 
 INSERT INTO Departments (DepartmentID, DepartmentName)
-VALUES (1, 'HR');
-INSERT INTO Departments (DepartmentID, DepartmentName)
-VALUES  (2, 'IT'); 
-INSERT INTO Departments (DepartmentID, DepartmentName)
-VALUES  (3, 'Finance');
-
-
+VALUES 
+(2, 'HR'),
+(3, 'IT'), 
+(4,'Finance');
 
 SELECT E.Name, D.DepartmentName
 FROM Employees E
