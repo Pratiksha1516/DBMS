@@ -13,6 +13,17 @@ VALUES (1, 'Alice', 30, 'HR', 50000.00),
 
 SELECT * FROM Employees;
 
+CREATE TABLE Departments (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName VARCHAR(50)
+);
+
+INSERT INTO Departments (DepartmentID, DepartmentName)
+VALUES 
+(2, 'HR'),
+(3, 'IT'), 
+(4,'Finance');
+
 SELECT *
 FROM Employees
 WHERE Name = 'Bob' OR Department = 'IT';
@@ -33,31 +44,9 @@ WHERE EmployeeID = 3;
 DELETE FROM Employees
 WHERE EmployeeID = 1;
 
-INSERT INTO Employees (EmployeeID, Name, Age, Department, Salary)
-VALUES (1, 'Alice', 30, 'HR', 50000.00),
-       (2, 'Bob', 25, 'IT', 60000.00),
-       (3, 'Charlie', 28, 'Finance', 70000.00);
-
-SELECT * FROM Employees;
-
 UPDATE Employees
-SET Salary = 75000.00
-WHERE EmployeeID = 3;
-
-DELETE FROM Employees
-WHERE EmployeeID = 1;
-
-
-CREATE TABLE Departments (
-    DepartmentID INT PRIMARY KEY,
-    DepartmentName VARCHAR(50)
-);
-
-INSERT INTO Departments (DepartmentID, DepartmentName)
-VALUES 
-(2, 'HR'),
-(3, 'IT'), 
-(4,'Finance');
+SET Name = 'Hruta'
+WHERE Name = 'Charlie';
 
 --JOINS
 SELECT E.Name, D.DepartmentName
