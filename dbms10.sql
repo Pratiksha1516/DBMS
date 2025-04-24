@@ -55,10 +55,17 @@ VALUES  (2, 'IT');
 INSERT INTO Departments (DepartmentID, DepartmentName)
 VALUES  (3, 'Finance');
 
+
+
 SELECT E.Name, D.DepartmentName
 FROM Employees E
 JOIN Departments D
 ON E.Department = D.DepartmentName;
+
+SELECT *
+FROM Employees E
+INNER JOIN Departments D
+ON E.EmployeeID = D.DepartmentID;
 
 SELECT Department, AVG(Salary) AS AverageSalary
 FROM Employees
