@@ -13,10 +13,7 @@ VALUES (1, 'Alice', 30, 'HR', 50000.00),
 
 SELECT * FROM Employees;
 
-UPDATE Employees
-SET Salary = 75000.00
-WHERE EmployeeID = 3;
-
+--agrregate functions
 SELECT COUNT(EmployeeID)
 FROM Employees;
 
@@ -38,3 +35,11 @@ FROM Employees;
 SELECT AVG(Salary)
 FROM Employees;
 
+--update operations
+UPDATE Employees
+SET Age= 38
+where EmployeeID = 3;
+
+UPDATE Employees
+SET Salary = 75000.00
+WHERE EmployeeID = 3;
