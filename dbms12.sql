@@ -46,4 +46,8 @@ SELECT Salary
 FROM Employees
 WHERE Age > 33;
 
+--aggregate functions
+SELECT MIN(Salary)
+FROM Employees;
+
 DROP TABLE Employees;
