@@ -50,4 +50,7 @@ WHERE Age > 33;
 SELECT MIN(Salary)
 FROM Employees;
 
+SELECT AVG(Salary)
+FROM Employees;
+
 DROP TABLE Employees;
