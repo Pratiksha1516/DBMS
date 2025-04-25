@@ -25,3 +25,6 @@ FROM Employees;
 
 SELECT AVG(Age)
 FROM Employees;
+
+SELECT MAX(Name)
+FROM Employees;
