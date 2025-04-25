@@ -17,9 +17,6 @@ UPDATE Employees
 SET Salary = 75000.00
 WHERE EmployeeID = 3;
 
-DELETE FROM Employees
-WHERE EmployeeID = 1;
-
 SELECT COUNT(EmployeeID)
 FROM Employees;
 
@@ -29,9 +26,12 @@ FROM Employees;
 SELECT MAX(Salary)
 FROM Employees;
 
-
 SELECT MAX(Name)
 FROM Employees;
 
 SELECT MIN(Name)
 FROM Employees;
+
+SELECT AVG(Salary)
+FROM Employees;
+
