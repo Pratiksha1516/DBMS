@@ -32,6 +32,9 @@ FROM Employees;
 SELECT MIN(Name)
 FROM Employees;
 
+SELECT MIN(Salary)
+FROM Employees;
+
 SELECT AVG(Salary)
 FROM Employees;
 
