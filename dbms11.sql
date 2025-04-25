@@ -28,3 +28,6 @@ FROM Employees;
 
 SELECT MAX(Name)
 FROM Employees;
+
+SELECT MIN(Name)
+FROM Employees;
