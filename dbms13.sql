@@ -52,3 +52,12 @@ WHERE id = 'A05';
 
 ALTER TABLE Customer
 ADD COLUMN age INT;
+
+--Agrregate functions
+SELECT COUNT(id)
+FROM Customer;
+
+SELECT MAX(Ph_no)
+FROM Customer;
+
+
