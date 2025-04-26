@@ -12,11 +12,14 @@ CREATE TABLE Invoice (
     FOREIGN KEY (Cust_id) REFERENCES Customer(id)
 );
 
-INSERT INTO Customer VALUES('A01', 'Allan', 'Border', 'SA', '723622');
-INSERT INTO Customer VALUES('A02', 'Tina', 'Shields', 'MO', '23784');
-INSERT INTO Customer VALUES('A03', 'Ravi', 'Kumar', 'BI', '545621');
-INSERT INTO Customer VALUES('A04', 'Sunita', 'Rai', 'CH', '983724');
-INSERT INTO Customer VALUES('A05', 'James', 'Smith', 'WA', '634672');
+INSERT INTO Customer
+(id, fname,lname, area, Ph_no)
+VALUES
+('A01', 'Allan', 'Border', 'SA', '723622'),
+('A02', 'Tina', 'Shields', 'MO', '23784'),
+('A03', 'Ravi', 'Kumar', 'BI', '545621'),
+('A04', 'Sunita', 'Rai', 'CH', '983724'),
+('A05', 'James', 'Smith', 'WA', '634672');
 
 INSERT INTO Invoice VALUES(101, 'A01');
 INSERT INTO Invoice VALUES(102, 'A02');
