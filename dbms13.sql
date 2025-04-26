@@ -60,4 +60,6 @@ FROM Customer;
 SELECT MAX(Ph_no)
 FROM Customer;
 
-
+SELECT COUNT(Ph_no)
+FROM Customer
+WHERE id = 'A02';
