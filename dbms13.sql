@@ -32,6 +32,8 @@ VALUES
 
 SELECT * FROM Customer;
 
+SELECT * FROM Invoice;
+
 SELECT fname, area FROM Customer;
 
 SELECT *
