@@ -63,3 +63,6 @@ FROM Customer;
 SELECT COUNT(Ph_no)
 FROM Customer
 WHERE id = 'A02';
+
+SELECT MIN(Ph_no)
+FROM Customer;
