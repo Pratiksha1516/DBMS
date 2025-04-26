@@ -21,11 +21,14 @@ VALUES
 ('A04', 'Sunita', 'Rai', 'CH', '983724'),
 ('A05', 'James', 'Smith', 'WA', '634672');
 
-INSERT INTO Invoice VALUES(101, 'A01');
-INSERT INTO Invoice VALUES(102, 'A02');
-INSERT INTO Invoice VALUES(103, 'A03');
-INSERT INTO Invoice VALUES(104, 'A04');
-INSERT INTO Invoice VALUES(105, 'A05');
+INSERT INTO Invoice
+(Inv_no, Cust_id)
+VALUES
+(101, 'A01'),
+(102, 'A02'),
+(103, 'A03'),
+(104, 'A04'),
+(105, 'A05');
 
 SELECT * FROM Customer;
 
