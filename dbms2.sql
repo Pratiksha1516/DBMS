@@ -18,6 +18,9 @@ FROM emp;
 SELECT MAX(emp_salary)
 FROM emp;
 
+SELECT AVG(emp_salary)
+FROM emp;
+
 select * from emp where emp_dep = 'full stack';
 
 select * from emp where emp_salary > 100000;
