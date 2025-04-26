@@ -15,6 +15,9 @@ INSERT INTO emp VALUES   (3, 'shiri', 20, 90000000, 'designing');
 SELECT COUNT(emp_id)
 FROM emp;
 
+SELECT MAX(emp_salary)
+FROM emp;
+
 select * from emp where emp_dep = 'full stack';
 
 select * from emp where emp_salary > 100000;
