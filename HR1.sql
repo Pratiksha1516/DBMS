@@ -27,6 +27,9 @@ from(
 SELECT MAX(element)
 FROM setA;
 
+SELECT MAX(element)
+FROM setA;
+
 drop table setA;
 
 drop table setB;
