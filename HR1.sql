@@ -23,6 +23,10 @@ from(
 	select element from setB
 ) AS UnionResult;
 
+--aggregate functions
+SELECT MAX(element)
+FROM setA;
+
 drop table setA;
 
 drop table setB;
