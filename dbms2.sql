@@ -10,17 +10,6 @@ INSERT INTO emp VALUES  (1, 'prati', 20, 1000000, 'database');
 INSERT INTO emp VALUES   (2, 'ranveer', 20, 90000000, 'full stack');
 INSERT INTO emp VALUES   (3, 'shiri', 20, 90000000, 'designing');
 
-
---Aggregate functions
-SELECT COUNT(emp_id)
-FROM emp;
-
-SELECT MAX(emp_salary)
-FROM emp;
-
-SELECT AVG(emp_salary)
-FROM emp;
-
 select * from emp where emp_dep = 'full stack';
 
 select * from emp where emp_salary > 100000;
@@ -61,3 +50,14 @@ where emp_name = 'shiri';
 select emp_dep
 from emp
 where emp_id = 3;
+
+--Aggregate functions
+SELECT COUNT(emp_id)
+FROM emp;
+
+SELECT MAX(emp_salary)
+FROM emp;
+
+SELECT AVG(emp_salary)
+FROM emp;
+
