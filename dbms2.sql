@@ -67,3 +67,8 @@ FROM emp;
 SELECT MIN(emp_salary)
 FROM emp;
 
+--UPDATE queries
+UPDATE emp
+SET emp_name = 'pratiksha'
+WHERE emp_id = 1;
+
