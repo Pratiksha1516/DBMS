@@ -64,3 +64,6 @@ FROM emp;
 SELECT AVG(emp_salary)
 FROM emp;
 
+SELECT MIN(emp_salary)
+FROM emp;
+
