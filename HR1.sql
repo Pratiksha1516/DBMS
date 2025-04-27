@@ -36,6 +36,9 @@ FROM setA;
 SELECT AVG(element)
 FROM setA;
 
+
+TRUNCATE TABLE setA;
+
 drop table setA;
 
 drop table setB;
