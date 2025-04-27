@@ -39,6 +39,8 @@ FROM setA;
 
 TRUNCATE TABLE setA;
 
+TRUNCATE TABLE setB;
+
 drop table setA;
 
 drop table setB;
