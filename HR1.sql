@@ -33,6 +33,9 @@ FROM setA;
 SELECT COUNT(element)
 FROM setA;
 
+SELECT AVG(element)
+FROM setA;
+
 drop table setA;
 
 drop table setB;
