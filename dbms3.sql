@@ -10,6 +10,10 @@ INSERT INTO emp VALUES  (1, 'prati', 20, 1000000, 'database');
 INSERT INTO emp VALUES   (2, 'ranveer', 20, 90000000, 'full stack');
 INSERT INTO emp VALUES   (3, 'shiri', 20, 90000000, 'designing');
 
+SELECT COUNT(emp)
+FROM emp;
+
+
 select emp_name from emp where emp_age < 26;
 
 select max(emp_salary) AS highest_salary from emp;
