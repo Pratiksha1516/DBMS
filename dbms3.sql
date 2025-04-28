@@ -17,6 +17,10 @@ FROM emp;
 SELECT MAX(emp_salary)
 FROM emp;
 
+SELECT MIN(emp_salary)
+FROM emp;
+
+
 select emp_name from emp where emp_age < 26;
 
 select max(emp_salary) AS highest_salary from emp;
