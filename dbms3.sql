@@ -20,6 +20,9 @@ FROM emp;
 SELECT MIN(emp_salary)
 FROM emp;
 
+SELECT AVG(emp_salary)
+FROM emp;
+
 
 select emp_name from emp where emp_age < 26;
 
