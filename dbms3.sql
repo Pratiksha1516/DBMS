@@ -28,6 +28,10 @@ UPDATE emp
 SET emp_age =18
 WHERE emp_id = 3;
 
+UPDATE emp
+SET emp_dep = 'CLOUD COMPUTING'
+WHERE emp_id = 2;
+
 
 select emp_name from emp where emp_age < 26;
 
