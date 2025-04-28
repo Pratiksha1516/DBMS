@@ -10,6 +10,7 @@ INSERT INTO emp VALUES  (1, 'prati', 20, 1000000, 'database');
 INSERT INTO emp VALUES   (2, 'ranveer', 20, 90000000, 'full stack');
 INSERT INTO emp VALUES   (3, 'shiri', 20, 90000000, 'designing');
 
+--aggregation functions
 SELECT COUNT(emp)
 FROM emp;
 
