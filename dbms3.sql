@@ -33,7 +33,9 @@ SET emp_dep = 'CLOUD COMPUTING'
 WHERE emp_id = 2;
 
 
-select emp_name from emp where emp_age < 26;
+select emp_name 
+from emp 
+where emp_age < 26;
 
 select max(emp_salary) AS highest_salary from emp;
 
@@ -71,8 +73,4 @@ select emp_dep
 from emp
 where emp_id = 2;
 
-delete from emp where emp_id = 1;
 
-truncate table emp;
-
-drop table emp;
