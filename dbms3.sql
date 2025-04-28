@@ -14,7 +14,7 @@ INSERT INTO emp VALUES   (3, 'shiri', 20, 90000000, 'designing');
 SELECT COUNT(emp)
 FROM emp;
 
-SELECT MAX(emp_salary)
+SELECT MAX(emp_salary)UPDATE query
 FROM emp;
 
 SELECT MIN(emp_salary)
@@ -22,6 +22,11 @@ FROM emp;
 
 SELECT AVG(emp_salary)
 FROM emp;
+
+--UPDATE QUERY
+UPDATE emp
+SET emp_age =18
+WHERE emp_id = 3;
 
 
 select emp_name from emp where emp_age < 26;
