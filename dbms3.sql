@@ -13,6 +13,8 @@ INSERT INTO emp VALUES   (3, 'shiri', 20, 90000000, 'designing');
 SELECT COUNT(emp)
 FROM emp;
 
+SELECT MAX(emp_salary)
+FROM emp;
 
 select emp_name from emp where emp_age < 26;
 
