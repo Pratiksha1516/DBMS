@@ -16,6 +16,10 @@ VALUES
 
 SELECT * FROM student;
 
+--Aggregation function
+SELECT COUNT(id)
+FROM student
+
 SELECT *
 FROM student
 WHERE gpa > 8 OR name = 'Pratiksha';
