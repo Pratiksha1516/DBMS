@@ -8,11 +8,11 @@ CREATE TABLE student(
 );
 
 INSERT INTO student 
-VALUES (1, 'Pratiksha', 'Computer Science', 'Engineering', 8.5, TO_DATE('2017-05-13', 'YYYY-MM-DD'));
-INSERT INTO student 
-VALUES (2, 'Ran', 'Electrical Engineering', 'Engineering', 7.8, TO_DATE('2018-06-20', 'YYYY-MM-DD'));
-INSERT INTO student 
-VALUES (3, 'prati', 'Mathematics', 'Science', 9.2, TO_DATE('2019-05-18', 'YYYY-MM-DD'));
+(id, name, major, department, gpa,graduation_date )
+VALUES
+(1, 'Pratiksha','Computer Science', 'Engineering', 8.5, TO_DATE('2017-05-13', 'YYYY-MM-DD')),
+(2, 'Ran', 'Electrical Engineering', 'Engineering', 7.8, TO_DATE('2018-06-20', 'YYYY-MM-DD')),
+(3, 'prati', 'Mathematics', 'Science', 9.2, TO_DATE('2019-05-18', 'YYYY-MM-DD'));
 
 SELECT * FROM student;
 
