@@ -24,6 +24,9 @@ FROM stud;
 SELECT MIN(stud_name)
 FROM stud;
 
+SELECT MAX(stud_name)
+FROM stud;
+
 SELECT stud_name FROM stud WHERE stud_name LIKE '___a%';
 
 SELECT * FROM stud WHERE stud_name = 'ram';
