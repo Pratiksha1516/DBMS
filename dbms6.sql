@@ -26,6 +26,10 @@ FROM customers;
 SELECT MIN(registration_date)
 FROM customers;
 
+SELECT COUNT(registration_date)
+FROM customers;
+
+
     
 WHERE registration_date >= TO_DATE('2022-01-01', 'YYYY-MM-DD');
 
