@@ -31,8 +31,10 @@ FROM customers;
 
 SELECT MAX(city)
 FROM customers;
-
-    
+ 
+SELECT MIN(city)
+FROM customers;
+   
 WHERE registration_date >= TO_DATE('2022-01-01', 'YYYY-MM-DD');
 
 SELECT * FROM  customers
