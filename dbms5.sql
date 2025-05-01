@@ -67,4 +67,8 @@ UPDATE student
 SET name = 'Ranveer'
 WHERE id = 2;
 
+UPDATE student
+SET major = 'Civil Engineer'
+WHERE id = 3;
+
 drop table student
