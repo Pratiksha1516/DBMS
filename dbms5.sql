@@ -22,7 +22,10 @@ FROM student
 
 SELECT MAX(gpa)
 FROM student;
-    
+
+SELECT MIN(gpa)
+FROM student;
+
 SELECT *
 FROM student
 WHERE gpa > 8 OR name = 'Pratiksha';
