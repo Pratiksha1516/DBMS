@@ -35,8 +35,6 @@ FROM customers;
 SELECT MIN(city)
 FROM customers;
    
-WHERE registration_date >= TO_DATE('2022-01-01', 'YYYY-MM-DD');
-
 SELECT * FROM  customers
 WHERE city = 'Chicago';
 
@@ -74,6 +72,11 @@ WHERE name = 'ghi';
 SELECT phone
 FROM customers
 WHERE name = 'abc';
+
+--UPDATE
+UPDATE customers
+SET name = 'pratiksha'
+WHERE customer_id = 1;
 
 truncate table customers;
 
