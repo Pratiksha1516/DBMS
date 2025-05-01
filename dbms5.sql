@@ -8,7 +8,7 @@ CREATE TABLE student(
 );
 
 INSERT INTO student 
-(id, name, major, department, gpa,graduation_date )
+(id, name, major, department, gpa,graduation_date)
 VALUES
 (1, 'Pratiksha','Computer Science', 'Engineering', 8.5, TO_DATE('2017-05-13', 'YYYY-MM-DD')),
 (2, 'Ran', 'Electrical Engineering', 'Engineering', 7.8, TO_DATE('2018-06-20', 'YYYY-MM-DD')),
@@ -61,5 +61,10 @@ WHERE id = 2;
 SELECT department
 FROM student
 WHERE id = 3;
+
+--UPDATE QUERY
+UPDATE student
+SET name = 'Ranveer'
+WHERE id = 2;
 
 drop table student
