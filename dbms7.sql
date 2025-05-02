@@ -52,6 +52,14 @@ FROM Student;
 SELECT MAX(Age)
 FROM Student;
 
+SELECT MIN
+(
+  CASE Grade
+    WHEN 'A' THEN 2
+    WHEN 'B' THEN 1
+  END
+) AS Min_Grade_Value
+FROM Enrollment;
 
 SELECT *
 FROM Student 
