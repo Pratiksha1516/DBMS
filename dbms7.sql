@@ -41,6 +41,8 @@ VALUES
 
 SELECT * FROM Student;
 
+SELECT * FROM Course;
+
 SELECT *
 FROM Student 
 WHERE Age > 20 OR Department = 'Mathematics';
