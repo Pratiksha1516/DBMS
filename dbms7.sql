@@ -45,6 +45,10 @@ SELECT * FROM Course;
 
 SELECT * FROM Enrollment;
 
+SELECT COUNT(Name)
+FROM Student;
+
+
 SELECT *
 FROM Student 
 WHERE Age > 20 OR Department = 'Mathematics';
