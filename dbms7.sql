@@ -39,6 +39,7 @@ VALUES
 (1, 1, 101, 'Fall 2024', 'A'),
 (2, 2, 102, 'Fall 2024', 'B');
 
+SELECT * FROM Student;
 
 SELECT *
 FROM Student 
