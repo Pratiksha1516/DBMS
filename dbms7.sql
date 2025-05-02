@@ -48,6 +48,9 @@ SELECT * FROM Enrollment;
 SELECT COUNT(Name)
 FROM Student;
 
+SELECT MAX(Age)
+FROM Student;
+
 
 SELECT *
 FROM Student 
