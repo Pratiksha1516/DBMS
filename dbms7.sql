@@ -45,6 +45,7 @@ SELECT * FROM Course;
 
 SELECT * FROM Enrollment;
 
+--Aggregate 
 SELECT COUNT(Name)
 FROM Student;
 
