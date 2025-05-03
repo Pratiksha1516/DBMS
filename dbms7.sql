@@ -52,6 +52,9 @@ FROM Student;
 SELECT MAX(Age)
 FROM Student;
 
+SELECT MIN(Age)
+FROM Student;
+
 SELECT MIN
 (
   CASE Grade
