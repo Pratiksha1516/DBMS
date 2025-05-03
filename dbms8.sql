@@ -39,6 +39,8 @@ VALUES
 (1, 1, 101, 'Fall 2024', 'A'),
 (2, 2, 102, 'Fall 2024', 'B');
 
+SELECT * FFROM Student;
+
 select S.name
 from student s
 join Enrollment E on S.studentID = E.studentID
