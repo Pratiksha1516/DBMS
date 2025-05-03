@@ -33,8 +33,11 @@ VALUES
 (101, 'Database Systems', 4),
 (102, 'Linear Algebra', 3);
 
-INSERT INTO Enrollment VALUES (1, 1, 101, 'Fall 2024', 'A');
-INSERT INTO Enrollment VALUES (2, 2, 102, 'Fall 2024', 'B');
+INSERT INTO Enrollment
+(EnrollmentID,StudentID,CourseID,Semester,Grade)
+VALUES 
+(1, 1, 101, 'Fall 2024', 'A'),
+(2, 2, 102, 'Fall 2024', 'B');
 
 select S.name
 from student s
