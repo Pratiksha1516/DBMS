@@ -43,6 +43,8 @@ SELECT * FFROM Student;
 
 SELECT * FROM Course;
 
+SELECT * FROM Enrollment;
+
 select S.name
 from student s
 join Enrollment E on S.studentID = E.studentID
