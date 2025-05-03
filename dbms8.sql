@@ -27,8 +27,11 @@ VALUES
 (1, 'prati', 20, 'Computer Science'),
 (2, 'ranveer', 21, 'Mathematics');
 
-INSERT INTO Course VALUES (101, 'Database Systems', 4);
-INSERT INTO Course VALUES (102, 'Linear Algebra', 3);
+INSERT INTO Course 
+(CourseID,CourseName,Credits)
+VALUES
+(101, 'Database Systems', 4),
+(102, 'Linear Algebra', 3);
 
 INSERT INTO Enrollment VALUES (1, 1, 101, 'Fall 2024', 'A');
 INSERT INTO Enrollment VALUES (2, 2, 102, 'Fall 2024', 'B');
