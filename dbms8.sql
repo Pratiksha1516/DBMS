@@ -21,8 +21,11 @@ CREATE TABLE Enrollment (
     FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
 );
 
-INSERT INTO Student VALUES (1, 'prati', 20, 'Computer Science');
-INSERT INTO Student VALUES (2, 'ranveer', 21, 'Mathematics');
+INSERT INTO Student
+(StudentID,Name,Age,Department)
+VALUES 
+(1, 'prati', 20, 'Computer Science'),
+(2, 'ranveer', 21, 'Mathematics');
 
 INSERT INTO Course VALUES (101, 'Database Systems', 4);
 INSERT INTO Course VALUES (102, 'Linear Algebra', 3);
