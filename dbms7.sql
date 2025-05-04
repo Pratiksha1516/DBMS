@@ -70,17 +70,10 @@ SELECT MIN
 ) AS Min_Grade_Value
 FROM Enrollment;
 
-SELECT MAX(Credits)
-FROM Course;
-
+--SELECT queries
 SELECT *
 FROM Student 
 WHERE Age > 20 OR Department = 'Mathematics';
-
-select S.name
-from student s
-join Enrollment E on S.studentID = E.studentID
-where E.courseID = 101;
 
 SELECT Grade
 FROM Enrollment 
@@ -94,6 +87,9 @@ SELECT Semester
 FROM Enrollment
 WHERE EnrollmentID = 1;
 
-UPDATE student2
-SET Age = 23
-WHERE EnrollmentID = 2;
+--JOINS
+select S.name
+from student s
+join Enrollment E on S.studentID = E.studentID
+where E.courseID = 101;
+
