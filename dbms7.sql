@@ -106,3 +106,6 @@ UPDATE Student
 SET Name = 'Pratiksha'
 WHERE StudentID = 1;
 
+UPDATE Student
+SET Age = 25
+WHERE Name = 'ranveer';
