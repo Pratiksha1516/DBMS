@@ -109,3 +109,7 @@ WHERE StudentID = 1;
 UPDATE Student
 SET Age = 25
 WHERE Name = 'ranveer';
+
+UPDATE Course
+SET Credits = 9
+WHERE CourseID = 102;
