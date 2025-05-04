@@ -97,3 +97,6 @@ SELECT S.Name, S.Department, E.Grade
 FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID;
 
+SELECT S.Name, S.Department, E.Grade
+FROM Student S
+RIGHT JOIN Enrollment E ON S.StudentID = E.StudentID;
