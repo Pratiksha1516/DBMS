@@ -113,3 +113,7 @@ WHERE Name = 'ranveer';
 UPDATE Course
 SET Credits = 9
 WHERE CourseID = 102;
+
+UPDATE Course
+SET CourseName = 'Software Engineering'
+WHERE CourseID = 102;
