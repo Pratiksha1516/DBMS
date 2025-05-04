@@ -93,3 +93,7 @@ from student s
 join Enrollment E on S.studentID = E.studentID
 where E.courseID = 101;
 
+SELECT S.Name, S.Department, E.Grade
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID;
+
