@@ -100,3 +100,9 @@ JOIN Enrollment E ON S.StudentID = E.StudentID;
 SELECT S.Name, S.Department, E.Grade
 FROM Student S
 RIGHT JOIN Enrollment E ON S.StudentID = E.StudentID;
+
+--UPDATE 
+UPDATE Student
+SET Name = 'Pratiksha'
+WHERE StudentID = 1;
+
