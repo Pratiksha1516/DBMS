@@ -70,6 +70,9 @@ SELECT MIN
 ) AS Min_Grade_Value
 FROM Enrollment;
 
+SELECT MAX(Credits)
+FROM Course;
+
 SELECT *
 FROM Student 
 WHERE Age > 20 OR Department = 'Mathematics';
