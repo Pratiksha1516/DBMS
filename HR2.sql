@@ -35,3 +35,6 @@ FROM setA;
 
 SELECT COUNT(element)
 FROM setB;
+
+SELECT MIN(element)
+FROM setB;
