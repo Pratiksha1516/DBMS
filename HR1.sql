@@ -39,6 +39,8 @@ FROM setA;
 SELECT MAX(element)
 FROM setB;
 
+SELECT MIN(element)
+FROM setB;
 
 TRUNCATE TABLE setA;
 
