@@ -27,7 +27,7 @@ from(
 SELECT MAX(element)
 FROM setA;
 
-SELECT MAX(element)
+SELECT MIN(element)
 FROM setA;
 
 SELECT COUNT(element)
