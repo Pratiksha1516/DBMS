@@ -111,3 +111,6 @@ FROM Employee;
 
 SELECT MIN(Age)
 FROM Employees;
+
+SELECT MAX(Age)
+FROM Employees;
