@@ -18,3 +18,7 @@ FROM (
     INTERSECT
     SELECT element FROM setB
 ) AS IntersectionResult;
+
+--aggregate functions
+SELECT MAX(element)
+FROM setA;
