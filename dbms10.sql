@@ -117,3 +117,6 @@ FROM Employees;
 
 SELECT AVG(Age)
 FROM Employees;
+
+SELECT MIN(Department)
+FROM Employees;
