@@ -36,6 +36,9 @@ FROM setA;
 SELECT AVG(element)
 FROM setA;
 
+SELECT MAX(element)
+FROM setB;
+
 
 TRUNCATE TABLE setA;
 
