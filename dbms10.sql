@@ -109,4 +109,5 @@ FROM Employee;
 SELECT MIN(Salary)
 FROM Employee;
 
-
+SELECT MIN(Age)
+FROM Employees;
