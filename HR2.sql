@@ -38,3 +38,9 @@ FROM setB;
 
 SELECT MIN(element)
 FROM setB;
+
+SELECT MAX(element)
+FROM setB;
+
+SELECT AVG(element)
+FROM setB;
