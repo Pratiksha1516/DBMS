@@ -20,6 +20,10 @@ FROM (
 ) AS IntersectionResult;
 
 --aggregate functions
+
+SELECT COUNT(element)
+FROM setA;
+
 SELECT MAX(element)
 FROM setA;
 
