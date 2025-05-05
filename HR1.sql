@@ -42,6 +42,10 @@ FROM setB;
 SELECT MIN(element)
 FROM setB;
 
+SELECT AVG(element)
+FROM setB;
+
+
 TRUNCATE TABLE setA;
 
 TRUNCATE TABLE setB;
