@@ -45,6 +45,9 @@ FROM setB;
 SELECT AVG(element)
 FROM setB;
 
+SELECT COUNT(element)
+FROM setB;
+
 
 TRUNCATE TABLE setA;
 
