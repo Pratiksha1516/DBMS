@@ -29,3 +29,6 @@ FROM setA;
 
 SELECT MIN(element)
 FROM setA;
+
+SELECT AVG(element)
+FROM setA;
