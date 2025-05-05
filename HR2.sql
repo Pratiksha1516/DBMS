@@ -32,3 +32,6 @@ FROM setA;
 
 SELECT AVG(element)
 FROM setA;
+
+SELECT COUNT(element)
+FROM setB;
