@@ -22,3 +22,6 @@ FROM (
 --aggregate functions
 SELECT MAX(element)
 FROM setA;
+
+SELECT MIN(element)
+FROM setA;
