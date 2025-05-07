@@ -33,6 +33,13 @@ FROM(
 	SELECT element FROM setB
 )AS combined;
 
+SELECT SUM(element)
+FROM(
+	SELECT element FROM setA
+	UNION ALL
+	SELECT element FROM setB
+)AS combined;
+
 drop table setA;
 
 drop table setB;
