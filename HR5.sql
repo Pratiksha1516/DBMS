@@ -30,3 +30,6 @@ where number = 2356;
 --Aggregate functions
 SELECT COUNT(*)
 FROM student;
+
+SELECT MAX(number)
+FROM student;
