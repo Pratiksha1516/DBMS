@@ -39,6 +39,13 @@ FROM(
 SELECT SUM(number)
 FROM student;
 
+SELECT SUM(number)
+FROM(
+	SELECT number FROM student
+	EXCEPT
+	SELECT ID from Teaching_Assistants
+);
+
 select * 
 from student
 inner join Teaching_Assistants
