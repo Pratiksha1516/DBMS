@@ -36,3 +36,6 @@ FROM student;
 
 SELECT MIN(number)
 FROM student;
+
+SELECT SUM(number)
+FROM student;
