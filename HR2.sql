@@ -52,6 +52,13 @@ FROM (
     SELECT element FROM setB
 ) AS DifferenceResult;
 
+SELECT MIN(element)
+FROM(
+	SELECT element FROM setA
+	UNION ALL
+	SELECT element FROM setB
+)AS combined;
+
 --JOINS
 SELECT setA.element
 FROM setA
