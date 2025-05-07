@@ -45,6 +45,8 @@ FROM setB;
 SELECT AVG(element)
 FROM setB;
 
+--JOINS
+
 TRUNCATE TABLE setA;
 
 TRUNCATE TABLE setB;
