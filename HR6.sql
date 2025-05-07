@@ -29,6 +29,14 @@ FROM(
 	SELECT ID from Teaching_Assistants
 );
 
+SELECT SUM(number)
+FROM(
+	SELECT number FROM student
+	UNION ALL
+	SELECT ID from Teaching_Assistants
+);
+
+
 select * 
 from student
 inner join Teaching_Assistants
