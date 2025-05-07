@@ -55,6 +55,11 @@ SELECT setA.element
 FROM setA
 INNER JOIN setB ON setA.element = setB.element;
 
+SELECT setA.element
+FROM setA
+RIGHT JOIN setB ON setA.element = setB.element
+WHERE setB.element IS NOT NULL;
+
 
 
 TRUNCATE TABLE setA;
