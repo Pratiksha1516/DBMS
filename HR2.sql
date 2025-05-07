@@ -45,6 +45,13 @@ FROM setB;
 SELECT AVG(element)
 FROM setB;
 
+SELECT COUNT(element)
+FROM (
+    SELECT element FROM setA
+    EXCEPT
+    SELECT element FROM setB
+) AS DifferenceResult;
+
 --JOINS
 SELECT setA.element
 FROM setA
