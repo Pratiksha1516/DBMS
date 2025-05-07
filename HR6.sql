@@ -9,9 +9,6 @@ insert into student(stud_name, number, sex) values
 ('ranveer', 2356, 'M'),
 ('Shree', 3456, 'F');
 
-SELECT stud_name,number
-FROM Student;
-
 create table Teaching_Assistants(
 subject varchar(20),
 ID int);
@@ -20,6 +17,9 @@ insert into Teaching_Assistants(subject, ID) values
 ('Physics', 15426),
 ('Chemistry', 2356),
 ('Maths', 2645);
+
+SELECT stud_name,number
+FROM Student;
 
 select * 
 from student
