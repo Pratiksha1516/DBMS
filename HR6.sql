@@ -21,6 +21,14 @@ insert into Teaching_Assistants(subject, ID) values
 SELECT stud_name,number
 FROM Student;
 
+--Aggregate functions
+SELECT MAX(number)
+FROM(
+	SELECT number FROM student
+	UNION ALL
+	SELECT ID from Teaching_Assistants
+);
+
 select * 
 from student
 inner join Teaching_Assistants
