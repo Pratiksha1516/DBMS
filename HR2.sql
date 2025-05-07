@@ -46,6 +46,11 @@ SELECT AVG(element)
 FROM setB;
 
 --JOINS
+SELECT setA.element
+FROM setA
+LEFT JOIN setB ON setA.element = setB.element
+WHERE setB.element IS NOT NULL;
+
 
 TRUNCATE TABLE setA;
 
