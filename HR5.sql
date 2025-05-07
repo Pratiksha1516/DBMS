@@ -26,3 +26,7 @@ where sex = 'F';
 select sex
 from student
 where number = 2356;
+
+--Aggregate functions
+SELECT COUNT(*)
+FROM student;
