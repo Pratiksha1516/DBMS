@@ -47,7 +47,7 @@ FROM(
 	SELECT element FROM setB
 )AS combined;
 
-SELECT AVG(element)
+SELECT MIN(element)
 FROM(
 	SELECT element FROM setA
 	UNION ALL
