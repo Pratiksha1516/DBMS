@@ -19,6 +19,13 @@ FROM (
     SELECT element FROM setB
 ) AS DifferenceResult;
 
+SELECT COUNT(element)
+FROM(
+	SELECT element FROM setA
+	UNION ALL
+	SELECT element FROM setB
+)AS combined;
+
 drop table setA;
 
 drop table setB;
