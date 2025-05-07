@@ -39,3 +39,6 @@ FROM student;
 
 SELECT SUM(number)
 FROM student;
+
+SELECT AVG(number)
+FROM student;
