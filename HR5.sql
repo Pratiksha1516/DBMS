@@ -33,3 +33,6 @@ FROM student;
 
 SELECT MAX(number)
 FROM student;
+
+SELECT MIN(number)
+FROM student;
