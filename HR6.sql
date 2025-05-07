@@ -36,6 +36,8 @@ FROM(
 	SELECT ID from Teaching_Assistants
 );
 
+SELECT SUM(number)
+FROM student;
 
 select * 
 from student
