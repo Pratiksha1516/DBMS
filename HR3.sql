@@ -47,6 +47,13 @@ FROM(
 	SELECT element FROM setB
 )AS combined;
 
+SELECT AVG(element)
+FROM(
+	SELECT element FROM setA
+	UNION ALL
+	SELECT element FROM setB
+)AS combined;
+
 drop table setA;
 
 drop table setB;
