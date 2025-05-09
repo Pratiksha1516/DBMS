@@ -40,6 +40,8 @@ SELECT * FROM Book;
 
 SELECT * FROM Member;
 
+SELECT * FROM Borrow;
+
 SELECT Price
 FROM Book
 WHERE BookID = 3;
