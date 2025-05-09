@@ -37,6 +37,10 @@ where Fav_thing = 'Travelling';
 SELECT COUNT(name)
 FROM Fav;
 
+SELECT COUNT(*) AS TotalPeople
+FROM Fav;
+
+
 truncate table Fav;
 
 drop table Fav;
