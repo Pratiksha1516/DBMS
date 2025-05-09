@@ -110,3 +110,9 @@ SELECT
 	MAX(ReturnDate - BorrowDate) AS MaxBorrowDays
 FROM Borrow
 WHERE ReturnDate IS NOT NULL;
+
+
+SELECT 
+    MIN(BorrowDate) AS FirstBorrowed,
+    MAX(BorrowDate) AS LastBorrowed
+FROM Borrow;
