@@ -93,4 +93,9 @@ FROM Book;
 SELECT MIN(Price)
 FROM Book;
 
+SELECT MAX(JoinDate)        --this shows max values based on ID not on joindate
+FROM Member;
+
+SELECT COUNT(*) AS TotalBorrow 
+FROM Borrow;
 
