@@ -102,3 +102,8 @@ FROM Borrow;
 SELECT MemberID, COUNT(*) AS BookBorrowed
 FROM Borrow
 GROUP BY MemberID;
+
+SELECT 
+	COUNT(CASE WHEN ReturnDate IS NOT NULL THEN 1 END) AS Returned,
+	COUNT(CASE WHEN ReturnDate IS NULL THEN 1 END) AS NotReturned
+FROM Borrow;
