@@ -124,3 +124,9 @@ SELECT m.Name, COUNT(b.BorrowID) AS BooksBorrowed
 FROM Member m
 JOIN Borrow b ON m.MemberID = b.MemberID
 GROUP BY m.Name;
+
+CREATE VIEW BookBorrowCount AS			-- here i have used view, aggregate function and join as well
+SELECT bk.Title, COUNT(b.BorrowID) AS TimesBorrowed
+FROM Book bk
+JOIN Borrow b ON bk.BookID = b.BookID
+GROUP BY bk.Title;
