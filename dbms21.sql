@@ -40,6 +40,8 @@ FROM Fav;
 SELECT COUNT(*) AS TotalPeople
 FROM Fav;
 
+SELECT COUNT(DISTINCT fav_thing) AS DistinctFav
+FROM Fav;
 
 truncate table Fav;
 
