@@ -99,3 +99,6 @@ FROM Member;
 SELECT COUNT(*) AS TotalBorrow 
 FROM Borrow;
 
+SELECT MemberID, COUNT(*) AS BookBorrowed
+FROM Borrow
+GROUP BY MemberID;
