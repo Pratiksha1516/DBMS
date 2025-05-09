@@ -38,6 +38,8 @@ INSERT INTO Borrow (MemberID, BookID, BorrowDate, ReturnDate) VALUES
 
 SELECT * FROM Book;
 
+SELECT * FROM Member;
+
 SELECT Price
 FROM Book
 WHERE BookID = 3;
