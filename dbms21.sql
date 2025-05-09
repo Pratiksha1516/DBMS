@@ -43,6 +43,10 @@ FROM Fav;
 SELECT COUNT(DISTINCT fav_thing) AS DistinctFav
 FROM Fav;
 
+SELECT 
+    MAX(array_length(string_to_array(fav_thing, ','), 1)) AS MaxFavItems
+FROM Fav;
+
 truncate table Fav;
 
 drop table Fav;
