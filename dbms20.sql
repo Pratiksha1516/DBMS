@@ -90,5 +90,7 @@ FROM Book;
 SELECT MAX(Price)
 FROM Book;
 
-TRUNCATE TABLE Book;
+SELECT MIN(Price)
+FROM Book;
+
 
