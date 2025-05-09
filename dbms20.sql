@@ -119,3 +119,8 @@ FROM Borrow;
 
 SELECT SUM(Price) AS TotalBookValue 
 FROM Book;
+
+SELECT m.Name, COUNT(b.BorrowID) AS BooksBorrowed
+FROM Member m
+JOIN Borrow b ON m.MemberID = b.MemberID
+GROUP BY m.Name;
