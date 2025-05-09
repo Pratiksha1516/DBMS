@@ -33,6 +33,10 @@ select name
 from Fav
 where Fav_thing = 'Travelling';
 
+--Aggregate functions
+SELECT COUNT(name)
+FROM Fav;
+
 truncate table Fav;
 
 drop table Fav;
