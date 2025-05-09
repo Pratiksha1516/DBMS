@@ -82,5 +82,11 @@ WHERE Name = 'Ranveer';
 DELETE FROM Member  
 WHERE MemberID NOT IN (SELECT DISTINCT MemberID FROM Borrow);
 
+--Aggregation function
+
+SELECT COUNT(Title)
+FROM Book;
+
+
 TRUNCATE TABLE Book;
 
