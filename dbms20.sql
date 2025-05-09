@@ -36,6 +36,8 @@ INSERT INTO Borrow (MemberID, BookID, BorrowDate, ReturnDate) VALUES
 (2, 1, '2024-03-05', '2024-03-15'),  
 (3, 3, '2024-03-10', NULL);         
 
+SELECT * FROM Book;
+
 SELECT Price
 FROM Book
 WHERE BookID = 3;
