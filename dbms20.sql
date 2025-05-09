@@ -93,9 +93,6 @@ FROM Book;
 SELECT MIN(Price)
 FROM Book;
 
-SELECT MAX(JoinDate)        --this shows max values based on ID not on joindate
-FROM Member;
-
 SELECT COUNT(*) AS TotalBorrow 
 FROM Borrow;
 
@@ -107,3 +104,9 @@ SELECT
 	COUNT(CASE WHEN ReturnDate IS NOT NULL THEN 1 END) AS Returned,
 	COUNT(CASE WHEN ReturnDate IS NULL THEN 1 END) AS NotReturned
 FROM Borrow;
+
+
+SELECT 
+	MAX(ReturnDate - BorrowDate) AS MaxBorrowDays
+FROM Borrow
+WHERE ReturnDate IS NOT NULL;
