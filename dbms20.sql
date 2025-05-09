@@ -116,3 +116,6 @@ SELECT
     MIN(BorrowDate) AS FirstBorrowed,
     MAX(BorrowDate) AS LastBorrowed
 FROM Borrow;
+
+SELECT SUM(Price) AS TotalBookValue 
+FROM Book;
