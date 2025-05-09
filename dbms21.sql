@@ -47,6 +47,13 @@ SELECT
     MAX(array_length(string_to_array(fav_thing, ','), 1)) AS MaxFavItems
 FROM Fav;
 
+SELECT 
+    name,
+    array_length(string_to_array(fav_thing, ','), 1) AS FavCount
+FROM Fav;
+
+
+
 truncate table Fav;
 
 drop table Fav;
