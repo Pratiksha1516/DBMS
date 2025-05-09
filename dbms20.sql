@@ -130,3 +130,5 @@ SELECT bk.Title, COUNT(b.BorrowID) AS TimesBorrowed
 FROM Book bk
 JOIN Borrow b ON bk.BookID = b.BookID
 GROUP BY bk.Title;
+
+select * from BookBorrowCount;
