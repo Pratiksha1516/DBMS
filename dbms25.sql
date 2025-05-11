@@ -29,3 +29,7 @@ FROM emp;
 UPDATE emp
 SET branch = 'hardware'
 WHERE id = 2;
+
+UPDATE emp
+SET salary = 3000
+WHERE branch = 'hardware';
