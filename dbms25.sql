@@ -41,3 +41,8 @@ WHERE id = 3;
 UPDATE emp
 SET branch = 'data analytics', salary = 100000
 WHERE id = 3;
+
+--SELECT 
+SELECT branch 
+FROM emp
+WHERE id = 1;
