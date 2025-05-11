@@ -46,3 +46,7 @@ WHERE id = 3;
 SELECT branch 
 FROM emp
 WHERE id = 1;
+
+SELECT salary
+FROM emp
+WHERE branch = 'data analytics';
