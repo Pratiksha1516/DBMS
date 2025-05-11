@@ -13,3 +13,5 @@ VALUES
 SELECT * FROM emp;
 
 --Aggregation function
+SELECT COUNT(*)
+FROM emp;
