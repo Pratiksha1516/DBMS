@@ -37,3 +37,7 @@ WHERE branch = 'hardware';
 UPDATE emp
 SET branch = 'data analytics'
 WHERE id = 3;
+
+UPDATE emp
+SET branch = 'data analytics', salary = 100000
+WHERE id = 3;
