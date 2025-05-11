@@ -24,3 +24,5 @@ FROM emp;
 
 SELECT AVG(salary)
 FROM emp;
+
+--Update query
