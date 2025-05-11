@@ -26,3 +26,6 @@ SELECT AVG(salary)
 FROM emp;
 
 --Update query
+UPDATE emp
+SET branch = 'hardware'
+WHERE id = 2;
