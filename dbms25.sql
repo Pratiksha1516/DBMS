@@ -11,3 +11,5 @@ VALUES
 (3);
 
 SELECT * FROM emp;
+
+--Aggregation function
