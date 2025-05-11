@@ -21,3 +21,6 @@ FROM emp;
 
 SELECT SUM(salary)
 FROM emp;
+
+SELECT AVG(salary)
+FROM emp;
