@@ -18,3 +18,6 @@ FROM emp;
 
 SELECT MAX(salary)
 FROM emp;
+
+SELECT SUM(salary)
+FROM emp;
