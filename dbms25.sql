@@ -15,3 +15,6 @@ SELECT * FROM emp;
 --Aggregation function
 SELECT COUNT(*)
 FROM emp;
+
+SELECT MAX(salary)
+FROM emp;
