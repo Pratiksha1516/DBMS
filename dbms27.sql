@@ -51,6 +51,9 @@ FROM student2;
 SELECT name, marks, marks | 5 AS bitwise_or
 FROM student2;
 
+SELECT name, marks, marks # 7 AS bitwise_xor
+FROM student2;
+
 
 --Aggregatiion functions
 SELECT MAX(marks)
