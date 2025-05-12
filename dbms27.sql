@@ -21,6 +21,8 @@ FROM student2;
 
 SELECT * FROM student2;
 
+SELECT * FROM student2 LIMIT(2);
+
 SELECT DISTINCT city 
 FROM student2;
 
