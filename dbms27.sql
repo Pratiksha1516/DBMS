@@ -34,6 +34,11 @@ SELECT *
 FROM student2
 WHERE marks+10 > 100;
 
+SELECT marks,grade
+FROM student2
+WHERE grade = 'A';
+
+
 --Aggregatiion functions
 SELECT MAX(marks)
 FROM student2;
