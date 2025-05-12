@@ -16,11 +16,13 @@ VALUES
 (103, 'chetan', 85, 'B', 'Delhi'),
 (104, 'dhruv', 96, 'A', 'Sangli');
 
-SELECT name, marks FROM student2;
+SELECT name, marks 
+FROM student2;
 
 SELECT * FROM student2;
 
-SELECT DISTINCT city FROM student2;
+SELECT DISTINCT city 
+FROM student2;
 
 SELECT * 
 FROM student2 
@@ -30,3 +32,4 @@ SELECT *
 FROM student2
 WHERE marks+10 > 100;
 
+--Aggregatiion functions
