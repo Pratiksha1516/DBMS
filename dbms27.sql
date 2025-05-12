@@ -45,6 +45,9 @@ FROM student2 order by grade asc;
 SELECT name, marks, marks & 6 AS bitwise_and
 FROM student2;
 
+SELECT name, marks, ~marks AS bitwise_not
+FROM student2;
+
 
 --Aggregatiion functions
 SELECT MAX(marks)
