@@ -15,3 +15,6 @@ select * from city1;
 
 select count(*)
 from city1;
+
+ALTER TABLE city1
+ADD f_name varchar(20);
