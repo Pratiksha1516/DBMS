@@ -10,3 +10,5 @@ VALUES
 INSERT INTO city1(pin, name)
 VALUES
 (234567, 'Sangli');  -- here data is inserted successfully
+
+select * from city1;
