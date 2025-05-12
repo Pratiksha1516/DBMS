@@ -38,6 +38,9 @@ SELECT marks,grade
 FROM student2
 WHERE grade = 'A';
 
+SELECT DISTINCT grade
+FROM student2 order by grade asc;
+
 
 --Aggregatiion functions
 SELECT MAX(marks)
