@@ -12,3 +12,6 @@ VALUES
 (234567, 'Sangli');  -- here data is inserted successfully
 
 select * from city1;
+
+select count(*)
+from city1;
