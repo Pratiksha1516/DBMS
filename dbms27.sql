@@ -33,3 +33,5 @@ FROM student2
 WHERE marks+10 > 100;
 
 --Aggregatiion functions
+SELECT MAX(marks)
+FROM student2;
