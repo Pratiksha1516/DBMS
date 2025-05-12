@@ -35,3 +35,6 @@ WHERE marks+10 > 100;
 --Aggregatiion functions
 SELECT MAX(marks)
 FROM student2;
+
+SELECT MIN(marks)
+FROM student2;
