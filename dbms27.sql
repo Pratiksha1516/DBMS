@@ -124,3 +124,7 @@ WHERE name= 'dhruv';
 UPDATE student2
 SET grade = 'A'
 WHERE marks > 90;
+
+--alter
+ALTER TABLE student2
+ADD result varchar(10);
