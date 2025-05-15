@@ -132,3 +132,9 @@ ADD result varchar(10);
 UPDATE student2
 SET marks = 22
 WHERE rollno = 103;
+
+UPDATE student2
+SET result = case
+	WHEN marks > 33 THEN 'pass'
+	ELSE 'fail'
+END;
