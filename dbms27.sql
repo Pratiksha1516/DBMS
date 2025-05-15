@@ -71,6 +71,9 @@ FROM student2;
 SELECT SUM(marks)
 FROM student2;
 
+SELECT COUNT(name)
+FROM student2
+WHERE grade = 'A';
 
 --update queries
 UPDATE student2
