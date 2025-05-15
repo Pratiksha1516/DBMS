@@ -56,6 +56,9 @@ FROM student2;
 
 
 --Aggregatiion functions
+SELECT COUNT(name)
+FROM student2;
+
 SELECT MAX(marks)
 FROM student2;
 
