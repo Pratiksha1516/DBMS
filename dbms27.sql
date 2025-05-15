@@ -73,3 +73,7 @@ FROM student2;
 UPDATE student2
 SET marks = 87
 WHERE rollno = 101;
+
+UPDATE student2
+SET city = 'Hupri'
+WHERE name= 'dhruv';
