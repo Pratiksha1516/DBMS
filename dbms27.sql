@@ -57,6 +57,9 @@ SELECT *
 FROM student2
 WHERE city LIKE '_____i%';
 
+SELECT *
+FROM student2
+WHERE city LIKE '____i%';
 
 
 --bitwise operations
