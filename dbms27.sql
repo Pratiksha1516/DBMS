@@ -97,6 +97,10 @@ FROM student2;
 
 SELECT * 
 FROM student2
+WHERE city = 'pune' OR marks > 90;
+
+SELECT * 
+FROM student2
 WHERE name like '_____n%';
 
 --Aggregatiion functions
