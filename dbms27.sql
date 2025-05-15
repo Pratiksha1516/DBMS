@@ -49,6 +49,11 @@ SELECT *
 FROM student2
 WHERE name like '__r%__';
 
+SELECT marks 
+FROM student2
+WHERE grade = 'C';
+
+
 
 --bitwise operations
 SELECT name, marks, marks & 6 AS bitwise_and
