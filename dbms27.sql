@@ -53,6 +53,10 @@ SELECT marks
 FROM student2
 WHERE grade = 'C';
 
+SELECT *
+FROM student2
+WHERE city LIKE '_____i%';
+
 
 
 --bitwise operations
