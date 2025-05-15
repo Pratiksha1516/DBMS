@@ -77,3 +77,7 @@ WHERE rollno = 101;
 UPDATE student2
 SET city = 'Hupri'
 WHERE name= 'dhruv';
+
+UPDATE student2
+SET grade = 'A'
+WHERE marks > 90;
