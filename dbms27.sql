@@ -81,7 +81,12 @@ WHERE marks < 80;
 
 SELECT COUNT(name)
 FROM student2
-WHERE marks > 80 and marks < 95;
+WHERE marks > 80 and marks < 95; 
+--or
+SELECT COUNT(name)
+FROM student2
+WHERE marks between 80 and 95;
+
 
 --update queries
 UPDATE student2
