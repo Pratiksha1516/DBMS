@@ -58,6 +58,9 @@ FROM student2;
 SELECT name, marks, marks # 7 AS bitwise_xor
 FROM student2;
 
+SELECT * 
+FROM student2
+WHERE name like '_____n%';
 
 --Aggregatiion functions
 SELECT COUNT(name)
