@@ -128,3 +128,7 @@ WHERE marks > 90;
 --alter
 ALTER TABLE student2
 ADD result varchar(10);
+
+UPDATE student2
+SET marks = 22
+WHERE rollno = 103;
