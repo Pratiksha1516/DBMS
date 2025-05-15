@@ -65,6 +65,10 @@ SELECT *
 FROM student2
 WHERE city IN('Mumbai', 'Pune');
 
+SELECT * 
+FROM student2
+WHERE city IN('Mumbai', 'Pune');
+
 
 --bitwise operations
 SELECT name, marks, marks & 6 AS bitwise_and
