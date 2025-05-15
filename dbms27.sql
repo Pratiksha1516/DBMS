@@ -67,3 +67,9 @@ FROM student2;
 
 SELECT SUM(marks)
 FROM student2;
+
+
+--update queries
+UPDATE student2
+SET marks = 87
+WHERE rollno = 101;
