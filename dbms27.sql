@@ -69,6 +69,10 @@ SELECT *
 FROM student2
 WHERE name LIKE '%a';
 
+SELECT *
+FROM student2
+WHERE name LIKE '______';
+
 SELECT * 
 FROM student2
 WHERE city IN('Mumbai', 'Pune');
