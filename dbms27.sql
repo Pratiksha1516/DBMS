@@ -41,6 +41,10 @@ WHERE grade = 'A';
 SELECT DISTINCT grade
 FROM student2 order by grade asc;
 
+SELECT * 
+FROM student2
+WHERE name like = 'a%__';
+
 --bitwise operations
 SELECT name, marks, marks & 6 AS bitwise_and
 FROM student2;
