@@ -37,6 +37,9 @@ SELECT *
 FROM Fav
 WHERE name LIKE '%e';
 
+SELECT *
+FROM Fav
+WHERE name LIKE '%r';
 
 
 --Aggregate functions
