@@ -15,13 +15,19 @@ INSERT INTO Student1 (Name, Age, Grade) VALUES
 
 SELECT * FROM Student1;
 
-SELECT Name, Age FROM Student1 WHERE Age > 21;
+SELECT Name, Age 
+FROM Student1
+WHERE Age > 21;
 
-SELECT Grade, COUNT(*) FROM Student1 GROUP BY Grade;
+SELECT Grade, COUNT(*) 
+FROM Student1 GROUP BY Grade;
 
-UPDATE Student1 SET Grade = 'B+' WHERE Name = 'ranveer';
+UPDATE Student1 
+SET Grade = 'B+' 
+WHERE Name = 'ranveer';
 
-DELETE FROM Student1 WHERE Name = 'varsha';
+DELETE FROM Student1 
+WHERE Name = 'varsha';
 
 SELECT Grade
 FROM Student1
