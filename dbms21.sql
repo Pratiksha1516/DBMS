@@ -45,6 +45,10 @@ SELECT name
 FROM Fav
 WHERE name LIKE '%i';
 
+SELECT *
+FROM Fav
+WHERE fav_thing LIKE '%g';
+
 --Aggregate functions
 SELECT COUNT(name)
 FROM Fav;
