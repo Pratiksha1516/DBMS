@@ -81,6 +81,11 @@ SELECT *
 FROM student2
 WHERE city IN('Mumbai', 'Pune');
 
+SELECT * 
+FROM student2
+WHERE name like '_____n%';
+
+
 --bitwise operations
 
 SELECT * 
@@ -102,10 +107,6 @@ FROM student2;
 SELECT * 
 FROM student2
 WHERE city = 'pune' OR marks > 90;
-
-SELECT * 
-FROM student2
-WHERE name like '_____n%';
 
 --Aggregatiion functions
 SELECT COUNT(name)
