@@ -52,6 +52,10 @@ SELECT
     array_length(string_to_array(fav_thing, ','), 1) AS FavCount
 FROM Fav;
 
+--Bitwise operation
+SELECT *
+FROM Fav
+WHERE fav_thing = 'Cooking' OR name ='Ranveer';
 
 
 truncate table Fav;
