@@ -53,6 +53,9 @@ SELECT fav_thing
 FROM Fav
 WHERE fav_thing LIKE 'g%';
 
+SELECT fav_thing
+FROM Fav
+WHERE fav_thing LIKE 'T%';
 
 
 --Aggregate functions
