@@ -57,6 +57,10 @@ SELECT fav_thing
 FROM Fav
 WHERE fav_thing LIKE 'T%';
 
+SELECT *
+FROM Fav
+ORDER BY fav_thing DESC;
+
 
 --Aggregate functions
 SELECT COUNT(name)
