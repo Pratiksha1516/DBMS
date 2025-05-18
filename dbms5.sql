@@ -41,6 +41,10 @@ SELECT *
 FROM student
 WHERE name like 'R%';
 
+SELECT major
+FROM student
+WHERE department like 'E%';
+
 SELECT *
 FROM student 
 WHERE gpa BETWEEN 8 TO 9.5;
