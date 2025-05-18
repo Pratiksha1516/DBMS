@@ -31,13 +31,20 @@ SELECT *
 FROM stud
 WHERE stud_name like '%m';
 
-SELECT stud_name FROM stud WHERE stud_name LIKE '___a%';
+SELECT stud_name 
+FROM stud 
+WHERE stud_name LIKE '___a%';
 
-SELECT * FROM stud WHERE stud_name = 'ram';
+SELECT *
+FROM stud 
+WHERE stud_name = 'ram';
 
-SELECT * FRROM stud WHERE stud_contact = 1100;
+SELECT * 
+FROM stud 
+WHERE stud_contact = 1100;
 
-delete from stud where stud_name = 'rita;
+delete from stud
+where stud_name = 'rita;
 
 select stud_name
 from stud
