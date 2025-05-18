@@ -13,15 +13,25 @@ VALUES
 (2, 'ranveer', 20, 90000000, 'full stack'),
 (3, 'shiri', 20, 90000000, 'designing');
 
-select * from emp where emp_dep = 'full stack';
+select * 
+from emp
+where emp_dep = 'full stack';
 
-select * from emp where emp_salary > 100000;
+select * 
+from emp 
+where emp_salary > 100000;
 
-select * from emp where emp_age > 20;   
+select * 
+from emp 
+where emp_age > 20;   
 
-select * from emp where emp_age < 10;
+select * 
+from emp 
+where emp_age < 10;
 
-select * from emp where emp_name like = '_____i%';
+select * 
+from emp 
+where emp_name like = '_____i%';
 
 select * from emp
 where emp_name like = 's%___';
