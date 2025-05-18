@@ -34,6 +34,10 @@ FROM student
 WHERE gpa > 8 OR name = 'Pratiksha';
 
 SELECT *
+FROM student
+WHERE name like '%a';
+
+SELECT *
 FROM student 
 WHERE gpa BETWEEN 8 TO 9.5;
     
