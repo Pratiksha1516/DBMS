@@ -64,6 +64,9 @@ select emp_dep
 from emp
 where emp_id = 3;
 
+select SUM(emp_Salary)
+from emp;
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
