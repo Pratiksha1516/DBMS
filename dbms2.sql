@@ -40,6 +40,10 @@ select emp_name
 from emp
 where emp_name like 'r%';
 
+select *
+from emp
+where emp_dep like 'd%';
+
 select emp_age
 from emp
 where emp_name = 'prati';
