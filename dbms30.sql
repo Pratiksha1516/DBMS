@@ -17,6 +17,8 @@ VALUES
 (107, 'Ava', 'Debit Card', 'Lonavla'),
 (108, 'Jack', 'Credit Card', 'Boston');
 
+SELECT * FROM payment;
+
 --find the total payment according to each payment method
 SELECT mode, COUNT(customer_id) -- we can use anything here means customer also or custome_id also
 FROM payment
