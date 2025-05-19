@@ -35,3 +35,7 @@ WHERE city IN ('pune', 'Mumbai');
 SELECT customer
 FROM payment
 WHERE customer LIKE '%a';
+
+SELECT city
+FROM payment
+WHERE city LIKE 'B%';
