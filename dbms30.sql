@@ -57,3 +57,6 @@ FROM payment;
 
 SELECT SUM(customer_id)
 FROM payment;
+
+SELECT AVG(customer_id)
+FROM payment;
