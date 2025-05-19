@@ -47,3 +47,7 @@ WHERE mode LIKE 'N%';
 SELECT customer,city
 FROM payment
 WHERE city LIKE '__l%';
+
+--Aggregate function
+SELECT MAX(customer_id)
+FROM payment;
