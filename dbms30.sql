@@ -27,3 +27,7 @@ GROUP BY mode;
 SELECT * 
 FROM payment
 WHERE mode = 'Credit Card';
+
+SELECT * 
+FROM payment
+WHERE city IN ('pune', 'Mumbai'); 
