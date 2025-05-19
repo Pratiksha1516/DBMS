@@ -54,3 +54,6 @@ FROM payment;
 
 SELECT COUNT(customer_id)
 FROM payment;
+
+SELECT SUM(customer_id)
+FROM payment;
