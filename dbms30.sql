@@ -39,3 +39,7 @@ WHERE customer LIKE '%a';
 SELECT city
 FROM payment
 WHERE city LIKE 'B%';
+
+SELECT customer
+FROM payment
+WHERE mode LIKE 'N%';
