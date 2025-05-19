@@ -23,3 +23,7 @@ SELECT * FROM payment;
 SELECT mode, COUNT(customer_id) -- we can use anything here means customer also or custome_id also
 FROM payment
 GROUP BY mode;
+
+SELECT * 
+FROM payment
+WHERE mode = 'Credit Card';
