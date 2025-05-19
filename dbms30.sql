@@ -31,3 +31,7 @@ WHERE mode = 'Credit Card';
 SELECT * 
 FROM payment
 WHERE city IN ('pune', 'Mumbai'); 
+
+SELECT customer
+FROM payment
+WHERE customer LIKE '%a';
