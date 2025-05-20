@@ -33,3 +33,6 @@ WHERE grade = 'A'
 GROUP BY city
 HAVING MAX(marks) >= 93
 ORDER BY city DESC;
+
+SELECT MAX(marks)
+FROM student2;
