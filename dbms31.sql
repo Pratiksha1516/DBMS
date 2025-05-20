@@ -30,6 +30,10 @@ SELECT name, marks,grade
 FROM student2
 WHERE marks < 90;
 
+SELECT *
+FROM student2
+WHERE name LIKE 'c%';
+
 SELECT grade, COUNT(rollno)
 FROM student2
 GROUP BY grade
