@@ -38,3 +38,6 @@ ORDER BY city DESC;
 
 SELECT MAX(marks)
 FROM student2;
+
+SELECT MIN(marks)
+FROM student2;
