@@ -38,6 +38,10 @@ SELECT name, city
 FROM student2
 WHERE city LIKE '%i';
 
+SELECT  distinct city
+FROM student2
+WHERE city like '_u%';
+
 SELECT grade, COUNT(rollno)
 FROM student2
 GROUP BY grade
