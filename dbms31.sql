@@ -41,3 +41,6 @@ FROM student2;
 
 SELECT MIN(marks)
 FROM student2;
+
+SELECT AVG(marks)
+FROM student2;
