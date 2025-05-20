@@ -19,6 +19,10 @@ VALUES
 
 SELECT * FROM student2;
 
+SELECT name, marks
+FROM student2
+WHERE marks > 90;
+
 SELECT grade, COUNT(rollno)
 FROM student2
 GROUP BY grade
