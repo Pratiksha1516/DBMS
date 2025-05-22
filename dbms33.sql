@@ -25,6 +25,9 @@ FROM student2;
 SELECT MIN(marks)
 FROM student2;
 
+SELECT SUM(marks)
+FROM student2;
+
 UPDATE student2
 SET marks = 12
 WHERE rollno = 105;
