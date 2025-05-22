@@ -17,6 +17,8 @@ VALUES
 (104, 'dhruv', 96, 'A', 'Sangli'),
 (105, 'ram', 85, 'B', 'Mumbai');
 
+SELECT * FROM student2;
+
 UPDATE student2
 SET marks = 12
 WHERE rollno = 105;
