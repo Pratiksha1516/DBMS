@@ -34,6 +34,10 @@ FROM student2;
 SELECT COUNT(marks)
 FROM student2;
 
+SELECT name
+FROM student2;
+
+WHERE name LIKE 'a%';
 UPDATE student2
 SET marks = 12
 WHERE rollno = 105;
