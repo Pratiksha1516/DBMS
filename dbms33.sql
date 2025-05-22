@@ -34,6 +34,10 @@ FROM student2;
 SELECT COUNT(marks)
 FROM student2;
 
+SELECT name,city
+FROM student2
+WHERE city LIKE '%i';
+
 SELECT name
 FROM student2;
 WHERE name LIKE 'a%';
