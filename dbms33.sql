@@ -38,6 +38,10 @@ SELECT name,city
 FROM student2
 WHERE city LIKE '%i';
 
+SELECT *
+FROM student2
+WHERE city  LIKE 'M%';
+
 SELECT name
 FROM student2;
 WHERE name LIKE 'a%';
