@@ -31,6 +31,9 @@ FROM student2;
 SELECT AVG(marks)
 FROM student2;
 
+SELECT COUNT(marks)
+FROM student2;
+
 UPDATE student2
 SET marks = 12
 WHERE rollno = 105;
