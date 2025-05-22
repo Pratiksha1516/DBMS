@@ -19,6 +19,9 @@ VALUES
 
 SELECT * FROM student2;
 
+SELECT MAX(marks)
+FROM student2;
+
 UPDATE student2
 SET marks = 12
 WHERE rollno = 105;
