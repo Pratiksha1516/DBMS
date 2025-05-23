@@ -67,4 +67,7 @@ FROM student4;
 SELECT MAX(marks)
 FROM student4;
 
+SElECT AVG(marks)
+FROM student4;
+
 TRUNCATE TABLE student4;
