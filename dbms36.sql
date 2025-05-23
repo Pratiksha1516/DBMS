@@ -72,4 +72,8 @@ FROM student4;
 
 SELECT MIN(marks)
 FROM student4;
+
+SELECT SUM(marks)
+FROM student4;
+
 TRUNCATE TABLE student4;
