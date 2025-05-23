@@ -61,7 +61,8 @@ RENAME TO student4;
 SELECT * FROM student4;
 
 --Aggregate 
-
+SELECT COUNT(stud_id)
+FROM student4;
 
 
 TRUNCATE TABLE student4;
