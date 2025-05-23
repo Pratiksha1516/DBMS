@@ -70,3 +70,6 @@ WHERE marks < 80;
 
 ALTER TABLE student4
 DROP COLUMN grade;
+
+SELECT MAX(marks)
+FROM student4;
