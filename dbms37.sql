@@ -73,3 +73,6 @@ DROP COLUMN grade;
 
 SELECT MAX(marks)
 FROM student4;
+
+SELECT COUNT(marks)
+FROM student4;
