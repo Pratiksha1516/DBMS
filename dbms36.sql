@@ -64,6 +64,9 @@ SELECT name, marks
 FROM student4
 WHERE name LIKE '_a%';
 
+SELECT name, city
+FROM student4
+WHERE city LIKE '_u%';
 --Aggregate 
 SELECT COUNT(stud_id)
 FROM student4;
