@@ -60,6 +60,10 @@ RENAME TO student4;
 
 SELECT * FROM student4;
 
+SELECT name, marks
+FROM student4
+WHERE name LIKE '_a%';
+
 --Aggregate 
 SELECT COUNT(stud_id)
 FROM student4;
