@@ -60,4 +60,8 @@ RENAME TO student4;
 
 SELECT * FROM student4;
 
+--Aggregate 
+
+
+
 TRUNCATE TABLE student4;
