@@ -70,4 +70,6 @@ FROM student4;
 SElECT AVG(marks)
 FROM student4;
 
+SELECT MIN(marks)
+FROM student4;
 TRUNCATE TABLE student4;
