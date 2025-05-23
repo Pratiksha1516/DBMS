@@ -64,5 +64,7 @@ SELECT * FROM student4;
 SELECT COUNT(stud_id)
 FROM student4;
 
+SELECT MAX(marks)
+FROM student4;
 
 TRUNCATE TABLE student4;
