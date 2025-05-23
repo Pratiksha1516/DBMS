@@ -67,6 +67,11 @@ WHERE name LIKE '_a%';
 SELECT name, city
 FROM student4
 WHERE city LIKE '_u%';
+
+SELECT distinct city, name
+FROM student4
+WHERE name LIKE '__r%';
+
 --Aggregate 
 SELECT COUNT(stud_id)
 FROM student4;
