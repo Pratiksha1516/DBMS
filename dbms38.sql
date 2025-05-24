@@ -58,3 +58,11 @@ WHERE name LIKE 'a%';
 SELECT course
 FROM course
 WHERE course LIKE '%h';
+
+SELECT name, id
+FROM stud
+WHERE name LIKE '_o%'
+UNION
+SELECT course,id
+FROM course
+WHERE course LIKE '_o%';
