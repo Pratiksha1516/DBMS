@@ -24,6 +24,9 @@ FROM student;
 SELECT MAX(marks)
 FROM student;
 
+SELECT MIN(marks)
+FROM student;
+
 --views
 CREATE VIEW view1 AS
 SELECT rollno, name, marks FROM student;
