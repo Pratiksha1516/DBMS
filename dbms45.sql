@@ -30,6 +30,9 @@ FROM student;
 SELECT SUM(marks)
 FROM student;
 
+SELECT AVG(marks)
+FROM student;
+
 --views
 CREATE VIEW view1 AS
 SELECT rollno, name, marks FROM student;
