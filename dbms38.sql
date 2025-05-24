@@ -41,3 +41,6 @@ ON s.id = c.id;
 
 SELECT COUNT(name)
 FROM stud;
+
+SELECT COUNT(course)
+FROM course;
