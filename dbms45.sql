@@ -21,6 +21,8 @@ select * from student;
 SELECT COUNT(rollno)
 FROM student;
 
+SELECT MAX(marks)
+FROM student;
 
 --views
 CREATE VIEW view1 AS
