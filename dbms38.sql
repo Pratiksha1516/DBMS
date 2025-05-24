@@ -39,4 +39,5 @@ FROM stud as s				-- with alias s(alternate name for student)
 INNER JOIN course as c		-- with alias c(alternate name for course)
 ON s.id = c.id;
 
-SELECT 
+SELECT COUNT(name)
+FROM stud;
