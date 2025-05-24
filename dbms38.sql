@@ -44,3 +44,9 @@ FROM stud;
 
 SELECT COUNT(course)
 FROM course;
+
+SELECT DISTINCT id
+FROM stud
+UNION 
+SELECT id
+FROM course;
