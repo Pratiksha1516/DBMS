@@ -50,3 +50,7 @@ FROM stud
 UNION 
 SELECT id
 FROM course;
+
+SELECT name
+FROM stud
+WHERE name LIKE 'a%';
