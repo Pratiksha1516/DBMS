@@ -18,6 +18,7 @@ VALUES
 
 select * from student;
 
+--Aggregation function
 SELECT COUNT(rollno)
 FROM student;
 
