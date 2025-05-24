@@ -54,3 +54,7 @@ FROM course;
 SELECT name
 FROM stud
 WHERE name LIKE 'a%';
+
+SELECT course
+FROM course
+WHERE course LIKE '%h';
