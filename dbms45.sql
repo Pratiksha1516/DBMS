@@ -18,6 +18,10 @@ VALUES
 
 select * from student;
 
+SELECT COUNT(rollno)
+FROM student;
+
+
 --views
 CREATE VIEW view1 AS
 SELECT rollno, name, marks FROM student;
