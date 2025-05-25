@@ -44,3 +44,7 @@ FROM employee;
 SELECT name, salary
 FROM employee
 WHERE name LIKE '%a';
+
+SELECT name, salary
+FROM employee
+WHERE name LIKE '_o%';
