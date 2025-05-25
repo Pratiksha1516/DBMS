@@ -60,3 +60,7 @@ WHERE months > 10;
 SELECT employee_id,name
 FROM employee
 WHERE months < 10;
+
+SELECT *
+FROM employee
+where name LIKE '_____%';
