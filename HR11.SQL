@@ -52,3 +52,7 @@ WHERE name LIKE '_o%';
 SELECT name
 FROM employee
 WHERE name LIKE '%e';
+
+SELECT name, salary
+FROM employee 
+WHERE months > 10;
