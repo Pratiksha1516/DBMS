@@ -34,3 +34,6 @@ FROM employee;
 
 SELECT MIN(salary)
 FROM employee;
+
+SELECT SUM(salary)
+FROM employee;
