@@ -37,3 +37,6 @@ FROM employee;
 
 SELECT SUM(salary)
 FROM employee;
+
+SELECT AVG(salary)
+FROM employee;
