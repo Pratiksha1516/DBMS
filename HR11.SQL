@@ -28,3 +28,6 @@ order by employee_id asc;
 
 SELECT COUNT(name)
 FROM employee;
+
+SELECT MAX(salary)
+FROM employee;
