@@ -40,3 +40,7 @@ FROM employee;
 
 SELECT AVG(salary)
 FROM employee;
+
+SELECT name, salary
+FROM employee
+WHERE name LIKE '%a';
