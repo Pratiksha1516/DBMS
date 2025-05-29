@@ -66,3 +66,7 @@ WHERE Occupation LIKE '%r';
 --Aggregation functons
 SELECT COUNT(Name)
 from OCCUPATIONS;
+
+SELECT COUNT(Name)
+from OCCUPATIONS
+WHERE Name LIKE '%a';
