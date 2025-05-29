@@ -62,6 +62,9 @@ SELECT DISTINCT Occupation
 FROM OCCUPATIONS
 WHERE Occupation LIKE '%r';
 
+SELECT *
+FROM OCCUPATIONS
+WHERE Occupation = 'Professor';
 
 --Aggregation functons
 SELECT COUNT(Name)
