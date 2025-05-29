@@ -44,3 +44,10 @@ ORDER BY NAME DESC;
 SELECT Name
 FROM OCCUPATIONS
 WHERE Occupation = 'Actor';
+
+
+SELECT Occupation
+FROM OCCUPATIONS
+WHERE Name LIKE '%a';
+
+--Aggregation functons
