@@ -50,6 +50,10 @@ SELECT Occupation
 FROM OCCUPATIONS
 WHERE Name LIKE '%a';
 
+SELECT *
+FROM OCCUPATIONS
+WHERE Occupation LIKE 'D%';
+
 --Aggregation functons
 SELECT COUNT(Name)
 from OCCUPATIONS;
