@@ -58,6 +58,11 @@ SELECT *
 FROM OCCUPATIONS
 WHERE Occupation LIKE '%r';
 
+SELECT DISTINCT Occupation
+FROM OCCUPATIONS
+WHERE Occupation LIKE '%r';
+
+
 --Aggregation functons
 SELECT COUNT(Name)
 from OCCUPATIONS;
