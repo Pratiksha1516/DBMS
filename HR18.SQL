@@ -51,3 +51,5 @@ FROM OCCUPATIONS
 WHERE Name LIKE '%a';
 
 --Aggregation functons
+SELECT COUNT(Name)
+from OCCUPATIONS;
