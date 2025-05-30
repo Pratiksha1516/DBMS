@@ -52,3 +52,6 @@ FROM StudentInformation;
 
 SELECT COUNT(FacultyID)
 FROM FacultyInformation;
+
+SELECT MAX(Salary)
+FROM FacultyInformation;
