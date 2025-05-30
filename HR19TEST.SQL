@@ -54,6 +54,10 @@ SELECT *
 FROM StudentInformation
 WHERE Name LIKE '_o%';
 
+SELECT *
+FROM StudentInformation
+WHERE Adviser > 2;
+
 --Aggegation function
 SELECT COUNT(Name)
 FROM StudentInformation;
