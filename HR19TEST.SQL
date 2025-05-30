@@ -58,3 +58,6 @@ FROM FacultyInformation;
 
 SELECT MIN(Salary)
 FROM FacultyInformation;
+
+SELECT SUM(Salary)
+FROM FacultyInformation;
