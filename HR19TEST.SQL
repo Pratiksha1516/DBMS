@@ -55,3 +55,6 @@ FROM FacultyInformation;
 
 SELECT MAX(Salary)
 FROM FacultyInformation;
+
+SELECT MIN(Salary)
+FROM FacultyInformation;
