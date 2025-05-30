@@ -64,3 +64,8 @@ FROM FacultyInformation;
 
 SELECT AVG(Salary)
 FROM FacultyInformation;
+
+
+SELECT SUM(Salary)
+FROM FacultyInformation
+WHERE Gender = 'Male'; 
