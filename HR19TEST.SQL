@@ -47,3 +47,5 @@ FROM FacultyInformation
 WHERE Salary < 20000;
 
 --Aggegation function
+SELECT COUNT(Name)
+FROM StudentInformation;
