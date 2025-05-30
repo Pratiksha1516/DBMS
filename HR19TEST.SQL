@@ -45,3 +45,5 @@ WHERE
 SELECT Gender
 FROM FacultyInformation
 WHERE Salary < 20000;
+
+--Aggegation function
