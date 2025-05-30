@@ -61,3 +61,6 @@ FROM FacultyInformation;
 
 SELECT SUM(Salary)
 FROM FacultyInformation;
+
+SELECT AVG(Salary)
+FROM FacultyInformation;
