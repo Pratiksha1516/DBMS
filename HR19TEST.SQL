@@ -50,6 +50,10 @@ SELECT *
 FROM FacultyInformation
 WHERE Salary > 20000;
 
+SELECT *
+FROM StudentInformation
+WHERE Name LIKE '_o%';
+
 --Aggegation function
 SELECT COUNT(Name)
 FROM StudentInformation;
