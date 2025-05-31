@@ -95,3 +95,6 @@ FROM Product;
 
 SELECT SUM(price)
 FROM Product;
+
+SELECT AVG(price)
+FROM Product;
