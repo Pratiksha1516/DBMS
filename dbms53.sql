@@ -92,3 +92,6 @@ FROM Product;
 
 SELECT MIN(price)
 FROM Product;
+
+SELECT SUM(price)
+FROM Product;
