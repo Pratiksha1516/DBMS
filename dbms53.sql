@@ -82,3 +82,7 @@ SELECT * FROM "Order";
 SELECT * FROM OrderDetails;
 
 SELECT * FROM ProductSupplier;
+
+--Aggregation function
+SELECT COUNT(product_name)
+FROM Product;
