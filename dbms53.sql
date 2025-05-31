@@ -70,4 +70,6 @@ VALUES (1, 1, '2025-03-15', 5),
        (2, 2, '2025-03-16', 10),
        (3, 1, '2025-03-17', 7);
 
-	  
+--DISPLAYING ALL THE TABLES
+SELECT * FROM Product;
+  
