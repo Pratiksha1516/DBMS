@@ -76,3 +76,5 @@ SELECT * FROM Product;
 SELECT * FROM Supplier;
 
 SELECT * FROM Customer;
+
+SELECT * FROM "Order";
