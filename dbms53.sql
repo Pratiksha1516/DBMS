@@ -74,3 +74,5 @@ VALUES (1, 1, '2025-03-15', 5),
 SELECT * FROM Product;
   
 SELECT * FROM Supplier;
+
+SELECT * FROM Customer;
