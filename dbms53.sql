@@ -89,3 +89,6 @@ FROM Product;
 
 SELECT MAX(price)
 FROM Product;
+
+SELECT MIN(price)
+FROM Product;
