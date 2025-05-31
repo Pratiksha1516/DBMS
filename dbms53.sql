@@ -86,3 +86,6 @@ SELECT * FROM ProductSupplier;
 --Aggregation function
 SELECT COUNT(product_name)
 FROM Product;
+
+SELECT MAX(price)
+FROM Product;
