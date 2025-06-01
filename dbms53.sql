@@ -113,3 +113,6 @@ FROM Product;
 
 SELECT MAX(total_amount)
 FROM "Order";
+
+SELECT MIN(total_amount)
+FROM "Order";
