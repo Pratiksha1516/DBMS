@@ -122,3 +122,6 @@ FROM "Order";
 
 SELECT AVG(total_amount)
 FROM "Order";
+
+SELECT MAX(price_at_purchase)
+FROM OrderDetails;
