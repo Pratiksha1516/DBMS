@@ -131,3 +131,6 @@ FROM OrderDetails;
 
 SELECT SUM(price_at_purchase)
 FROM OrderDetails;
+
+SELECT AVG(price_at_purchase)
+FROM OrderDetails;
