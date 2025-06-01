@@ -125,3 +125,6 @@ FROM "Order";
 
 SELECT MAX(price_at_purchase)
 FROM OrderDetails;
+
+SELECT MIN(price_at_purchase)
+FROM OrderDetails;
