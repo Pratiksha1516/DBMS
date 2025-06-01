@@ -116,3 +116,6 @@ FROM "Order";
 
 SELECT MIN(total_amount)
 FROM "Order";
+
+SELECT SUM(total_amount)
+FROM "Order";
