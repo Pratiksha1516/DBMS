@@ -119,3 +119,6 @@ FROM "Order";
 
 SELECT SUM(total_amount)
 FROM "Order";
+
+SELECT AVG(total_amount)
+FROM "Order";
