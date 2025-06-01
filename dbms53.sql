@@ -110,3 +110,6 @@ FROM Product;
 
 SELECT AVG(stock_quantity)
 FROM Product;
+
+SELECT MAX(total_amount)
+FROM "Order";
