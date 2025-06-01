@@ -128,3 +128,6 @@ FROM OrderDetails;
 
 SELECT MIN(price_at_purchase)
 FROM OrderDetails;
+
+SELECT SUM(price_at_purchase)
+FROM OrderDetails;
