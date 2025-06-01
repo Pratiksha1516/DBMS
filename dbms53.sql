@@ -101,3 +101,6 @@ FROM Product;
 
 SELECT MAX(stock_quantity)
 FROM Product;
+
+SELECT MIN(stock_quantity)
+FROM Product;
