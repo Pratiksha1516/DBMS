@@ -104,3 +104,6 @@ FROM Product;
 
 SELECT MIN(stock_quantity)
 FROM Product;
+
+SELECT AVG(stock_quantity)
+FROM Product;
