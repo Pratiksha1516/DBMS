@@ -98,3 +98,6 @@ FROM Product;
 
 SELECT AVG(price)
 FROM Product;
+
+SELECT MAX(stock_quantity)
+FROM Product;
