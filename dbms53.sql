@@ -137,3 +137,6 @@ FROM OrderDetails;
 
 SELECT COUNT(product_id)
 FROM ProductSupplier;
+
+SELECT MAX(quantity_supplied)
+FROM ProductSupplier;
