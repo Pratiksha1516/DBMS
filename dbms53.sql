@@ -146,3 +146,6 @@ FROM ProductSupplier;
 
 SELECT SUM(quantity_supplied)
 FROM ProductSupplier;
+
+SELECT AVG(quantity_supplied)
+FROM ProductSupplier;
