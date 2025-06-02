@@ -167,3 +167,8 @@ SELECT p.product_name, SUM(ps.quantity_supplied) AS total_supplied
 FROM ProductSupplier ps
 JOIN Product p ON ps.product_id = p.product_id
 GROUP BY p.product_name;
+	   
+SELECT p.product_name, SUM(od.quantity) AS total_sold, SUM(od.price_at_purchase * od.quantity) AS total_sales
+FROM OrderDetails od
+JOIN Product p ON od.product_id = p.product_id
+GROUP BY p.product_name;
