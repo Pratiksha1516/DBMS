@@ -186,3 +186,10 @@ WHERE od.product_id IS NULL;
 SELECT product_id, product_name, stock_quantity
 FROM Product
 WHERE stock_quantity > 2;
+	   
+SELECT s.supplier_name, SUM(ps.quantity_supplied) AS total_quantity
+FROM Supplier s
+JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
+GROUP BY s.supplier_name
+ORDER BY total_quantity DESC
+LIMIT 1;
