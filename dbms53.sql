@@ -182,3 +182,7 @@ SELECT p.product_id, p.product_name
 FROM Product p
 LEFT JOIN OrderDetails od ON p.product_id = od.product_id
 WHERE od.product_id IS NULL;
+
+SELECT product_id, product_name, stock_quantity
+FROM Product
+WHERE stock_quantity > 2;
