@@ -140,3 +140,6 @@ FROM ProductSupplier;
 
 SELECT MAX(quantity_supplied)
 FROM ProductSupplier;
+
+SELECT MIN(quantity_supplied)
+FROM ProductSupplier;
