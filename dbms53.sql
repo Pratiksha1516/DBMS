@@ -162,3 +162,8 @@ SELECT od.order_detail_id, o.order_id, p.product_name, od.quantity, od.price_at_
 FROM OrderDetails od
 JOIN "Order" o ON od.order_id = o.order_id
 JOIN Product p ON od.product_id = p.product_id;
+
+SELECT p.product_name, SUM(ps.quantity_supplied) AS total_supplied
+FROM ProductSupplier ps
+JOIN Product p ON ps.product_id = p.product_id
+GROUP BY p.product_name;
