@@ -134,3 +134,6 @@ FROM OrderDetails;
 
 SELECT AVG(price_at_purchase)
 FROM OrderDetails;
+
+SELECT COUNT(product_id)
+FROM ProductSupplier;
