@@ -149,3 +149,7 @@ FROM ProductSupplier;
 
 SELECT AVG(quantity_supplied)
 FROM ProductSupplier;
+
+
+SELECT product_id, product_name, category, price, stock_quantity
+FROM Product;
