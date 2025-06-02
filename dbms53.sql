@@ -143,3 +143,6 @@ FROM ProductSupplier;
 
 SELECT MIN(quantity_supplied)
 FROM ProductSupplier;
+
+SELECT SUM(quantity_supplied)
+FROM ProductSupplier;
