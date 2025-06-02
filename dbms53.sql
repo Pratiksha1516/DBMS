@@ -153,3 +153,7 @@ FROM ProductSupplier;
 
 SELECT product_id, product_name, category, price, stock_quantity
 FROM Product;
+
+SELECT o.order_id, c.name AS customer_name, o.order_date, o.total_amount
+FROM "Order" o
+JOIN Customer c ON o.customer_id = c.customer_id;
