@@ -172,3 +172,8 @@ SELECT p.product_name, SUM(od.quantity) AS total_sold, SUM(od.price_at_purchase 
 FROM OrderDetails od
 JOIN Product p ON od.product_id = p.product_id
 GROUP BY p.product_name;
+
+SELECT s.supplier_name, COUNT(DISTINCT ps.product_id) AS product_count
+FROM Supplier s
+JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
+GROUP BY s.supplier_name;
