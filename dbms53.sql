@@ -177,3 +177,8 @@ SELECT s.supplier_name, COUNT(DISTINCT ps.product_id) AS product_count
 FROM Supplier s
 JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
 GROUP BY s.supplier_name;
+
+SELECT p.product_id, p.product_name
+FROM Product p
+LEFT JOIN OrderDetails od ON p.product_id = od.product_id
+WHERE od.product_id IS NULL;
