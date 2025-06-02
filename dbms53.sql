@@ -157,3 +157,8 @@ FROM Product;
 SELECT o.order_id, c.name AS customer_name, o.order_date, o.total_amount
 FROM "Order" o
 JOIN Customer c ON o.customer_id = c.customer_id;
+
+SELECT od.order_detail_id, o.order_id, p.product_name, od.quantity, od.price_at_purchase
+FROM OrderDetails od
+JOIN "Order" o ON od.order_id = o.order_id
+JOIN Product p ON od.product_id = p.product_id;
