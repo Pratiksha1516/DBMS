@@ -208,3 +208,7 @@ SELECT ps.*
 FROM ProductSupplier ps
 JOIN Supplier s ON ps.supplier_id = s.supplier_id
 WHERE s.supplier_name = 'Tech Supplier Co.';
+
+UPDATE Product
+SET stock_quantity = stock_quantity + 5
+WHERE product_name = 'Laptop';
