@@ -212,3 +212,6 @@ WHERE s.supplier_name = 'Tech Supplier Co.';
 UPDATE Product
 SET stock_quantity = stock_quantity + 5
 WHERE product_name = 'Laptop';
+
+DELETE FROM "Order"
+WHERE order_date < '2025-03-01';
