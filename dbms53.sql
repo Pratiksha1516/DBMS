@@ -193,3 +193,8 @@ JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
 GROUP BY s.supplier_name
 ORDER BY total_quantity DESC
 LIMIT 1;
+
+--
+SELECT * 
+FROM "Order" 
+WHERE total_amount > 50000;
