@@ -231,3 +231,8 @@ SHOW all;
 SELECT pid, usename, datname, client_addr, state, query
 FROM pg_stat_activity
 WHERE state != 'idle';
+
+SELECT p.product_name, SUM(od.quantity) AS total_sold
+FROM OrderDetails od
+JOIN Product p ON od.product_id = p.product_id
+GROUP BY p.product_name;
