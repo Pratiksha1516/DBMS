@@ -224,3 +224,7 @@ SELECT rolname
 FROM pg_roles 
 WHERE rolcanlogin = true;
 SELECT current_user;
+
+SELECT pid, usename, datname, client_addr, state, query
+FROM pg_stat_activity
+WHERE state != 'idle';
