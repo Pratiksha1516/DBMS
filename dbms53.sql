@@ -215,3 +215,7 @@ WHERE product_name = 'Laptop';
 
 DELETE FROM "Order"
 WHERE order_date < '2025-03-01';
+
+UPDATE Supplier
+SET contact_info = 'newemail@example.com'
+WHERE supplier_name = 'Gadgets Supplier Ltd.';
