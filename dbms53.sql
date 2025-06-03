@@ -223,3 +223,4 @@ WHERE supplier_name = 'Gadgets Supplier Ltd.';
 SELECT rolname 
 FROM pg_roles 
 WHERE rolcanlogin = true;
+SELECT current_user;
