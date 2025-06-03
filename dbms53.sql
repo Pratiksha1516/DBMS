@@ -198,3 +198,8 @@ LIMIT 1;
 SELECT * 
 FROM "Order" 
 WHERE total_amount > 50000;
+
+
+SELECT * 
+FROM Product 
+WHERE stock_quantity < 15;
