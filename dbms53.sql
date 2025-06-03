@@ -203,3 +203,8 @@ WHERE total_amount > 50000;
 SELECT * 
 FROM Product 
 WHERE stock_quantity < 15;
+
+SELECT ps.*
+FROM ProductSupplier ps
+JOIN Supplier s ON ps.supplier_id = s.supplier_id
+WHERE s.supplier_name = 'Tech Supplier Co.';
