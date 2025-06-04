@@ -115,6 +115,10 @@ SELECT emp_dep, MAX(emp_salary) AS max_sal
 FROM emp 
 GROUP BY emp_dep;
 
+SELECT emp_dep, MIN(emp_age) AS min_age 
+FROM emp 
+GROUP BY emp_dep;
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
