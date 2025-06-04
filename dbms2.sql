@@ -83,6 +83,10 @@ SELECT *
 FROM emp 
 WHERE emp_dep = 'database';
 
+SELECT * 
+FROM emp 
+WHERE emp_name LIKE '%i';
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
