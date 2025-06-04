@@ -87,6 +87,10 @@ SELECT *
 FROM emp 
 WHERE emp_name LIKE '%i';
 
+SELECT * 
+FROM emp
+WHERE LENGTH(emp_dep) = 9;
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
