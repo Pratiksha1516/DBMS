@@ -123,6 +123,10 @@ SELECT *
 FROM emp 
 WHERE emp_salary > (SELECT AVG(emp_salary) FROM emp);
 
+SELECT *
+FROM emp
+WHERE emp_salary = (SELECT MAX(emp_salary) FROM emp);
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
