@@ -79,6 +79,10 @@ where emp_id = 3;
 select SUM(emp_Salary)
 from emp;
 
+SELECT * 
+FROM emp 
+WHERE emp_dep = 'database';
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
