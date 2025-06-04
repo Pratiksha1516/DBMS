@@ -111,6 +111,10 @@ SELECT emp_dep, COUNT(*) AS emp_count
 FROM emp 
 GROUP BY emp_dep HAVING COUNT(*) > 1;
 
+SELECT emp_dep, MAX(emp_salary) AS max_sal 
+FROM emp 
+GROUP BY emp_dep;
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
