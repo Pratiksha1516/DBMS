@@ -119,6 +119,10 @@ SELECT emp_dep, MIN(emp_age) AS min_age
 FROM emp 
 GROUP BY emp_dep;
 
+SELECT *
+FROM emp 
+WHERE emp_salary > (SELECT AVG(emp_salary) FROM emp);
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
