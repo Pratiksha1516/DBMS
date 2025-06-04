@@ -127,6 +127,10 @@ SELECT *
 FROM emp
 WHERE emp_salary = (SELECT MAX(emp_salary) FROM emp);
 
+SELECT * 
+FROM emp 
+WHERE emp_dep = (SELECT emp_dep FROM emp WHERE emp_id = 1);
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
