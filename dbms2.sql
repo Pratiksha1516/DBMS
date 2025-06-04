@@ -107,6 +107,10 @@ SELECT emp_dep, AVG(emp_salary) AS avg_sal
 FROM emp 
 GROUP BY emp_dep;
 
+SELECT emp_dep, COUNT(*) AS emp_count 
+FROM emp 
+GROUP BY emp_dep HAVING COUNT(*) > 1;
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
