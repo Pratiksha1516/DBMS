@@ -95,6 +95,10 @@ SELECT *
 FROM emp 
 WHERE emp_name LIKE '%a%';
 
+SELECT * 
+FROM emp 
+ORDER BY emp_age ASC, emp_salary DESC;
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
