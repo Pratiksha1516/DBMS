@@ -103,6 +103,10 @@ SELECT *
 FROM emp 
 WHERE emp_dep <> 'designing';
 
+SELECT emp_dep, AVG(emp_salary) AS avg_sal 
+FROM emp 
+GROUP BY emp_dep;
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
