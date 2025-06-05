@@ -184,3 +184,14 @@ UPDATE emp
 SET emp_name = 'pratiksha'
 WHERE emp_id = 1;
 
+--
+
+SELECT emp_name,
+       emp_salary,
+       CASE 
+           WHEN emp_salary >= 90000000 THEN 'High'
+           WHEN emp_salary >= 1000000 THEN 'Medium'
+           ELSE 'Low'
+       END AS salary_category
+FROM emp;
+
