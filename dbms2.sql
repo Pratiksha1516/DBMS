@@ -156,6 +156,10 @@ FROM emp;
 SELECT MIN(emp_salary)
 FROM emp;
 
+SELECT SUM(emp_salary)
+FROM emp 
+WHERE emp_dep = 'designing';
+
 --UPDATE queries
 UPDATE emp
 SET emp_name = 'pratiksha'
