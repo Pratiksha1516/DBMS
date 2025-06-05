@@ -139,6 +139,10 @@ SELECT *
 FROM emp 
 WHERE emp_salary BETWEEN 500000 AND 95000000;
 
+SELECT * 
+FROM emp 
+WHERE emp_age = 20 AND emp_dep = 'full stack';
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
