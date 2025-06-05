@@ -195,3 +195,8 @@ SELECT emp_name,
        END AS salary_category
 FROM emp;
 
+--
+
+SELECT * FROM emp 
+ORDER BY emp_salary DESC 
+LIMIT 2;
