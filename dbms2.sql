@@ -143,6 +143,11 @@ SELECT *
 FROM emp 
 WHERE emp_age = 20 AND emp_dep = 'full stack';
 
+SELECT emp_name 
+FROM emp 
+WHERE emp_salary > (SELECT emp_salary FROM emp WHERE emp_name = 'prati');
+
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
