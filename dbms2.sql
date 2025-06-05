@@ -163,6 +163,10 @@ WHERE emp_dep = 'designing';
 SELECT AVG(emp_age) 
 FROM emp;
 
+SELECT COUNT(*) 
+FROM emp 
+WHERE emp_salary > 1000000;
+
 --UPDATE queries
 UPDATE emp
 SET emp_name = 'pratiksha'
