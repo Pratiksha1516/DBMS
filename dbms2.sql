@@ -172,6 +172,10 @@ SELECT COUNT(*)
 FROM emp 
 WHERE emp_salary > 1000000;
 
+SELECT emp_dep, emp_name
+FROM emp 
+WHERE emp_salary = (SELECT MAX(emp_salary) FROM emp);
+
 --UPDATE queries
 UPDATE emp
 SET emp_name = 'pratiksha'
