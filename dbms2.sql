@@ -160,6 +160,9 @@ SELECT SUM(emp_salary)
 FROM emp 
 WHERE emp_dep = 'designing';
 
+SELECT AVG(emp_age) 
+FROM emp;
+
 --UPDATE queries
 UPDATE emp
 SET emp_name = 'pratiksha'
