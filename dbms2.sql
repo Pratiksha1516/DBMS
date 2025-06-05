@@ -200,3 +200,7 @@ FROM emp;
 SELECT * FROM emp 
 ORDER BY emp_salary DESC 
 LIMIT 2;
+
+SELECT * FROM emp 
+ORDER BY emp_age DESC 
+LIMIT 1;
