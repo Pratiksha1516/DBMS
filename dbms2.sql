@@ -135,6 +135,10 @@ SELECT *
 FROM emp
 WHERE emp_name LIKE '%r';
 
+SELECT * 
+FROM emp 
+WHERE emp_salary BETWEEN 500000 AND 95000000;
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
