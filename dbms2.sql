@@ -147,6 +147,9 @@ SELECT emp_name
 FROM emp 
 WHERE emp_salary > (SELECT emp_salary FROM emp WHERE emp_name = 'prati');
 
+SELECT * FROM emp 
+WHERE emp_dep NOT IN ('full stack', 'database');
+
 
 --Aggregate functions
 SELECT COUNT(emp_id)
