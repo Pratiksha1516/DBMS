@@ -192,6 +192,10 @@ SELECT emp_dep, emp_name
 FROM emp 
 WHERE emp_salary = (SELECT MAX(emp_salary) FROM emp);
 
+SELECT emp_age, COUNT(*) AS age_count
+FROM emp
+GROUP BY emp_age;
+
 --UPDATE queries
 UPDATE emp
 SET emp_name = 'pratiksha'
