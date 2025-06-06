@@ -161,6 +161,10 @@ FROM emp
 GROUP BY emp_dep
 HAVING SUM(emp_salary) > 100000000;
 
+SELECT AVG(emp_age)
+FROM emp
+WHERE emp_dep LIKE 'd%';
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
