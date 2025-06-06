@@ -170,6 +170,10 @@ WHERE emp_salary = (
     SELECT emp_salary FROM emp WHERE emp_name = 'ranveer'
 );
 
+UPDATE emp
+SET emp_salary = emp_salary * 1.10
+WHERE emp_dep = 'designing';
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
