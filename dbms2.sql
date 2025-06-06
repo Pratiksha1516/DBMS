@@ -156,6 +156,10 @@ WHERE emp_salary > (SELECT emp_salary FROM emp WHERE emp_name = 'prati');
 SELECT * FROM emp 
 WHERE emp_dep NOT IN ('full stack', 'database');
 
+SELECT emp_dep, SUM(emp_salary) AS total_salary
+FROM emp
+GROUP BY emp_dep
+HAVING SUM(emp_salary) > 100000000;
 
 --Aggregate functions
 SELECT COUNT(emp_id)
