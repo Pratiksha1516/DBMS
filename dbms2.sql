@@ -29,6 +29,9 @@ select *
 from emp 
 where emp_age < 10;
 
+SELECT * FROM emp
+WHERE LENGTH(emp_name) = 5;
+
 select * 
 from emp 
 where emp_name like = '_____i%';
