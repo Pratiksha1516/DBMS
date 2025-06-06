@@ -247,3 +247,7 @@ LIMIT 1;
 UPDATE emp
 SET emp_dep = 'UI/UX'
 WHERE emp_name = 'shiri';
+
+--
+DELETE FROM emp
+WHERE emp_salary < 100000;
