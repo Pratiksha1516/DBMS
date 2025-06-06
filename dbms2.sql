@@ -171,6 +171,9 @@ WHERE emp_dep = 'designing';
 SELECT AVG(emp_age) 
 FROM emp;
 
+SELECT * FROM emp
+WHERE emp_name LIKE '%i' AND emp_age = 20;
+
 SELECT COUNT(*) 
 FROM emp 
 WHERE emp_salary > 1000000;
