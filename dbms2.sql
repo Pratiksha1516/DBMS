@@ -165,6 +165,11 @@ SELECT AVG(emp_age)
 FROM emp
 WHERE emp_dep LIKE 'd%';
 
+SELECT * FROM emp
+WHERE emp_salary = (
+    SELECT emp_salary FROM emp WHERE emp_name = 'ranveer'
+);
+
 --Aggregate functions
 SELECT COUNT(emp_id)
 FROM emp;
