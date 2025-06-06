@@ -91,6 +91,9 @@ SELECT *
 FROM emp
 WHERE LENGTH(emp_dep) = 9;
 
+SELECT * FROM emp
+WHERE emp_dep LIKE '%a%';
+
 SELECT * 
 FROM emp 
 WHERE emp_name LIKE '%a%';
