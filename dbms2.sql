@@ -221,6 +221,14 @@ SELECT emp_name,
        END AS salary_category
 FROM emp;
 
+SELECT emp_name, emp_age,
+  CASE 
+    WHEN emp_age < 20 THEN 'Teen'
+    WHEN emp_age = 20 THEN 'Young Adult'
+    ELSE 'Adult'
+  END AS age_category
+FROM emp;
+
 --
 
 SELECT * FROM emp 
