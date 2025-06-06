@@ -242,3 +242,8 @@ LIMIT 2;
 SELECT * FROM emp 
 ORDER BY emp_age DESC 
 LIMIT 1;
+
+--
+UPDATE emp
+SET emp_dep = 'UI/UX'
+WHERE emp_name = 'shiri';
