@@ -65,3 +65,7 @@ ORDER BY stud_name ASC;
 SELECT * 
 FROM stud 
 ORDER BY stud_contact DESC;
+
+SELECT * 
+FROM stud 
+WHERE stud_name LIKE 'r%';
