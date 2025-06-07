@@ -69,3 +69,6 @@ ORDER BY stud_contact DESC;
 SELECT * 
 FROM stud 
 WHERE stud_name LIKE 'r%';
+
+SELECT COUNT(DISTINCT stud_contact) 
+FROM stud;
