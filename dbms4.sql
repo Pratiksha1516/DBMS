@@ -94,3 +94,7 @@ WHERE stud_name = 'raj';
 
 ALTER TABLE stud
 ADD age int;
+
+SELECT * 
+FROM stud 
+WHERE age IS NULL;
