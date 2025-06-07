@@ -72,3 +72,7 @@ WHERE stud_name LIKE 'r%';
 
 SELECT COUNT(DISTINCT stud_contact) 
 FROM stud;
+
+SELECT * 
+FROM stud 
+WHERE stud_name <> 'ram';
