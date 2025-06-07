@@ -106,3 +106,6 @@ WHERE age IS NOT NULL;
 UPDATE stud 
 SET age = 21 
 WHERE stud_name = 'ram';
+
+SELECT stud_name, LENGTH(stud_name) AS name_length 
+FROM stud;
