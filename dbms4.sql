@@ -98,3 +98,7 @@ ADD age int;
 SELECT * 
 FROM stud 
 WHERE age IS NULL;
+
+SELECT * 
+FROM stud 
+WHERE age IS NOT NULL;
