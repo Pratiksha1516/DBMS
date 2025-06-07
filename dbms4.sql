@@ -109,3 +109,6 @@ WHERE stud_name = 'ram';
 
 SELECT stud_name, LENGTH(stud_name) AS name_length 
 FROM stud;
+
+SELECT UPPER(stud_name) AS uppercase_name 
+FROM stud;
