@@ -112,3 +112,8 @@ FROM stud;
 
 SELECT UPPER(stud_name) AS uppercase_name 
 FROM stud;
+
+SELECT * 
+FROM stud 
+LIMIT 1;
+
