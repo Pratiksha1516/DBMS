@@ -91,3 +91,6 @@ WHERE stud_contact BETWEEN 10000000 AND 60000000;
 SELECT * 
 FROM stud 
 WHERE stud_name = 'raj';
+
+ALTER TABLE stud
+ADD age int;
