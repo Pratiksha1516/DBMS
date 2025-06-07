@@ -56,3 +56,7 @@ where stud_name = 'ram';
 
 ALTER TABLE stud
 ADD COLUMN age INT;
+
+SELECT stud_name 
+FROM stud 
+ORDER BY stud_name ASC;
