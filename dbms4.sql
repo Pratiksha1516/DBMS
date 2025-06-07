@@ -61,3 +61,7 @@ ADD COLUMN age INT;
 SELECT stud_name 
 FROM stud 
 ORDER BY stud_name ASC;
+
+SELECT * 
+FROM stud 
+ORDER BY stud_contact DESC;
