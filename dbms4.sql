@@ -102,3 +102,7 @@ WHERE age IS NULL;
 SELECT * 
 FROM stud 
 WHERE age IS NOT NULL;
+
+UPDATE stud 
+SET age = 21 
+WHERE stud_name = 'ram';
