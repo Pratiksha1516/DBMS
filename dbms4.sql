@@ -83,3 +83,7 @@ WHERE stud_contact > 50000000;
 
 SELECT stud_name AS "Student Name", stud_contact AS "Contact Number" 
 FROM stud;
+
+SELECT * 
+FROM stud 
+WHERE stud_contact BETWEEN 10000000 AND 60000000;
