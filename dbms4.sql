@@ -56,7 +56,3 @@ where stud_name = 'ram';
 
 ALTER TABLE stud
 ADD COLUMN age INT;
-
-truncate table stud;
-    
-drop table stud;
