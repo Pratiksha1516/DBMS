@@ -79,3 +79,7 @@ SELECT *
 FROM emp 
 WHERE emp_salary BETWEEN 500000 AND 2000000;
 
+SELECT * 
+FROM emp 
+WHERE emp_dep <> 'full stack';
+
