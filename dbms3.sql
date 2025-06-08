@@ -32,6 +32,10 @@ SELECT COUNT(*) AS total_employees
 FROM emp 
 WHERE emp_age = 20;
 
+SELECT emp_dep, COUNT(*) AS dept_count
+FROM emp 
+GROUP BY emp_dep;
+
 --UPDATE QUERY
 UPDATE emp
 SET emp_age =18
