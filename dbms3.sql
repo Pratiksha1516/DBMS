@@ -75,4 +75,7 @@ select emp_dep
 from emp
 where emp_id = 2;
 
+SELECT * 
+FROM emp 
+WHERE emp_salary BETWEEN 500000 AND 2000000;
 
