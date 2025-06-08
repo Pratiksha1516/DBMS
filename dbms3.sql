@@ -123,3 +123,8 @@ ORDER BY emp_age DESC LIMIT 1;
 
 SELECT * 
 FROM emp WHERE emp_salary > (SELECT AVG(emp_salary) FROM emp);
+
+SELECT emp_name 
+FROM emp
+WHERE emp_dep IN (SELECT emp_dep FROM emp WHERE emp_salary < 2000000);
+
