@@ -90,3 +90,7 @@ WHERE emp_name LIKE '%a';
 SELECT * 
 FROM emp
 WHERE emp_name ILIKE 'p%';
+
+SELECT * 
+FROM emp 
+WHERE emp_age IN (18, 20);
