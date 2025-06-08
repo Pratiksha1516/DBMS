@@ -112,3 +112,7 @@ GROUP BY emp_dep;
 
 SELECT emp_dep 
 FROM emp GROUP BY emp_dep HAVING COUNT(*) > 1;
+
+SELECT * 
+FROM emp 
+ORDER BY emp_name ASC;
