@@ -25,6 +25,9 @@ FROM emp;
 SELECT AVG(emp_salary)
 FROM emp;
 
+SELECT SUM(emp_salary) AS total_salary 
+FROM emp;
+
 --UPDATE QUERY
 UPDATE emp
 SET emp_age =18
