@@ -120,3 +120,6 @@ ORDER BY emp_name ASC;
 SELECT * 
 FROM emp 
 ORDER BY emp_age DESC LIMIT 1;
+
+SELECT * 
+FROM emp WHERE emp_salary > (SELECT AVG(emp_salary) FROM emp);
