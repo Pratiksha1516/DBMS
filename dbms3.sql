@@ -83,3 +83,7 @@ SELECT *
 FROM emp 
 WHERE emp_dep <> 'full stack';
 
+SELECT * 
+FROM emp 
+WHERE emp_name LIKE '%a';
+
