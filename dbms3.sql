@@ -101,3 +101,7 @@ WHERE emp_name ILIKE 'p%';
 SELECT * 
 FROM emp 
 WHERE emp_age IN (18, 20);
+
+SELECT emp_dep, AVG(emp_salary) AS avg_dep_salary 
+FROM emp
+GROUP BY emp_dep;
