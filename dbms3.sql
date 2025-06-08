@@ -109,3 +109,6 @@ WHERE emp_age IN (18, 20);
 SELECT emp_dep, AVG(emp_salary) AS avg_dep_salary 
 FROM emp
 GROUP BY emp_dep;
+
+SELECT emp_dep 
+FROM emp GROUP BY emp_dep HAVING COUNT(*) > 1;
