@@ -28,6 +28,10 @@ FROM emp;
 SELECT SUM(emp_salary) AS total_salary 
 FROM emp;
 
+SELECT COUNT(*) AS total_employees 
+FROM emp 
+WHERE emp_age = 20;
+
 --UPDATE QUERY
 UPDATE emp
 SET emp_age =18
