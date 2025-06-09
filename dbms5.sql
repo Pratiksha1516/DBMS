@@ -118,3 +118,8 @@ WHERE LENGTH(name) = 6;
 SELECT department, AVG(gpa) AS avg_gpa
 FROM student
 GROUP BY department;
+
+SELECT department, AVG(gpa) AS avg_gpa
+FROM student
+GROUP BY department
+HAVING AVG(gpa) > 8;
