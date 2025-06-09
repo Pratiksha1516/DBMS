@@ -97,3 +97,7 @@ WHERE department != 'Engineering';
 
 SELECT * FROM student
 WHERE gpa < 8;
+
+SELECT name, gpa
+FROM student
+ORDER BY name ASC;
