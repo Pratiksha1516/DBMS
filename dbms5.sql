@@ -90,3 +90,7 @@ UPDATE student
 SET department = 'Engineering'
 WHERE id = 3;
 
+--
+
+SELECT * FROM student
+WHERE department != 'Engineering';
