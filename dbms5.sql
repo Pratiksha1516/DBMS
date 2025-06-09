@@ -126,3 +126,6 @@ HAVING AVG(gpa) > 8;
 
 SELECT UPPER(name) AS upper_name
 FROM student;
+
+SELECT name, EXTRACT(YEAR FROM graduation_date) AS grad_year
+FROM student;
