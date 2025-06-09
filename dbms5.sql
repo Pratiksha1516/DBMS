@@ -111,3 +111,6 @@ FROM student;
 SELECT department, COUNT(*) AS total_students
 FROM student
 GROUP BY department;
+
+SELECT * FROM student
+WHERE LENGTH(name) = 6;
