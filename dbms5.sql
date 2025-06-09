@@ -94,3 +94,6 @@ WHERE id = 3;
 
 SELECT * FROM student
 WHERE department != 'Engineering';
+
+SELECT * FROM student
+WHERE gpa < 8;
