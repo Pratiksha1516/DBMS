@@ -101,3 +101,6 @@ WHERE gpa < 8;
 SELECT name, gpa
 FROM student
 ORDER BY name ASC;
+
+SELECT * FROM student
+WHERE graduation_date > TO_DATE('2018-12-31', 'YYYY-MM-DD');
