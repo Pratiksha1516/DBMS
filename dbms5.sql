@@ -114,3 +114,7 @@ GROUP BY department;
 
 SELECT * FROM student
 WHERE LENGTH(name) = 6;
+
+SELECT department, AVG(gpa) AS avg_gpa
+FROM student
+GROUP BY department;
