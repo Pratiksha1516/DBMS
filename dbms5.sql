@@ -104,3 +104,6 @@ ORDER BY name ASC;
 
 SELECT * FROM student
 WHERE graduation_date > TO_DATE('2018-12-31', 'YYYY-MM-DD');
+
+SELECT DISTINCT major
+FROM student;
