@@ -123,3 +123,6 @@ SELECT department, AVG(gpa) AS avg_gpa
 FROM student
 GROUP BY department
 HAVING AVG(gpa) > 8;
+
+SELECT UPPER(name) AS upper_name
+FROM student;
