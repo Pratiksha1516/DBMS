@@ -133,3 +133,7 @@ FROM student;
 UPDATE student
 SET gpa = gpa + 0.2
 WHERE department ='Electrical Engineering';
+
+UPDATE student
+SET graduation_date = NULL
+WHERE gpa < 8;
