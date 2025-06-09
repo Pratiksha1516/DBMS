@@ -129,3 +129,7 @@ FROM student;
 
 SELECT name, EXTRACT(YEAR FROM graduation_date) AS grad_year
 FROM student;
+
+UPDATE student
+SET gpa = gpa + 0.2
+WHERE department ='Electrical Engineering';
