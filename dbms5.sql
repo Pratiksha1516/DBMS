@@ -107,3 +107,7 @@ WHERE graduation_date > TO_DATE('2018-12-31', 'YYYY-MM-DD');
 
 SELECT DISTINCT major
 FROM student;
+
+SELECT department, COUNT(*) AS total_students
+FROM student
+GROUP BY department;
