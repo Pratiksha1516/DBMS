@@ -55,6 +55,10 @@ SELECT StudentID, Grade FROM Enrollment;
 
 SELECT CourseID, Semester FROM Enrollment;
 
+SELECT Name 
+FROM Student 
+WHERE Name LIKE 'r%';
+
 select S.name
 from student s
 join Enrollment E on S.studentID = E.studentID
