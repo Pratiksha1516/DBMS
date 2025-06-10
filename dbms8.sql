@@ -130,3 +130,9 @@ SELECT S.Name, C.CourseName, E.Grade
 FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID
 JOIN Course C ON E.CourseID = C.CourseID;
+
+SELECT C.CourseName
+FROM Course C
+LEFT JOIN Enrollment E ON C.CourseID = E.CourseID
+WHERE E.CourseID IS NULL;
+
