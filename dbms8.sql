@@ -49,6 +49,8 @@ SELECT Name FROM Student;
 
 SELECT CourseName, Credits FROM Course;
 
+SELECT Name, Department FROM Student WHERE Age > 20;
+
 select S.name
 from student s
 join Enrollment E on S.studentID = E.studentID
