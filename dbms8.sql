@@ -119,3 +119,9 @@ SELECT S.Name, MAX(E.Grade) AS HighestGrade
 FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID
 GROUP BY S.Name;
+
+SELECT S.Name, COUNT(E.CourseID) AS CourseCount
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID
+GROUP BY S.Name
+HAVING COUNT(E.CourseID) > 1;
