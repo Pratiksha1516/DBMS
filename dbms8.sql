@@ -98,3 +98,7 @@ SELECT C.CourseName, COUNT(E.StudentID) AS StudentCount
 FROM Course C
 LEFT JOIN Enrollment E ON C.CourseID = E.CourseID
 GROUP BY C.CourseName;
+
+SELECT Department, AVG(Age) AS AverageAge
+FROM Student
+GROUP BY Department;
