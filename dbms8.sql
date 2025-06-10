@@ -109,3 +109,8 @@ JOIN Enrollment E ON S.StudentID = E.StudentID
 JOIN Course C ON E.CourseID = C.CourseID
 WHERE S.StudentID = 1
 GROUP BY S.Name;
+
+SELECT DISTINCT C.CourseName
+FROM Course C
+JOIN Enrollment E ON C.CourseID = E.CourseID
+WHERE E.Semester = 'Fall 2024';
