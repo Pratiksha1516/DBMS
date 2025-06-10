@@ -55,6 +55,9 @@ SELECT StudentID, Grade FROM Enrollment;
 
 SELECT CourseID, Semester FROM Enrollment;
 
+SELECT DISTINCT Semester 
+FROM Enrollment;
+
 SELECT Name 
 FROM Student 
 WHERE Name LIKE 'r%';
