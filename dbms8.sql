@@ -114,3 +114,8 @@ SELECT DISTINCT C.CourseName
 FROM Course C
 JOIN Enrollment E ON C.CourseID = E.CourseID
 WHERE E.Semester = 'Fall 2024';
+
+SELECT S.Name, MAX(E.Grade) AS HighestGrade
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID
+GROUP BY S.Name;
