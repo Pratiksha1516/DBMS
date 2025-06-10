@@ -67,6 +67,9 @@ from student s
 join Enrollment E on S.studentID = E.studentID
 where E.courseID = 101;
 
+SELECT CourseName, Credits 
+FROM Course 
+WHERE CourseID = 102;
 select C.CourseName
 from Course C
 join Enrollment E on C.CourseID = E.CourseID
