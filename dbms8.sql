@@ -125,3 +125,8 @@ FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID
 GROUP BY S.Name
 HAVING COUNT(E.CourseID) > 1;
+
+SELECT S.Name, C.CourseName, E.Grade
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID
+JOIN Course C ON E.CourseID = C.CourseID;
