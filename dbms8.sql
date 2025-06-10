@@ -82,3 +82,9 @@ where E.courseID = 102;
 select Grade
 from Enrollment
 where EnrollmentID = 2;
+
+--
+SELECT S.Name, C.CourseName
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID
+JOIN Course C ON E.CourseID = C.CourseID;
