@@ -102,3 +102,10 @@ GROUP BY C.CourseName;
 SELECT Department, AVG(Age) AS AverageAge
 FROM Student
 GROUP BY Department;
+
+SELECT S.Name, SUM(C.Credits) AS TotalCredits
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID
+JOIN Course C ON E.CourseID = C.CourseID
+WHERE S.StudentID = 1
+GROUP BY S.Name;
