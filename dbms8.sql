@@ -89,8 +89,12 @@ FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID
 JOIN Course C ON E.CourseID = C.CourseID;
 
-
 SELECT S.Name
 FROM Student S
 LEFT JOIN Enrollment E ON S.StudentID = E.StudentID
 WHERE E.StudentID IS NULL;
+
+SELECT C.CourseName, COUNT(E.StudentID) AS StudentCount
+FROM Course C
+LEFT JOIN Enrollment E ON C.CourseID = E.CourseID
+GROUP BY C.CourseName;
