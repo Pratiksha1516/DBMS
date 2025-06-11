@@ -95,3 +95,7 @@ FROM Product;
 SELECT *
 FROM Product 
 WHERE ProductName LIKE '%Phone%';
+
+SELECT *
+FROM Product 
+WHERE Price BETWEEN 300 AND 1000;
