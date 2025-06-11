@@ -80,3 +80,7 @@ WHERE Name LIKE '%a%';
 SELECT ProductID, Price
 FROM Product 
 ORDER BY Price ASC;
+
+SELECT COUNT(*) AS ExpensiveProducts 
+FROM Product
+WHERE Price > 500;
