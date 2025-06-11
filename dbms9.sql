@@ -122,3 +122,9 @@ FROM Customer c
 JOIN Orders o ON c.CustomerID = o.CustomerID
 JOIN Product p ON o.ProductID = p.ProductID
 GROUP BY c.Name;
+
+SELECT DISTINCT c.Name
+FROM Customer c
+JOIN Orders o ON c.CustomerID = o.CustomerID
+JOIN Product p ON o.ProductID = p.ProductID
+WHERE p.ProductName = 'Laptop';
