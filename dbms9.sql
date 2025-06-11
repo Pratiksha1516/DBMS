@@ -61,3 +61,7 @@ select Price
 from Product 
 where ProductID = 3 ;
 
+--
+SELECT ProductName, Price 
+FROM Product;
+
