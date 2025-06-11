@@ -68,3 +68,7 @@ FROM Product;
 SELECT *
 FROM Customer
 WHERE Email LIKE '%@example.com';
+
+SELECT ProductName 
+FROM Product
+WHERE Price < 1000;
