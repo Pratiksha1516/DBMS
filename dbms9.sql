@@ -76,3 +76,7 @@ WHERE Price < 1000;
 SELECT * 
 FROM Customer 
 WHERE Name LIKE '%a%';
+
+SELECT ProductID, Price
+FROM Product 
+ORDER BY Price ASC;
