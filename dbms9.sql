@@ -116,3 +116,9 @@ VALUES
 (1, 1, 1, 1, '2024-06-10'),
 (2, 2, 2, 2, '2024-06-11'),
 (3, 3, 3, 1, '2024-06-11');
+
+SELECT c.Name, SUM(p.Price * o.Quantity) AS TotalSpent
+FROM Customer c
+JOIN Orders o ON c.CustomerID = o.CustomerID
+JOIN Product p ON o.ProductID = p.ProductID
+GROUP BY c.Name;
