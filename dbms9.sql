@@ -99,3 +99,14 @@ WHERE ProductName LIKE '%Phone%';
 SELECT *
 FROM Product 
 WHERE Price BETWEEN 300 AND 1000;
+
+--
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    ProductID INT,
+    Quantity INT,
+    OrderDate DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID),
+    FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
+);
