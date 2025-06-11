@@ -65,3 +65,6 @@ where ProductID = 3 ;
 SELECT ProductName, Price 
 FROM Product;
 
+SELECT *
+FROM Customer
+WHERE Email LIKE '%@example.com';
