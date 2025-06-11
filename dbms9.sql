@@ -128,3 +128,8 @@ FROM Customer c
 JOIN Orders o ON c.CustomerID = o.CustomerID
 JOIN Product p ON o.ProductID = p.ProductID
 WHERE p.ProductName = 'Laptop';
+
+SELECT ProductName
+FROM Product
+WHERE ProductID NOT IN (SELECT ProductID FROM Orders);
+
