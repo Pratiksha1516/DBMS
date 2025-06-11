@@ -84,3 +84,7 @@ ORDER BY Price ASC;
 SELECT COUNT(*) AS ExpensiveProducts 
 FROM Product
 WHERE Price > 500;
+
+SELECT * FROM Product
+ORDER BY Price DESC
+OFFSET 1 ROW FETCH NEXT 1 ROW ONLY;  -- Use LIMIT 1 OFFSET 1 if using MySQL
