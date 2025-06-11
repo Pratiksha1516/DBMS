@@ -16,6 +16,12 @@ VALUES
 (2, 'pratiksha', 'prati@example.com'),
 (3, 'shiri', 'shiri@example.com');
 
+INSERT INTO Product (ProductID, ProductName, Price)
+VALUES 
+(1, 'Laptop', 1500.00),
+(2, 'Phone', 800.00),
+(3, 'Tablet', 500.00),
+(4, 'Headphones', 200.00);
 
 select * from customer
     
