@@ -110,3 +110,9 @@ CREATE TABLE Orders (
     FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID),
     FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
 );
+
+INSERT INTO Orders(OrderID,CustomerID,ProductID, Quantity, OrderDate)
+VALUES 
+(1, 1, 1, 1, '2024-06-10'),
+(2, 2, 2, 2, '2024-06-11'),
+(3, 3, 3, 1, '2024-06-11');
