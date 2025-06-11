@@ -72,3 +72,7 @@ WHERE Email LIKE '%@example.com';
 SELECT ProductName 
 FROM Product
 WHERE Price < 1000;
+
+SELECT * 
+FROM Customer 
+WHERE Name LIKE '%a%';
