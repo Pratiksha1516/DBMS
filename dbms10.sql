@@ -186,3 +186,8 @@ UNION
 SELECT E.Name, D.DepartmentName
 FROM Departments D
 RIGHT JOIN Employees E ON E.Department = D.DepartmentName;
+
+SELECT E.*
+FROM Employees E
+LEFT JOIN Departments D ON E.Department = D.DepartmentName
+WHERE D.DepartmentName IS NULL;
