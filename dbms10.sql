@@ -175,3 +175,6 @@ WHERE E.Salary > (
     FROM Employees
     WHERE Department = E.Department
 );
+
+SELECT * FROM Employees
+WHERE Department IN (SELECT DepartmentName FROM Departments);
