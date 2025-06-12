@@ -191,3 +191,8 @@ SELECT E.*
 FROM Employees E
 LEFT JOIN Departments D ON E.Department = D.DepartmentName
 WHERE D.DepartmentName IS NULL;
+
+--CREATE VIEW High_Salary_Employees AS
+SELECT Name, Salary, Department
+FROM Employees
+WHERE Salary > 65000;
