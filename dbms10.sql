@@ -120,3 +120,8 @@ FROM Employees;
 
 SELECT MIN(Department)
 FROM Employees;
+
+--
+SELECT * 
+FROM Employees 
+WHERE Name LIKE 'H%';
