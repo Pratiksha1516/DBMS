@@ -129,3 +129,7 @@ WHERE Name LIKE 'H%';
 SELECT * 
 FROM Employees 
 WHERE Department <> 'Finance';
+
+SELECT * 
+FROM Employees 
+ORDER BY Salary DESC;
