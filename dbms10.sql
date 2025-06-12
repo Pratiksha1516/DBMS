@@ -125,3 +125,7 @@ FROM Employees;
 SELECT * 
 FROM Employees 
 WHERE Name LIKE 'H%';
+
+SELECT * 
+FROM Employees 
+WHERE Department <> 'Finance';
