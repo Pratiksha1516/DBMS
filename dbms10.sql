@@ -125,6 +125,12 @@ SELECT Department, COUNT(*) AS Total
 FROM Employees 
 GROUP BY Department;
 
+SELECT Department, AVG(Salary) AS AvgSalary
+FROM Employees
+GROUP BY Department
+ORDER BY AvgSalary DESC
+LIMIT 1;
+
 --
 SELECT * 
 FROM Employees 
