@@ -121,6 +121,10 @@ FROM Employees;
 SELECT MIN(Department)
 FROM Employees;
 
+SELECT Department, COUNT(*) AS Total 
+FROM Employees 
+GROUP BY Department;
+
 --
 SELECT * 
 FROM Employees 
