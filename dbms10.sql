@@ -133,3 +133,7 @@ WHERE Department <> 'Finance';
 SELECT * 
 FROM Employees 
 ORDER BY Salary DESC;
+
+SELECT *
+FROM Employees 
+ORDER BY Salary DESC LIMIT 2;
