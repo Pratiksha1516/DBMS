@@ -178,3 +178,11 @@ WHERE E.Salary > (
 
 SELECT * FROM Employees
 WHERE Department IN (SELECT DepartmentName FROM Departments);
+
+--SELECT E.Name, D.DepartmentName
+FROM Departments D
+LEFT JOIN Employees E ON E.Department = D.DepartmentName
+UNION
+SELECT E.Name, D.DepartmentName
+FROM Departments D
+RIGHT JOIN Employees E ON E.Department = D.DepartmentName;
