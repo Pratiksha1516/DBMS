@@ -140,6 +140,9 @@ FROM Employees
 GROUP BY Department
 HAVING COUNT(*) > 1;
 
+SELECT MAX(Salary) - MIN(Salary) AS SalaryRange
+FROM Employees;
+
 --
 SELECT * 
 FROM Employees 
