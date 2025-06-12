@@ -135,6 +135,11 @@ SELECT Department, SUM(Salary) AS TotalSalary
 FROM Employees
 GROUP BY Department;
 
+SELECT Department
+FROM Employees
+GROUP BY Department
+HAVING COUNT(*) > 1;
+
 --
 SELECT * 
 FROM Employees 
