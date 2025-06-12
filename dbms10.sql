@@ -137,3 +137,7 @@ ORDER BY Salary DESC;
 SELECT *
 FROM Employees 
 ORDER BY Salary DESC LIMIT 2;
+
+SELECT *
+FROM Employees
+WHERE Name LIKE '%li%';
