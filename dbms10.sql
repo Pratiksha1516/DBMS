@@ -196,3 +196,6 @@ WHERE D.DepartmentName IS NULL;
 SELECT Name, Salary, Department
 FROM Employees
 WHERE Salary > 65000;
+
+SELECT Name AS EmployeeName, Salary AS MonthlyPay 
+FROM Employees;
