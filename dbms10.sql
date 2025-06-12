@@ -131,6 +131,10 @@ GROUP BY Department
 ORDER BY AvgSalary DESC
 LIMIT 1;
 
+SELECT Department, SUM(Salary) AS TotalSalary 
+FROM Employees
+GROUP BY Department;
+
 --
 SELECT * 
 FROM Employees 
