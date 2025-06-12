@@ -167,3 +167,11 @@ WHERE Name LIKE '%li%';
 SELECT Name
 FROM Employees
 WHERE Salary = (SELECT MAX(Salary) FROM Employees);
+
+SELECT E.Name, E.Department, E.Salary
+FROM Employees E
+WHERE E.Salary > (
+    SELECT AVG(Salary)
+    FROM Employees
+    WHERE Department = E.Department
+);
