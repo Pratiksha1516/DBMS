@@ -163,3 +163,7 @@ ORDER BY Salary DESC LIMIT 2;
 SELECT *
 FROM Employees
 WHERE Name LIKE '%li%';
+
+SELECT Name
+FROM Employees
+WHERE Salary = (SELECT MAX(Salary) FROM Employees);
