@@ -54,3 +54,7 @@ SELECT AVG(Salary)
 FROM Employees;
 
 DROP TABLE Employees;
+
+--
+SELECT * FROM Employees
+WHERE Salary > 55000;
