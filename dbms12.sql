@@ -65,3 +65,7 @@ WHERE JoiningDate > TO_DATE('2021-12-31', 'YYYY-MM-DD');
 SELECT Department, COUNT(*) AS NumEmployees
 FROM Employees
 GROUP BY Department;
+
+SELECT Department, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Department;
