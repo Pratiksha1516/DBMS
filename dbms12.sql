@@ -84,3 +84,6 @@ SELECT D.DeptName
 FROM Departments D
 LEFT JOIN Employees E ON D.DeptName = E.Department
 WHERE E.EmpID IS NULL;
+
+SELECT AVG(Age) AS AverageAge
+FROM Employees;
