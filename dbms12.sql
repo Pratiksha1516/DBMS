@@ -96,3 +96,9 @@ WHERE Department <> 'IT';
 
 SELECT DISTINCT Department
 FROM Employees;
+
+SELECT Department 
+FROM Employees
+GROUP BY Department
+ORDER BY AVG(Salary) DESC
+FETCH FIRST 1 ROW ONLY;
