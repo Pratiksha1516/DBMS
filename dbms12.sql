@@ -102,3 +102,7 @@ FROM Employees
 GROUP BY Department
 ORDER BY AVG(Salary) DESC
 FETCH FIRST 1 ROW ONLY;
+
+UPDATE Departments
+SET DeptName = 'Accounting'
+WHERE DeptName = 'Finance';
