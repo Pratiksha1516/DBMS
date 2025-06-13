@@ -93,3 +93,6 @@ WHERE EXTRACT(YEAR FROM JoiningDate) = 2023;
 
 SELECT * FROM Employees
 WHERE Department <> 'IT';
+
+SELECT DISTINCT Department
+FROM Employees;
