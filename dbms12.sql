@@ -69,3 +69,5 @@ GROUP BY Department;
 SELECT Department, SUM(Salary) AS TotalSalary
 FROM Employees
 GROUP BY Department;
+SELECT * FROM Employees
+WHERE Age = (SELECT MAX(Age) FROM Employees);
