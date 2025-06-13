@@ -17,6 +17,8 @@ VALUES (2, 'ran', 28, 'Finance', 60000, to_date('2022-05-15', 'yyyy-mm-dd'));
 INSERT INTO Employees (EmpID, Name, Age, Department, Salary, JoiningDate)
 VALUES (3, 'prati', 35, 'IT', 70000, to_date('2020-12-20', 'yyyy-mm-dd'));
 
+SELECT COUNT(*) FROM Employees;
+
 CREATE TABLE Departments (
     DeptID INT PRIMARY KEY,
     DeptName VARCHAR(30)
