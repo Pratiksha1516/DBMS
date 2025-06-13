@@ -74,3 +74,6 @@ WHERE Age = (SELECT MAX(Age) FROM Employees);
 
 SELECT * FROM Employees
 WHERE Salary BETWEEN 55000 AND 70000;
+
+SELECT Name FROM Employees
+ORDER BY Name ASC;
