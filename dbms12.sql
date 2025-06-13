@@ -71,3 +71,6 @@ FROM Employees
 GROUP BY Department;
 SELECT * FROM Employees
 WHERE Age = (SELECT MAX(Age) FROM Employees);
+
+SELECT * FROM Employees
+WHERE Salary BETWEEN 55000 AND 70000;
