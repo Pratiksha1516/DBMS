@@ -77,3 +77,8 @@ WHERE Salary BETWEEN 55000 AND 70000;
 
 SELECT Name FROM Employees
 ORDER BY Name ASC;
+
+SELECT D.DeptName 
+FROM Departments D
+LEFT JOIN Employees E ON D.DeptName = E.Department
+WHERE E.EmpID IS NULL;
