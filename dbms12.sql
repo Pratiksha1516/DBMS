@@ -61,3 +61,7 @@ WHERE Salary > 55000;
 
 SELECT * FROM Employees
 WHERE JoiningDate > TO_DATE('2021-12-31', 'YYYY-MM-DD');
+
+SELECT Department, COUNT(*) AS NumEmployees
+FROM Employees
+GROUP BY Department;
