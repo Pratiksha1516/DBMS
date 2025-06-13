@@ -109,3 +109,6 @@ WHERE DeptName = 'Finance';
 
 SELECT Name, JoiningDate, (JoiningDate + INTERVAL '1 year') AS NewJoiningDate
 FROM Employees;
+
+SELECT * FROM Employees
+WHERE LOWER(Name) LIKE 'p%';
