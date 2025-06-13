@@ -106,3 +106,6 @@ FETCH FIRST 1 ROW ONLY;
 UPDATE Departments
 SET DeptName = 'Accounting'
 WHERE DeptName = 'Finance';
+
+SELECT Name, JoiningDate, (JoiningDate + INTERVAL '1 year') AS NewJoiningDate
+FROM Employees;
