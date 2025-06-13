@@ -90,3 +90,6 @@ FROM Employees;
 
 SELECT * FROM Employees
 WHERE EXTRACT(YEAR FROM JoiningDate) = 2023;
+
+SELECT * FROM Employees
+WHERE Department <> 'IT';
