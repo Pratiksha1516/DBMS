@@ -87,3 +87,6 @@ WHERE E.EmpID IS NULL;
 
 SELECT AVG(Age) AS AverageAge
 FROM Employees;
+
+SELECT * FROM Employees
+WHERE EXTRACT(YEAR FROM JoiningDate) = 2023;
