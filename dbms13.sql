@@ -130,3 +130,6 @@ LIMIT 2;
 UPDATE Customer 
 SET area = 'NY'
 WHERE id = 'A02';
+
+DELETE FROM Invoice
+WHERE Inv_no = 105;
