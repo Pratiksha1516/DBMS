@@ -73,6 +73,9 @@ SELECT area, COUNT(*) AS total_customers
 FROM Customer
 GROUP BY area;
 
+SELECT COUNT( distinct area) AS unique_area 
+FROM Customer;
+
 --
 SELECT fname || ' '|| lname AS fullname 
 FROM Customer;
