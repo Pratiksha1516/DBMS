@@ -79,6 +79,9 @@ FROM Customer;
 SELECT AVG(LENGth(Ph_no)) AS avg_lenght
 FROM Customer;
 
+SELECT MIN(id) AS min_id, MAX(id) AS max_id 
+FROM Customer;
+
 
 --
 SELECT fname || ' '|| lname AS fullname 
