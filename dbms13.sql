@@ -68,3 +68,8 @@ WHERE id = 'A02';
 
 SELECT MIN(Ph_no)
 FROM Customer;
+
+
+--
+SELECT fname || ' '|| lname AS fullname 
+FROM Customer;
