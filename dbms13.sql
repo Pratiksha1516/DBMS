@@ -103,6 +103,10 @@ SELECT fname,lname
 FROM Customer
 ORDER BY fname DESC;
 
+SELECT I.Inv_no, C.fname, C.lname
+FROM Invoice I
+JOIN Customer C ON I.Cust_id = C.id;
+
 --
 SELECT I.Inv_no, C.fname, C.lname
 FROM Invoice I
