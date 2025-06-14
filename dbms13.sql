@@ -133,3 +133,7 @@ WHERE id = 'A02';
 
 DELETE FROM Invoice
 WHERE Inv_no = 105;
+
+SELECT *
+FROM Customer
+WHERE LENGTH(fname) = 5;
