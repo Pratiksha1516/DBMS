@@ -115,3 +115,9 @@ WHERE id NOT IN(SELECT Cust_id FROM Invoice);
 SELECT I.Inv_no, C.fname, C.lname
 FROM Invoice I
 JOIN Customer C ON I.Cust_id = C.id;
+
+--
+SELECT *
+FROM Customer
+ORDER BY Ph_no DESC
+LIMIT 3;
