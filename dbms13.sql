@@ -137,3 +137,7 @@ WHERE Inv_no = 105;
 SELECT *
 FROM Customer
 WHERE LENGTH(fname) = 5;
+
+SELECT *
+FROM Customer
+WHERE SUBSTR(fname,1,1) = SUBSTR(lname,1,1);
