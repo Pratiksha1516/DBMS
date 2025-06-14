@@ -141,3 +141,7 @@ WHERE LENGTH(fname) = 5;
 SELECT *
 FROM Customer
 WHERE SUBSTR(fname,1,1) = SUBSTR(lname,1,1);
+
+SELECT * 
+FROM Customer
+WHERE area = 'CH' OR fname LIKE '%i%';
