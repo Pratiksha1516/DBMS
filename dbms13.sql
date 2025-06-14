@@ -73,3 +73,7 @@ FROM Customer;
 --
 SELECT fname || ' '|| lname AS fullname 
 FROM Customer;
+
+SELECT fname,Ph_no
+FROM Customer 
+WHERE Ph_no LIKE '7%';
