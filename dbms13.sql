@@ -121,3 +121,8 @@ SELECT *
 FROM Customer
 ORDER BY Ph_no DESC
 LIMIT 3;
+
+SELECT *
+FROM Customer
+ORDER BY lname ASC
+LIMIT 2;
