@@ -81,3 +81,7 @@ WHERE Ph_no LIKE '7%';
 SELECT *
 FROM Customer
 WHERE area  <> 'MO';
+
+SELECT *
+FROM Customer
+WHERE Ph_no > '500000';
