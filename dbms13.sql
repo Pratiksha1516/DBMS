@@ -76,6 +76,10 @@ GROUP BY area;
 SELECT COUNT( distinct area) AS unique_area 
 FROM Customer;
 
+SELECT AVG(LENGth(Ph_no)) AS avg_lenght
+FROM Customer;
+
+
 --
 SELECT fname || ' '|| lname AS fullname 
 FROM Customer;
