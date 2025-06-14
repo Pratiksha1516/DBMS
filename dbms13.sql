@@ -103,9 +103,9 @@ SELECT fname,lname
 FROM Customer
 ORDER BY fname DESC;
 
-SELECT I.Inv_no, C.fname, C.lname
-FROM Invoice I
-JOIN Customer C ON I.Cust_id = C.id;
+SELECT DISTINCT fname, lname
+FROM Customer
+WHERE id IN(SELECT Cust_id FROM Invoice);
 
 --
 SELECT I.Inv_no, C.fname, C.lname
