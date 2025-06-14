@@ -69,6 +69,9 @@ WHERE id = 'A02';
 SELECT MIN(Ph_no)
 FROM Customer;
 
+SELECT area, COUNT(*) AS total_customers
+FROM Customer
+GROUP BY area;
 
 --
 SELECT fname || ' '|| lname AS fullname 
