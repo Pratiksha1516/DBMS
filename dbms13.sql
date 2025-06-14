@@ -107,6 +107,10 @@ SELECT DISTINCT fname, lname
 FROM Customer
 WHERE id IN(SELECT Cust_id FROM Invoice);
 
+SELECT *
+FROM Customer
+WHERE id NOT IN(SELECT Cust_id FROM Invoice);
+
 --
 SELECT I.Inv_no, C.fname, C.lname
 FROM Invoice I
