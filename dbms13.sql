@@ -77,3 +77,7 @@ FROM Customer;
 SELECT fname,Ph_no
 FROM Customer 
 WHERE Ph_no LIKE '7%';
+
+SELECT *
+FROM Customer
+WHERE area  <> 'MO';
