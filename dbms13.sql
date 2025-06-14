@@ -126,3 +126,7 @@ SELECT *
 FROM Customer
 ORDER BY lname ASC
 LIMIT 2;
+
+UPDATE Customer 
+SET area = 'NY'
+WHERE id = 'A02';
