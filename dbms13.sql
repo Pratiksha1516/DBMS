@@ -85,3 +85,7 @@ WHERE area  <> 'MO';
 SELECT *
 FROM Customer
 WHERE Ph_no > '500000';
+
+SELECT fname,lname
+FROM Customer
+ORDER BY fname DESC;
