@@ -69,3 +69,7 @@ SELECT title
 FROM Books
 WHERE title LIKE '%Harry%';
 
+SELECT name
+FROM Authors
+WHERE name LIKE '%R.R%';
+
