@@ -113,3 +113,8 @@ SELECT A.name
 FROM Authors A
 LEFT JOIN Books B ON A.author_id = B.author_id
 WHERE B.book_id IS NULL;
+
+SELECT *
+FROM Books
+ORDER BY published_year DESC
+LIMIT 3;
