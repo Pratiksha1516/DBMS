@@ -65,3 +65,7 @@ SELECT title
 FROM Books
 WHERE title LIKE 'A%';
 
+SELECT title
+FROM Books
+WHERE title LIKE '%Harry%';
+
