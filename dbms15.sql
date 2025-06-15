@@ -28,11 +28,13 @@ CREATE TABLE Invoice (
 );
 
 -- 5. Insert data into Employee table
-INSERT INTO Employee VALUES('a01', name_ty('allan', 'border'), 'sa', 723622);
-INSERT INTO Employee VALUES('a02', name_ty('tina', 'shields'), 'mo', 23784);
-INSERT INTO Employee VALUES('a03', name_ty('ravi', 'kumar'), 'bi', 545621);
-INSERT INTO Employee VALUES('a04', name_ty('sunita', 'rai'), 'ch', 983724);
-INSERT INTO Employee VALUES('a05', name_ty('james', 'smith'), 'wa', 634672);
+INSERT INTO Employee(Emp_id, Inv_no, Salary_amount) 
+VALUES
+('a01', name_ty('allan', 'border'), 'sa', 723622);
+('a02', name_ty('tina', 'shields'), 'mo', 23784);
+('a03', name_ty('ravi', 'kumar'), 'bi', 545621);
+('a04', name_ty('sunita', 'rai'), 'ch', 983724);
+('a05', name_ty('james', 'smith'), 'wa', 634672);
 
 -- 6. Insert data into Invoice table
 INSERT INTO Invoice VALUES('a01', 1, 10000);
