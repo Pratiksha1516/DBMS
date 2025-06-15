@@ -73,3 +73,7 @@ SELECT name
 FROM Authors
 WHERE name LIKE '%R.R%';
 
+SELECT B.title 
+FROM Books B
+JOIN Authors A ON B.Author_id = A.Author_id
+WHERE A.name LIKE '%King%';
