@@ -14,18 +14,22 @@ CREATE TABLE Invoice (
 );
 
 -- Insert values into Customer Table
-INSERT INTO Customer VALUES('A01', 'Allan', 'Border', 'SA', '723622');
-INSERT INTO Customer VALUES('A02', 'Tina', 'Shields', 'MO', '23784');
-INSERT INTO Customer VALUES('A03', 'Ravi', 'Kumar', 'BI', '545621');
-INSERT INTO Customer VALUES('A04', 'Sunita', 'Rai', 'CH', '983724');
-INSERT INTO Customer VALUES('A05', 'James', 'Smith', 'WA', '634672');
+INSERT INTO Customer(id, fname, lname, area, Ph_no) 
+VALUES
+('A01', 'Allan', 'Border', 'SA', '723622'),
+('A02', 'Tina', 'Shields', 'MO', '23784'),
+('A03', 'Ravi', 'Kumar', 'BI', '545621'),
+('A04', 'Sunita', 'Rai', 'CH', '983724'),
+('A05', 'James', 'Smith', 'WA', '634672');
 
 -- Insert values into Invoice Table
-INSERT INTO Invoice VALUES(101, 'A01');
-INSERT INTO Invoice VALUES(102, 'A02');
-INSERT INTO Invoice VALUES(103, 'A03');
-INSERT INTO Invoice VALUES(104, 'A04');
-INSERT INTO Invoice VALUES(105, 'A05');
+INSERT INTO Invoice (Inv_no, Cust_id)
+VALUES
+(101, 'A01'),
+(102, 'A02'),
+(103, 'A03'),
+(104, 'A04'),
+(105, 'A05');
 
 -- 2. Print entire Customer table
 SELECT * FROM Customer;
@@ -56,7 +60,4 @@ ADD COLUMN E-mail VARCHAR(30);
 
 ALTER TABLE Customer
 ADD COLUMN age INT NOT NULL DEFAULT 22;
-
-DROP TABLE IF EXISTS Invoice;
-DROP TABLE IF EXISTS Customer;
 
