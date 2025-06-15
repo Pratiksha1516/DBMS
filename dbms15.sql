@@ -37,11 +37,13 @@ VALUES
 ('a05', name_ty('james', 'smith'), 'wa', 634672);
 
 -- 6. Insert data into Invoice table
-INSERT INTO Invoice VALUES('a01', 1, 10000);
-INSERT INTO Invoice VALUES('a02', 2, 20000);
-INSERT INTO Invoice VALUES('a03', 3, 4500);
-INSERT INTO Invoice VALUES('a04', 4, 15200);
-INSERT INTO Invoice VALUES('a05', 5, 14800);
+INSERT INTO Invoice (Em_id, Inv_no, Salary_amount)
+VALUES
+('a01', 1, 10000),
+('a02', 2, 20000),
+('a03', 3, 4500),
+('a04', 4, 15200),
+('a05', 5, 14800);
 
 -- 7. Print both Employee and Invoice tables
 SELECT Emp_id, Name.Fname AS First_Name, Name.Lname AS Last_Name, Location, Ph_no FROM Employee;
