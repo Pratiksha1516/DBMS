@@ -98,3 +98,7 @@ FROM Books;
 
 SELECT AVG(published_year) AS Aavg_year
 FROM Books;
+
+SELECT B.title, A.name
+FROM Books B
+JOIN Authors A ON B.author_id = A.author_id;
