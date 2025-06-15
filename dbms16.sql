@@ -92,3 +92,6 @@ SELECT published_year, COUNT(*) AS book_count
 FROM Books
 GROUP BY published_year
 ORDER BY published_year;
+
+SELECT COUNT(*)
+FROM Books;
