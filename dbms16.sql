@@ -118,3 +118,10 @@ SELECT *
 FROM Books
 ORDER BY published_year DESC
 LIMIT 3;
+
+SELECT *
+FROM Books
+JOIN Authors A ON Books.author_id = A.author_id
+WHERE A.name = 'Agatha Christie'
+ORDER BY published_year;
+
