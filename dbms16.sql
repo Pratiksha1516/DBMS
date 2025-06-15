@@ -102,3 +102,10 @@ FROM Books;
 SELECT B.title, A.name
 FROM Books B
 JOIN Authors A ON B.author_id = A.author_id;
+
+SELECT A.name, COUNT(B.book_id) AS book_count
+FROM Authors A
+JOIN Books B ON A.author_id = B.author_id
+GROUP BY A.name
+HAVING COUNT(B.book_id) > 1;
+
