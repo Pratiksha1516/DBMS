@@ -61,4 +61,7 @@ SELECT *
 FROM Books
 WHERE published_year < 2000;
 
+SELECT title
+FROM Books
+WHERE title LIKE 'A%';
 
