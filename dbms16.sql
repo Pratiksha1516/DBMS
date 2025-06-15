@@ -82,3 +82,8 @@ SELECT *
 FROM Books
 ORDER BY published_year ASC
 LIMIT 1;
+
+SELECT *
+FROM Books
+ORDER BY published_year DESC
+LIMIT 1;
