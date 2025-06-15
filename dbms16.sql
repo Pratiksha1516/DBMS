@@ -57,4 +57,8 @@ UPDATE Authors
 SET name = 'Stephen Edwin King'
 WHERE name = 'Stephen King';
 
+SELECT *
+FROM Books
+WHERE published_year < 2000;
+
 
