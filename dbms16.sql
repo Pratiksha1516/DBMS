@@ -2,7 +2,6 @@ CREATE TABLE Authors (
     author_id SERIAL PRIMARY KEY,
     name VARCHAR(100)
 );
-DROP TABLE IF EXISTS Authors CASCADE;
 
 CREATE TABLE Books (
     book_id SERIAL PRIMARY KEY,
@@ -10,7 +9,6 @@ CREATE TABLE Books (
 	published_year INT,
     author_id INT REFERENCES Authors(author_id)
 );
-DROP TABLE IF EXISTS Books CASCADE;
 
 INSERT INTO Authors (name)
 VALUES 
