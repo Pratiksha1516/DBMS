@@ -77,3 +77,8 @@ SELECT B.title
 FROM Books B
 JOIN Authors A ON B.Author_id = A.Author_id
 WHERE A.name LIKE '%King%';
+
+SELECT *
+FROM Books
+ORDER BY published_year ASC
+LIMIT 1;
