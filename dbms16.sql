@@ -109,3 +109,7 @@ JOIN Books B ON A.author_id = B.author_id
 GROUP BY A.name
 HAVING COUNT(B.book_id) > 1;
 
+SELECT A.name
+FROM Authors A
+LEFT JOIN Books B ON A.author_id = B.author_id
+WHERE B.book_id IS NULL;
