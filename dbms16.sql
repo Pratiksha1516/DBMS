@@ -199,3 +199,8 @@ ORDER BY published_year;
 SELECT title
 FROM Books
 WHERE title LIKE '%s';
+
+SELECT DISTINCT A.name
+FROM Authors A
+JOIN Books B ON A.author_id = B.author_id
+WHERE B.published_year < 1980;
