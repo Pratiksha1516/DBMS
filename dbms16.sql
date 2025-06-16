@@ -161,3 +161,8 @@ GROUP BY Period;
 SELECT title 
 FROM Books 
 WHERE LENGTH(title) > 25;
+
+SELECT A.name, B.published_year
+FROM Authors A
+JOIN Books B ON A.author_id = B.author_id
+ORDER BY A.name, B.published_year;
