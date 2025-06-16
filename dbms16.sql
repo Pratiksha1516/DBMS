@@ -209,3 +209,10 @@ SELECT B.title
 FROM Books B
 JOIN Authors A ON B.author_id = A.author_id
 WHERE A.name LIKE '%Rowling%' OR A.name LIKE '%King%';
+
+SELECT A.name
+FROM Authors A
+JOIN Books B ON A.author_id = B.author_id
+WHERE B.published_year IN (1997, 1998)
+GROUP BY A.name
+HAVING COUNT(DISTINCT B.published_year) = 2;
