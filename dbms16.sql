@@ -183,3 +183,7 @@ JOIN Books B ON A.author_id = B.author_id
 GROUP BY A.name
 ORDER BY book_count DESC
 LIMIT 1;
+
+SELECT title
+FROM Books
+WHERE LENGTH(title) - LENGTH(REPLACE(title, ' ', '')) + 1 > 3;
