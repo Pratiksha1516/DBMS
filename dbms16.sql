@@ -148,3 +148,12 @@ WHERE (A.author_id, B.published_year) IN (
     FROM Books
     GROUP BY author_id
 );
+
+SELECT 
+    CASE 
+        WHEN published_year < 2000 THEN 'Before 2000'
+        ELSE '2000 or Later'
+    END AS Period,
+    COUNT(*) AS book_count
+FROM Books
+GROUP BY Period;
