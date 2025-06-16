@@ -176,3 +176,10 @@ SELECT B.title, A.name
 FROM Books B
 JOIN Authors A ON B.author_id = A.author_id
 WHERE A.name LIKE 'J%';
+
+SELECT A.name, COUNT(B.book_id) AS book_count
+FROM Authors A
+JOIN Books B ON A.author_id = B.author_id
+GROUP BY A.name
+ORDER BY book_count DESC
+LIMIT 1;
