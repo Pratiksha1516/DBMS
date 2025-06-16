@@ -139,3 +139,12 @@ FROM Authors A
 JOIN Books B ON A.author_id = B.author_id 
 GROUP BY A.name 
 HAVING COUNT(B.book_id) = 1;
+
+SELECT A.name, B.title, B.published_year
+FROM Authors A
+JOIN Books B ON A.author_id = B.author_id
+WHERE (A.author_id, B.published_year) IN (
+    SELECT author_id, MAX(published_year)
+    FROM Books
+    GROUP BY author_id
+);
