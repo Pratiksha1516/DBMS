@@ -166,3 +166,8 @@ SELECT A.name, B.published_year
 FROM Authors A
 JOIN Books B ON A.author_id = B.author_id
 ORDER BY A.name, B.published_year;
+
+SELECT A.name, COUNT(B.book_id) AS book_count, MIN(B.published_year) AS first_published
+FROM Authors A
+JOIN Books B ON A.author_id = B.author_id
+GROUP BY A.name;
