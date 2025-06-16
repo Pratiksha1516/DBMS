@@ -216,3 +216,7 @@ JOIN Books B ON A.author_id = B.author_id
 WHERE B.published_year IN (1997, 1998)
 GROUP BY A.name
 HAVING COUNT(DISTINCT B.published_year) = 2;
+
+SELECT title
+FROM Books
+ORDER BY title DESC;
