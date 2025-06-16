@@ -157,3 +157,7 @@ SELECT
     COUNT(*) AS book_count
 FROM Books
 GROUP BY Period;
+
+SELECT title 
+FROM Books 
+WHERE LENGTH(title) > 25;
