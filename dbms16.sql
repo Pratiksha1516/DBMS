@@ -204,3 +204,8 @@ SELECT DISTINCT A.name
 FROM Authors A
 JOIN Books B ON A.author_id = B.author_id
 WHERE B.published_year < 1980;
+
+SELECT B.title
+FROM Books B
+JOIN Authors A ON B.author_id = A.author_id
+WHERE A.name LIKE '%Rowling%' OR A.name LIKE '%King%';
