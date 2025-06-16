@@ -220,3 +220,6 @@ HAVING COUNT(DISTINCT B.published_year) = 2;
 SELECT title
 FROM Books
 ORDER BY title DESC;
+
+SELECT MAX(published_year) - MIN(published_year) AS year_range
+FROM Books;
