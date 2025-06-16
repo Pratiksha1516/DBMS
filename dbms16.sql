@@ -125,3 +125,11 @@ JOIN Authors A ON Books.author_id = A.author_id
 WHERE A.name = 'Agatha Christie'
 ORDER BY published_year;
 
+--
+SELECT title 
+FROM Books 
+WHERE published_year = (
+    SELECT published_year 
+    FROM Books 
+    WHERE title = 'The Hobbit'
+);
