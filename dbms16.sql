@@ -223,3 +223,8 @@ ORDER BY title DESC;
 
 SELECT MAX(published_year) - MIN(published_year) AS year_range
 FROM Books;
+
+SELECT A.name, COUNT(B.book_id) AS book_count
+FROM Authors A
+LEFT JOIN Books B ON A.author_id = B.author_id
+GROUP BY A.name;
