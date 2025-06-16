@@ -133,3 +133,9 @@ WHERE published_year = (
     FROM Books 
     WHERE title = 'The Hobbit'
 );
+
+SELECT A.name 
+FROM Authors A 
+JOIN Books B ON A.author_id = B.author_id 
+GROUP BY A.name 
+HAVING COUNT(B.book_id) = 1;
