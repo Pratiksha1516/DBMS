@@ -195,3 +195,7 @@ ORDER BY published_year;
 SELECT DISTINCT published_year 
 FROM Books 
 ORDER BY published_year;
+
+SELECT title
+FROM Books
+WHERE title LIKE '%s';
