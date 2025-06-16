@@ -228,3 +228,8 @@ SELECT A.name, COUNT(B.book_id) AS book_count
 FROM Authors A
 LEFT JOIN Books B ON A.author_id = B.author_id
 GROUP BY A.name;
+
+SELECT B.title, A.name
+FROM Books B
+JOIN Authors A ON B.author_id = A.author_id
+WHERE LENGTH(A.name) - LENGTH(REPLACE(A.name, ' ', '')) = 1;
