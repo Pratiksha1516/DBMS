@@ -171,3 +171,8 @@ SELECT A.name, COUNT(B.book_id) AS book_count, MIN(B.published_year) AS first_pu
 FROM Authors A
 JOIN Books B ON A.author_id = B.author_id
 GROUP BY A.name;
+
+SELECT B.title, A.name
+FROM Books B
+JOIN Authors A ON B.author_id = A.author_id
+WHERE A.name LIKE 'J%';
