@@ -187,3 +187,7 @@ LIMIT 1;
 SELECT title
 FROM Books
 WHERE LENGTH(title) - LENGTH(REPLACE(title, ' ', '')) + 1 > 3;
+
+SELECT DISTINCT published_year 
+FROM Books 
+ORDER BY published_year;
