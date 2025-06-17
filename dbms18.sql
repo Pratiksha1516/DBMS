@@ -55,3 +55,6 @@ WHERE Age = 30;
 SELECT *
 FROM Employee1
 ORDER BY Salary DESC;
+
+SELECT AVG(Salary) AS avg_salary
+FROM Employee1;
