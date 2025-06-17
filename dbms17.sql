@@ -73,3 +73,7 @@ WHERE Age >= 21;
 SELECT Name
 FROM Student1
 WHERE Grade <> 'A';
+
+SELECT DISTINCT Grade
+FROM Student1
+ORDER BY Grade;
