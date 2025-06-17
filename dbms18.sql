@@ -70,3 +70,8 @@ WHERE Name LIKE '%e%';
 SELECT Department, SUM(Salary) AS total_salary
 FROM Employee1
 GROUP BY Department;
+
+SELECT Name, Salary
+FROM Employee1
+ORDER BY Salary DESC
+LIMIT 1;
