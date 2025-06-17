@@ -85,3 +85,6 @@ WHERE StudentID = 1;
 SELECT Name
 FROM Student1
 WHERE Name LIKE '%i%';
+
+SELECT COUNT(Name)
+FROM Student1;
