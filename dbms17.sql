@@ -53,3 +53,6 @@ WHERE Grade = 'A';
 SELECT *
 FROM Student1
 ORDER BY Name ASC;
+
+SELECT AVG(Age)
+FROM Student1;
