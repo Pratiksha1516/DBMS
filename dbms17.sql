@@ -65,3 +65,7 @@ SELECT *
 FROM Student1
 ORDER BY Age ASC
 LIMIT 1;
+
+SELECT COUNT(*) count_21_or_above
+FROM Student1
+WHERE Age >= 21;
