@@ -87,3 +87,6 @@ WHERE Name = 'abc';
 SELECT *
 FROM Employee1
 WHERE Department <> 'HR';
+
+SELECT DISTINCT Department 
+FROM Employee1;
