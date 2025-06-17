@@ -60,3 +60,8 @@ FROM Student1;
 SELECT Name
 FROM Student1
 WHERE Name LIKE 'r%';
+
+SELECT *
+FROM Student1
+ORDER BY Age ASC
+LIMIT 1;
