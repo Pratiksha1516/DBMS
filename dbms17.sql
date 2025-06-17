@@ -81,3 +81,7 @@ ORDER BY Grade;
 UPDATE Student1
 SET Name = 'Pratiksha'
 WHERE StudentID = 1;
+
+SELECT Name
+FROM Student1
+WHERE Name LIKE '%i%';
