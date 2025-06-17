@@ -83,3 +83,7 @@ WHERE Age BETWEEN 28 AND 32;
 UPDATE Employee1
 SET Department = 'Admin'
 WHERE Name = 'abc';
+
+SELECT *
+FROM Employee1
+WHERE Department <> 'HR';
