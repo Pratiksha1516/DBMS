@@ -75,3 +75,7 @@ SELECT Name, Salary
 FROM Employee1
 ORDER BY Salary DESC
 LIMIT 1;
+
+SELECT *
+FROM Employee1
+WHERE Age BETWEEN 28 AND 32;
