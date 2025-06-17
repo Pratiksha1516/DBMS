@@ -58,3 +58,7 @@ ORDER BY Salary DESC;
 
 SELECT AVG(Salary) AS avg_salary
 FROM Employee1;
+
+SELECT Department, COUNT(EmpID) AS Emp_count
+from Employee1
+GROUP BY Department;
