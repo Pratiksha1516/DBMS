@@ -66,3 +66,7 @@ GROUP BY Department;
 SELECT *
 FROM Employee1
 WHERE Name LIKE '%e%';
+
+SELECT Department, SUM(Salary) AS total_salary
+FROM Employee1
+GROUP BY Department;
