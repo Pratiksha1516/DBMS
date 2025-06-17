@@ -62,3 +62,7 @@ FROM Employee1;
 SELECT Department, COUNT(EmpID) AS Emp_count
 from Employee1
 GROUP BY Department;
+
+SELECT *
+FROM Employee1
+WHERE Name LIKE '%e%';
