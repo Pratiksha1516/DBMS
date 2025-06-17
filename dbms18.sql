@@ -79,3 +79,7 @@ LIMIT 1;
 SELECT *
 FROM Employee1
 WHERE Age BETWEEN 28 AND 32;
+
+UPDATE Employee1
+SET Department = 'Admin'
+WHERE Name = 'abc';
