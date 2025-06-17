@@ -77,3 +77,7 @@ WHERE Grade <> 'A';
 SELECT DISTINCT Grade
 FROM Student1
 ORDER BY Grade;
+
+UPDATE Student1
+SET Name = 'Pratiksha'
+WHERE StudentID = 1;
