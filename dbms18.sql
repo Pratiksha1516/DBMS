@@ -12,15 +12,21 @@ INSERT INTO Employee1 (Name, Age, Department, Salary) VALUES
 ('hij', 35, 'Finance', 60000),
 ('klm', 32, 'IT', 75000);
 
-SELECT * FROM Employee1 WHERE Department = 'IT';
+SELECT * 
+FROM Employee1;
 
-UPDATE Employee1 SET Salary = Salary * 1.10 WHERE Department = 'Finance';
+SELECT * 
+FROM Employee1 
+WHERE Department = 'IT';
 
-SELECT MAX(Salary) FROM Employee1;
+UPDATE Employee1 SET Salary = Salary * 1.10
+WHERE Department = 'Finance';
 
-DELETE FROM Employee1 WHERE Name = 'hij';
+SELECT MAX(Salary) 
+FROM Employee1;
 
-select * from Employee1;
+DELETE FROM Employee1 
+WHERE Name = 'hij';
 
 SELECT Department
 FROM Employee1
