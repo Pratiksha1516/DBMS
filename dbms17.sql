@@ -56,3 +56,7 @@ ORDER BY Name ASC;
 
 SELECT AVG(Age)
 FROM Student1;
+
+SELECT Name
+FROM Student1
+WHERE Name LIKE 'r%';
