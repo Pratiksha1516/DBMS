@@ -88,3 +88,7 @@ SELECT c.*
 FROM Customer1 c
 LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
 WHERE o.OrderID IS NULL;
+
+SELECT CustomerID, DATE_TRUNC('month', OrderDate) AS Month, SUM(Amount) AS MonthlyTotal
+FROM Orders
+GROUP BY CustomerID, DATE_TRUNC('month', OrderDate);
