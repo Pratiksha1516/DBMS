@@ -53,3 +53,6 @@ SELECT *
 FROM Orders
 ORDER BY OrderDate DESC
 LIMIT 1;
+
+SELECT AVG(Amount)
+FROM Orders;
