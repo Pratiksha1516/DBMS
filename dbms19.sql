@@ -106,3 +106,6 @@ SET Name = 'Mr./Ms. ' || Name;
 
 DELETE FROM Orders
 WHERE Amount < 2000;
+
+DELETE FROM Customer1
+WHERE CustomerID NOT IN (SELECT DISTINCT CustomerID FROM Orders);
