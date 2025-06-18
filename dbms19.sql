@@ -69,3 +69,10 @@ GROUP BY CustomerID;
 SELECT c.Name, o.Amount
 FROM Customer1 c
 JOIN Orders o ON c.CustomerID = o.CustomerID;
+
+INSERT INTO Orders(CustomerID, Amount, OrderDate)
+VALUES(
+	(SELECT CustomerID FROM Customer1 WHERE Name = 'Charlie'),
+	20000,
+	'2025-06-18'
+);
