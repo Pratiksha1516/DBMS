@@ -103,3 +103,6 @@ WHERE OrderID = 2;
 
 UPDATE Customer1
 SET Name = 'Mr./Ms. ' || Name;
+
+DELETE FROM Orders
+WHERE Amount < 2000;
