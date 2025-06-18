@@ -92,3 +92,7 @@ WHERE o.OrderID IS NULL;
 SELECT CustomerID, DATE_TRUNC('month', OrderDate) AS Month, SUM(Amount) AS MonthlyTotal
 FROM Orders
 GROUP BY CustomerID, DATE_TRUNC('month', OrderDate);
+
+UPDATE Customer1
+SET Email = 'new_bob_email@example.com'
+WHERE Name = 'Bob';
