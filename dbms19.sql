@@ -100,3 +100,6 @@ WHERE Name = 'Bob';
 UPDATE Orders
 SET Amount = 2500.00
 WHERE OrderID = 2;
+
+UPDATE Customer1
+SET Name = 'Mr./Ms. ' || Name;
