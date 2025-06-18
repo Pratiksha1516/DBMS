@@ -42,3 +42,9 @@ select * from Orders;
 SELECT Email
 FROM Customer1
 WHERE Name = 'Bob';
+
+--
+
+SELECT DISTINCT c.CustomerID, C.Name
+FROM Customer1 c
+JOIN Orders o ON c.CustomerID = o.CustomerID;
