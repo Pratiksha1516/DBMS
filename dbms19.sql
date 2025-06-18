@@ -76,3 +76,10 @@ VALUES(
 	20000,
 	'2025-06-18'
 );
+
+SELECT * FROM Orders;
+SELECT c.Name
+FROM Customer1 c
+JOIN Orders o ON c.CustomerID = o.CustomerID
+GROUP BY c.Name
+HAVING SUM(o.Amount) > 2000;
