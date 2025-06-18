@@ -83,3 +83,8 @@ FROM Customer1 c
 JOIN Orders o ON c.CustomerID = o.CustomerID
 GROUP BY c.Name
 HAVING SUM(o.Amount) > 2000;
+
+SELECT c.*
+FROM Customer1 c
+LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
+WHERE o.OrderID IS NULL;
