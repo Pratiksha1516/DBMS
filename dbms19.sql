@@ -48,3 +48,8 @@ WHERE Name = 'Bob';
 SELECT DISTINCT c.CustomerID, C.Name
 FROM Customer1 c
 JOIN Orders o ON c.CustomerID = o.CustomerID;
+
+SELECT *
+FROM Orders
+ORDER BY OrderDate DESC
+LIMIT 1;
