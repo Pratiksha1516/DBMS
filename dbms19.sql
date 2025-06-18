@@ -65,3 +65,7 @@ WHERE Amount >
 SELECT CustomerID, COUNT(*) AS Totalorders
 FROM Orders
 GROUP BY CustomerID;
+
+SELECT c.Name, o.Amount
+FROM Customer1 c
+JOIN Orders o ON c.CustomerID = o.CustomerID;
