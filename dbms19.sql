@@ -61,3 +61,7 @@ SELECT *
 from Orders
 WHERE Amount >
 (SELECT AVG(Amount) FROM Orders);
+
+SELECT CustomerID, COUNT(*) AS Totalorders
+FROM Orders
+GROUP BY CustomerID;
