@@ -96,3 +96,7 @@ GROUP BY CustomerID, DATE_TRUNC('month', OrderDate);
 UPDATE Customer1
 SET Email = 'new_bob_email@example.com'
 WHERE Name = 'Bob';
+
+UPDATE Orders
+SET Amount = 2500.00
+WHERE OrderID = 2;
