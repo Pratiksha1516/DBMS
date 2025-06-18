@@ -56,3 +56,8 @@ LIMIT 1;
 
 SELECT AVG(Amount)
 FROM Orders;
+
+SELECT *
+from Orders
+WHERE Amount >
+(SELECT AVG(Amount) FROM Orders);
