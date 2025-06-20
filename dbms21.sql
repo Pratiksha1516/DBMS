@@ -95,3 +95,7 @@ ORDER BY name ASC;
 SELECT DISTINCT fav_thing
 FROM Fav
 ORDER BY fav_thing ASC;
+
+SELECT *
+FROM Fav
+WHERE name LIKE 'P%';
