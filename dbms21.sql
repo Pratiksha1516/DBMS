@@ -91,3 +91,7 @@ WHERE fav_thing = 'Cooking' OR name ='Ranveer';
 SELECT name
 FROM Fav
 ORDER BY name ASC;
+
+SELECT DISTINCT fav_thing
+FROM Fav
+ORDER BY fav_thing ASC;
