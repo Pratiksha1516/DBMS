@@ -103,3 +103,7 @@ WHERE name LIKE 'P%';
 SELECT name
 FROM Fav
 WHERE LENGTH(name) = 5;
+
+SELECT name
+FROM Fav
+WHERE name ILIKE '%a%';
