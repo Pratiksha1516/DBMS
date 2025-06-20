@@ -144,3 +144,7 @@ WHERE array_length(string_to_array(fav_thing, ','),1) = 2;
 
 SELECT name, unnest(string_to_array(fav_thing, ',')) AS individual_fav
 FROM Fav;
+
+SELECT COUNT(*) 
+FROM Fav
+WHERE fav_thing ILIKE '%Travelling%';
