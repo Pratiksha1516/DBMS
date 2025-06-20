@@ -126,3 +126,6 @@ FROM Fav;
 SELECT name
 FROM Fav
 WHERE array_length(string_to_array(fav_thing, ','), 1) > 3;
+
+SELECT name FROM Fav
+WHERE fav_thing ILIKE '%Travelling%' AND fav_thing ILIKE '%Gaming%';
