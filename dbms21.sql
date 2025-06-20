@@ -116,3 +116,6 @@ FROM Fav;
 
 SELECT name, REPLACE(fav_thing, ',', ' | ') AS formatted_fav
 FROM fav;
+
+SELECT TRIM(name) as_trimmed_name
+FROM Fav;
