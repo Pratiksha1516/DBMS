@@ -99,3 +99,7 @@ ORDER BY fav_thing ASC;
 SELECT *
 FROM Fav
 WHERE name LIKE 'P%';
+
+SELECT name
+FROM Fav
+WHERE LENGTH(name) = 5;
