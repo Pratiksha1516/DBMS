@@ -138,3 +138,6 @@ WHERE name NOT LIKE '%e%';
 
 SELECT name FROM Fav
 WHERE name LIKE '%i';
+
+SELECT name FROM Fav
+WHERE array_length(string_to_array(fav_thing, ','),1) = 2;
