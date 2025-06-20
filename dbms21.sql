@@ -110,3 +110,6 @@ WHERE name ILIKE '%a%';
 
 SELECT UPPER(fav_thing) AS UPPER_FAV
 FROM Fav;
+
+SELECT LOWER(name) AS Lower_name
+FROM Fav;
