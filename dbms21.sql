@@ -107,3 +107,6 @@ WHERE LENGTH(name) = 5;
 SELECT name
 FROM Fav
 WHERE name ILIKE '%a%';
+
+SELECT UPPER(fav_thing) AS UPPER_FAV
+FROM Fav;
