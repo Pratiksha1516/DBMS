@@ -135,3 +135,6 @@ WHERE fav_thing ILIKE '%Cooking%';
 
 SELECT name FROM Fav
 WHERE name NOT LIKE '%e%';
+
+SELECT name FROM Fav
+WHERE name LIKE '%i';
