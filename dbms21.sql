@@ -148,3 +148,6 @@ FROM Fav;
 SELECT COUNT(*) 
 FROM Fav
 WHERE fav_thing ILIKE '%Travelling%';
+
+SELECT name, LENGTH(fav_thing) AS fav_length
+FROM Fav;
