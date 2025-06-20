@@ -113,3 +113,6 @@ FROM Fav;
 
 SELECT LOWER(name) AS Lower_name
 FROM Fav;
+
+SELECT name, REPLACE(fav_thing, ',', ' | ') AS formatted_fav
+FROM fav;
