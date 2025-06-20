@@ -86,7 +86,8 @@ SELECT *
 FROM Fav
 WHERE fav_thing = 'Cooking' OR name ='Ranveer';
 
+--
 
-truncate table Fav;
-
-drop table Fav;
+SELECT name
+FROM Fav
+ORDER BY name ASC;
