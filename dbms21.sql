@@ -122,3 +122,7 @@ FROM Fav;
 
 SELECT name, split_part(fav_thing, ',', 1) AS first_fav 
 FROM Fav;
+
+SELECT name
+FROM Fav
+WHERE array_length(string_to_array(fav_thing, ','), 1) > 3;
