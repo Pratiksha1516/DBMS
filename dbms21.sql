@@ -151,3 +151,8 @@ WHERE fav_thing ILIKE '%Travelling%';
 
 SELECT name, LENGTH(fav_thing) AS fav_length
 FROM Fav;
+
+SELECT name
+FROM Fav
+ORDER BY array_length(string_to_array(fav_thing,','),1) DESC
+LIMIT 1;
