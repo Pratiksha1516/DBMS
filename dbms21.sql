@@ -119,3 +119,6 @@ FROM fav;
 
 SELECT TRIM(name) as_trimmed_name
 FROM Fav;
+
+SELECT name, split_part(fav_thing, ',', 1) AS first_fav 
+FROM Fav;
