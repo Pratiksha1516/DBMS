@@ -40,3 +40,7 @@ FROM employee2;
 
 SELECT SUM(salary)
 FROM employee;
+
+SELECT *
+FROM employee2
+ORDER BY salary ASC;
