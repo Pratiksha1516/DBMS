@@ -28,3 +28,6 @@ WHERE name LIKE 'C%';
 
 SELECT COUNT(*)
 FROM employee2;
+
+SELECT MAX(salary)
+FROM employee2;
