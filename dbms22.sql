@@ -80,3 +80,6 @@ WHERE salary > 50000;
 
 INSERT INTO employee2(id, name, salary)
 VALUES(4, 'RANVEER', 1000000);
+
+SELECT UPPER(name) AS name_upper 
+FROM employee2;
