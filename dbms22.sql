@@ -55,3 +55,6 @@ WHERE name = 'BOB';
 
 UPDATE employee2
 SET salary = salary* 1.10;
+
+DELETE FROM employee2
+WHERE id = 2;
