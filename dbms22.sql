@@ -31,3 +31,6 @@ FROM employee2;
 
 SELECT MAX(salary)
 FROM employee2;
+
+SELECT MIN(salary)
+FROM employee2;
