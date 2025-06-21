@@ -17,3 +17,7 @@ SELECT * FROM employee2;
 SELECT *
 FROM employee2
 WHERE salary > 25000;
+
+SELECT *
+FROM employee2
+WHERE salary > 30000;
