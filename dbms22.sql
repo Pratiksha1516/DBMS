@@ -77,3 +77,6 @@ WHERE salary < 35000;
 SELECT *
 FROM employee2
 WHERE salary > 50000;
+
+INSERT INTO employee2(id, name, salary)
+VALUES(4, 'RANVEER', 1000000);
