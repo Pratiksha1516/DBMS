@@ -48,3 +48,7 @@ ORDER BY salary ASC;
 SELECT *
 FROM employee2
 ORDER BY salary DESC;
+
+UPDATE employee2
+SET salary =35000
+WHERE name = 'BOB';
