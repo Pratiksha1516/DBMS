@@ -66,3 +66,6 @@ WHERE name = 'CASEY';
 SELECT *
 FROM employee2
 WHERE salary BETWEEN 25000 AND 35000;
+
+SELECT name
+FROM employee2;
