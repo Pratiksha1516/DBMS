@@ -25,3 +25,6 @@ WHERE salary > 30000;
 SELECT *
 FROM employee2
 WHERE name LIKE 'C%';
+
+SELECT COUNT(*)
+FROM employee2;
