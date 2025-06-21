@@ -62,3 +62,7 @@ WHERE id = 2;
 UPDATE employee2 
 SET name = 'CHRIS'
 WHERE name = 'CASEY';
+
+SELECT *
+FROM employee2
+WHERE salary BETWEEN 25000 AND 35000;
