@@ -69,3 +69,7 @@ WHERE salary BETWEEN 25000 AND 35000;
 
 SELECT name
 FROM employee2;
+
+SELECT id 
+FROM employee2
+WHERE salary < 35000;
