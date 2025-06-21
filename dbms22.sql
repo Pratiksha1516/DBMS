@@ -73,3 +73,7 @@ FROM employee2;
 SELECT id 
 FROM employee2
 WHERE salary < 35000;
+
+SELECT *
+FROM employee2
+WHERE salary > 50000;
