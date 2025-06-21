@@ -52,3 +52,6 @@ ORDER BY salary DESC;
 UPDATE employee2
 SET salary =35000
 WHERE name = 'BOB';
+
+UPDATE employee2
+SET salary = salary* 1.10;
