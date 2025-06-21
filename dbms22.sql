@@ -13,3 +13,7 @@ VALUES
 (3, 'CASEY', 40000);
 
 SELECT * FROM employee2;
+
+SELECT *
+FROM employee2
+WHERE salary > 25000;
