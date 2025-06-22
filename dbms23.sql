@@ -17,12 +17,10 @@ INSERT INTO temp2(id, name, city)
 VALUES
 (1, 'PRATI', 'BELAGAV');
 
+SELECT * FROM temp2;
+
 INSERT INTO temp2(id, name, city)  /*Here it is duplcate entry so It will throw error */ 
 VALUES
 (1, 'PRATI', 'BELAGAV');
 
-SELECT * FROM temp2;
 
-TRUNCATE TABLE temp2;
-
-DROP TABLE temp2;
