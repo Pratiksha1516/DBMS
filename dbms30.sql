@@ -53,6 +53,10 @@ FROM payment;
 
 SELECT LENgTH(city)
 FROM payment;
+
+SELECT LENgTH(mode)
+FROM payment;
+
 --Aggregate function
 SELECT MAX(customer_id)
 FROM payment;
