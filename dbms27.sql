@@ -108,6 +108,9 @@ SELECT *
 FROM student2
 WHERE city = 'pune' OR marks > 90;
 
+SELECT LENGTH(city)
+FROM student2;
+
 --Aggregatiion functions
 SELECT COUNT(name)
 FROM student2;
