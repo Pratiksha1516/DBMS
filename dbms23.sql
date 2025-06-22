@@ -28,3 +28,6 @@ FROM temp2;
 
 SELECT LENGTH(name)
 FROM temp2;
+
+SELECT LENGTH(city)
+FROM temp2;
