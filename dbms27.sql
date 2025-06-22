@@ -85,6 +85,8 @@ SELECT *
 FROM student2
 WHERE name like '_____n%';
 
+SELECT LENGTH(name)
+FROM student2;
 
 --bitwise operations
 
