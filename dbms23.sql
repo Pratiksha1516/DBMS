@@ -23,4 +23,5 @@ INSERT INTO temp2(id, name, city)  /*Here it is duplcate entry so It will throw 
 VALUES
 (1, 'PRATI', 'BELAGAV');
 
-
+SELECT LOWER(name)
+FROM temp2;
