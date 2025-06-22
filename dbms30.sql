@@ -51,6 +51,8 @@ WHERE city LIKE '__l%';
 SELECT LENgTH(customer)
 FROM payment;
 
+SELECT LENgTH(city)
+FROM payment;
 --Aggregate function
 SELECT MAX(customer_id)
 FROM payment;
