@@ -19,6 +19,3 @@ VALUES
 
 SELECT * FROM temp3;
 
-TRUNCATE TABLE temp2;
-
-DROP TABLE temp2;
