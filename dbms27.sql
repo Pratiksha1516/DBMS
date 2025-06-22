@@ -94,6 +94,9 @@ FROM student2;
 SELECT UPPER(name)
 FROM student2;
 
+SELECT UPPER(city)
+FROM student2;
+
 
 --bitwise operations
 
