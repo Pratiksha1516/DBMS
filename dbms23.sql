@@ -25,3 +25,6 @@ VALUES
 
 SELECT LOWER(name)
 FROM temp2;
+
+SELECT LENGTH(name)
+FROM temp2;
