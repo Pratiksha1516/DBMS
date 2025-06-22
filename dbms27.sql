@@ -179,7 +179,3 @@ SET result = case
 	WHEN marks > 33 THEN 'pass'
 	ELSE 'fail'
 END;
-
---
-ALTER TABLE student2
-ADD COLUMN result VARCHAR(10);
