@@ -34,3 +34,7 @@ FROM temp2;
 
 SELECT LOWER(city)
 FROM temp2;
+
+UPDATE temp2
+SET name = 'PRATIKSHA'
+WHERE id = 1;
