@@ -31,3 +31,6 @@ FROM temp2;
 
 SELECT LENGTH(city)
 FROM temp2;
+
+SELECT LOWER(city)
+FROM temp2;
