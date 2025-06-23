@@ -99,6 +99,9 @@ WHERE country = 'India';
 SELECT * FROM Flight
 WHERE  airline_id = 2;
 
+SELECT * FROM Flight 
+WHERE departure_time >= CURRENT_DATE;
+
 --
 SELECT p.name, b.seat_no
 FROM Booking b
