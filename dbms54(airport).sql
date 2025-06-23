@@ -73,3 +73,5 @@ SELECT * FROM Airline;
 SELECT * FROM Flight;
 
 SELECT * FROM Passenger;
+
+SELECT * FROM Booking;
