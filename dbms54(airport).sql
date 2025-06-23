@@ -105,3 +105,9 @@ FROM Booking b
 JOIN Passenger p ON b.passenger_id = p.passenger_id
 WHERE b.flight_id = 1;
 
+SELECT f.flight_number, a1.name AS from_airport, a2.name AS to_airport
+FROM Flight f
+JOIN Airport a1 ON f.departure_airport = a1.airport_id
+JOIN Airport a2 ON f.arrival_airport = a2.airport_id
+WHERE a1.city = 'Mumbai' AND a2.city = 'Delhi';
+
