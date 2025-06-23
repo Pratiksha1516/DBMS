@@ -84,3 +84,7 @@ FROM passenger;
 
 SELECT * FROM Booking
 WHERE passenger_id = 2;
+
+SELECT flight_number 
+FROM Flight
+WHERE airline_id = 2;
