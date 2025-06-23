@@ -88,3 +88,6 @@ WHERE passenger_id = 2;
 SELECT flight_number 
 FROM Flight
 WHERE airline_id = 2;
+
+SELECT * FROM Booking 
+WHERE booking_date = '2025-06-20';
