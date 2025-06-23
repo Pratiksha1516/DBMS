@@ -114,3 +114,9 @@ JOIN Airport a1 ON f.departure_airport = a1.airport_id
 JOIN Airport a2 ON f.arrival_airport = a2.airport_id
 WHERE a1.city = 'Mumbai' AND a2.city = 'Delhi';
 
+--count of flights operated by each airline
+SELECT al.name, COUNT(*) AS total_flights
+FROM Flight f
+JOIN Airline al ON f.airline_id = al.airline_id
+GROUP BY al.name;
+
