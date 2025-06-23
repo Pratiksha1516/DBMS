@@ -98,3 +98,10 @@ WHERE country = 'India';
 
 SELECT * FROM Flight
 WHERE  airline_id = 2;
+
+--
+SELECT p.name, b.seat_no
+FROM Booking b
+JOIN Passenger p ON b.passenger_id = p.passenger_id
+WHERE b.flight_id = 1;
+
