@@ -81,3 +81,6 @@ FROM Flight;
 
 SELECT name, passport_no
 FROM passenger;
+
+SELECT * FROM Booking
+WHERE passenger_id = 2;
