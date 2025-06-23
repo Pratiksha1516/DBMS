@@ -69,3 +69,5 @@ VALUES
 SELECT * FROM Airport;
 
 SELECT * FROM Airline;
+
+SELECT * FROM Flight;
