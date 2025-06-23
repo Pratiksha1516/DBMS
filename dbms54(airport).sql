@@ -95,3 +95,6 @@ WHERE booking_date = '2025-06-20';
 SELECT * 
 FROM Airport
 WHERE country = 'India'; 
+
+SELECT * FROM Flight
+WHERE  airline_id = 2;
