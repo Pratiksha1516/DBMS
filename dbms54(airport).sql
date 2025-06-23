@@ -71,3 +71,5 @@ SELECT * FROM Airport;
 SELECT * FROM Airline;
 
 SELECT * FROM Flight;
+
+SELECT * FROM Passenger;
