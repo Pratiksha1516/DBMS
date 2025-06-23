@@ -75,3 +75,6 @@ SELECT * FROM Flight;
 SELECT * FROM Passenger;
 
 SELECT * FROM Booking;
+
+SELECT flight_number, departure_airport, arrival_airport
+FROM Flight;
