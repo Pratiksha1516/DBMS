@@ -78,3 +78,6 @@ SELECT * FROM Booking;
 
 SELECT flight_number, departure_airport, arrival_airport
 FROM Flight;
+
+SELECT name, passport_no
+FROM passenger;
