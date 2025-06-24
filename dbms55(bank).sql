@@ -104,3 +104,6 @@ SELECT AccountNo, SUM(Amount) AS Total_deposit
 FROM Transaction
 WHERE TransType = 'Deposit'
 GROUP BY AccountNo;
+
+SELECT * FROM Account
+WHERE Balance < 10000;
