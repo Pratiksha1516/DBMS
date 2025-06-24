@@ -118,3 +118,10 @@ JOIN Account a ON a.CustomerID = c.CustomerID
 JOIN Transaction t ON t.AccountNo = a. AccountNo
 WHERE TransType = 'Withdraw'
 GROUP BY c.Name;
+
+SELECT c.Name
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID
+JOIN Transaction t ON a.AccountNo = t.AccountNo
+GROUP BY c.Name
+HAVING COUNT(t.TransID) > 1;
