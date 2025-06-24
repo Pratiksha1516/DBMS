@@ -72,3 +72,8 @@ SELECT c.Name
 FROM Customer c
 JOIN Account a ON a.CustomerID = c.CustomerID
 WHERE a.AccountType = 'Savings';
+
+SELECT c.Name
+FROM Customer c
+JOIN Account a ON a.CustomerID = c.CustomerID
+WHERE Balance > 20000;
