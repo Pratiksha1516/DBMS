@@ -57,3 +57,5 @@ INSERT INTO Transaction VALUES
 (8, 1008, 'Withdraw', 500.00, '2025-06-08'),
 (9, 1009, 'Deposit', 8000.00, '2025-06-09'),
 (10, 1010, 'Withdraw', 2500.00, '2025-06-10');
+
+SELECT * FROM Customer;
