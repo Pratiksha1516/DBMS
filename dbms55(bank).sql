@@ -107,3 +107,7 @@ GROUP BY AccountNo;
 
 SELECT * FROM Account
 WHERE Balance < 10000;
+
+SELECT AccountType, COUNT(*) AS TotalAccounts
+FROM Account
+GROUP BY AccountType;
