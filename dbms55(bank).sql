@@ -81,3 +81,6 @@ WHERE Balance > 20000;
 SELECT * 
 FROM Transaction
 WHERE AccountNo = 1001;
+
+SELECT SUM(Balance) AS Total_balance
+FROM Account;
