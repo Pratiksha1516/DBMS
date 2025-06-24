@@ -88,3 +88,9 @@ FROM Account;
 SELECT COUNT(*)
 FROM Transaction 
 WHERE TransDate = '2025-06-05';
+
+SELECT C.Name
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID
+JOIN Transaction t ON a.AccountNo = t.AccountNo
+WHERE TransType = 'Withdraw';
