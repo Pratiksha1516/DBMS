@@ -84,3 +84,7 @@ WHERE AccountNo = 1001;
 
 SELECT SUM(Balance) AS Total_balance
 FROM Account;
+
+SELECT COUNT(*)
+FROM Transaction 
+WHERE TransDate = '2025-06-05';
