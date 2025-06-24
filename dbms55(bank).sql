@@ -99,3 +99,8 @@ SELECT *
 FROM Account
 ORDER BY Balance DESC
 LIMIT 1;
+
+SELECT AccountNo, SUM(Amount) AS Total_deposit
+FROM Transaction
+WHERE TransType = 'Deposit'
+GROUP BY AccountNo;
