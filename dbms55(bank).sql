@@ -67,3 +67,8 @@ SELECT * FROM Transaction;
 SELECT Name 
 FROM Customer
 WHERE City = 'Delhi';
+
+SELECT c.Name
+FROM Customer c
+JOIN Account a ON a.CustomerID = c.CustomerID
+WHERE a.AccountType = 'Savings';
