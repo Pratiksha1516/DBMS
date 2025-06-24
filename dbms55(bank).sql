@@ -63,3 +63,7 @@ SELECT * FROM Customer;
 SELECT * FROM Account;
 
 SELECT * FROM Transaction;
+
+SELECT Name 
+FROM Customer
+WHERE City = 'Delhi';
