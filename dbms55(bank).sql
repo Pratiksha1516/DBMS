@@ -59,3 +59,5 @@ INSERT INTO Transaction VALUES
 (10, 1010, 'Withdraw', 2500.00, '2025-06-10');
 
 SELECT * FROM Customer;
+
+SELECT * FROM Account;
