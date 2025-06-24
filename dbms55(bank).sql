@@ -61,3 +61,5 @@ INSERT INTO Transaction VALUES
 SELECT * FROM Customer;
 
 SELECT * FROM Account;
+
+SELECT * FROM Transaction;
