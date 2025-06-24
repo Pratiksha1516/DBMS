@@ -94,3 +94,8 @@ FROM Customer c
 JOIN Account a ON c.CustomerID = a.CustomerID
 JOIN Transaction t ON a.AccountNo = t.AccountNo
 WHERE TransType = 'Withdraw';
+
+SELECT *
+FROM Account
+ORDER BY Balance DESC
+LIMIT 1;
