@@ -111,3 +111,10 @@ WHERE Balance < 10000;
 SELECT AccountType, COUNT(*) AS TotalAccounts
 FROM Account
 GROUP BY AccountType;
+
+SELECT c.Name, SUM(t.Amount) AS TotalWithdraw
+FROM Customer c
+JOIN Account a ON a.CustomerID = c.CustomerID
+JOIN Transaction t ON t.AccountNo = a. AccountNo
+WHERE TransType = 'Withdraw'
+GROUP BY c.Name;
