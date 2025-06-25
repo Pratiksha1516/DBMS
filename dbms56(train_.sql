@@ -119,3 +119,10 @@ SELECT p.name, t.ticket_id, t.train_id, t.travel_date
 FROM Passenger p
 JOIN Ticket t ON p.passenger_id = t.passenger_id;
 
+--List route of train 101
+SELECT t.train_name, s.station_name, r.arrival_time, r.departure_time
+FROM Train t
+JOIN Route r ON t.train_id = r.train_id
+JOIN Station s ON r.station_id = s.station_id
+WHERE t.train_id = 101
+ORDER BY r.stop_number;
