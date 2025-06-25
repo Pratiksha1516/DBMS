@@ -126,3 +126,9 @@ JOIN Route r ON t.train_id = r.train_id
 JOIN Station s ON r.station_id = s.station_id
 WHERE t.train_id = 101
 ORDER BY r.stop_number;
+
+SELECT DISTINCT t.train_name
+FROM Train t
+JOIN Route r ON t.train_id = r.train_id
+JOIN Station s ON r.station_id = s.station_id
+WHERE s.station_name = 'Nagpur Station';
