@@ -81,4 +81,8 @@ SELECT * FROM Train;
 
 SELECT * FROM Passenger;
 
-SELECT station_name FROM Station WHERE city = 'Delhi';
+SELECT station_name FROM Station
+WHERE city = 'Delhi';
+
+SELECT * FROM Ticket 
+WHERE travel_date = '2025-07-01';
