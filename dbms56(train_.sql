@@ -92,3 +92,7 @@ WHERE gender = 'Female';
 
 SELECT train_name FROM Train
 WHERE train_type = 'Superfast';
+
+SELECT * FROM Ticket 
+WHERE ticket_id = 1003;
+
