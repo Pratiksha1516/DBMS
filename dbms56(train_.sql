@@ -115,3 +115,7 @@ JOIN Train t ON r.train_id = t.train_id
 JOIN Station s ON r.station_id = s.station_id
 WHERE r.stop_number = 1;
 
+SELECT p.name, t.ticket_id, t.train_id, t.travel_date
+FROM Passenger p
+JOIN Ticket t ON p.passenger_id = t.passenger_id;
+
