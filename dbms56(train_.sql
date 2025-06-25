@@ -103,3 +103,8 @@ WHERE age > 25;
 
 SELECT * FROM Ticket
 WHERE source_station_id = 1 AND destination_station_id = 4;
+
+SELECT p.name
+FROM Passenger p
+JOIN Ticket tk ON p.passenger_id = tk.passenger_id
+WHERE tk.source_station_id = 1;
