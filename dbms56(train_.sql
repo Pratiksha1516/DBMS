@@ -96,3 +96,4 @@ WHERE train_type = 'Superfast';
 SELECT * FROM Ticket 
 WHERE ticket_id = 1003;
 
+SELECT DISTINCT city FROM Station;
