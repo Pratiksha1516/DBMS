@@ -86,3 +86,6 @@ WHERE city = 'Delhi';
 
 SELECT * FROM Ticket 
 WHERE travel_date = '2025-07-01';
+
+SELECT name FROM Passenger 
+WHERE gender = 'Female';
