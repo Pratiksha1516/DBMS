@@ -100,3 +100,6 @@ SELECT DISTINCT city FROM Station;
 
 SELECT COUNT(*) FROM Passenger 
 WHERE age > 25;
+
+SELECT * FROM Ticket
+WHERE source_station_id = 1 AND destination_station_id = 4;
