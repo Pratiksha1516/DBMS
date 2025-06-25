@@ -108,3 +108,10 @@ SELECT p.name
 FROM Passenger p
 JOIN Ticket tk ON p.passenger_id = tk.passenger_id
 WHERE tk.source_station_id = 1;
+
+SELECT t.train_name, s.station_name
+FROM Route r
+JOIN Train t ON r.train_id = t.train_id
+JOIN Station s ON r.station_id = s.station_id
+WHERE r.stop_number = 1;
+
