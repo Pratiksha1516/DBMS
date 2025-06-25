@@ -132,3 +132,8 @@ FROM Train t
 JOIN Route r ON t.train_id = r.train_id
 JOIN Station s ON r.station_id = s.station_id
 WHERE s.station_name = 'Nagpur Station';
+
+SELECT t.train_name, COUNT(*) AS passenger_count
+FROM Train t
+JOIN Ticket tk ON t.train_id = tk.train_id
+GROUP BY t.train_name;
