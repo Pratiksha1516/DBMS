@@ -40,3 +40,38 @@ CREATE TABLE Ticket (
     FOREIGN KEY (source_station_id) REFERENCES Station(station_id),
     FOREIGN KEY (destination_station_id) REFERENCES Station(station_id)
 );
+
+
+INSERT INTO Train VALUES
+(101, 'Rajdhani Express', 'Superfast'),
+(102, 'Shatabdi Express', 'Fast'),
+(103, 'Duronto Express', 'Superfast');
+
+INSERT INTO Station VALUES
+(1, 'Mumbai Central', 'Mumbai'),
+(2, 'Pune Junction', 'Pune'),
+(3, 'Nagpur Station', 'Nagpur'),
+(4, 'Delhi Junction', 'Delhi'),
+(5, 'Chennai Central', 'Chennai');
+
+INSERT INTO Passenger VALUES
+(1, 'Pratiksha', 'Female', 23),
+(2, 'Ranveer', 'Male', 25),
+(3, 'Shree', 'Female', 20),
+(4, 'Sahil', 'Male', 30),
+(5, 'Jenny', 'Female', 28);
+
+INSERT INTO Route (train_id, station_id, arrival_time, departure_time, stop_number) VALUES
+(101, 1, '06:00:00', '06:10:00', 1),
+(101, 2, '09:00:00', '09:10:00', 2),
+(101, 4, '20:00:00', '20:10:00', 3),
+(102, 1, '07:00:00', '07:15:00', 1),
+(102, 3, '13:00:00', '13:20:00', 2),
+(102, 5, '20:30:00', '20:45:00', 3);
+
+INSERT INTO Ticket VALUES
+(1001, 1, 101, 1, 4, '2025-07-01'),
+(1002, 2, 102, 1, 5, '2025-07-02'),
+(1003, 3, 101, 2, 4, '2025-07-01'),
+(1004, 4, 102, 1, 3, '2025-07-03'),
+(1005, 5, 103, 1, 5, '2025-07-04');
