@@ -78,3 +78,5 @@ INSERT INTO Ticket VALUES
 
 --
 SELECT * FROM Train;
+
+SELECT * FROM Passenger;
