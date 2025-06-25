@@ -89,3 +89,6 @@ WHERE travel_date = '2025-07-01';
 
 SELECT name FROM Passenger 
 WHERE gender = 'Female';
+
+SELECT train_name FROM Train
+WHERE train_type = 'Superfast';
