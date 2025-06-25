@@ -80,3 +80,5 @@ INSERT INTO Ticket VALUES
 SELECT * FROM Train;
 
 SELECT * FROM Passenger;
+
+SELECT station_name FROM Station WHERE city = 'Delhi';
