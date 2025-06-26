@@ -125,3 +125,8 @@ SELECT P.project_name, SUM(W.hours_worked) AS total_hours
 FROM Project P
 JOIN Works_On W ON P.project_id = W.project_id
 GROUP BY P.project_name;
+
+SELECT emp_name, salary
+FROM Employee
+ORDER BY salary DESC
+LIMIT 1;
