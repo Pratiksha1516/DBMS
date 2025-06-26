@@ -134,3 +134,7 @@ LIMIT 1;
 SELECT dept_name
 FROM Department
 WHERE dept_id NOT IN (SELECT dept_id FROM Project);
+
+SELECT emp_name
+FROM Employee
+WHERE emp_id NOT IN (SELECT emp_id FROM Works_On);
