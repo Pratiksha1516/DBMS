@@ -109,3 +109,8 @@ SELECT D.dept_name, COUNT(P.project_id) AS total_projects
 FROM Department D
 LEFT JOIN Project P ON D.dept_id = P.dept_id
 GROUP BY D.dept_name;
+
+SELECT emp_id
+FROM Works_On
+GROUP BY emp_id
+HAVING COUNT(project_id) > 1;
