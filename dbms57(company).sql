@@ -66,3 +66,6 @@ INSERT INTO Works_On VALUES
 (1003, 202, 25),
 (1004, 204, 10),
 (1005, 201, 30);
+
+--
+SELECT * FROM Employee;
