@@ -100,3 +100,7 @@ GROUP BY dept_id;
 
 SELECT emp_name, salary FROM Employee 
 WHERE salary > 60000;
+
+SELECT AVG(salary)
+FROM Employee
+WHERE dept_id = (SELECT dept_id FROM Department WHERE dept_name = 'IT');
