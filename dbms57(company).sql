@@ -69,3 +69,5 @@ INSERT INTO Works_On VALUES
 
 --
 SELECT * FROM Employee;
+
+SELECT * FROM Project;
