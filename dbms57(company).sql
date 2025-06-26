@@ -71,3 +71,8 @@ INSERT INTO Works_On VALUES
 SELECT * FROM Employee;
 
 SELECT * FROM Project;
+
+SELECT D.dept_name
+FROM Department D
+JOIN Company C ON D.company_id = C.company_id
+WHERE C.company_name = 'TechCorp';
