@@ -87,3 +87,9 @@ WHERE W.hours_worked > 15;
 
 SELECT company_name FROM Company 
 WHERE location = 'San Francisco';
+
+SELECT emp_name
+FROM Employee E
+JOIN Works_On W ON E.emp_id = W.emp_id
+JOIN Project P ON W.project_id = P.project_id
+WHERE P.project_name = 'App Development';
