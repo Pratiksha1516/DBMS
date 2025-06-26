@@ -36,3 +36,33 @@ CREATE TABLE Works_On (
     FOREIGN KEY (project_id) REFERENCES Project(project_id)
 );
 
+
+INSERT INTO Company VALUES
+(1, 'TechCorp', 'New York'),
+(2, 'SoftSolutions', 'San Francisco');
+
+INSERT INTO Department VALUES
+(101, 'IT', 1),
+(102, 'HR', 1),
+(103, 'Development', 2),
+(104, 'Support', 2);
+
+INSERT INTO Employee VALUES
+(1001, 'Alice', 30, 60000, 101),
+(1002, 'Bob', 25, 50000, 102),
+(1003, 'Charlie', 35, 70000, 103),
+(1004, 'Diana', 28, 48000, 104),
+(1005, 'Eve', 40, 80000, 101);
+
+INSERT INTO Project VALUES
+(201, 'Website Redesign', 101),
+(202, 'App Development', 103),
+(203, 'Recruitment Drive', 102),
+(204, 'Customer Support Tool', 104);
+
+INSERT INTO Works_On VALUES
+(1001, 201, 20),
+(1002, 203, 15),
+(1003, 202, 25),
+(1004, 204, 10),
+(1005, 201, 30);
