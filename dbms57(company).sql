@@ -120,3 +120,8 @@ FROM Employee E
 JOIN Department D ON E.dept_id = D.dept_id
 JOIN Company C ON D.company_id = C.company_id
 WHERE E.emp_name = 'Charlie';
+
+SELECT P.project_name, SUM(W.hours_worked) AS total_hours
+FROM Project P
+JOIN Works_On W ON P.project_id = W.project_id
+GROUP BY P.project_name;
