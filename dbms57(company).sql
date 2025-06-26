@@ -84,3 +84,6 @@ SELECT E.emp_name, W.hours_worked
 FROM Employee E
 JOIN Works_On W ON E.emp_id = W.emp_id
 WHERE W.hours_worked > 15;
+
+SELECT company_name FROM Company 
+WHERE location = 'San Francisco';
