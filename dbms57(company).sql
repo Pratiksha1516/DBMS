@@ -76,3 +76,6 @@ SELECT D.dept_name
 FROM Department D
 JOIN Company C ON D.company_id = C.company_id
 WHERE C.company_name = 'TechCorp';
+
+SELECT emp_name FROM Employee
+WHERE dept_id = (SELECT dept_id FROM Department WHERE dept_name = 'HR');
