@@ -79,3 +79,8 @@ WHERE C.company_name = 'TechCorp';
 
 SELECT emp_name FROM Employee
 WHERE dept_id = (SELECT dept_id FROM Department WHERE dept_name = 'HR');
+
+SELECT E.emp_name, W.hours_worked
+FROM Employee E
+JOIN Works_On W ON E.emp_id = W.emp_id
+WHERE W.hours_worked > 15;
