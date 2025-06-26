@@ -93,3 +93,7 @@ FROM Employee E
 JOIN Works_On W ON E.emp_id = W.emp_id
 JOIN Project P ON W.project_id = P.project_id
 WHERE P.project_name = 'App Development';
+
+SELECT dept_id, COUNT(*) AS total_employees
+FROM Employee
+GROUP BY dept_id;
