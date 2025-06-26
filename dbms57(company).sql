@@ -130,3 +130,7 @@ SELECT emp_name, salary
 FROM Employee
 ORDER BY salary DESC
 LIMIT 1;
+
+SELECT dept_name
+FROM Department
+WHERE dept_id NOT IN (SELECT dept_id FROM Project);
