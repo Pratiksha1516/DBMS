@@ -104,3 +104,8 @@ WHERE salary > 60000;
 SELECT AVG(salary)
 FROM Employee
 WHERE dept_id = (SELECT dept_id FROM Department WHERE dept_name = 'IT');
+
+SELECT D.dept_name, COUNT(P.project_id) AS total_projects
+FROM Department D
+LEFT JOIN Project P ON D.dept_id = P.dept_id
+GROUP BY D.dept_name;
