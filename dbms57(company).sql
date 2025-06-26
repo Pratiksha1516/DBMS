@@ -97,3 +97,6 @@ WHERE P.project_name = 'App Development';
 SELECT dept_id, COUNT(*) AS total_employees
 FROM Employee
 GROUP BY dept_id;
+
+SELECT emp_name, salary FROM Employee 
+WHERE salary > 60000;
