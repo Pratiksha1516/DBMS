@@ -114,3 +114,9 @@ SELECT emp_id
 FROM Works_On
 GROUP BY emp_id
 HAVING COUNT(project_id) > 1;
+
+SELECT C.company_name, D.dept_name
+FROM Employee E
+JOIN Department D ON E.dept_id = D.dept_id
+JOIN Company C ON D.company_id = C.company_id
+WHERE E.emp_name = 'Charlie';
