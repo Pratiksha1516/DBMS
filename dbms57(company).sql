@@ -138,3 +138,8 @@ WHERE dept_id NOT IN (SELECT dept_id FROM Project);
 SELECT emp_name
 FROM Employee
 WHERE emp_id NOT IN (SELECT emp_id FROM Works_On);
+
+SELECT P.project_name, D.dept_name, C.company_name
+FROM Project P
+JOIN Department D ON P.dept_id = D.dept_id
+JOIN Company C ON D.company_id = C.company_id;
