@@ -86,3 +86,7 @@ WHERE element % 2 = 0;
 SELECT element FROM setB
 WHERE element % 2 <> 0;
 
+SELECT setA.element
+FROM setA
+INNER JOIN setB ON setA.element = setB.element;
+
