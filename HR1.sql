@@ -51,6 +51,9 @@ FROM setB;
 SELECT AVG(element) FROM setA 
 WHERE element < 5;
 
+SELECT MAX(element) FROM setB
+WHERE element > 5;
+
 
 --
 SELECT element FROM setA
