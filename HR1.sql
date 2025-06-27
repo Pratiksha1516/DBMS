@@ -94,3 +94,6 @@ SELECT setA.element, setB.element AS B_element
 FROM setA
 LEFT JOIN setB ON setA.element = setB.element;
 
+SELECT setA.element AS A_element, setB.element
+FROM setA
+RIGHT JOIN setB ON setA.element = setB.element;
