@@ -72,3 +72,6 @@ SELECT element FROM setA;
 
 SELECT element FROM setA
 WHERE element > 3;
+
+SELECT element FROM setB 
+WHERE element <= 5;
