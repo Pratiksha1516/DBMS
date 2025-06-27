@@ -79,3 +79,6 @@ WHERE element <= 5;
 --SELECT EXISTS (SELECT 1 FROM setA WHERE element = 7);
 SELECT EXISTS (SELECT 1 FROM setA 
 WHERE element = 7);
+
+SELECT COUNT(*) FROM setA 
+WHERE element % 2 = 0;
