@@ -75,3 +75,7 @@ WHERE element > 3;
 
 SELECT element FROM setB 
 WHERE element <= 5;
+
+--SELECT EXISTS (SELECT 1 FROM setA WHERE element = 7);
+SELECT EXISTS (SELECT 1 FROM setA 
+WHERE element = 7);
