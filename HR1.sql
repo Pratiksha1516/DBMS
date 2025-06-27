@@ -49,3 +49,6 @@ SELECT COUNT(element)
 FROM setB;
 
 --
+SELECT element FROM setA
+INTERSECT
+SELECT element FROM setB;
