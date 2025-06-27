@@ -117,3 +117,7 @@ WHERE element IN (SELECT element FROM setA);
 SELECT element FROM setB
 ORDER BY element DESC
 LIMIT 3;
+
+SELECT element FROM setA
+ORDER BY element ASC
+LIMIT 2;
