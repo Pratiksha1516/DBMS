@@ -82,3 +82,7 @@ WHERE element = 7);
 
 SELECT COUNT(*) FROM setA 
 WHERE element % 2 = 0;
+
+SELECT element FROM setB
+WHERE element % 2 <> 0;
+
