@@ -90,3 +90,7 @@ SELECT setA.element
 FROM setA
 INNER JOIN setB ON setA.element = setB.element;
 
+SELECT setA.element, setB.element AS B_element
+FROM setA
+LEFT JOIN setB ON setA.element = setB.element;
+
