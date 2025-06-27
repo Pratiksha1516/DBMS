@@ -48,6 +48,10 @@ FROM setB;
 SELECT COUNT(element)
 FROM setB;
 
+SELECT AVG(element) FROM setA 
+WHERE element < 5;
+
+
 --
 SELECT element FROM setA
 INTERSECT
