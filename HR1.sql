@@ -69,3 +69,6 @@ UNION
 SELECT element FROM setB
 EXCEPT
 SELECT element FROM setA;
+
+SELECT element FROM setA
+WHERE element > 3;
