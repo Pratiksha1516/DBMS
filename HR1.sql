@@ -61,6 +61,7 @@ SELECT element FROM setB
 EXCEPT
 SELECT element FROM setA;
 
+--Symmetric Difference (elements in either set, but not in both)
 SELECT element FROM setA
 EXCEPT
 SELECT element FROM setB
