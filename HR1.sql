@@ -104,3 +104,7 @@ LEFT JOIN setB ON setA.element = setB.element;
 SELECT setA.element AS A_element, setB.element
 FROM setA
 RIGHT JOIN setB ON setA.element = setB.element;
+
+--
+SELECT element FROM setA
+WHERE element NOT IN (SELECT element FROM setB);
