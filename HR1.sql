@@ -52,3 +52,7 @@ FROM setB;
 SELECT element FROM setA
 INTERSECT
 SELECT element FROM setB;
+
+SELECT element FROM setA
+EXCEPT
+SELECT element FROM setB;
