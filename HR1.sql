@@ -48,11 +48,4 @@ FROM setB;
 SELECT COUNT(element)
 FROM setB;
 
-
-TRUNCATE TABLE setA;
-
-TRUNCATE TABLE setB;
-
-drop table setA;
-
-drop table setB;
+--
