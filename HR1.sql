@@ -56,3 +56,7 @@ SELECT element FROM setB;
 SELECT element FROM setA
 EXCEPT
 SELECT element FROM setB;
+
+SELECT element FROM setB
+EXCEPT
+SELECT element FROM setA;
