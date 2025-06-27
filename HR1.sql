@@ -60,3 +60,11 @@ SELECT element FROM setB;
 SELECT element FROM setB
 EXCEPT
 SELECT element FROM setA;
+
+SELECT element FROM setA
+EXCEPT
+SELECT element FROM setB
+UNION
+SELECT element FROM setB
+EXCEPT
+SELECT element FROM setA;
