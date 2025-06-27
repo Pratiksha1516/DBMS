@@ -111,3 +111,9 @@ WHERE element NOT IN (SELECT element FROM setB);
 
 SELECT element FROM setB
 WHERE element IN (SELECT element FROM setA);
+
+
+--
+SELECT element FROM setB
+ORDER BY element DESC
+LIMIT 3;
