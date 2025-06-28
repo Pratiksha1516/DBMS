@@ -128,3 +128,6 @@ GROUP BY grade;
 
 SELECT * FROM student4
 WHERE name LIKE '_h%';
+
+SELECT * FROM student4
+WHERE city LIKE 'D%';
