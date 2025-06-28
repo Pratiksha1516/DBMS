@@ -89,3 +89,5 @@ SELECT SUM(marks)
 FROM student4;
 
 --
+SELECT * FROM student4
+WHERE grade = 'A';
