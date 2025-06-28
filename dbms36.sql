@@ -125,3 +125,6 @@ GROUP BY city;
 SELECT grade, COUNT(*) AS count
 FROM student4
 GROUP BY grade;
+
+SELECT * FROM student4
+WHERE name LIKE '_h%';
