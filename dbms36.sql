@@ -97,3 +97,6 @@ WHERE marks > 80;
 
 SELECT * FROM student4
 WHERE marks BETWEEN 70 AND 90;
+
+SELECT * FROM student4
+WHERE city IN ('Delhi', 'Mumbai');
