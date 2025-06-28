@@ -117,3 +117,7 @@ WHERE marks < 35;
 SELECT city, COUNT(*) AS student_count
 FROM student4
 GROUP BY city;
+
+SELECT city, AVG(marks) AS average_marks
+FROM student4
+GROUP BY city;
