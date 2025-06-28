@@ -113,3 +113,7 @@ LIMIT 3;
 
 SELECT * FROM student4
 WHERE marks < 35;
+
+SELECT city, COUNT(*) AS student_count
+FROM student4
+GROUP BY city;
