@@ -110,3 +110,6 @@ ORDER BY marks DESC;
 SELECT * FROM student4
 ORDER BY marks DESC
 LIMIT 3;
+
+SELECT * FROM student4
+WHERE marks < 35;
