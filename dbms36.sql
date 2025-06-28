@@ -134,3 +134,7 @@ WHERE city LIKE 'D%';
 
 SELECT * FROM student4
 WHERE marks NOT BETWEEN 70 AND 90;
+
+SELECT SUM(marks)
+FROM student4
+WHERE city = 'Mumbai';
