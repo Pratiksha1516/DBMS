@@ -121,3 +121,7 @@ GROUP BY city;
 SELECT city, AVG(marks) AS average_marks
 FROM student4
 GROUP BY city;
+
+SELECT grade, COUNT(*) AS count
+FROM student4
+GROUP BY grade;
