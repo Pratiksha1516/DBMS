@@ -106,3 +106,7 @@ WHERE name LIKE '%a';
 
 SELECT * FROM student4
 ORDER BY marks DESC;
+
+SELECT * FROM student4
+ORDER BY marks DESC
+LIMIT 3;
