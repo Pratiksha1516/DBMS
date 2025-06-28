@@ -138,3 +138,7 @@ WHERE marks NOT BETWEEN 70 AND 90;
 SELECT SUM(marks)
 FROM student4
 WHERE city = 'Mumbai';
+
+SELECT name, marks
+FROM student4
+WHERE marks = (SELECT MAX(marks) FROM student4);
