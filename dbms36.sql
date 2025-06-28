@@ -142,7 +142,5 @@ WHERE city = 'Mumbai';
 SELECT name, marks
 FROM student4
 WHERE marks = (SELECT MAX(marks) FROM student4);
-
-SELECT name, marks
-FROM student4
-WHERE marks = (SELECT MIN(marks) FROM student4);
+SELECT * FROM student4
+WHERE LENGTH(name) > 5;
