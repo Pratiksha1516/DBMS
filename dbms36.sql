@@ -103,3 +103,6 @@ WHERE city IN ('Delhi', 'Mumbai');
 
 SELECT * FROM student4
 WHERE name LIKE '%a';
+
+SELECT * FROM student4
+ORDER BY marks DESC;
