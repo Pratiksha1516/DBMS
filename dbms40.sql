@@ -110,3 +110,8 @@ ORDER BY c.course DESC;
 SELECT DISTINCT c.course, s.name
 FROM stud s
 RIGHT JOIN course c ON s.id = c.id;
+
+SELECT * FROM stud s
+WHERE EXISTS (
+  SELECT 1 FROM course c WHERE s.id = c.id
+);
