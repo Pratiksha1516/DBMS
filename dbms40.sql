@@ -120,3 +120,8 @@ SELECT * FROM stud s
 WHERE NOT EXISTS (
   SELECT 1 FROM course c WHERE s.id = c.id
 );
+
+SELECT s.id, s.name, c.course
+FROM stud s
+FULL OUTER JOIN course c ON s.id = c.id
+WHERE COALESCE(s.id, c.id) > 102;
