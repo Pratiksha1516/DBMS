@@ -92,3 +92,7 @@ GROUP BY c.course;
 
 SELECT * FROM stud
 WHERE id IN (SELECT id FROM course);
+
+SELECT course 
+FROM course 
+WHERE id IN (SELECT id FROM stud WHERE id > 101);
