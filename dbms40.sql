@@ -96,3 +96,8 @@ WHERE id IN (SELECT id FROM course);
 SELECT course 
 FROM course 
 WHERE id IN (SELECT id FROM stud WHERE id > 101);
+
+SELECT s.name, c.course
+FROM stud s
+LEFT JOIN course c ON s.id = c.id
+ORDER BY s.name;
