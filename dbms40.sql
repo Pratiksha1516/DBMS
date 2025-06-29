@@ -84,3 +84,8 @@ WHERE c.course = 'Science';
 SELECT COUNT(*) AS enrolled_students
 FROM stud s
 INNER JOIN course c ON s.id = c.id;
+
+SELECT c.course, COUNT(s.id) AS student_count
+FROM course c
+LEFT JOIN stud s ON s.id = c.id
+GROUP BY c.course;
