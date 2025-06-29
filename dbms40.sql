@@ -89,3 +89,6 @@ SELECT c.course, COUNT(s.id) AS student_count
 FROM course c
 LEFT JOIN stud s ON s.id = c.id
 GROUP BY c.course;
+
+SELECT * FROM stud
+WHERE id IN (SELECT id FROM course);
