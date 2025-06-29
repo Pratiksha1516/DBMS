@@ -106,3 +106,7 @@ SELECT c.course, s.name
 FROM course c
 LEFT JOIN stud s ON s.id = c.id
 ORDER BY c.course DESC;
+
+SELECT DISTINCT c.course, s.name
+FROM stud s
+RIGHT JOIN course c ON s.id = c.id;
