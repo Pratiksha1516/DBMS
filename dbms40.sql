@@ -80,3 +80,7 @@ SELECT s.name
 FROM stud s
 INNER JOIN course c ON s.id = c.id
 WHERE c.course = 'Science';
+
+SELECT COUNT(*) AS enrolled_students
+FROM stud s
+INNER JOIN course c ON s.id = c.id;
