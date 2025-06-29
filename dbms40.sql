@@ -60,3 +60,8 @@ SELECT s.name, c.course
 FROM stud s 
 RIGHT JOIN course c 
 ON s.id = c.id;
+
+SELECT s.* 
+FROM stud s
+LEFT JOIN course c ON s.id = c.id
+WHERE c.id IS NULL;
