@@ -55,3 +55,8 @@ SELECT *
 FROM stud
 FULL OUTER JOIN course
 ON stud.id = course.id;
+
+SELECT s.name, c.course 
+FROM stud s 
+RIGHT JOIN course c 
+ON s.id = c.id;
