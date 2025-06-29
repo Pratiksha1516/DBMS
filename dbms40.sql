@@ -115,3 +115,8 @@ SELECT * FROM stud s
 WHERE EXISTS (
   SELECT 1 FROM course c WHERE s.id = c.id
 );
+
+SELECT * FROM stud s
+WHERE NOT EXISTS (
+  SELECT 1 FROM course c WHERE s.id = c.id
+);
