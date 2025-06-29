@@ -70,3 +70,8 @@ SELECT c.*
 FROM stud s
 RIGHT JOIN course c ON s.id = c.id
 WHERE s.id IS NULL;
+
+SELECT s.name, c.course
+FROM stud s
+INNER JOIN course c ON s.id = c.id
+WHERE c.course LIKE '%e%';
