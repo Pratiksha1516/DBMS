@@ -19,3 +19,8 @@ SELECT e.name as manager_name, f.name
 FROM employee as e
 JOIN employee as f   
 ON e.id = f.manager_id;
+
+
+--
+SELECT name, manager_id 
+FROM employee;
