@@ -82,3 +82,7 @@ FROM employee
 WHERE manager_id = (
   SELECT id FROM employee WHERE name = 'casey'
 );
+
+SELECT name 
+FROM employee 
+WHERE id NOT IN (SELECT DISTINCT manager_id FROM employee WHERE manager_id IS NOT NULL);
