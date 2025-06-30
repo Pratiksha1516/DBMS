@@ -76,3 +76,9 @@ FROM employee;
 SELECT DISTINCT e.name AS manager
 FROM employee e
 JOIN employee f ON e.id = f.manager_id;
+
+SELECT name 
+FROM employee 
+WHERE manager_id = (
+  SELECT id FROM employee WHERE name = 'casey'
+);
