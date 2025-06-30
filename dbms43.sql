@@ -50,3 +50,8 @@ LEFT JOIN employee m ON e.manager_id = m.id;
 SELECT m.name AS manager, e.name AS employee
 FROM employee m
 JOIN employee e ON m.id = e.manager_id;
+
+SELECT manager_id, COUNT(*) AS num_employees
+FROM employee
+WHERE manager_id IS NOT NULL
+GROUP BY manager_id;
