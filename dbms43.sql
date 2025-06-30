@@ -24,3 +24,7 @@ ON e.id = f.manager_id;
 --
 SELECT name, manager_id 
 FROM employee;
+
+SELECT name 
+FROM employee
+WHERE manager_id IS NULL;
