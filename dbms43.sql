@@ -42,6 +42,8 @@ WHERE id > 102;
 SELECT * FROM employee
 ORDER BY name;
 
+SELECT * FROM employee ORDER BY manager_id DESC;
+
 SELECT f.name AS employee, e.name AS manager
 FROM employee f
 JOIN employee e ON f.manager_id = e.id;
