@@ -46,3 +46,7 @@ JOIN employee e ON f.manager_id = e.id;
 SELECT e.name AS employee, m.name AS manager
 FROM employee e
 LEFT JOIN employee m ON e.manager_id = m.id;
+
+SELECT m.name AS manager, e.name AS employee
+FROM employee m
+JOIN employee e ON m.id = e.manager_id;
