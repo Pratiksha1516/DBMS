@@ -35,3 +35,6 @@ WHERE manager_id IS NOT NULL;
 
 SELECT * FROM employee 
 WHERE name LIKE 'a%';
+
+SELECT * FROM employee 
+WHERE id > 102;
