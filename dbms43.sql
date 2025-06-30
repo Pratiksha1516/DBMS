@@ -92,3 +92,9 @@ FROM employee
 WHERE manager_id IN (
   SELECT id FROM employee WHERE name IN ('casey', 'donald')
 );
+
+SELECT DISTINCT m.name
+FROM employee m
+WHERE EXISTS (
+  SELECT 1 FROM employee e WHERE e.manager_id = m.id
+);
