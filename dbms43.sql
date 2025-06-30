@@ -98,3 +98,9 @@ FROM employee m
 WHERE EXISTS (
   SELECT 1 FROM employee e WHERE e.manager_id = m.id
 );
+
+SELECT e.name
+FROM employee e
+WHERE NOT EXISTS (
+  SELECT 1 FROM employee m WHERE e.manager_id = m.id
+);
