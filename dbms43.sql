@@ -72,3 +72,7 @@ SELECT name,
     ELSE 'Has Manager'
   END AS manager_status
 FROM employee;
+
+SELECT DISTINCT e.name AS manager
+FROM employee e
+JOIN employee f ON e.id = f.manager_id;
