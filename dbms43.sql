@@ -65,3 +65,10 @@ SELECT m.name AS manager, COUNT(e.id) AS num_subordinates
 FROM employee m
 JOIN employee e ON m.id = e.manager_id
 GROUP BY m.name;
+
+SELECT name,
+  CASE 
+    WHEN manager_id IS NULL THEN 'No Manager'
+    ELSE 'Has Manager'
+  END AS manager_status
+FROM employee;
