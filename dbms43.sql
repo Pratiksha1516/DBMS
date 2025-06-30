@@ -86,3 +86,9 @@ WHERE manager_id = (
 SELECT name 
 FROM employee 
 WHERE id NOT IN (SELECT DISTINCT manager_id FROM employee WHERE manager_id IS NOT NULL);
+
+SELECT name
+FROM employee
+WHERE manager_id IN (
+  SELECT id FROM employee WHERE name IN ('casey', 'donald')
+);
