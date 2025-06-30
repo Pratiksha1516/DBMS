@@ -55,3 +55,8 @@ SELECT manager_id, COUNT(*) AS num_employees
 FROM employee
 WHERE manager_id IS NOT NULL
 GROUP BY manager_id;
+
+SELECT m.name AS manager, COUNT(e.id) AS num_subordinates
+FROM employee m
+JOIN employee e ON m.id = e.manager_id
+GROUP BY m.name;
