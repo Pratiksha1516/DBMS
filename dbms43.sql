@@ -42,3 +42,7 @@ WHERE id > 102;
 SELECT f.name AS employee, e.name AS manager
 FROM employee f
 JOIN employee e ON f.manager_id = e.id;
+
+SELECT e.name AS employee, m.name AS manager
+FROM employee e
+LEFT JOIN employee m ON e.manager_id = m.id;
