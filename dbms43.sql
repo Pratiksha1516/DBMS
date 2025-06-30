@@ -28,3 +28,7 @@ FROM employee;
 SELECT name 
 FROM employee
 WHERE manager_id IS NULL;
+
+SELECT name 
+FROM employee 
+WHERE manager_id IS NOT NULL;
