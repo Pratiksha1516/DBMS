@@ -23,3 +23,6 @@ SELECT name FROM employee;
 SELECT name FROM employee
 UNION ALL
 SELECT name FROM employee;
+
+--
+SELECT name, manager_id FROM employee;
