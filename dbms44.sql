@@ -75,3 +75,5 @@ SELECT e.name
 FROM employee e
 JOIN employee m ON e.manager_id = m.id
 WHERE m.name = 'donald';
+
+SELECT UPPER(name) AS upper_name FROM employee;
