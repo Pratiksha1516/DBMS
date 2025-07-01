@@ -79,3 +79,7 @@ WHERE m.name = 'donald';
 SELECT UPPER(name) AS upper_name FROM employee;
 
 SELECT name, LENGTH(name) AS name_length FROM employee;
+
+SELECT e.name || ' reports to ' || COALESCE(m.name, 'No Manager') AS relationship
+FROM employee e
+LEFT JOIN employee m ON e.manager_id = m.id;
