@@ -46,3 +46,6 @@ WHERE name LIKE 'a%';
 
 SELECT * FROM employee 
 WHERE name LIKE '%d';
+
+SELECT * FROM employee 
+WHERE name LIKE '%a%';
