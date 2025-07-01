@@ -39,3 +39,4 @@ JOIN employee e2 ON e1.id = e2.manager_id;
 
 SELECT COUNT(*) AS total_employees FROM employee;
 
+SELECT * FROM employee ORDER BY name;
