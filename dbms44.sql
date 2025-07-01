@@ -59,3 +59,8 @@ LEFT JOIN employee m ON e.manager_id = m.id;
 
 SELECT * FROM employee
 WHERE id IN (SELECT DISTINCT manager_id FROM employee WHERE manager_id IS NOT NULL);
+
+SELECT manager_id, COUNT(*) AS report_count
+FROM employee
+WHERE manager_id IS NOT NULL
+GROUP BY manager_id;
