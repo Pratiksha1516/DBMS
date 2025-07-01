@@ -56,3 +56,6 @@ WHERE manager_id = 103;
 SELECT e.name AS employee_name, m.name AS manager_name
 FROM employee e
 LEFT JOIN employee m ON e.manager_id = m.id;
+
+SELECT * FROM employee
+WHERE id IN (SELECT DISTINCT manager_id FROM employee WHERE manager_id IS NOT NULL);
