@@ -43,3 +43,6 @@ SELECT * FROM employee ORDER BY name;
 
 SELECT * FROM employee
 WHERE name LIKE 'a%';
+
+SELECT * FROM employee 
+WHERE name LIKE '%d';
