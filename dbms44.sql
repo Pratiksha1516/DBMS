@@ -70,3 +70,8 @@ WHERE id = (SELECT MAX(id) FROM employee);
 
 SELECT * FROM employee 
 WHERE id = (SELECT MIN(id) FROM employee);
+
+SELECT e.name
+FROM employee e
+JOIN employee m ON e.manager_id = m.id
+WHERE m.name = 'donald';
