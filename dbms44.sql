@@ -64,3 +64,6 @@ SELECT manager_id, COUNT(*) AS report_count
 FROM employee
 WHERE manager_id IS NOT NULL
 GROUP BY manager_id;
+
+SELECT * FROM employee 
+WHERE id = (SELECT MAX(id) FROM employee);
