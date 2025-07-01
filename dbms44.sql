@@ -52,3 +52,7 @@ WHERE name LIKE '%a%';
 
 SELECT * FROM employee
 WHERE manager_id = 103;
+
+SELECT e.name AS employee_name, m.name AS manager_name
+FROM employee e
+LEFT JOIN employee m ON e.manager_id = m.id;
