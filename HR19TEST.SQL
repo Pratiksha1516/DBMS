@@ -112,3 +112,6 @@ LIMIT 2;
 
 SELECT * FROM StudentInformation
 ORDER BY Name ASC;
+
+SELECT UPPER(Name) AS Uppercase_Name
+FROM StudentInformation;
