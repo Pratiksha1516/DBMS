@@ -129,3 +129,8 @@ GROUP BY Gender;
 SELECT Adviser, COUNT(*) AS Student_Count
 FROM StudentInformation
 GROUP BY Adviser;
+
+SELECT S.*
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID
+WHERE F.Salary > (SELECT AVG(Salary) FROM FacultyInformation);
