@@ -109,3 +109,6 @@ ORDER BY Salary DESC;
 SELECT * FROM FacultyInformation
 ORDER BY Salary DESC
 LIMIT 2;
+
+SELECT * FROM StudentInformation
+ORDER BY Name ASC;
