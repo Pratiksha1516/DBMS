@@ -96,3 +96,8 @@ SELECT S.*
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID
 WHERE F.Salary = (SELECT MIN(Salary) FROM FacultyInformation);
+
+SELECT F.FacultyID, F.Gender, S.Roll_Number
+FROM FacultyInformation F
+JOIN StudentInformation S ON F.FacultyID = S.Adviser
+WHERE F.Gender = 'Female';
