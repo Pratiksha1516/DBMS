@@ -118,3 +118,6 @@ FROM StudentInformation;
 
 SELECT Name, LENGTH(Name) AS Name_Length
 FROM StudentInformation;
+
+SELECT CONCAT(Name, ' - ', Roll_Number) AS Info
+FROM StudentInformation;
