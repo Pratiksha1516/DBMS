@@ -146,3 +146,8 @@ SELECT Adviser
 FROM StudentInformation;
 
 SELECT DISTINCT Adviser FROM StudentInformation;
+
+SELECT S.*
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID
+WHERE F.Gender = 'Male' AND F.Salary BETWEEN 10000 AND 20000;
