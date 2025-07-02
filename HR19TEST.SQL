@@ -144,3 +144,5 @@ FROM FacultyInformation
 EXCEPT
 SELECT Adviser
 FROM StudentInformation;
+
+SELECT DISTINCT Adviser FROM StudentInformation;
