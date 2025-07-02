@@ -84,3 +84,10 @@ WHERE Gender = 'Male';
 SELECT SUM(Salary)
 FROM FacultyInformation
 WHERE Gender = 'Female'; 
+
+
+--
+SELECT S.*
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID
+WHERE F.Gender = 'Female';
