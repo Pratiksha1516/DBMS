@@ -125,3 +125,7 @@ FROM StudentInformation;
 SELECT Gender, SUM(Salary) AS Total_Salary
 FROM FacultyInformation
 GROUP BY Gender;
+
+SELECT Adviser, COUNT(*) AS Student_Count
+FROM StudentInformation
+GROUP BY Adviser;
