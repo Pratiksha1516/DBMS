@@ -121,3 +121,7 @@ FROM StudentInformation;
 
 SELECT CONCAT(Name, ' - ', Roll_Number) AS Info
 FROM StudentInformation;
+
+SELECT Gender, SUM(Salary) AS Total_Salary
+FROM FacultyInformation
+GROUP BY Gender;
