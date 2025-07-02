@@ -138,3 +138,9 @@ WHERE F.Salary > (SELECT AVG(Salary) FROM FacultyInformation);
 SELECT *
 FROM FacultyInformation
 WHERE FacultyID NOT IN (SELECT Adviser FROM StudentInformation);
+
+SELECT FacultyID
+FROM FacultyInformation
+EXCEPT
+SELECT Adviser
+FROM StudentInformation;
