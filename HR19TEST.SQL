@@ -101,3 +101,7 @@ SELECT F.FacultyID, F.Gender, S.Roll_Number
 FROM FacultyInformation F
 JOIN StudentInformation S ON F.FacultyID = S.Adviser
 WHERE F.Gender = 'Female';
+
+
+SELECT * FROM FacultyInformation
+ORDER BY Salary DESC;
