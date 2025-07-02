@@ -134,3 +134,7 @@ SELECT S.*
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID
 WHERE F.Salary > (SELECT AVG(Salary) FROM FacultyInformation);
+
+SELECT *
+FROM FacultyInformation
+WHERE FacultyID NOT IN (SELECT Adviser FROM StudentInformation);
