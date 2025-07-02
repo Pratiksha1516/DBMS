@@ -115,3 +115,6 @@ ORDER BY Name ASC;
 
 SELECT UPPER(Name) AS Uppercase_Name
 FROM StudentInformation;
+
+SELECT Name, LENGTH(Name) AS Name_Length
+FROM StudentInformation;
