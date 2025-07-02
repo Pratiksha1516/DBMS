@@ -151,3 +151,6 @@ SELECT S.*
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID
 WHERE F.Gender = 'Male' AND F.Salary BETWEEN 10000 AND 20000;
+
+SELECT * FROM StudentInformation
+WHERE Name LIKE '%a';
