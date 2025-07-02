@@ -105,3 +105,7 @@ WHERE F.Gender = 'Female';
 
 SELECT * FROM FacultyInformation
 ORDER BY Salary DESC;
+
+SELECT * FROM FacultyInformation
+ORDER BY Salary DESC
+LIMIT 2;
