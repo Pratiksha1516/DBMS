@@ -165,3 +165,7 @@ SELECT *
 FROM Flight 
 ORDER BY arrival_time ASC 
 LIMIT 1;
+
+SELECT * 
+FROM Booking 
+WHERE booking_date BETWEEN '2025-06-20' AND '2025-06-25';
