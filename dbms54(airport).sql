@@ -120,3 +120,12 @@ FROM Flight f
 JOIN Airline al ON f.airline_id = al.airline_id
 GROUP BY al.name;
 
+--
+SELECT name, passport_no 
+FROM Passenger 
+WHERE passenger_id IN (
+    SELECT passenger_id 
+    FROM Booking 
+    WHERE seat_no LIKE '12%'
+);
+
