@@ -181,3 +181,8 @@ JOIN Flight f ON b.flight_id = f.flight_id
 JOIN Airline a ON f.airline_id = a.airline_id
 JOIN Passenger p ON b.passenger_id = p.passenger_id
 WHERE a.name = 'Air India';
+
+SELECT p.name, f.flight_number 
+FROM Booking b
+JOIN Passenger p ON b.passenger_id = p.passenger_id
+JOIN Flight f ON b.flight_id = f.flight_id;
