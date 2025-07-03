@@ -212,3 +212,7 @@ ORDER BY booking_date DESC;
 
 SELECT DISTINCT country 
 FROM Airline;
+
+SELECT * 
+FROM Passenger 
+WHERE name LIKE 'P%';
