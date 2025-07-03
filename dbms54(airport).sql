@@ -186,3 +186,8 @@ SELECT p.name, f.flight_number
 FROM Booking b
 JOIN Passenger p ON b.passenger_id = p.passenger_id
 JOIN Flight f ON b.flight_id = f.flight_id;
+
+SELECT DISTINCT a.name 
+FROM Airport a
+WHERE a.airport_id IN (SELECT departure_airport FROM Flight)
+  AND a.airport_id IN (SELECT arrival_airport FROM Flight);
