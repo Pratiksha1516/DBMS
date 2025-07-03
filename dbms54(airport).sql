@@ -138,3 +138,7 @@ WHERE departure_airport = (
 SELECT * 
 FROM Booking 
 WHERE booking_date > '2025-06-21';
+
+SELECT * 
+FROM Airline 
+WHERE country = 'UK';
