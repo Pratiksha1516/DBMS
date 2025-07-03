@@ -135,3 +135,6 @@ WHERE departure_airport = (
     SELECT airport_id FROM Airport WHERE name = 'Heathrow'
 );
 
+SELECT * 
+FROM Booking 
+WHERE booking_date > '2025-06-21';
