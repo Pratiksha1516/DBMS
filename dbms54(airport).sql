@@ -191,3 +191,7 @@ SELECT DISTINCT a.name
 FROM Airport a
 WHERE a.airport_id IN (SELECT departure_airport FROM Flight)
   AND a.airport_id IN (SELECT arrival_airport FROM Flight);
+
+SELECT flight_number 
+FROM Flight 
+WHERE flight_id NOT IN (SELECT flight_id FROM Booking);
