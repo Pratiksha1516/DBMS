@@ -174,3 +174,10 @@ SELECT f.flight_number, al.name AS airline_name, a.city AS departure_city
 FROM Flight f
 JOIN Airline al ON f.airline_id = al.airline_id
 JOIN Airport a ON f.departure_airport = a.airport_id;
+
+SELECT DISTINCT p.name 
+FROM Booking b
+JOIN Flight f ON b.flight_id = f.flight_id
+JOIN Airline a ON f.airline_id = a.airline_id
+JOIN Passenger p ON b.passenger_id = p.passenger_id
+WHERE a.name = 'Air India';
