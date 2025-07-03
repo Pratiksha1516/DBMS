@@ -209,3 +209,6 @@ WHERE a.city = 'Mumbai';
 SELECT * 
 FROM Booking 
 ORDER BY booking_date DESC;
+
+SELECT DISTINCT country 
+FROM Airline;
