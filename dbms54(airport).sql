@@ -160,3 +160,8 @@ WHERE a1.city = 'Bangalore' AND a2.city = 'Mumbai';
 SELECT * 
 FROM Flight 
 WHERE departure_time BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '7 days';
+
+SELECT * 
+FROM Flight 
+ORDER BY arrival_time ASC 
+LIMIT 1;
