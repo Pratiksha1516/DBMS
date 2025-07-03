@@ -145,3 +145,8 @@ WHERE country = 'UK';
 
 SELECT COUNT(*) AS total_passengers 
 FROM Passenger;
+
+SELECT p.name, COUNT(*) AS booking_count 
+FROM Booking b
+JOIN Passenger p ON b.passenger_id = p.passenger_id
+GROUP BY p.name;
