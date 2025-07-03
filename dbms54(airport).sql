@@ -199,3 +199,9 @@ WHERE flight_id NOT IN (SELECT flight_id FROM Booking);
 SELECT name 
 FROM Passenger 
 WHERE passenger_id NOT IN (SELECT passenger_id FROM Booking);
+
+SELECT DISTINCT al.name 
+FROM Airline al
+JOIN Flight f ON al.airline_id = f.airline_id
+JOIN Airport a ON f.arrival_airport = a.airport_id
+WHERE a.city = 'Mumbai';
