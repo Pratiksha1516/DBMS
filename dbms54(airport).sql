@@ -205,3 +205,7 @@ FROM Airline al
 JOIN Flight f ON al.airline_id = f.airline_id
 JOIN Airport a ON f.arrival_airport = a.airport_id
 WHERE a.city = 'Mumbai';
+
+SELECT * 
+FROM Booking 
+ORDER BY booking_date DESC;
