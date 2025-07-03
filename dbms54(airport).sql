@@ -142,3 +142,6 @@ WHERE booking_date > '2025-06-21';
 SELECT * 
 FROM Airline 
 WHERE country = 'UK';
+
+SELECT COUNT(*) AS total_passengers 
+FROM Passenger;
