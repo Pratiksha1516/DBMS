@@ -129,3 +129,9 @@ WHERE passenger_id IN (
     WHERE seat_no LIKE '12%'
 );
 
+SELECT flight_number 
+FROM Flight 
+WHERE departure_airport = (
+    SELECT airport_id FROM Airport WHERE name = 'Heathrow'
+);
+
