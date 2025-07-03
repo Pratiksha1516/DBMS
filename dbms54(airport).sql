@@ -156,3 +156,7 @@ FROM Flight f
 JOIN Airport a1 ON f.departure_airport = a1.airport_id
 JOIN Airport a2 ON f.arrival_airport = a2.airport_id
 WHERE a1.city = 'Bangalore' AND a2.city = 'Mumbai';
+
+SELECT * 
+FROM Flight 
+WHERE departure_time BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '7 days';
