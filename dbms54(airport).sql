@@ -195,3 +195,7 @@ WHERE a.airport_id IN (SELECT departure_airport FROM Flight)
 SELECT flight_number 
 FROM Flight 
 WHERE flight_id NOT IN (SELECT flight_id FROM Booking);
+
+SELECT name 
+FROM Passenger 
+WHERE passenger_id NOT IN (SELECT passenger_id FROM Booking);
