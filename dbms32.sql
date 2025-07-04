@@ -34,3 +34,7 @@ UPDATE student2
 SET marks = marks+1;
 
 SELECT * FROM student2;
+
+--
+SELECT * FROM student2 
+WHERE city = 'Mumbai';
