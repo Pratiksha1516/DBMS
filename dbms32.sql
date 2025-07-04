@@ -50,3 +50,6 @@ WHERE marks BETWEEN 80 AND 90;
 
 SELECT * FROM student2
 WHERE city != 'pune';
+
+SELECT AVG(marks) AS average_marks 
+FROM student2;
