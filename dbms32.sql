@@ -38,3 +38,6 @@ SELECT * FROM student2;
 --
 SELECT * FROM student2 
 WHERE city = 'Mumbai';
+
+SELECT name, marks FROM student2 
+WHERE marks > 80;
