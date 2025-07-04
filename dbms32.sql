@@ -63,3 +63,6 @@ FROM student2;
 SELECT COUNT(*) AS grade_B_students 
 FROM student2 
 WHERE grade = 'B';
+
+SELECT SUM(marks) AS total_marks 
+FROM student2;
