@@ -81,3 +81,6 @@ FROM student2 GROUP BY city;
 SELECT grade, COUNT(*) FROM student2 
 GROUP BY grade 
 HAVING COUNT(*) > 1;
+
+SELECT UPPER(name) AS name_upper
+FROM student2;
