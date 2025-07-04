@@ -41,3 +41,6 @@ WHERE city = 'Mumbai';
 
 SELECT name, marks FROM student2 
 WHERE marks > 80;
+
+SELECT * FROM student2
+WHERE name LIKE 'a%';
