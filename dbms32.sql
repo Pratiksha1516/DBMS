@@ -71,3 +71,6 @@ SELECT * FROM student2
 ORDER BY marks DESC;
 
 SELECT * FROM student2 ORDER BY city, name;
+
+SELECT grade, AVG(marks) AS avg_marks 
+FROM student2 GROUP BY grade;
