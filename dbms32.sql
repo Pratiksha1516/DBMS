@@ -56,3 +56,6 @@ FROM student2;
 
 SELECT MAX(marks) AS highest_marks 
 FROM student2;
+
+SELECT COUNT(*) AS total_students
+FROM student2;
