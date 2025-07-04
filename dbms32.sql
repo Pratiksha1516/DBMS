@@ -53,3 +53,6 @@ WHERE city != 'pune';
 
 SELECT AVG(marks) AS average_marks 
 FROM student2;
+
+SELECT MAX(marks) AS highest_marks 
+FROM student2;
