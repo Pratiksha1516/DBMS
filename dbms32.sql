@@ -66,3 +66,6 @@ WHERE grade = 'B';
 
 SELECT SUM(marks) AS total_marks 
 FROM student2;
+
+SELECT * FROM student2
+ORDER BY marks DESC;
