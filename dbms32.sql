@@ -87,3 +87,6 @@ FROM student2;
 
 SELECT SUBSTRING(name FROM 1 FOR 3) AS short_name 
 FROM student2;
+
+SELECT * FROM student2 
+WHERE name LIKE '%a';
