@@ -99,3 +99,7 @@ ORDER BY customer;
 
 SELECT * FROM payment
 ORDER BY city DESC;
+
+SELECT * FROM payment
+ORDER BY customer_id DESC
+LIMIT 3;
