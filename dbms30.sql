@@ -69,3 +69,7 @@ FROM payment;
 
 SELECT AVG(customer_id)
 FROM payment;
+
+--
+SELECT * FROM payment
+WHERE city LIKE '%a';
