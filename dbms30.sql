@@ -112,3 +112,6 @@ FROM payment;
 
 SELECT customer_id, customer, customer_id % 2 AS is_even
 FROM payment;
+
+SELECT ROUND(AVG(customer_id), 2) AS rounded_avg
+FROM payment;
