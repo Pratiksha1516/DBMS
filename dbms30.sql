@@ -129,3 +129,5 @@ FROM payment
 WHERE LENGTH(customer) = 4;
 
 SELECT DISTINCT mode FROM payment;
+
+SELECT DISTINCT city FROM payment;
