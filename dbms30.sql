@@ -106,3 +106,6 @@ LIMIT 3;
 
 SELECT UPPER(customer) AS customer_upper
 FROM payment;
+
+SELECT REPLACE(mode, 'Card', 'Pay') AS updated_mode
+FROM payment;
