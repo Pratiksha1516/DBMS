@@ -79,3 +79,7 @@ WHERE customer ~* '^[aeiou]';
 
 SELECT * FROM payment
 WHERE mode IN ('Netbanking', 'Debit Card');
+
+SELECT city, COUNT(*) AS customer_count
+FROM payment
+GROUP BY city;
