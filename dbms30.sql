@@ -73,3 +73,6 @@ FROM payment;
 --
 SELECT * FROM payment
 WHERE city LIKE '%a';
+
+SELECT * FROM payment
+WHERE customer ~* '^[aeiou]';
