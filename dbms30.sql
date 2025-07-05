@@ -76,3 +76,6 @@ WHERE city LIKE '%a';
 
 SELECT * FROM payment
 WHERE customer ~* '^[aeiou]';
+
+SELECT * FROM payment
+WHERE mode IN ('Netbanking', 'Debit Card');
