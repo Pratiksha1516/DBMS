@@ -88,3 +88,8 @@ SELECT city, COUNT(*) AS num_customers
 FROM payment
 GROUP BY city
 HAVING COUNT(*) > 1;
+
+SELECT mode, COUNT(*) AS total
+FROM payment
+GROUP BY mode
+HAVING COUNT(*) > 2;
