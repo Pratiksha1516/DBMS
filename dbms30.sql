@@ -93,3 +93,6 @@ SELECT mode, COUNT(*) AS total
 FROM payment
 GROUP BY mode
 HAVING COUNT(*) > 2;
+
+SELECT * FROM payment
+ORDER BY customer;
