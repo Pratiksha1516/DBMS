@@ -96,3 +96,6 @@ HAVING COUNT(*) > 2;
 
 SELECT * FROM payment
 ORDER BY customer;
+
+SELECT * FROM payment
+ORDER BY city DESC;
