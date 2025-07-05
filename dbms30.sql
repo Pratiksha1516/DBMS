@@ -127,3 +127,5 @@ FROM payment;
 SELECT customer
 FROM payment
 WHERE LENGTH(customer) = 4;
+
+SELECT DISTINCT mode FROM payment;
