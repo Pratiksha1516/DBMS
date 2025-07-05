@@ -115,3 +115,11 @@ FROM payment;
 
 SELECT ROUND(AVG(customer_id), 2) AS rounded_avg
 FROM payment;
+
+SELECT customer, mode,
+    CASE 
+        WHEN mode LIKE '%Credit%' THEN 'Credit Type'
+        WHEN mode LIKE '%Debit%' THEN 'Debit Type'
+        ELSE 'Online Banking'
+    END AS mode_type
+FROM payment;
