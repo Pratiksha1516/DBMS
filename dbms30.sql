@@ -83,3 +83,8 @@ WHERE mode IN ('Netbanking', 'Debit Card');
 SELECT city, COUNT(*) AS customer_count
 FROM payment
 GROUP BY city;
+
+SELECT city, COUNT(*) AS num_customers
+FROM payment
+GROUP BY city
+HAVING COUNT(*) > 1;
