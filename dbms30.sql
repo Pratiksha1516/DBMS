@@ -103,3 +103,6 @@ ORDER BY city DESC;
 SELECT * FROM payment
 ORDER BY customer_id DESC
 LIMIT 3;
+
+SELECT UPPER(customer) AS customer_upper
+FROM payment;
