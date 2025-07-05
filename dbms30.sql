@@ -109,3 +109,6 @@ FROM payment;
 
 SELECT REPLACE(mode, 'Card', 'Pay') AS updated_mode
 FROM payment;
+
+SELECT customer_id, customer, customer_id % 2 AS is_even
+FROM payment;
