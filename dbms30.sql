@@ -123,3 +123,7 @@ SELECT customer, mode,
         ELSE 'Online Banking'
     END AS mode_type
 FROM payment;
+
+SELECT customer
+FROM payment
+WHERE LENGTH(customer) = 4;
