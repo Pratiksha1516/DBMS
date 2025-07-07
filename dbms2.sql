@@ -282,3 +282,5 @@ WHERE emp_dep NOT IN ('UI/UX', 'full stack');
 SELECT * FROM emp
 WHERE emp_salary % 1000000 = 0;
 
+SELECT emp_name, emp_salary, emp_salary * 1.15 AS increased_salary
+FROM emp;
