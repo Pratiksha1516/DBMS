@@ -255,3 +255,5 @@ WHERE emp_salary < 100000;
 --
 SELECT * FROM emp
 WHERE emp_name LIKE '%i' AND LENGTH(emp_name) > 5;
+
+SELECT emp_name, UPPER(emp_dep) AS upper_dep FROM emp;
