@@ -291,3 +291,9 @@ FROM emp;
 
 SELECT * FROM emp
 WHERE emp_salary > 2 * (SELECT emp_salary FROM emp WHERE emp_name = 'prati');
+
+SELECT * FROM emp
+WHERE emp_dep = (
+SELECT emp_dep FROM emp
+WHERE emp_salary = (SELECT MIN(emp_salary) FROM emp)
+);
