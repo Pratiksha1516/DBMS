@@ -144,3 +144,7 @@ SELECT emp_dep, COUNT(emp_id) AS emp_count
 FROM emp
 GROUP BY emp_dep;
 
+SELECT * FROM emp
+WHERE emp_name LIKE '%a%' AND emp_name LIKE '%i%';
+
+
