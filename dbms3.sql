@@ -131,3 +131,7 @@ WHERE emp_dep IN (SELECT emp_dep FROM emp WHERE emp_salary < 2000000);
 SELECT emp_name, emp_salary, 
 emp_salary - (SELECT AVG(emp_salary) FROM emp) AS salary_diff_from_avg
 FROM emp;
+
+SELECT MAX(emp_salary) AS second_highest_salary
+FROM emp
+WHERE emp_salary < (SELECT MAX(emp_salary) FROM emp);
