@@ -259,3 +259,5 @@ WHERE emp_name LIKE '%i' AND LENGTH(emp_name) > 5;
 SELECT emp_name, UPPER(emp_dep) AS upper_dep FROM emp;
 
 SELECT emp_name, SUBSTRING(emp_name FROM 1 FOR 3) AS short_name FROM emp;
+
+SELECT SUM(emp_salary) AS total_salary, AVG(emp_salary) AS avg_salary FROM emp;
