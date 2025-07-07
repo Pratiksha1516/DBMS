@@ -139,3 +139,8 @@ WHERE emp_salary < (SELECT MAX(emp_salary) FROM emp);
 SELECT emp_name, emp_salary,
 ROUND((emp_salary * 100.0) / (SELECT SUM(emp_salary) FROM emp), 2) AS salary_percentage
 FROM emp;
+
+SELECT emp_dep, COUNT(emp_id) AS emp_count
+FROM emp
+GROUP BY emp_dep;
+
