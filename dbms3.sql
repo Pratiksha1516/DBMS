@@ -135,3 +135,7 @@ FROM emp;
 SELECT MAX(emp_salary) AS second_highest_salary
 FROM emp
 WHERE emp_salary < (SELECT MAX(emp_salary) FROM emp);
+
+SELECT emp_name, emp_salary,
+ROUND((emp_salary * 100.0) / (SELECT SUM(emp_salary) FROM emp), 2) AS salary_percentage
+FROM emp;
