@@ -284,3 +284,7 @@ WHERE emp_salary % 1000000 = 0;
 
 SELECT emp_name, emp_salary, emp_salary * 1.15 AS increased_salary
 FROM emp;
+
+SELECT emp_name, emp_age,
+emp_age - (SELECT MIN(emp_age) FROM emp) AS age_difference
+FROM emp;
