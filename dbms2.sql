@@ -251,3 +251,7 @@ WHERE emp_name = 'shiri';
 --
 DELETE FROM emp
 WHERE emp_salary < 100000;
+
+--
+SELECT * FROM emp
+WHERE emp_name LIKE '%i' AND LENGTH(emp_name) > 5;
