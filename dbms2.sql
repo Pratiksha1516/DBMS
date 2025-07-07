@@ -269,9 +269,12 @@ ORDER BY SUM(emp_salary) DESC
 LIMIT 1;
 
 SELECT emp_name, emp_salary,
-       RANK() OVER (ORDER BY emp_salary DESC) AS salary_rank
+RANK() OVER (ORDER BY emp_salary DESC) AS salary_rank
 FROM emp;
 
 SELECT emp_dep, emp_name, emp_salary,
-       SUM(emp_salary) OVER (PARTITION BY emp_dep ORDER BY emp_salary DESC) AS cumulative_salary
+SUM(emp_salary) OVER (PARTITION BY emp_dep ORDER BY emp_salary DESC) AS cumulative_salary
 FROM emp;
+
+SELECT * FROM emp
+WHERE emp_dep NOT IN ('UI/UX', 'full stack');
