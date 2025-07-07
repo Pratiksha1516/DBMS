@@ -267,3 +267,7 @@ FROM emp
 GROUP BY emp_dep
 ORDER BY SUM(emp_salary) DESC
 LIMIT 1;
+
+SELECT emp_name, emp_salary,
+       RANK() OVER (ORDER BY emp_salary DESC) AS salary_rank
+FROM emp;
