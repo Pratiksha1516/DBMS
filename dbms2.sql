@@ -288,3 +288,6 @@ FROM emp;
 SELECT emp_name, emp_age,
 emp_age - (SELECT MIN(emp_age) FROM emp) AS age_difference
 FROM emp;
+
+SELECT * FROM emp
+WHERE emp_salary > 2 * (SELECT emp_salary FROM emp WHERE emp_name = 'prati');
