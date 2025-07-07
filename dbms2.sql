@@ -278,3 +278,7 @@ FROM emp;
 
 SELECT * FROM emp
 WHERE emp_dep NOT IN ('UI/UX', 'full stack');
+
+SELECT * FROM emp
+WHERE emp_salary % 1000000 = 0;
+
