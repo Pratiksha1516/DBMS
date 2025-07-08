@@ -178,3 +178,10 @@ SELECT c.Name
 FROM Customer c
 JOIN Account a ON c.CustomerID = a.CustomerID
 WHERE a.Balance < 15000;
+
+SELECT c.Name
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID
+JOIN Transaction t ON a.AccountNo = t.AccountNo
+GROUP BY c.Name
+HAVING COUNT(t.TransID) = 1;
