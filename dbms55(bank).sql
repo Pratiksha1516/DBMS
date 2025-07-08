@@ -150,3 +150,7 @@ SELECT COUNT(*) FROM Account
 WHERE AccountType = 'Savings';
 
 SELECT MAX(Amount) AS MaxTransaction FROM Transaction;
+
+SELECT SUM(Amount) AS TotalWithdraw
+FROM Transaction
+WHERE TransType = 'Withdraw' AND TransDate >= '2025-06-05';
