@@ -158,3 +158,8 @@ WHERE TransType = 'Withdraw' AND TransDate >= '2025-06-05';
 SELECT TransType, COUNT(*) AS Total
 FROM Transaction
 GROUP BY TransType;
+
+SELECT c.Name, t.Amount, t.TransType, t.TransDate
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID
+JOIN Transaction t ON a.AccountNo = t.AccountNo;
