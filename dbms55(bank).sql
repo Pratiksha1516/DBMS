@@ -148,3 +148,5 @@ SELECT AVG(Balance) AS AverageBalance FROM Account;
 
 SELECT COUNT(*) FROM Account
 WHERE AccountType = 'Savings';
+
+SELECT MAX(Amount) AS MaxTransaction FROM Transaction;
