@@ -145,3 +145,6 @@ SELECT * FROM Account
 WHERE Balance BETWEEN 10000 AND 30000;
 
 SELECT AVG(Balance) AS AverageBalance FROM Account;
+
+SELECT COUNT(*) FROM Account
+WHERE AccountType = 'Savings';
