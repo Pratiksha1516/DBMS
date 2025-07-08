@@ -129,3 +129,8 @@ HAVING COUNT(t.TransID) > 1;
 --
 SELECT * FROM Customer 
 WHERE City = 'Pune';
+
+SELECT a.* 
+FROM Account a 
+JOIN Customer c ON a.CustomerID = c.CustomerID 
+WHERE c.Name = 'Jenny';
