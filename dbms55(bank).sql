@@ -163,3 +163,9 @@ SELECT c.Name, t.Amount, t.TransType, t.TransDate
 FROM Customer c
 JOIN Account a ON c.CustomerID = a.CustomerID
 JOIN Transaction t ON a.AccountNo = t.AccountNo;
+
+SELECT DISTINCT c.Name
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID
+JOIN Transaction t ON a.AccountNo = t.AccountNo
+WHERE t.TransDate = '2025-06-06';
