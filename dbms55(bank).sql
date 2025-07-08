@@ -204,3 +204,7 @@ SELECT c.Name, c.Phone
 FROM Customer c
 JOIN Account a ON c.CustomerID = a.CustomerID
 WHERE a.AccountType = 'Current';
+
+SELECT a.AccountNo, c.Name
+FROM Account a
+LEFT JOIN Customer c ON a.CustomerID = c.CustomerID;
