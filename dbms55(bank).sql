@@ -193,3 +193,9 @@ FROM Customer c
 JOIN Account a ON c.CustomerID = a.CustomerID
 LEFT JOIN Transaction t ON a.AccountNo = t.AccountNo
 WHERE t.TransID IS NULL;
+
+SELECT AccountNo
+FROM Transaction
+WHERE TransType = 'Deposit'
+GROUP BY AccountNo
+HAVING SUM(Amount) > 10000;
