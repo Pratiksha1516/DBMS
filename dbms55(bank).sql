@@ -169,3 +169,7 @@ FROM Customer c
 JOIN Account a ON c.CustomerID = a.CustomerID
 JOIN Transaction t ON a.AccountNo = t.AccountNo
 WHERE t.TransDate = '2025-06-06';
+
+SELECT c.Name, a.Balance
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID;
