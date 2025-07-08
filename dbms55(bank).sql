@@ -137,3 +137,6 @@ WHERE c.Name = 'Jenny';
 
 SELECT * FROM Transaction 
 WHERE TransType = 'Deposit';
+
+SELECT Name FROM Customer 
+WHERE City LIKE 'B%';
