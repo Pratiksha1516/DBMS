@@ -140,3 +140,6 @@ WHERE TransType = 'Deposit';
 
 SELECT Name FROM Customer 
 WHERE City LIKE 'B%';
+
+SELECT * FROM Account 
+WHERE Balance BETWEEN 10000 AND 30000;
