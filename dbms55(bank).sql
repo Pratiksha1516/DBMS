@@ -187,3 +187,9 @@ GROUP BY c.Name
 HAVING COUNT(t.TransID) = 1;
 
 SELECT * FROM Transaction ORDER BY TransDate DESC;
+
+SELECT c.Name
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID
+LEFT JOIN Transaction t ON a.AccountNo = t.AccountNo
+WHERE t.TransID IS NULL;
