@@ -154,3 +154,7 @@ SELECT MAX(Amount) AS MaxTransaction FROM Transaction;
 SELECT SUM(Amount) AS TotalWithdraw
 FROM Transaction
 WHERE TransType = 'Withdraw' AND TransDate >= '2025-06-05';
+
+SELECT TransType, COUNT(*) AS Total
+FROM Transaction
+GROUP BY TransType;
