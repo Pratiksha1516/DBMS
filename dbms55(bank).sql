@@ -134,3 +134,6 @@ SELECT a.*
 FROM Account a 
 JOIN Customer c ON a.CustomerID = c.CustomerID 
 WHERE c.Name = 'Jenny';
+
+SELECT * FROM Transaction 
+WHERE TransType = 'Deposit';
