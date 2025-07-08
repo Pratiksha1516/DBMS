@@ -199,3 +199,8 @@ FROM Transaction
 WHERE TransType = 'Deposit'
 GROUP BY AccountNo
 HAVING SUM(Amount) > 10000;
+
+SELECT c.Name, c.Phone
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID
+WHERE a.AccountType = 'Current';
