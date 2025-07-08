@@ -125,3 +125,7 @@ JOIN Account a ON c.CustomerID = a.CustomerID
 JOIN Transaction t ON a.AccountNo = t.AccountNo
 GROUP BY c.Name
 HAVING COUNT(t.TransID) > 1;
+
+--
+SELECT * FROM Customer 
+WHERE City = 'Pune';
