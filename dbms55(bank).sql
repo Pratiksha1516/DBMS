@@ -173,3 +173,8 @@ WHERE t.TransDate = '2025-06-06';
 SELECT c.Name, a.Balance
 FROM Customer c
 JOIN Account a ON c.CustomerID = a.CustomerID;
+
+SELECT c.Name
+FROM Customer c
+JOIN Account a ON c.CustomerID = a.CustomerID
+WHERE a.Balance < 15000;
