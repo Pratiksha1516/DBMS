@@ -121,3 +121,8 @@ SELECT project_id
 FROM Tasks
 GROUP BY project_id
 HAVING COUNT(*) > 1;
+
+SELECT T.*
+FROM Tasks T
+JOIN Users U ON T.assigned_to = U.user_id
+WHERE U.role = 'Developer';
