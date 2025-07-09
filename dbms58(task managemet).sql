@@ -98,3 +98,7 @@ GROUP BY project_id;
 SELECT status, COUNT(*) AS total
 FROM Tasks 
 GROUP BY status;
+
+SELECT task_id, COUNT(*) AS comment_count
+FROM Comments
+GROUP BY task_id;
