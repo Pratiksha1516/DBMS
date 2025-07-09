@@ -78,3 +78,7 @@ WHERE project_id = 101;
 SELECT T.* FROM Tasks T
 JOIN Users U ON T.assigned_to = U.user_id
 WHERE U.name = 'Bob';
+
+SELECT * 
+FROM Tasks 
+WHERE due_date > '2025-07-01';
