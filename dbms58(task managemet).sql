@@ -116,3 +116,8 @@ ORDER BY due_date ASC;
 
 SELECT * FROM Users
 WHERE user_id NOT IN (SELECT assigned_to FROM Tasks);
+
+SELECT project_id
+FROM Tasks
+GROUP BY project_id
+HAVING COUNT(*) > 1;
