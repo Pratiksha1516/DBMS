@@ -126,3 +126,10 @@ SELECT T.*
 FROM Tasks T
 JOIN Users U ON T.assigned_to = U.user_id
 WHERE U.role = 'Developer';
+
+SELECT task_id, COUNT(*) AS comment_count
+FROM Comments
+GROUP BY task_id
+ORDER BY comment_count DESC
+LIMIT 1;
+
