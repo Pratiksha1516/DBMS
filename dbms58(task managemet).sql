@@ -110,3 +110,6 @@ ORDER BY
         WHEN 'Medium' THEN 2
         WHEN 'Low' THEN 3
     END;
+
+SELECT * FROM Tasks 
+ORDER BY due_date ASC;
