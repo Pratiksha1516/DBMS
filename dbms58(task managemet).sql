@@ -82,3 +82,7 @@ WHERE U.name = 'Bob';
 SELECT * 
 FROM Tasks 
 WHERE due_date > '2025-07-01';
+
+SELECT * 
+FROM Tasks 
+WHERE status = 'Completed';
