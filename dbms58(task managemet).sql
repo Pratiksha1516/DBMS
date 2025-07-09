@@ -35,3 +35,15 @@ CREATE TABLE Comments (
     FOREIGN KEY (task_id) REFERENCES Tasks(task_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
+
+
+INSERT INTO Users VALUES
+(1, 'Ranveer', 'ran@example.com', 'Manager'),
+(2, 'prati', 'pra@example.com', 'Developer'),
+(3, 'shiri', 'shiri@example.com', 'Tester'),
+(4, 'rita', 'ri@example.com', 'Developer'),
+(5, 'riva', 'riva@example.com', 'Developer');
+
+INSERT INTO Projects VALUES
+(101, 'Website Revamp', 'Redesign the corporate website', '2025-06-01', '2025-08-01'),
+(102, 'Mobile App', 'Develop Android and iOS app', '2025-07-01', '2025-10-01');
