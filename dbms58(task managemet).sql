@@ -102,3 +102,11 @@ GROUP BY status;
 SELECT task_id, COUNT(*) AS comment_count
 FROM Comments
 GROUP BY task_id;
+
+SELECT * FROM Tasks
+ORDER BY 
+    CASE priority
+        WHEN 'High' THEN 1
+        WHEN 'Medium' THEN 2
+        WHEN 'Low' THEN 3
+    END;
