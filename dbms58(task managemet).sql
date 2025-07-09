@@ -94,3 +94,7 @@ WHERE due_date < CURRENT_DATE AND status != 'Completed';
 SELECT project_id, COUNT(*) AS total_tasks
 FROM Tasks
 GROUP BY project_id;
+
+SELECT status, COUNT(*) AS total
+FROM Tasks 
+GROUP BY status;
