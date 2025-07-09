@@ -62,3 +62,6 @@ INSERT INTO Comments VALUES
 (2, 1002, 2, 'Working on it', '2025-06-21 11:00:00'),
 (3, 1005, 5, 'Need help with FCM config', '2025-07-02 15:00:00'),
 (4, 1005, 1, 'Let’s discuss in standup', '2025-07-03 10:00:00');
+
+
+SELECT * FROM Tasks;
