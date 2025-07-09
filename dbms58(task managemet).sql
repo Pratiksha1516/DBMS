@@ -86,3 +86,7 @@ WHERE due_date > '2025-07-01';
 SELECT * 
 FROM Tasks 
 WHERE status = 'Completed';
+
+SELECT * 
+FROM Tasks
+WHERE due_date < CURRENT_DATE AND status != 'Completed';
