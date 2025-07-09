@@ -70,3 +70,7 @@ SELECT * FROM Users;
 SELECT T.task_id, T.title, U.name AS assigned_user
 FROM Tasks T
 JOIN Users U ON T.assigned_to = U.user_id;
+
+SELECT * 
+FROM Tasks 
+WHERE project_id = 101;
