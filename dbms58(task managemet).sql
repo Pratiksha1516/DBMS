@@ -26,6 +26,8 @@ CREATE TABLE Tasks (
     FOREIGN KEY (assigned_to) REFERENCES Users(user_id)
 );
 
+SELECT * FROM Users;
+
 CREATE TABLE Comments (
     comment_id INT PRIMARY KEY,
     task_id INT,
