@@ -26,7 +26,6 @@ CREATE TABLE Tasks (
     FOREIGN KEY (assigned_to) REFERENCES Users(user_id)
 );
 
-SELECT * FROM Users;
 
 CREATE TABLE Comments (
     comment_id INT PRIMARY KEY,
@@ -65,3 +64,9 @@ INSERT INTO Comments VALUES
 
 
 SELECT * FROM Tasks;
+
+SELECT * FROM Users;
+
+SELECT T.task_id, T.title, U.name AS assigned_user
+FROM Tasks T
+JOIN Users U ON T.assigned_to = U.user_id;
