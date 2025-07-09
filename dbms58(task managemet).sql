@@ -113,3 +113,6 @@ ORDER BY
 
 SELECT * FROM Tasks 
 ORDER BY due_date ASC;
+
+SELECT * FROM Users
+WHERE user_id NOT IN (SELECT assigned_to FROM Tasks);
