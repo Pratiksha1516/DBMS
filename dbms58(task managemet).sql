@@ -207,3 +207,9 @@ JOIN (
 SELECT status, priority, COUNT(*) AS total
 FROM Tasks
 GROUP BY status, priority;
+
+
+SELECT U.name, COUNT(C.comment_id) AS comment_count
+FROM Users U
+JOIN Comments C ON U.user_id = C.user_id
+GROUP BY U.name;
