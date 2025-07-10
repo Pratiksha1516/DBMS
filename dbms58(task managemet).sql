@@ -194,3 +194,11 @@ FROM Tasks
 WHERE task_id NOT IN (
     SELECT DISTINCT task_id FROM Comments
 );
+
+SELECT C.*
+FROM Comments C
+JOIN (
+    SELECT task_id, MAX(created_at) AS latest_time
+    FROM Comments
+    GROUP BY task_id
+) latest ON C.task_id = latest.task_id AND C.created_at = latest.latest_time;
