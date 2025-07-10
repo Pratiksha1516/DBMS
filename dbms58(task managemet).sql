@@ -162,3 +162,7 @@ SELECT U.name, COUNT(T.task_id) AS total_tasks
 FROM Users U
 LEFT JOIN Tasks T ON U.user_id = T.assigned_to
 GROUP BY U.name;
+
+SELECT *
+FROM Users
+WHERE role != 'Manager';
