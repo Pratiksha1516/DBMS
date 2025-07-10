@@ -148,3 +148,8 @@ SELECT *
 FROM Tasks
 WHERE status = 'In Progress'
   AND due_date BETWEEN '2025-07-01' AND '2025-07-31';
+
+SELECT assigned_to, COUNT(*) AS task_count
+FROM Tasks
+GROUP BY assigned_to
+HAVING COUNT(*) > 1;
