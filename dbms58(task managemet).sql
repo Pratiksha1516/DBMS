@@ -143,3 +143,8 @@ SELECT T.*
 FROM Tasks T
 JOIN Projects P ON T.project_id = P.project_id
 WHERE P.name = 'Mobile App';
+
+SELECT *
+FROM Tasks
+WHERE status = 'In Progress'
+  AND due_date BETWEEN '2025-07-01' AND '2025-07-31';
