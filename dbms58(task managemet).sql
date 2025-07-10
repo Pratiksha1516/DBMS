@@ -188,3 +188,9 @@ SELECT DISTINCT U.name
 FROM Comments C
 JOIN Users U ON C.user_id = U.user_id
 WHERE C.task_id = 1005;
+
+SELECT *
+FROM Tasks
+WHERE task_id NOT IN (
+    SELECT DISTINCT task_id FROM Comments
+);
