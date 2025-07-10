@@ -213,3 +213,9 @@ SELECT U.name, COUNT(C.comment_id) AS comment_count
 FROM Users U
 JOIN Comments C ON U.user_id = C.user_id
 GROUP BY U.name;
+
+SELECT T.project_id, COUNT(DISTINCT T.assigned_to) AS developers_count
+FROM Tasks T
+JOIN Users U ON T.assigned_to = U.user_id
+WHERE U.role = 'Developer'
+GROUP BY T.project_id;
