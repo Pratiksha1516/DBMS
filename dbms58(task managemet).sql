@@ -157,3 +157,8 @@ HAVING COUNT(*) > 1;
 SELECT *
 FROM Tasks
 WHERE due_date < CURRENT_DATE AND status = 'Not Started';
+
+SELECT U.name, COUNT(T.task_id) AS total_tasks
+FROM Users U
+LEFT JOIN Tasks T ON U.user_id = T.assigned_to
+GROUP BY U.name;
