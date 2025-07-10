@@ -183,3 +183,8 @@ WHERE start_date < CURRENT_DATE;
 SELECT *
 FROM Tasks
 WHERE due_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '7 days';
+
+SELECT DISTINCT U.name
+FROM Comments C
+JOIN Users U ON C.user_id = U.user_id
+WHERE C.task_id = 1005;
