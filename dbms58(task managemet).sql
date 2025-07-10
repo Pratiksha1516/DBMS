@@ -226,3 +226,8 @@ JOIN Comments C ON T.task_id = C.task_id
 GROUP BY T.task_id, T.title
 ORDER BY comment_count DESC
 LIMIT 3;
+
+SELECT DISTINCT U.*
+FROM Users U
+WHERE U.user_id IN (SELECT assigned_to FROM Tasks)
+  AND U.user_id IN (SELECT user_id FROM Comments);
