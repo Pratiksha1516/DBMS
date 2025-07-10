@@ -231,3 +231,10 @@ SELECT DISTINCT U.*
 FROM Users U
 WHERE U.user_id IN (SELECT assigned_to FROM Tasks)
   AND U.user_id IN (SELECT user_id FROM Comments);
+
+
+SELECT T.*
+FROM Tasks T
+WHERE T.assigned_to NOT IN (
+    SELECT DISTINCT user_id FROM Comments
+);
