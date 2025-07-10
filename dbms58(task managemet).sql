@@ -139,3 +139,7 @@ FROM Tasks T
 JOIN Users U ON T.assigned_to = U.user_id
 WHERE U.role = 'Tester';
 
+SELECT T.*
+FROM Tasks T
+JOIN Projects P ON T.project_id = P.project_id
+WHERE P.name = 'Mobile App';
