@@ -153,3 +153,7 @@ SELECT assigned_to, COUNT(*) AS task_count
 FROM Tasks
 GROUP BY assigned_to
 HAVING COUNT(*) > 1;
+
+SELECT *
+FROM Tasks
+WHERE due_date < CURRENT_DATE AND status = 'Not Started';
