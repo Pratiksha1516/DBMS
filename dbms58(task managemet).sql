@@ -175,3 +175,7 @@ WHERE U.role = 'Developer';
 SELECT *
 FROM Tasks
 WHERE due_date BETWEEN '2025-07-01' AND '2025-07-31';
+
+SELECT *
+FROM Projects
+WHERE start_date < CURRENT_DATE;
