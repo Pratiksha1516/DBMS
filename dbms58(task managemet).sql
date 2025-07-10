@@ -219,3 +219,10 @@ FROM Tasks T
 JOIN Users U ON T.assigned_to = U.user_id
 WHERE U.role = 'Developer'
 GROUP BY T.project_id;
+
+SELECT T.task_id, T.title, COUNT(C.comment_id) AS comment_count
+FROM Tasks T
+JOIN Comments C ON T.task_id = C.task_id
+GROUP BY T.task_id, T.title
+ORDER BY comment_count DESC
+LIMIT 3;
