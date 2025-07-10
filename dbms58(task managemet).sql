@@ -133,3 +133,9 @@ GROUP BY task_id
 ORDER BY comment_count DESC
 LIMIT 1;
 
+--
+SELECT T.*
+FROM Tasks T
+JOIN Users U ON T.assigned_to = U.user_id
+WHERE U.role = 'Tester';
+
