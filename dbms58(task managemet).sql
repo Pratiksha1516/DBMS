@@ -202,3 +202,8 @@ JOIN (
     FROM Comments
     GROUP BY task_id
 ) latest ON C.task_id = latest.task_id AND C.created_at = latest.latest_time;
+
+
+SELECT status, priority, COUNT(*) AS total
+FROM Tasks
+GROUP BY status, priority;
