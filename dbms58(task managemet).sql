@@ -171,3 +171,7 @@ SELECT U.name, T.title, T.status
 FROM Users U
 JOIN Tasks T ON U.user_id = T.assigned_to
 WHERE U.role = 'Developer';
+
+SELECT *
+FROM Tasks
+WHERE due_date BETWEEN '2025-07-01' AND '2025-07-31';
