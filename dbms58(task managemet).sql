@@ -166,3 +166,8 @@ GROUP BY U.name;
 SELECT *
 FROM Users
 WHERE role != 'Manager';
+
+SELECT U.name, T.title, T.status
+FROM Users U
+JOIN Tasks T ON U.user_id = T.assigned_to
+WHERE U.role = 'Developer';
