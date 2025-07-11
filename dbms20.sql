@@ -149,3 +149,8 @@ WHERE br.ReturnDate IS NULL;
 SELECT Name
 FROM Member
 WHERE JoinDate < '2023-01-01';
+
+SELECT MemberID, BookID, COUNT(*) AS TimesBorrowed
+FROM Borrow
+GROUP BY MemberID, BookID
+HAVING COUNT(*) > 1;
