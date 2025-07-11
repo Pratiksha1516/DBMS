@@ -208,3 +208,9 @@ JOIN Borrow br ON m.MemberID = br.MemberID
 GROUP BY m.Name
 ORDER BY Total DESC
 LIMIT 1;
+
+SELECT DISTINCT m.Name
+FROM Member m
+JOIN Borrow br ON m.MemberID = br.MemberID
+WHERE EXTRACT(YEAR FROM m.JoinDate) = 2023
+  AND EXTRACT(YEAR FROM br.BorrowDate) = 2023;
