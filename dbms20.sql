@@ -186,3 +186,8 @@ SELECT DISTINCT b.Title
 FROM Borrow br
 JOIN Book b ON br.BookID = b.BookID
 WHERE br.BorrowDate >= CURRENT_DATE - INTERVAL '60 days';
+
+SELECT m.Name
+FROM Member m
+LEFT JOIN Borrow br ON m.MemberID = br.MemberID
+WHERE br.BorrowID IS NULL;
