@@ -145,3 +145,7 @@ FROM Borrow br
 JOIN Book b ON br.BookID = b.BookID
 JOIN Member m ON br.MemberID = m.MemberID
 WHERE br.ReturnDate IS NULL;
+
+SELECT Name
+FROM Member
+WHERE JoinDate < '2023-01-01';
