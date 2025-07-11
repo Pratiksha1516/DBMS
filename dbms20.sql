@@ -163,3 +163,9 @@ SELECT b.Title,
 FROM Book b
 LEFT JOIN Borrow br ON b.BookID = br.BookID
 GROUP BY b.BookID, b.Title, br.BookID;
+
+SELECT DISTINCT m.Name, m.Email
+FROM Member m
+JOIN Borrow br ON m.MemberID = br.MemberID
+JOIN Book b ON br.BookID = b.BookID
+WHERE b.Price > 15.00;
