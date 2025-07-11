@@ -197,3 +197,7 @@ FROM Book;
 
 SELECT * FROM Book
 WHERE Title ILIKE '%Great%';
+
+SELECT SUM(bk.Price) AS TotalBorrowedValue
+FROM Borrow br
+JOIN Book bk ON br.BookID = bk.BookID;
