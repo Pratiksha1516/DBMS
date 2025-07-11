@@ -232,3 +232,12 @@ FROM Member m
 JOIN Borrow br ON m.MemberID = br.MemberID
 JOIN Book b ON br.BookID = b.BookID
 WHERE b.Publisher = 'Scribner';
+
+CREATE VIEW MemberBorrowSummary AS
+SELECT m.Name, COUNT(br.BorrowID) AS BorrowCount
+FROM Member m
+LEFT JOIN Borrow br ON m.MemberID = br.MemberID
+GROUP BY m.Name;
+
+-- To view it
+SELECT * FROM MemberBorrowSummary;
