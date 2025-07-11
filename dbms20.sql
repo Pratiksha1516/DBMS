@@ -220,3 +220,9 @@ FROM Book b
 JOIN Borrow br ON b.BookID = br.BookID
 GROUP BY b.Title
 HAVING COUNT(br.BorrowID) > 1;
+
+SELECT EXTRACT(MONTH FROM BorrowDate) AS Month, COUNT(*) AS Total
+FROM Borrow
+WHERE EXTRACT(YEAR FROM BorrowDate) = 2024
+GROUP BY Month
+ORDER BY Month;
