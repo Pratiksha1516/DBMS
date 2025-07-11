@@ -139,3 +139,9 @@ SELECT DISTINCT m.Name
 FROM Borrow br
 JOIN Member m ON br.MemberID = m.MemberID
 WHERE EXTRACT(MONTH FROM br.BorrowDate) = 3 AND EXTRACT(YEAR FROM br.BorrowDate) = 2024;
+
+SELECT b.Title, m.Name, br.BorrowDate
+FROM Borrow br
+JOIN Book b ON br.BookID = b.BookID
+JOIN Member m ON br.MemberID = m.MemberID
+WHERE br.ReturnDate IS NULL;
