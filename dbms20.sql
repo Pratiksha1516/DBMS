@@ -201,3 +201,10 @@ WHERE Title ILIKE '%Great%';
 SELECT SUM(bk.Price) AS TotalBorrowedValue
 FROM Borrow br
 JOIN Book bk ON br.BookID = bk.BookID;
+
+SELECT m.Name, COUNT(br.BorrowID) AS Total
+FROM Member m
+JOIN Borrow br ON m.MemberID = br.MemberID
+GROUP BY m.Name
+ORDER BY Total DESC
+LIMIT 1;
