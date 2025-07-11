@@ -132,3 +132,10 @@ JOIN Borrow b ON bk.BookID = b.BookID
 GROUP BY bk.Title;
 
 select * from BookBorrowCount;
+
+
+--
+SELECT DISTINCT m.Name
+FROM Borrow br
+JOIN Member m ON br.MemberID = m.MemberID
+WHERE EXTRACT(MONTH FROM br.BorrowDate) = 3 AND EXTRACT(YEAR FROM br.BorrowDate) = 2024;
