@@ -181,3 +181,8 @@ WHERE ReturnDate IS NOT NULL;
 
 SELECT * FROM Member
 ORDER BY Name ASC;
+
+SELECT DISTINCT b.Title
+FROM Borrow br
+JOIN Book b ON br.BookID = b.BookID
+WHERE br.BorrowDate >= CURRENT_DATE - INTERVAL '60 days';
