@@ -154,3 +154,12 @@ SELECT MemberID, BookID, COUNT(*) AS TimesBorrowed
 FROM Borrow
 GROUP BY MemberID, BookID
 HAVING COUNT(*) > 1;
+
+SELECT b.Title, 
+       CASE 
+           WHEN br.BookID IS NOT NULL THEN 'Yes'
+           ELSE 'No'
+       END AS IsBorrowed
+FROM Book b
+LEFT JOIN Borrow br ON b.BookID = br.BookID
+GROUP BY b.BookID, b.Title, br.BookID;
