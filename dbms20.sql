@@ -169,3 +169,8 @@ FROM Member m
 JOIN Borrow br ON m.MemberID = br.MemberID
 JOIN Book b ON br.BookID = b.BookID
 WHERE b.Price > 15.00;
+
+SELECT b.Author, COUNT(br.BorrowID) AS TimesBorrowed
+FROM Book b
+JOIN Borrow br ON b.BookID = br.BookID
+GROUP BY b.Author;
