@@ -214,3 +214,9 @@ FROM Member m
 JOIN Borrow br ON m.MemberID = br.MemberID
 WHERE EXTRACT(YEAR FROM m.JoinDate) = 2023
   AND EXTRACT(YEAR FROM br.BorrowDate) = 2023;
+
+SELECT b.Title, COUNT(br.BorrowID) AS TimesBorrowed
+FROM Book b
+JOIN Borrow br ON b.BookID = br.BookID
+GROUP BY b.Title
+HAVING COUNT(br.BorrowID) > 1;
