@@ -194,3 +194,6 @@ WHERE br.BorrowID IS NULL;
 
 SELECT DISTINCT Publisher
 FROM Book;
+
+SELECT * FROM Book
+WHERE Title ILIKE '%Great%';
