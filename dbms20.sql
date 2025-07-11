@@ -191,3 +191,6 @@ SELECT m.Name
 FROM Member m
 LEFT JOIN Borrow br ON m.MemberID = br.MemberID
 WHERE br.BorrowID IS NULL;
+
+SELECT DISTINCT Publisher
+FROM Book;
