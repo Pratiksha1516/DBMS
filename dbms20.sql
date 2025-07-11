@@ -226,3 +226,9 @@ FROM Borrow
 WHERE EXTRACT(YEAR FROM BorrowDate) = 2024
 GROUP BY Month
 ORDER BY Month;
+
+SELECT DISTINCT m.Name
+FROM Member m
+JOIN Borrow br ON m.MemberID = br.MemberID
+JOIN Book b ON br.BookID = b.BookID
+WHERE b.Publisher = 'Scribner';
