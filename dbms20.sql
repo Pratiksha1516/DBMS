@@ -178,3 +178,6 @@ GROUP BY b.Author;
 SELECT AVG(ReturnDate - BorrowDate) AS AvgBorrowDuration
 FROM Borrow
 WHERE ReturnDate IS NOT NULL;
+
+SELECT * FROM Member
+ORDER BY Name ASC;
