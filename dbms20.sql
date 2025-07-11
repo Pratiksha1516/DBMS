@@ -174,3 +174,7 @@ SELECT b.Author, COUNT(br.BorrowID) AS TimesBorrowed
 FROM Book b
 JOIN Borrow br ON b.BookID = br.BookID
 GROUP BY b.Author;
+
+SELECT AVG(ReturnDate - BorrowDate) AS AvgBorrowDuration
+FROM Borrow
+WHERE ReturnDate IS NOT NULL;
