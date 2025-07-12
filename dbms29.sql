@@ -122,3 +122,8 @@ WHERE city NOT IN ('Sangli', 'Delhi');
 SELECT * 
 FROM student2 
 WHERE marks BETWEEN 80 AND 90;
+
+SELECT marks, COUNT(*) 
+FROM student2 
+GROUP BY marks 
+HAVING COUNT(*) > 1;
