@@ -98,3 +98,7 @@ WHERE marks > (SELECT AVG(marks) FROM student2);
 SELECT * 
 FROM student2 
 WHERE city <> 'Mumbai';
+
+SELECT * 
+FROM student2 
+WHERE name LIKE 'b%';
