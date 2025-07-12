@@ -82,3 +82,7 @@ GROUP BY city;
 SELECT city, COUNT(*) 
 FROM student2 
 GROUP BY city HAVING COUNT(*) > 1;
+
+SELECT grade, AVG(marks)
+FROM student2 
+GROUP BY grade;
