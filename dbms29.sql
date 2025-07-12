@@ -49,19 +49,24 @@ GROUP BY city
 ORDER BY AVG(marks);
 
 --
-SELECT * FROM student2 
+SELECT *
+FROM student2 
 WHERE marks > 85;
 
-SELECT * FROM student2 
+SELECT * 
+FROM student2 
 WHERE city = 'Mumbai';
 
-SELECT * FROM student2
+SELECT * 
+FROM student2
 WHERE grade = 'B';
 
-SELECT * FROM student2 
+SELECT * 
+FROM student2 
 ORDER BY marks DESC;
 
-SELECT name, grade FROM student2 
+SELECT name, grade 
+FROM student2 
 WHERE marks < 90;
 
 SELECT SUM(marks) AS total_marks 
@@ -69,3 +74,7 @@ FROM student2;
 
 SELECT grade, COUNT(*) FROM student2 
 GROUP BY grade;
+
+SELECT city, MIN(marks) AS min_marks
+FROM student2 
+GROUP BY city;
