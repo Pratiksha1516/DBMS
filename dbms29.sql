@@ -102,3 +102,7 @@ WHERE city <> 'Mumbai';
 SELECT * 
 FROM student2 
 WHERE name LIKE 'b%';
+
+SELECT * 
+FROM student2
+WHERE name LIKE '%n';
