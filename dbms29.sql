@@ -63,3 +63,6 @@ ORDER BY marks DESC;
 
 SELECT name, grade FROM student2 
 WHERE marks < 90;
+
+SELECT SUM(marks) AS total_marks 
+FROM student2;
