@@ -51,3 +51,6 @@ ORDER BY AVG(marks);
 --
 SELECT * FROM student2 
 WHERE marks > 85;
+
+SELECT * FROM student2 
+WHERE city = 'Mumbai';
