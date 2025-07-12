@@ -94,3 +94,7 @@ WHERE marks = (SELECT MAX(marks) FROM student2);
 SELECT *
 FROM student2 
 WHERE marks > (SELECT AVG(marks) FROM student2);
+
+SELECT * 
+FROM student2 
+WHERE city <> 'Mumbai';
