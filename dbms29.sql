@@ -78,3 +78,7 @@ GROUP BY grade;
 SELECT city, MIN(marks) AS min_marks
 FROM student2 
 GROUP BY city;
+
+SELECT city, COUNT(*) 
+FROM student2 
+GROUP BY city HAVING COUNT(*) > 1;
