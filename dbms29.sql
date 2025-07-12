@@ -54,3 +54,6 @@ WHERE marks > 85;
 
 SELECT * FROM student2 
 WHERE city = 'Mumbai';
+
+SELECT * FROM student2
+WHERE grade = 'B';
