@@ -86,3 +86,7 @@ GROUP BY city HAVING COUNT(*) > 1;
 SELECT grade, AVG(marks)
 FROM student2 
 GROUP BY grade;
+
+SELECT * 
+FROM student2 
+WHERE marks = (SELECT MAX(marks) FROM student2);
