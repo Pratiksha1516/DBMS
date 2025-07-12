@@ -110,3 +110,7 @@ WHERE name LIKE '%n';
 SELECT * 
 FROM student2 
 WHERE grade IN ('A', 'B');
+
+SELECT *
+FROM student2 
+WHERE city IN ('Delhi', 'Pune');
