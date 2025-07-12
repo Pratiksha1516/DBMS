@@ -47,3 +47,7 @@ SELECT city, AVG(marks)
 FROM student2
 GROUP BY city
 ORDER BY AVG(marks);
+
+--
+SELECT * FROM student2 
+WHERE marks > 85;
