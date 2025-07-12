@@ -66,3 +66,6 @@ WHERE marks < 90;
 
 SELECT SUM(marks) AS total_marks 
 FROM student2;
+
+SELECT grade, COUNT(*) FROM student2 
+GROUP BY grade;
