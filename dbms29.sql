@@ -60,3 +60,6 @@ WHERE grade = 'B';
 
 SELECT * FROM student2 
 ORDER BY marks DESC;
+
+SELECT name, grade FROM student2 
+WHERE marks < 90;
