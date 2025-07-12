@@ -106,3 +106,7 @@ WHERE name LIKE 'b%';
 SELECT * 
 FROM student2
 WHERE name LIKE '%n';
+
+SELECT * 
+FROM student2 
+WHERE grade IN ('A', 'B');
