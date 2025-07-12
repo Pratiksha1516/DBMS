@@ -57,3 +57,6 @@ WHERE city = 'Mumbai';
 
 SELECT * FROM student2
 WHERE grade = 'B';
+
+SELECT * FROM student2 
+ORDER BY marks DESC;
