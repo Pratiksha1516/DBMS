@@ -104,3 +104,6 @@ WHERE EmployeeID = 2;
 
 DELETE FROM Employees 
 WHERE Department = 'Finance';
+
+INSERT INTO Employees (EmployeeID, Name, Age, Department, Salary)
+VALUES (4, 'prati', 26, 'IT', 58000.00);
