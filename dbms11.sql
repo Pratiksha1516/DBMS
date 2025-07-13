@@ -86,3 +86,7 @@ GROUP BY Department;
 SELECT Department, AVG(Salary) AS AvgSalary 
 FROM Employees
 GROUP BY Department;
+
+SELECT Department, MAX(Age) AS MaxAge
+FROM Employees 
+GROUP BY Department;
