@@ -63,3 +63,7 @@ WHERE Salary BETWEEN 55000 AND 70000;
 SELECT * 
 FROM Employees
 WHERE Name LIKE 'A%';
+
+SELECT * 
+FROM Employees 
+WHERE Name LIKE '%e';
