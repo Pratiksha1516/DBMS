@@ -82,3 +82,7 @@ FROM Employees ORDER BY Salary DESC;
 SELECT Department, COUNT(*) AS Total
 FROM Employees
 GROUP BY Department;
+
+SELECT Department, AVG(Salary) AS AvgSalary 
+FROM Employees
+GROUP BY Department;
