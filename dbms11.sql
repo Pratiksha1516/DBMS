@@ -78,3 +78,7 @@ ORDER BY Age ASC;
 
 SELECT * 
 FROM Employees ORDER BY Salary DESC;
+
+SELECT Department, COUNT(*) AS Total
+FROM Employees
+GROUP BY Department;
