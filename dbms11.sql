@@ -90,3 +90,7 @@ GROUP BY Department;
 SELECT Department, MAX(Age) AS MaxAge
 FROM Employees 
 GROUP BY Department;
+
+UPDATE Employees
+SET Salary = Salary * 1.10
+WHERE Department = 'IT';
