@@ -43,3 +43,8 @@ where EmployeeID = 3;
 UPDATE Employees
 SET Salary = 75000.00
 WHERE EmployeeID = 3;
+
+--
+SELECT Name, Department 
+FROM Employees;
+
