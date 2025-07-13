@@ -71,3 +71,7 @@ WHERE Name LIKE '%e';
 SELECT *
 FROM Employees 
 WHERE Department != 'HR';
+
+SELECT * 
+FROM Employees
+ORDER BY Age ASC;
