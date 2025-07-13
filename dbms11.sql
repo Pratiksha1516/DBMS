@@ -98,3 +98,6 @@ WHERE Department = 'IT';
 UPDATE Employees
 SET Department = 'Marketing'
 WHERE Name = 'Charlie';
+
+DELETE FROM Employees 
+WHERE EmployeeID = 2;
