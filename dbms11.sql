@@ -101,3 +101,6 @@ WHERE Name = 'Charlie';
 
 DELETE FROM Employees 
 WHERE EmployeeID = 2;
+
+DELETE FROM Employees 
+WHERE Department = 'Finance';
