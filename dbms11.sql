@@ -55,3 +55,7 @@ WHERE Age > 27;
 SELECT * 
 FROM Employees
 WHERE Department = 'IT';
+
+SELECT *
+FROM Employees
+WHERE Salary BETWEEN 55000 AND 70000;
