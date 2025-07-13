@@ -94,3 +94,7 @@ GROUP BY Department;
 UPDATE Employees
 SET Salary = Salary * 1.10
 WHERE Department = 'IT';
+
+UPDATE Employees
+SET Department = 'Marketing'
+WHERE Name = 'Charlie';
