@@ -52,3 +52,6 @@ SELECT *
 FROM Employees 
 WHERE Age > 27;
 
+SELECT * 
+FROM Employees
+WHERE Department = 'IT';
