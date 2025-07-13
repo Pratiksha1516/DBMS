@@ -75,3 +75,6 @@ WHERE Department != 'HR';
 SELECT * 
 FROM Employees
 ORDER BY Age ASC;
+
+SELECT * 
+FROM Employees ORDER BY Salary DESC;
