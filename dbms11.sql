@@ -67,3 +67,7 @@ WHERE Name LIKE 'A%';
 SELECT * 
 FROM Employees 
 WHERE Name LIKE '%e';
+
+SELECT *
+FROM Employees 
+WHERE Department != 'HR';
