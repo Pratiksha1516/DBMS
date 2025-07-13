@@ -110,3 +110,6 @@ VALUES (4, 'prati', 26, 'IT', 58000.00);
 
 INSERT INTO Employees (EmployeeID, Name, Age, Department, Salary)
 VALUES (5, 'Ranveer', 35, 'HR', 62000.00);
+
+SELECT * FROM Employees 
+WHERE Department = 'IT' OR Salary > 65000;
