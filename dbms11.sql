@@ -48,3 +48,7 @@ WHERE EmployeeID = 3;
 SELECT Name, Department 
 FROM Employees;
 
+SELECT * 
+FROM Employees 
+WHERE Age > 27;
+
