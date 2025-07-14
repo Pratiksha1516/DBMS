@@ -183,3 +183,6 @@ WHERE CourseID NOT IN (
   SELECT CourseID FROM Enrollment
   WHERE StudentID = (SELECT StudentID FROM Student WHERE Name = 'prati')
 );
+
+SELECT * FROM Student ORDER BY Age DESC;
+
