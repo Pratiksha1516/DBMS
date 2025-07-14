@@ -123,3 +123,6 @@ SELECT *
 FROM Student 
 WHERE Department = 'Computer Science';
 
+SELECT DISTINCT S.Name 
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID;
