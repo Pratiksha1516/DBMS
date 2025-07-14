@@ -126,3 +126,7 @@ WHERE Department = 'Computer Science';
 SELECT DISTINCT S.Name 
 FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID;
+
+SELECT CourseName 
+FROM Course 
+WHERE Credits > 3;
