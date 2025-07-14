@@ -154,3 +154,9 @@ WHERE Credits > 3;
 SELECT Semester, COUNT(*) AS EnrollmentCount
 FROM Enrollment
 GROUP BY Semester;
+
+SELECT S.Name, SUM(C.Credits) AS TotalCredits
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID
+JOIN Course C ON E.CourseID = C.CourseID
+GROUP BY S.Name;
