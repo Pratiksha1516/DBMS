@@ -146,3 +146,7 @@ FROM Student
 GROUP BY Department;
 
 SELECT AVG(Age) AS AverageAge FROM Student;
+
+SELECT COUNT(*)
+FROM Course 
+WHERE Credits > 3;
