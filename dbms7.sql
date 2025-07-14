@@ -144,3 +144,5 @@ WHERE E.Grade = 'A';
 SELECT Department, COUNT(*) AS StudentCount
 FROM Student
 GROUP BY Department;
+
+SELECT AVG(Age) AS AverageAge FROM Student;
