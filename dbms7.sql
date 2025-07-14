@@ -203,3 +203,14 @@ SELECT S.Name, E.Grade,
   END AS GradePoints
 FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID;
+
+SELECT S.Name
+FROM Student S
+WHERE EXISTS (
+    SELECT 1 FROM Enrollment E1
+    WHERE E1.StudentID = S.StudentID AND E1.Semester = 'Fall 2024'
+)
+AND EXISTS (
+    SELECT 1 FROM Enrollment E2
+    WHERE E2.StudentID = S.StudentID AND E2.Semester != 'Fall 2024'
+);
