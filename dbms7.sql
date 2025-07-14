@@ -177,3 +177,9 @@ WHERE Age = (SELECT MAX(Age) FROM Student);
 
 SELECT Name FROM Student
 WHERE StudentID NOT IN (SELECT StudentID FROM Enrollment);
+
+SELECT CourseName FROM Course
+WHERE CourseID NOT IN (
+  SELECT CourseID FROM Enrollment
+  WHERE StudentID = (SELECT StudentID FROM Student WHERE Name = 'prati')
+);
