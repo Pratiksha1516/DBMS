@@ -160,3 +160,6 @@ FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID
 JOIN Course C ON E.CourseID = C.CourseID
 GROUP BY S.Name;
+
+SELECT Name FROM Student
+WHERE Age > (SELECT AVG(Age) FROM Student);
