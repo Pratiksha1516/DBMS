@@ -117,3 +117,9 @@ WHERE CourseID = 102;
 UPDATE Course
 SET CourseName = 'Software Engineering'
 WHERE CourseID = 102;
+
+--
+SELECT * 
+FROM Student 
+WHERE Department = 'Computer Science';
+
