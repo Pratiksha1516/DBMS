@@ -140,3 +140,7 @@ SELECT S.Name
 FROM Student S
 JOIN Enrollment E ON S.StudentID = E.StudentID
 WHERE E.Grade = 'A';
+
+SELECT Department, COUNT(*) AS StudentCount
+FROM Student
+GROUP BY Department;
