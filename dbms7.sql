@@ -163,3 +163,11 @@ GROUP BY S.Name;
 
 SELECT Name FROM Student
 WHERE Age > (SELECT AVG(Age) FROM Student);
+
+SELECT CourseName
+FROM Course
+WHERE CourseID IN (
+  SELECT CourseID
+  FROM Enrollment
+  WHERE StudentID = (SELECT StudentID FROM Student WHERE Name = 'ranveer')
+);
