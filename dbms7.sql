@@ -130,3 +130,8 @@ JOIN Enrollment E ON S.StudentID = E.StudentID;
 SELECT CourseName 
 FROM Course 
 WHERE Credits > 3;
+
+SELECT S.Name, C.CourseName
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID
+JOIN Course C ON E.CourseID = C.CourseID;
