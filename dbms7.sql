@@ -187,3 +187,10 @@ WHERE CourseID NOT IN (
 SELECT * FROM Student ORDER BY Age DESC;
 
 SELECT * FROM Student ORDER BY Age ASC LIMIT 1;
+
+SELECT S.Name, COUNT(*) AS Enrollments
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID
+GROUP BY S.Name
+ORDER BY Enrollments DESC
+LIMIT 2;
