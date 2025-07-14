@@ -194,3 +194,12 @@ JOIN Enrollment E ON S.StudentID = E.StudentID
 GROUP BY S.Name
 ORDER BY Enrollments DESC
 LIMIT 2;
+
+SELECT S.Name, E.Grade,
+  CASE E.Grade
+    WHEN 'A' THEN 10
+    WHEN 'B' THEN 8
+    ELSE 0
+  END AS GradePoints
+FROM Student S
+JOIN Enrollment E ON S.StudentID = E.StudentID;
