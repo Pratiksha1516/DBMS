@@ -160,3 +160,8 @@ FROM (
 
 SELECT element FROM setA
 WHERE element % 2 = 0;
+
+
+SELECT element FROM setB
+WHERE element % 2 = 1;
+
