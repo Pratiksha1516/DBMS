@@ -126,3 +126,12 @@ FROM (
 GROUP BY element
 HAVING COUNT(*) > 1;
 
+
+SELECT element
+FROM (
+    SELECT element FROM setA
+    UNION ALL
+    SELECT element FROM setB
+) AS combined
+GROUP BY element
+HAVING COUNT(*) = 1;
