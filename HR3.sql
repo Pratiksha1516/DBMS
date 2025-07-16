@@ -135,3 +135,12 @@ FROM (
 ) AS combined
 GROUP BY element
 HAVING COUNT(*) = 1;
+
+
+SELECT COUNT(*) AS total_elements
+FROM (
+    SELECT element FROM setA
+    UNION ALL
+    SELECT element FROM setB
+) AS combined;
+
