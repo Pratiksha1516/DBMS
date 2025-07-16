@@ -149,3 +149,10 @@ SELECT 'setA' AS set_name, COUNT(*) AS count FROM setA
 UNION ALL
 SELECT 'setB', COUNT(*) FROM setB;
 
+
+SELECT DISTINCT element
+FROM (
+    SELECT element FROM setA WHERE element > 4
+    UNION
+    SELECT element FROM setB WHERE element > 4
+) AS filtered;
