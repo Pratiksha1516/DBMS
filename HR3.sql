@@ -59,9 +59,11 @@ SELECT element FROM setA
 INTERSECT
 SELECT element FROM setB;
 
+
 SELECT element FROM setB
 EXCEPT
 SELECT element FROM setA;
+
 
 SELECT element FROM setA
 EXCEPT
@@ -71,6 +73,7 @@ SELECT element FROM setB
 EXCEPT
 SELECT element FROM setA;
 
+
 SELECT COUNT(DISTINCT element)
 FROM (
     SELECT element FROM setA
@@ -78,8 +81,14 @@ FROM (
     SELECT element FROM setB
 ) AS union_result;
 
+
 SELECT NOT EXISTS (
     SELECT element FROM setA
     EXCEPT
     SELECT element FROM setB
 ) AS is_subset;
+
+
+SELECT A.element
+FROM setA A
+INNER JOIN setB B ON A.element = B.element;
