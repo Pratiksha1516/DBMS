@@ -54,6 +54,8 @@ FROM(
 	SELECT element FROM setB
 )AS combined;
 
-drop table setA;
+--
+SELECT element FROM setA
+INTERSECT
+SELECT element FROM setB;
 
-drop table setB;
