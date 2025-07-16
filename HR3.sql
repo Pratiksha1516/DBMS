@@ -108,3 +108,10 @@ SELECT element FROM setA
 UNION
 SELECT element FROM setB;
 
+
+SELECT COUNT(*)
+FROM (
+    SELECT element FROM setA
+    INTERSECT
+    SELECT element FROM setB
+) AS common;
