@@ -104,4 +104,7 @@ FROM setB B
 LEFT JOIN setA A ON A.element = B.element;
 
 
+SELECT element FROM setA
+UNION
+SELECT element FROM setB;
 
