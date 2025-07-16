@@ -165,3 +165,8 @@ WHERE element % 2 = 0;
 SELECT element FROM setB
 WHERE element % 2 = 1;
 
+
+SELECT element, COUNT(*) as count
+FROM setB
+GROUP BY element
+HAVING COUNT(*) > 1;
