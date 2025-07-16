@@ -144,3 +144,8 @@ FROM (
     SELECT element FROM setB
 ) AS combined;
 
+
+SELECT 'setA' AS set_name, COUNT(*) AS count FROM setA
+UNION ALL
+SELECT 'setB', COUNT(*) FROM setB;
+
