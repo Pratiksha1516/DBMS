@@ -70,3 +70,10 @@ UNION
 SELECT element FROM setB
 EXCEPT
 SELECT element FROM setA;
+
+SELECT COUNT(DISTINCT element)
+FROM (
+    SELECT element FROM setA
+    UNION
+    SELECT element FROM setB
+) AS union_result;
