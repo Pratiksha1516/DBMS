@@ -77,3 +77,9 @@ FROM (
     UNION
     SELECT element FROM setB
 ) AS union_result;
+
+SELECT NOT EXISTS (
+    SELECT element FROM setA
+    EXCEPT
+    SELECT element FROM setB
+) AS is_subset;
