@@ -92,3 +92,9 @@ SELECT NOT EXISTS (
 SELECT A.element
 FROM setA A
 INNER JOIN setB B ON A.element = B.element;
+
+
+SELECT A.element, B.element AS exists_in_B
+FROM setA A
+LEFT JOIN setB B ON A.element = B.element;
+
