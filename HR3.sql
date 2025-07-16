@@ -156,3 +156,7 @@ FROM (
     UNION
     SELECT element FROM setB WHERE element > 4
 ) AS filtered;
+
+
+SELECT element FROM setA
+WHERE element % 2 = 0;
