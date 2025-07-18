@@ -153,3 +153,7 @@ WHERE Occupation IN (
 SELECT COUNT(*)
 FROM OCCUPATIONS
 WHERE Occupation = 'Doctor';
+
+SELECT Name
+FROM OCCUPATIONS
+WHERE Name LIKE '_r%';
