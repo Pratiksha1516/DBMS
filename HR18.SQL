@@ -78,3 +78,8 @@ WHERE Name LIKE '%a';
 SELECT Occupation, COUNT(*) AS Total
 FROM OCCUPATIONS
 GROUP BY Occupation;
+
+SELECT Name, Occupation
+FROM OCCUPATIONS
+ORDER BY Occupation, Name;
+
