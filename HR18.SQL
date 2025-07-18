@@ -127,3 +127,6 @@ SELECT Name
 FROM OCCUPATIONS
 WHERE Occupation = 'Actor'
 ORDER BY Name DESC;
+
+SELECT Name, SUBSTR(Occupation, 1, 1) AS First_Letter
+FROM OCCUPATIONS;
