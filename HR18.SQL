@@ -83,3 +83,5 @@ SELECT Name, Occupation
 FROM OCCUPATIONS
 ORDER BY Occupation, Name;
 
+SELECT COUNT(DISTINCT Occupation) AS Unique_Occupations
+FROM OCCUPATIONS;
