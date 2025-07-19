@@ -85,11 +85,14 @@ SELECT MIN(number) FROM student;
 
 SELECT AVG(number) FROM student;
 
+
 SELECT COUNT(*) FROM student
 WHERE number IN (SELECT ID FROM Teaching_Assistants);
 
+
 SELECT subject FROM Teaching_Assistants
 WHERE ID IN (SELECT number FROM student);
+
 
 SELECT stud_name FROM student
 WHERE number IN (
@@ -97,6 +100,7 @@ WHERE number IN (
     EXCEPT
     SELECT ID FROM Teaching_Assistants
 );
+
 
 SELECT number FROM student
 INTERSECT
@@ -106,9 +110,11 @@ SELECT number AS id FROM student
 UNION
 SELECT ID FROM Teaching_Assistants;
 
+
 SELECT s.stud_name, s.sex, ta.subject
 FROM student s
 JOIN Teaching_Assistants ta ON s.number = ta.ID;
+
 
 SELECT stud_name,
        CASE
@@ -116,3 +122,8 @@ SELECT stud_name,
            ELSE 'No'
        END AS is_TA
 FROM student;
+
+
+SELECT 
+    (SELECT COUNT(*) FROM student) AS total_students,
+    (SELECT COUNT(*) FROM Teaching_Assistants) AS total_TAs;
