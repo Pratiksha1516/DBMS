@@ -97,3 +97,7 @@ WHERE number IN (
     EXCEPT
     SELECT ID FROM Teaching_Assistants
 );
+
+SELECT number FROM student
+INTERSECT
+SELECT ID FROM Teaching_Assistants;
