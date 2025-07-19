@@ -87,3 +87,6 @@ SELECT AVG(number) FROM student;
 
 SELECT COUNT(*) FROM student
 WHERE number IN (SELECT ID FROM Teaching_Assistants);
+
+SELECT subject FROM Teaching_Assistants
+WHERE ID IN (SELECT number FROM student);
