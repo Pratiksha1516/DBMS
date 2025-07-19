@@ -70,3 +70,6 @@ WHERE number NOT IN (SELECT ID FROM Teaching_Assistants);
 
 SELECT * 
 FROM student ORDER BY stud_name;
+
+SELECT *
+FROM student ORDER BY number DESC;
