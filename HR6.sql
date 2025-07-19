@@ -101,3 +101,7 @@ WHERE number IN (
 SELECT number FROM student
 INTERSECT
 SELECT ID FROM Teaching_Assistants;
+
+SELECT number AS id FROM student
+UNION
+SELECT ID FROM Teaching_Assistants;
