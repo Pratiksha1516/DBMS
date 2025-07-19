@@ -80,3 +80,5 @@ LEFT JOIN Teaching_Assistants ON student.number = Teaching_Assistants.ID;
 
 SELECT sex, COUNT(*) AS count 
 FROM student GROUP BY sex;
+
+SELECT MIN(number) FROM student;
