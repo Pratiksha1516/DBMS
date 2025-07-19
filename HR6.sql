@@ -61,3 +61,6 @@ WHERE sex = 'M';
 
 SELECT * FROM student 
 WHERE number > 3000;
+
+SELECT * FROM student 
+WHERE stud_name LIKE 'S%';
