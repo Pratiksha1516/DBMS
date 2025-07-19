@@ -58,3 +58,6 @@ WHERE sex = 'F';
 
 SELECT * FROM student 
 WHERE sex = 'M';
+
+SELECT * FROM student 
+WHERE number > 3000;
