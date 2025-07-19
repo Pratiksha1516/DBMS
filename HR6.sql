@@ -64,3 +64,6 @@ WHERE number > 3000;
 
 SELECT * FROM student 
 WHERE stud_name LIKE 'S%';
+
+SELECT * FROM student
+WHERE number NOT IN (SELECT ID FROM Teaching_Assistants);
