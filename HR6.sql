@@ -109,3 +109,10 @@ SELECT ID FROM Teaching_Assistants;
 SELECT s.stud_name, s.sex, ta.subject
 FROM student s
 JOIN Teaching_Assistants ta ON s.number = ta.ID;
+
+SELECT stud_name,
+       CASE
+           WHEN number IN (SELECT ID FROM Teaching_Assistants) THEN 'Yes'
+           ELSE 'No'
+       END AS is_TA
+FROM student;
