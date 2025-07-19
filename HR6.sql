@@ -90,3 +90,10 @@ WHERE number IN (SELECT ID FROM Teaching_Assistants);
 
 SELECT subject FROM Teaching_Assistants
 WHERE ID IN (SELECT number FROM student);
+
+SELECT stud_name FROM student
+WHERE number IN (
+    SELECT number FROM student
+    EXCEPT
+    SELECT ID FROM Teaching_Assistants
+);
