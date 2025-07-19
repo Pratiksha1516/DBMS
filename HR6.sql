@@ -73,3 +73,7 @@ FROM student ORDER BY stud_name;
 
 SELECT *
 FROM student ORDER BY number DESC;
+
+SELECT student.stud_name, student.number, Teaching_Assistants.subject
+FROM student
+LEFT JOIN Teaching_Assistants ON student.number = Teaching_Assistants.ID;
