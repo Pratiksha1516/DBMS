@@ -82,3 +82,5 @@ SELECT sex, COUNT(*) AS count
 FROM student GROUP BY sex;
 
 SELECT MIN(number) FROM student;
+
+SELECT AVG(number) FROM student;
