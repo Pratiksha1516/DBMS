@@ -55,3 +55,6 @@ ON student.number=Teaching_Assistants.ID;
 __
 SELECT * FROM student
 WHERE sex = 'F';
+
+SELECT * FROM student 
+WHERE sex = 'M';
