@@ -67,3 +67,6 @@ WHERE stud_name LIKE 'S%';
 
 SELECT * FROM student
 WHERE number NOT IN (SELECT ID FROM Teaching_Assistants);
+
+SELECT * 
+FROM student ORDER BY stud_name;
