@@ -84,3 +84,6 @@ FROM student GROUP BY sex;
 SELECT MIN(number) FROM student;
 
 SELECT AVG(number) FROM student;
+
+SELECT COUNT(*) FROM student
+WHERE number IN (SELECT ID FROM Teaching_Assistants);
