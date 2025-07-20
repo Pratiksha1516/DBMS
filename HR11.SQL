@@ -72,3 +72,7 @@ SELECT name, months
 FROM Employee
 WHERE months > (SELECT AVG(months) FROM Employee);
 
+SELECT name, salary
+FROM Employee
+ORDER BY salary DESC
+LIMIT 3;
