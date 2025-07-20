@@ -106,3 +106,6 @@ WHERE salary = (
 SELECT name, salary
 FROM Employee
 WHERE salary % 5 = 0;
+
+SELECT name, REVERSE(name) AS reversed_name
+FROM Employee;
