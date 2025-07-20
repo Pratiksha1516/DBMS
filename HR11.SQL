@@ -84,3 +84,7 @@ SELECT name, salary,
     ELSE 'Low'
   END AS salary_level
 FROM Employee;
+
+SELECT name
+FROM Employee
+WHERE LOWER(SUBSTR(name, 1, 1)) = LOWER(SUBSTR(name, -1));
