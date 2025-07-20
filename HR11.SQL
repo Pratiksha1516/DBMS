@@ -67,3 +67,8 @@ where name LIKE '_____%';
 
 SELECT name, months * salary AS annual_salary
 FROM Employee;
+
+SELECT name, months
+FROM Employee
+WHERE months > (SELECT AVG(months) FROM Employee);
+
