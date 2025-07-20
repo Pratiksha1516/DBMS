@@ -92,3 +92,13 @@ WHERE LOWER(SUBSTR(name, 1, 1)) = LOWER(SUBSTR(name, -1));
 SELECT COUNT(*)
 FROM Employee
 WHERE LENGTH(name) > 5;
+
+SELECT name, salary
+FROM Employee
+WHERE salary = (
+  SELECT MAX(salary)
+  FROM Employee
+  WHERE salary < (
+    SELECT MAX(salary) FROM Employee
+  )
+);
