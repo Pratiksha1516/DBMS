@@ -76,3 +76,11 @@ SELECT name, salary
 FROM Employee
 ORDER BY salary DESC
 LIMIT 3;
+
+SELECT name, salary,
+  CASE
+    WHEN salary >= 4000 THEN 'High'
+    WHEN salary >= 2000 THEN 'Medium'
+    ELSE 'Low'
+  END AS salary_level
+FROM Employee;
