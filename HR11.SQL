@@ -88,3 +88,7 @@ FROM Employee;
 SELECT name
 FROM Employee
 WHERE LOWER(SUBSTR(name, 1, 1)) = LOWER(SUBSTR(name, -1));
+
+SELECT COUNT(*)
+FROM Employee
+WHERE LENGTH(name) > 5;
