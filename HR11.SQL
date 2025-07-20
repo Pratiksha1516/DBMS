@@ -64,3 +64,6 @@ WHERE months < 10;
 SELECT *
 FROM employee
 where name LIKE '_____%';
+
+SELECT name, months * salary AS annual_salary
+FROM Employee;
