@@ -127,3 +127,6 @@ HAVING AVG(marks) > 85;
 
 SELECT name AS student_name, marks AS student_marks 
 FROM student2;
+
+SELECT UPPER(name) AS upper_name 
+FROM student2;
