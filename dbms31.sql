@@ -120,3 +120,7 @@ HAVING COUNT(*) > 1;
 SELECT *
 FROM student2 
 WHERE marks > (SELECT AVG(marks) FROM student2);
+
+SELECT city
+FROM student2 GROUP BY city
+HAVING AVG(marks) > 85;
