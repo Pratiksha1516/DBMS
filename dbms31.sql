@@ -91,3 +91,6 @@ WHERE city <> 'Delhi';
 
 SELECT * 
 FROM student2 ORDER BY marks DESC;
+
+SELECT *
+FROM student2 ORDER BY grade, name;
