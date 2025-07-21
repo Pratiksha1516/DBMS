@@ -67,3 +67,9 @@ FROM student2;
 
 SELECT AVG(marks)
 FROM student2;
+
+--
+SELECT * 
+FROM student2 
+WHERE grade = 'B';
+
