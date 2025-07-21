@@ -130,3 +130,7 @@ FROM student2;
 
 SELECT UPPER(name) AS upper_name 
 FROM student2;
+
+SELECT * 
+FROM student2 
+WHERE name LIKE '_a%';
