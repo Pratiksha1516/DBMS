@@ -97,3 +97,5 @@ FROM student2 ORDER BY grade, name;
 
 SELECT COUNT(*) AS total_students 
 FROM student2;
+SELECT SUM(marks) AS total_marks FROM student2;
+
