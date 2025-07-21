@@ -124,3 +124,6 @@ WHERE marks > (SELECT AVG(marks) FROM student2);
 SELECT city
 FROM student2 GROUP BY city
 HAVING AVG(marks) > 85;
+
+SELECT name AS student_name, marks AS student_marks 
+FROM student2;
