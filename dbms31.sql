@@ -106,3 +106,6 @@ WHERE marks = (SELECT MAX(marks) FROM student2);
 SELECT * 
 FROM student2 
 WHERE marks = (SELECT MIN(marks) FROM student2);
+
+SELECT city, AVG(marks) AS avg_marks 
+FROM student2 GROUP BY city;
