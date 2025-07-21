@@ -112,3 +112,8 @@ FROM student2 GROUP BY city;
 
 SELECT city, COUNT(*) AS student_count
 FROM student2 GROUP BY city;
+
+SELECT grade, COUNT(*) 
+FROM student2 GROUP BY grade
+HAVING COUNT(*) > 1;
+
