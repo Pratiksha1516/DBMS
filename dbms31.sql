@@ -88,3 +88,6 @@ WHERE marks BETWEEN 80 AND 95;
 SELECT * 
 FROM student2
 WHERE city <> 'Delhi';
+
+SELECT * 
+FROM student2 ORDER BY marks DESC;
