@@ -84,3 +84,7 @@ WHERE name LIKE '%a';
 SELECT * 
 FROM student2 
 WHERE marks BETWEEN 80 AND 95;
+
+SELECT * 
+FROM student2
+WHERE city <> 'Delhi';
