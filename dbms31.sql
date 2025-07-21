@@ -73,3 +73,7 @@ SELECT *
 FROM student2 
 WHERE grade = 'B';
 
+SELECT * 
+FROM student2 
+WHERE city IN ('Mumbai', 'Pune');
+
