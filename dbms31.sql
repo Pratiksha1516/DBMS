@@ -99,3 +99,7 @@ SELECT COUNT(*) AS total_students
 FROM student2;
 SELECT SUM(marks) AS total_marks FROM student2;
 
+SELECT *
+FROM student2
+WHERE marks = (SELECT MAX(marks) FROM student2);
+
