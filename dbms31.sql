@@ -134,3 +134,7 @@ FROM student2;
 SELECT * 
 FROM student2 
 WHERE name LIKE '_a%';
+
+SELECT *
+FROM student2 
+WHERE LENGTH(city) = 6;
