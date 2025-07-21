@@ -117,3 +117,6 @@ SELECT grade, COUNT(*)
 FROM student2 GROUP BY grade
 HAVING COUNT(*) > 1;
 
+SELECT *
+FROM student2 
+WHERE marks > (SELECT AVG(marks) FROM student2);
