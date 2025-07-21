@@ -109,3 +109,6 @@ WHERE marks = (SELECT MIN(marks) FROM student2);
 
 SELECT city, AVG(marks) AS avg_marks 
 FROM student2 GROUP BY city;
+
+SELECT city, COUNT(*) AS student_count
+FROM student2 GROUP BY city;
