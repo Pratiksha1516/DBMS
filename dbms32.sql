@@ -115,3 +115,6 @@ ORDER BY name DESC;
 
 SELECT * FROM student2 
 WHERE marks = (SELECT MIN(marks) FROM student2);
+
+SELECT * FROM student2 
+WHERE LOWER(name) LIKE '%m%';
