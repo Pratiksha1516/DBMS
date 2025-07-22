@@ -90,3 +90,6 @@ FROM student2;
 
 SELECT * FROM student2 
 WHERE name LIKE '%a';
+
+SELECT * FROM student2 
+WHERE name LIKE '%n';
