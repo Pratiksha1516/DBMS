@@ -118,3 +118,6 @@ WHERE marks = (SELECT MIN(marks) FROM student2);
 
 SELECT * FROM student2 
 WHERE LOWER(name) LIKE '%m%';
+
+UPDATE student2 SET marks = marks + 5 
+WHERE city = 'Delhi';
