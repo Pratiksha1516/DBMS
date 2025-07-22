@@ -124,3 +124,6 @@ WHERE city = 'Delhi';
 
 SELECT * FROM student2 
 WHERE rollno % 2 = 0;
+
+SELECT * FROM student2
+WHERE rollno != 104;
