@@ -148,3 +148,6 @@ SELECT * FROM student2
 WHERE marks IN (
     SELECT marks FROM student2 GROUP BY marks HAVING COUNT(*) > 1
 );
+
+SELECT grade, COUNT(*) AS total FROM student2
+GROUP BY grade;
