@@ -136,3 +136,6 @@ FROM student2;
 
 SELECT * FROM student2 
 WHERE grade IN ('O', 'B');
+
+SELECT name, marks, marks * 1.1 AS marks_with_bonus 
+FROM student2;
