@@ -109,3 +109,6 @@ FROM student2;
 
 SELECT * FROM student2 
 WHERE city NOT IN ('Mumbai', 'pune');
+
+SELECT name FROM student2 
+ORDER BY name DESC;
