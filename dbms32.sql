@@ -93,3 +93,6 @@ WHERE name LIKE '%a';
 
 SELECT * FROM student2 
 WHERE name LIKE '%n';
+
+SELECT * FROM student2 
+WHERE name LIKE '_h%';
