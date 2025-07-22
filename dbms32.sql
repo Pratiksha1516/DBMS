@@ -91,6 +91,7 @@ FROM student2;
 SELECT * FROM student2 
 WHERE name LIKE '%a';
 
+--
 SELECT * FROM student2 
 WHERE name LIKE '%n';
 
@@ -102,3 +103,6 @@ WHERE LENGTH(name) > 5;
 
 SELECT * FROM student2 
 WHERE LOWER(city) LIKE '%a%';
+
+SELECT COUNT(DISTINCT city) AS unique_cities 
+FROM student2;
