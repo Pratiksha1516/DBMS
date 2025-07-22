@@ -106,3 +106,6 @@ WHERE LOWER(city) LIKE '%a%';
 
 SELECT COUNT(DISTINCT city) AS unique_cities 
 FROM student2;
+
+SELECT * FROM student2 
+WHERE city NOT IN ('Mumbai', 'pune');
