@@ -112,3 +112,6 @@ WHERE city NOT IN ('Mumbai', 'pune');
 
 SELECT name FROM student2 
 ORDER BY name DESC;
+
+SELECT * FROM student2 
+WHERE marks = (SELECT MIN(marks) FROM student2);
