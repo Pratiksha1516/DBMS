@@ -143,3 +143,8 @@ FROM student2;
 SELECT name, marks,
        RANK() OVER (ORDER BY marks DESC) AS rank
 FROM student2;
+
+SELECT * FROM student2
+WHERE marks IN (
+    SELECT marks FROM student2 GROUP BY marks HAVING COUNT(*) > 1
+);
