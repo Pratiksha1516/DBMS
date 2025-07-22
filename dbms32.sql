@@ -127,3 +127,6 @@ WHERE rollno % 2 = 0;
 
 SELECT * FROM student2
 WHERE rollno != 104;
+
+SELECT city, MAX(marks) AS max_marks FROM student2
+GROUP BY city;
