@@ -130,3 +130,6 @@ WHERE rollno != 104;
 
 SELECT city, MAX(marks) AS max_marks FROM student2
 GROUP BY city;
+
+SELECT LOWER(name) AS lowercase_name 
+FROM student2;
