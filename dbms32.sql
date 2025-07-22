@@ -151,3 +151,6 @@ WHERE marks IN (
 
 SELECT grade, COUNT(*) AS total FROM student2
 GROUP BY grade;
+
+SELECT name || ' from ' || city AS student_info 
+FROM student2;
