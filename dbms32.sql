@@ -133,3 +133,6 @@ GROUP BY city;
 
 SELECT LOWER(name) AS lowercase_name 
 FROM student2;
+
+SELECT * FROM student2 
+WHERE grade IN ('O', 'B');
