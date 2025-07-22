@@ -139,3 +139,7 @@ WHERE grade IN ('O', 'B');
 
 SELECT name, marks, marks * 1.1 AS marks_with_bonus 
 FROM student2;
+
+SELECT name, marks,
+       RANK() OVER (ORDER BY marks DESC) AS rank
+FROM student2;
