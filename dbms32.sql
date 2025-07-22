@@ -96,3 +96,6 @@ WHERE name LIKE '%n';
 
 SELECT * FROM student2 
 WHERE name LIKE '_h%';
+
+SELECT * FROM student2 
+WHERE LENGTH(name) > 5;
