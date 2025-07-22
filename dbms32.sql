@@ -99,3 +99,6 @@ WHERE name LIKE '_h%';
 
 SELECT * FROM student2 
 WHERE LENGTH(name) > 5;
+
+SELECT * FROM student2 
+WHERE LOWER(city) LIKE '%a%';
