@@ -121,3 +121,6 @@ WHERE LOWER(name) LIKE '%m%';
 
 UPDATE student2 SET marks = marks + 5 
 WHERE city = 'Delhi';
+
+SELECT * FROM student2 
+WHERE rollno % 2 = 0;
