@@ -36,3 +36,6 @@ RENAME TO city_details;
 
 ALTER TABLE city1
 ADD state VARCHAR(20) DEFAULT 'Maharashtra';
+
+INSERT INTO city1(pin, name, f_name)
+VALUES (345678, 'Sangli', 'Shree');
