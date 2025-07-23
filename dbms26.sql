@@ -27,3 +27,6 @@ WHERE pin = 234567;
 SELECT *
 FROM city1
 WHERE f_name IS NOT NULL;
+
+DELETE FROM city1
+WHERE pin = 123456;
