@@ -46,3 +46,7 @@ WHERE f_name LIKE 'P%';
 
 SELECT pin, f_name
 FROM city1;
+
+SELECT *
+FROM city1
+ORDER BY f_name DESC;
