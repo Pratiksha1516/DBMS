@@ -69,3 +69,6 @@ ORDER BY marks DESC
 LIMIT 3;
 
 INSERT INTO student2 VALUES (105, 'ram', 85, 'B', 'Mumbai');
+
+SELECT AVG(marks) AS average_marks
+FROM student2;
