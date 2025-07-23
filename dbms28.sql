@@ -95,3 +95,6 @@ WHERE grade IN ('A', 'B');
 
 ALTER TABLE student2
 RENAME COLUMN grade TO performance;
+
+ALTER TABLE student2
+ADD email VARCHAR(50);
