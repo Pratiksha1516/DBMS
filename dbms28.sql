@@ -92,3 +92,6 @@ WHERE marks % 5 = 0;
 SELECT rollno, name
 FROM student2
 WHERE grade IN ('A', 'B');
+
+ALTER TABLE student2
+RENAME COLUMN grade TO performance;
