@@ -30,3 +30,6 @@ WHERE f_name IS NOT NULL;
 
 DELETE FROM city1
 WHERE pin = 123456;
+
+ALTER TABLE city1
+RENAME TO city_details;
