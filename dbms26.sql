@@ -54,3 +54,7 @@ ORDER BY f_name DESC;
 SELECT COUNT(*)
 FROM city1
 WHERE f_name IS NOT NULL;
+
+SELECT state, COUNT(*)
+FROM city1
+GROUP BY state;
