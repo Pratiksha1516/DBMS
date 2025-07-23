@@ -80,3 +80,7 @@ GROUP BY grade;
 SELECT SUM(marks) AS total_marks_mumbai
 FROM student2
 WHERE city = 'Mumbai';
+
+SELECT *
+FROM student2
+WHERE name LIKE '%a';
