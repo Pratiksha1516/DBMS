@@ -84,3 +84,7 @@ WHERE city = 'Mumbai';
 SELECT *
 FROM student2
 WHERE name LIKE '%a';
+
+SELECT *
+FROM student2
+WHERE marks % 5 = 0;
