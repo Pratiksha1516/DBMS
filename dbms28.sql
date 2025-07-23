@@ -88,3 +88,7 @@ WHERE name LIKE '%a';
 SELECT *
 FROM student2
 WHERE marks % 5 = 0;
+
+SELECT rollno, name
+FROM student2
+WHERE grade IN ('A', 'B');
