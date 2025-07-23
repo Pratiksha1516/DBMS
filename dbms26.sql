@@ -43,3 +43,6 @@ VALUES (345678, 'Sangli', 'Shree');
 SELECT *
 FROM city1
 WHERE f_name LIKE 'P%';
+
+SELECT pin, f_name
+FROM city1;
