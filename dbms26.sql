@@ -33,3 +33,6 @@ WHERE pin = 123456;
 
 ALTER TABLE city1
 RENAME TO city_details;
+
+ALTER TABLE city1
+ADD state VARCHAR(20) DEFAULT 'Maharashtra';
