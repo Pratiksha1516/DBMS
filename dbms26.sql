@@ -23,3 +23,7 @@ ADD f_name varchar(20);
 UPDATE city1
 SET f_name = 'Pratiksha'
 WHERE pin = 234567;
+
+SELECT *
+FROM city1
+WHERE f_name IS NOT NULL;
