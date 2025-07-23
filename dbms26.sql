@@ -50,3 +50,7 @@ FROM city1;
 SELECT *
 FROM city1
 ORDER BY f_name DESC;
+
+SELECT COUNT(*)
+FROM city1
+WHERE f_name IS NOT NULL;
