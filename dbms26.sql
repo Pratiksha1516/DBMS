@@ -39,3 +39,7 @@ ADD state VARCHAR(20) DEFAULT 'Maharashtra';
 
 INSERT INTO city1(pin, name, f_name)
 VALUES (345678, 'Sangli', 'Shree');
+
+SELECT *
+FROM city1
+WHERE f_name LIKE 'P%';
