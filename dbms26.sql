@@ -18,3 +18,8 @@ from city1;
 
 ALTER TABLE city1
 ADD f_name varchar(20);
+
+--
+UPDATE city1
+SET f_name = 'Pratiksha'
+WHERE pin = 234567;
