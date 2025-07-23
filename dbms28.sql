@@ -72,3 +72,7 @@ INSERT INTO student2 VALUES (105, 'ram', 85, 'B', 'Mumbai');
 
 SELECT AVG(marks) AS average_marks
 FROM student2;
+
+SELECT grade, COUNT(*) AS count_of_students
+FROM student2
+GROUP BY grade;
