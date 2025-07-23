@@ -76,3 +76,7 @@ FROM student2;
 SELECT grade, COUNT(*) AS count_of_students
 FROM student2
 GROUP BY grade;
+
+SELECT SUM(marks) AS total_marks_mumbai
+FROM student2
+WHERE city = 'Mumbai';
