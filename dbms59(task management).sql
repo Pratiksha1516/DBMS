@@ -57,3 +57,6 @@ WHERE AssignedTo = 1;
 SELECT TaskName FROM Task 
 WHERE ProjectID = 101;
 
+SELECT TaskName FROM Task 
+WHERE AssignedTo IS NULL;
+
