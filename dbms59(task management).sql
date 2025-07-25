@@ -67,3 +67,7 @@ SELECT COUNT(*) FROM TeamMember;
 
 SELECT COUNT(*) FROM Task;
 
+SELECT T.TaskName, TM.Name AS AssignedTo
+FROM Task T
+JOIN TeamMember TM ON T.AssignedTo = TM.MemberID;
+
