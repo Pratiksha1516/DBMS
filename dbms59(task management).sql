@@ -85,3 +85,8 @@ FROM Task T
 JOIN Project P ON T.ProjectID = P.ProjectID
 WHERE P.ProjectName = 'Cafe Management System';
 
+SELECT DISTINCT P.ProjectName
+FROM Project P
+JOIN Task T ON P.ProjectID = T.ProjectID
+WHERE T.AssignedTo IS NULL;
+
