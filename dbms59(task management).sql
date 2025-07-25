@@ -40,3 +40,5 @@ SELECT * FROM TeamMember;
 
 SELECT * FROM Project;
 
+SELECT * FROM Task;
+
