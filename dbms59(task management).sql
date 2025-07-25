@@ -46,3 +46,4 @@ SELECT Name FROM TeamMember;
 
 SELECT TaskName FROM Task;
 
+SELECT ProjectName FROM Project;
