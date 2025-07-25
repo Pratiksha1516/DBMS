@@ -35,3 +35,5 @@ INSERT INTO Task VALUES
 (204, 'Admin Dashboard', 102, 1),
 (205, 'Project Planning', 102, 4),
 (206, 'Create Reports', 102, NULL); 
+
+SELECT * FROM TeamMember;
