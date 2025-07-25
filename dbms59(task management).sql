@@ -90,3 +90,8 @@ FROM Project P
 JOIN Task T ON P.ProjectID = T.ProjectID
 WHERE T.AssignedTo IS NULL;
 
+SELECT COUNT(*) AS UnassignedTaskCount
+FROM Task
+WHERE AssignedTo IS NULL;
+
+
