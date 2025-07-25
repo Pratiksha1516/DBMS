@@ -47,3 +47,6 @@ SELECT Name FROM TeamMember;
 SELECT TaskName FROM Task;
 
 SELECT ProjectName FROM Project;
+
+SELECT Role FROM TeamMember 
+WHERE Name = 'Pratiksha';
