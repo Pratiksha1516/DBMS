@@ -80,3 +80,8 @@ FROM Task T
 JOIN TeamMember TM ON T.AssignedTo = TM.MemberID
 WHERE TM.Name = 'Pratiksha';
 
+SELECT T.TaskName
+FROM Task T
+JOIN Project P ON T.ProjectID = P.ProjectID
+WHERE P.ProjectName = 'Cafe Management System';
+
