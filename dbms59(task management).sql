@@ -54,3 +54,6 @@ WHERE Name = 'Pratiksha';
 SELECT TaskName FROM Task
 WHERE AssignedTo = 1;
 
+SELECT TaskName FROM Task 
+WHERE ProjectID = 101;
+
