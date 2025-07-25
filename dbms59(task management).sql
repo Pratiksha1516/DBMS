@@ -65,3 +65,5 @@ WHERE AssignedTo = (SELECT MemberID FROM TeamMember WHERE Name = 'shree');
 
 SELECT COUNT(*) FROM TeamMember;
 
+SELECT COUNT(*) FROM Task;
+
