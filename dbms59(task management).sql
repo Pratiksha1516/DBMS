@@ -71,3 +71,7 @@ SELECT T.TaskName, TM.Name AS AssignedTo
 FROM Task T
 JOIN TeamMember TM ON T.AssignedTo = TM.MemberID;
 
+SELECT TaskName
+FROM Task
+WHERE AssignedTo IS NULL;
+
