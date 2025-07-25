@@ -42,3 +42,5 @@ SELECT * FROM Project;
 
 SELECT * FROM Task;
 
+SELECT Name FROM TeamMember;
+
