@@ -50,3 +50,7 @@ SELECT ProjectName FROM Project;
 
 SELECT Role FROM TeamMember 
 WHERE Name = 'Pratiksha';
+
+SELECT TaskName FROM Task
+WHERE AssignedTo = 1;
+
