@@ -60,3 +60,6 @@ WHERE ProjectID = 101;
 SELECT TaskName FROM Task 
 WHERE AssignedTo IS NULL;
 
+SELECT TaskName FROM Task 
+WHERE AssignedTo = (SELECT MemberID FROM TeamMember WHERE Name = 'shree');
+
