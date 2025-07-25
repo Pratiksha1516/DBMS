@@ -44,3 +44,5 @@ SELECT * FROM Task;
 
 SELECT Name FROM TeamMember;
 
+SELECT TaskName FROM Task;
+
