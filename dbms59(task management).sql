@@ -37,3 +37,6 @@ INSERT INTO Task VALUES
 (206, 'Create Reports', 102, NULL); 
 
 SELECT * FROM TeamMember;
+
+SELECT * FROM Project;
+
