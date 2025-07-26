@@ -143,3 +143,7 @@ WHERE marks < 50;
 SELECT COUNT(*) AS students_with_email 
 FROM student2 
 WHERE email IS NOT NULL;
+
+SELECT * 
+FROM student2 
+WHERE email IS NULL;
