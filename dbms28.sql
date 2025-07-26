@@ -128,3 +128,7 @@ GROUP BY city;
 SELECT * 
 FROM student2 
 WHERE LENGTH(name) = 6;
+
+UPDATE student2 
+SET email = 'anil123@gmail.com' 
+WHERE name = 'anil';
