@@ -147,3 +147,7 @@ WHERE email IS NOT NULL;
 SELECT * 
 FROM student2 
 WHERE email IS NULL;
+
+SELECT * 
+FROM student2 
+WHERE name LIKE '%n';
