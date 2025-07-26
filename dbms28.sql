@@ -108,3 +108,7 @@ WHERE marks = (SELECT MAX(marks) FROM student2);
 SELECT * 
 FROM student2 
 WHERE marks = (SELECT MIN(marks) FROM student2);
+
+SELECT city, COUNT(*) AS total_students 
+FROM student2 
+GROUP BY city;
