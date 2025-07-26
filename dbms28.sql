@@ -159,3 +159,7 @@ WHERE name LIKE '_e%';
 SELECT * 
 FROM student2 
 WHERE name NOT LIKE '%a%';
+
+SELECT * 
+FROM student2 
+WHERE marks NOT BETWEEN 80 AND 90;
