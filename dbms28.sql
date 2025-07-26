@@ -163,3 +163,10 @@ WHERE name NOT LIKE '%a%';
 SELECT * 
 FROM student2 
 WHERE marks NOT BETWEEN 80 AND 90;
+
+SELECT name, marks,
+  CASE 
+    WHEN marks >= 40 THEN 'Pass'
+    ELSE 'Fail'
+  END AS result
+FROM student2;
