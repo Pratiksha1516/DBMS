@@ -175,3 +175,7 @@ SELECT *
 FROM student2 
 WHERE performance IS NULL;
 
+SELECT * 
+FROM student2 
+WHERE city LIKE 'M%';
+
