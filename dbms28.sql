@@ -116,3 +116,7 @@ GROUP BY city;
 SELECT * 
 FROM student2 
 WHERE name LIKE 'd%';
+
+SELECT * 
+FROM student2 
+ORDER BY name DESC;
