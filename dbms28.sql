@@ -120,3 +120,7 @@ WHERE name LIKE 'd%';
 SELECT * 
 FROM student2 
 ORDER BY name DESC;
+
+SELECT city, SUM(marks) AS total_marks, AVG(marks) AS avg_marks
+FROM student2
+GROUP BY city;
