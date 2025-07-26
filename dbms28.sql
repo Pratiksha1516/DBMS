@@ -170,3 +170,8 @@ SELECT name, marks,
     ELSE 'Fail'
   END AS result
 FROM student2;
+
+SELECT * 
+FROM student2 
+WHERE performance IS NULL;
+
