@@ -132,3 +132,7 @@ WHERE LENGTH(name) = 6;
 UPDATE student2 
 SET email = 'anil123@gmail.com' 
 WHERE name = 'anil';
+
+UPDATE student2 
+SET city = 'Pune' 
+WHERE city = 'pune';
