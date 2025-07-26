@@ -98,3 +98,9 @@ RENAME COLUMN grade TO performance;
 
 ALTER TABLE student2
 ADD email VARCHAR(50);
+
+
+--
+SELECT * 
+FROM student2 
+WHERE marks = (SELECT MAX(marks) FROM student2);
