@@ -155,3 +155,7 @@ WHERE name LIKE '%n';
 SELECT * 
 FROM student2 
 WHERE name LIKE '_e%';
+
+SELECT * 
+FROM student2 
+WHERE name NOT LIKE '%a%';
