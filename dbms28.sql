@@ -136,3 +136,6 @@ WHERE name = 'anil';
 UPDATE student2 
 SET city = 'Pune' 
 WHERE city = 'pune';
+
+DELETE FROM student2 
+WHERE marks < 50;
