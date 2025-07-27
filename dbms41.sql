@@ -45,4 +45,9 @@ FROM stud
 INNER JOIN course 
 ON stud.id = course.id;
 
+SELECT * 
+FROM stud 
+LEFT JOIN course 
+ON stud.id = course.id;
+
  
