@@ -112,3 +112,7 @@ WHERE EXISTS (SELECT 1 FROM course c WHERE c.id = s.id);
 
 SELECT * 
 FROM stud, course;
+
+SELECT s.id AS student_id, s.name, c.course AS enrolled_course
+FROM stud s
+LEFT JOIN course c ON s.id = c.id;
