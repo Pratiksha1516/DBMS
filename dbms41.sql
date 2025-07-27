@@ -102,3 +102,6 @@ SELECT
     (SELECT COUNT(*) FROM stud) AS student_count,
     (SELECT COUNT(*) FROM course) AS course_count;
 
+SELECT id 
+FROM stud 
+WHERE id IN (SELECT id FROM course);
