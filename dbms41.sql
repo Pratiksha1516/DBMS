@@ -72,4 +72,8 @@ FROM stud
 INNER JOIN course 
 ON stud.id = course.id;
 
+SELECT id 
+FROM stud 
+WHERE id NOT IN (SELECT id FROM course);
+
  
