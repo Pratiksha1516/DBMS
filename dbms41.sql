@@ -98,3 +98,7 @@ FROM stud s
 JOIN course c 
 ON s.id = c.id;
 
+SELECT 
+    (SELECT COUNT(*) FROM stud) AS student_count,
+    (SELECT COUNT(*) FROM course) AS course_count;
+
