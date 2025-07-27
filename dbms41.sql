@@ -61,4 +61,10 @@ LEFT JOIN course
 ON stud.id = course.id
 WHERE course.id IS NULL;
 
+SELECT * 
+FROM course 
+LEFT JOIN stud 
+ON course.id = stud.id
+WHERE stud.id IS NULL;
+
  
