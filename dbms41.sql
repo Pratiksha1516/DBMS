@@ -80,4 +80,8 @@ SELECT id
 FROM course 
 WHERE id NOT IN (SELECT id FROM stud);
 
+SELECT id FROM stud
+UNION
+SELECT id FROM course;
+
  
