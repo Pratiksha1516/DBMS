@@ -116,3 +116,7 @@ FROM stud, course;
 SELECT s.id AS student_id, s.name, c.course AS enrolled_course
 FROM stud s
 LEFT JOIN course c ON s.id = c.id;
+
+SELECT s.name AS student_name, c.course AS course_name
+FROM stud s
+FULL JOIN course c ON s.id = c.id;
