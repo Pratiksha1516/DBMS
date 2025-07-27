@@ -67,4 +67,9 @@ LEFT JOIN stud
 ON course.id = stud.id
 WHERE stud.id IS NULL;
 
+SELECT stud.id 
+FROM stud 
+INNER JOIN course 
+ON stud.id = course.id;
+
  
