@@ -39,4 +39,10 @@ FROM stud as s				-- with alias s(alternate name for student)
 FULL JOIN course as c		-- with alias c(alternate name for course)
 ON s.id = c.id;
 
+--
+SELECT * 
+FROM stud 
+INNER JOIN course 
+ON stud.id = course.id;
+
  
