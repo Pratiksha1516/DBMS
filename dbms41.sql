@@ -76,4 +76,8 @@ SELECT id
 FROM stud 
 WHERE id NOT IN (SELECT id FROM course);
 
+SELECT id 
+FROM course 
+WHERE id NOT IN (SELECT id FROM stud);
+
  
