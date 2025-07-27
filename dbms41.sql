@@ -120,3 +120,7 @@ LEFT JOIN course c ON s.id = c.id;
 SELECT s.name AS student_name, c.course AS course_name
 FROM stud s
 FULL JOIN course c ON s.id = c.id;
+
+SELECT id 
+FROM course 
+WHERE id NOT IN (SELECT id FROM stud);
