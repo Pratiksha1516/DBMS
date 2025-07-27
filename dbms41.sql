@@ -50,4 +50,9 @@ FROM stud
 LEFT JOIN course 
 ON stud.id = course.id;
 
+SELECT * 
+FROM stud 
+RIGHT JOIN course 
+ON stud.id = course.id;
+
  
