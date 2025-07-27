@@ -84,4 +84,7 @@ SELECT id FROM stud
 UNION
 SELECT id FROM course;
 
- 
+SELECT id FROM stud
+UNION ALL
+SELECT id FROM course;
+
