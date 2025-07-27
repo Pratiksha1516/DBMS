@@ -93,3 +93,8 @@ UNION
 SELECT id FROM course
 ORDER BY id;
 
+SELECT s.name, c.course 
+FROM stud s 
+JOIN course c 
+ON s.id = c.id;
+
