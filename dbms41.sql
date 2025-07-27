@@ -105,3 +105,7 @@ SELECT
 SELECT id 
 FROM stud 
 WHERE id IN (SELECT id FROM course);
+
+SELECT * 
+FROM stud s 
+WHERE EXISTS (SELECT 1 FROM course c WHERE c.id = s.id);
