@@ -149,3 +149,8 @@ WHERE Age > 30;
 SELECT * 
 FROM Employees
 WHERE Age = (SELECT MIN(Age) FROM Employees);
+
+SELECT Department, COUNT(*) AS NumEmployees
+FROM Employees
+GROUP BY Department
+HAVING COUNT(*) > 1;
