@@ -184,3 +184,8 @@ SELECT I.*
 FROM Invoice I
 JOIN Customer C ON I.Cust_id = C.id
 WHERE C.fname LIKE 'S%';
+
+SELECT Ph_no 
+FROM Customer
+ORDER BY Ph_no DESC
+LIMIT 1 OFFSET 1;
