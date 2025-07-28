@@ -175,3 +175,7 @@ ORDER BY LENGTH(fname) ASC;
 SELECT * 
 FROM Customer
 WHERE LENGTH(fname || lname) > 10;
+
+SELECT SUBSTR(Ph_no, 1, 2) AS Prefix, COUNT(*) AS Count
+FROM Customer
+GROUP BY SUBSTR(Ph_no, 1, 2);
