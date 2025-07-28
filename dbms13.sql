@@ -179,3 +179,8 @@ WHERE LENGTH(fname || lname) > 10;
 SELECT SUBSTR(Ph_no, 1, 2) AS Prefix, COUNT(*) AS Count
 FROM Customer
 GROUP BY SUBSTR(Ph_no, 1, 2);
+
+SELECT I.*
+FROM Invoice I
+JOIN Customer C ON I.Cust_id = C.id
+WHERE C.fname LIKE 'S%';
