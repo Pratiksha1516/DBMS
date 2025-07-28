@@ -155,3 +155,7 @@ WHERE LENGTH(Ph_no) = (
 SELECT C.fname || ' ' || C.lname AS FullName, I.Inv_no
 FROM Customer C
 LEFT JOIN Invoice I ON C.id = I.Cust_id;
+
+SELECT COUNT(*) AS NullPhoneCount
+FROM Customer
+WHERE Ph_no IS NULL OR TRIM(Ph_no) = '';
