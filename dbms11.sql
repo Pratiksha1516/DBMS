@@ -121,3 +121,11 @@ WHERE Age BETWEEN 25 AND 35 AND Department = 'HR';
 SELECT * 
 FROM Employees
 WHERE LOWER(Name) LIKE '%r%';
+
+SELECT * 
+FROM Employees
+WHERE Salary = (
+    SELECT MAX(Salary) 
+    FROM Employees 
+    WHERE Salary < (SELECT MAX(Salary) FROM Employees)
+);
