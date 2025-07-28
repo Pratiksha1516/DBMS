@@ -158,3 +158,12 @@ HAVING COUNT(*) > 1;
 SELECT * 
 FROM Employees
 WHERE LENGTH(Name) = 5;
+
+ALTER TABLE Employees
+ADD Bonus DECIMAL(10,2);
+
+UPDATE Employees
+SET Bonus = Salary * 0.05;
+
+SELECT Name, Salary, Bonus
+FROM Employees;
