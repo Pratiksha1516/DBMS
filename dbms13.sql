@@ -151,3 +151,7 @@ FROM Customer
 WHERE LENGTH(Ph_no) = (
     SELECT MAX(LENGTH(Ph_no)) FROM Customer
 );
+
+SELECT C.fname || ' ' || C.lname AS FullName, I.Inv_no
+FROM Customer C
+LEFT JOIN Invoice I ON C.id = I.Cust_id;
