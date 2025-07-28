@@ -129,3 +129,8 @@ WHERE Salary = (
     FROM Employees 
     WHERE Salary < (SELECT MAX(Salary) FROM Employees)
 );
+
+SELECT * 
+FROM Employees
+ORDER BY Department ASC, Age ASC;
+
