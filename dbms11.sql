@@ -116,3 +116,8 @@ WHERE Department = 'IT' OR Salary > 65000;
 
 SELECT * FROM Employees
 WHERE Age BETWEEN 25 AND 35 AND Department = 'HR';
+
+--
+SELECT * 
+FROM Employees
+WHERE LOWER(Name) LIKE '%r%';
