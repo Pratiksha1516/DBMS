@@ -138,3 +138,6 @@ SELECT Department, COUNT(*) AS TotalEmployees, SUM(Salary) AS TotalSalary
 FROM Employees
 GROUP BY Department;
 
+SELECT * 
+FROM Employees
+WHERE Age NOT BETWEEN 20 AND 29;
