@@ -167,3 +167,7 @@ WHERE lname LIKE '%h';
 SELECT * 
 FROM Customer
 WHERE LENGTH(area) = 2;
+
+SELECT * 
+FROM Customer
+ORDER BY LENGTH(fname) ASC;
