@@ -159,3 +159,7 @@ LEFT JOIN Invoice I ON C.id = I.Cust_id;
 SELECT COUNT(*) AS NullPhoneCount
 FROM Customer
 WHERE Ph_no IS NULL OR TRIM(Ph_no) = '';
+
+SELECT * 
+FROM Customer
+WHERE lname LIKE '%h';
