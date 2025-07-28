@@ -145,3 +145,9 @@ WHERE SUBSTR(fname,1,1) = SUBSTR(lname,1,1);
 SELECT * 
 FROM Customer
 WHERE area = 'CH' OR fname LIKE '%i%';
+
+SELECT * 
+FROM Customer
+WHERE LENGTH(Ph_no) = (
+    SELECT MAX(LENGTH(Ph_no)) FROM Customer
+);
