@@ -134,3 +134,7 @@ SELECT *
 FROM Employees
 ORDER BY Department ASC, Age ASC;
 
+SELECT Department, COUNT(*) AS TotalEmployees, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY Department;
+
