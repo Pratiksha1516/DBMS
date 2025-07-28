@@ -141,3 +141,7 @@ GROUP BY Department;
 SELECT * 
 FROM Employees
 WHERE Age NOT BETWEEN 20 AND 29;
+
+SELECT AVG(Salary) AS AvgSalaryOver30
+FROM Employees
+WHERE Age > 30;
