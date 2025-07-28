@@ -163,3 +163,7 @@ WHERE Ph_no IS NULL OR TRIM(Ph_no) = '';
 SELECT * 
 FROM Customer
 WHERE lname LIKE '%h';
+
+SELECT * 
+FROM Customer
+WHERE LENGTH(area) = 2;
