@@ -88,3 +88,6 @@ WHERE registration_date > TO_DATE('2022-01-01', 'YYYY-MM-DD');
 
 SELECT * FROM customers
 WHERE LOWER(city) = 'new york';
+
+SELECT * FROM customers
+WHERE phone LIKE '123%';
