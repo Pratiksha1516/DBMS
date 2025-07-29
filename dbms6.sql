@@ -140,3 +140,6 @@ WHERE phone IS NULL;
 
 SELECT name || ' from ' || city AS customer_info
 FROM customers;
+
+SELECT name, EXTRACT(YEAR FROM registration_date) AS reg_year
+FROM customers;
