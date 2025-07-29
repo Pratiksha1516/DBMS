@@ -122,3 +122,9 @@ WHERE registration_date < TO_DATE('2022-01-01', 'YYYY-MM-DD');
 SELECT * FROM customers
 ORDER BY registration_date DESC
 FETCH FIRST 2 ROWS ONLY;
+
+SELECT city, COUNT(*) AS total
+FROM customers
+GROUP BY city
+ORDER BY total DESC
+FETCH FIRST 3 ROWS ONLY;
