@@ -108,3 +108,7 @@ GROUP BY city;
 
 SELECT COUNT(DISTINCT city) AS unique_cities
 FROM customers;
+
+UPDATE customers
+SET phone = '9999999999'
+WHERE customer_id = 3;
