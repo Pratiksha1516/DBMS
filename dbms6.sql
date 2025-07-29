@@ -115,3 +115,6 @@ WHERE customer_id = 3;
 
 DELETE FROM customers
 WHERE city = 'Los Angeles';
+
+DELETE FROM customers
+WHERE registration_date < TO_DATE('2022-01-01', 'YYYY-MM-DD');
