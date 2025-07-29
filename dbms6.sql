@@ -128,3 +128,6 @@ FROM customers
 GROUP BY city
 ORDER BY total DESC
 FETCH FIRST 3 ROWS ONLY;
+
+SELECT * FROM customers
+WHERE email LIKE '%@gmail.com';
