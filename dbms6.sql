@@ -82,6 +82,4 @@ UPDATE customers
 SET city = 'Blegav'
 WHERE customer_id = 1;
 
-truncate table customers;
-
-drop table customers;
+--
