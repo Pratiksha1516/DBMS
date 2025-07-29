@@ -91,3 +91,6 @@ WHERE LOWER(city) = 'new york';
 
 SELECT * FROM customers
 WHERE phone LIKE '123%';
+
+SELECT name FROM customers
+ORDER BY name ASC;
