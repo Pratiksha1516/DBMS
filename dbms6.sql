@@ -101,3 +101,7 @@ WHERE EXTRACT(YEAR FROM registration_date) = 2023;
 SELECT city, COUNT(*) AS total_customers
 FROM customers
 GROUP BY city;
+
+SELECT city, MIN(registration_date) AS first_registration
+FROM customers
+GROUP BY city;
