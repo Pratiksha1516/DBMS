@@ -143,3 +143,6 @@ FROM customers;
 
 SELECT name, EXTRACT(YEAR FROM registration_date) AS reg_year
 FROM customers;
+
+SELECT * FROM customers
+WHERE city NOT IN ('New York', 'Chicago');
