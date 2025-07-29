@@ -97,3 +97,7 @@ ORDER BY name ASC;
 
 SELECT * FROM customers
 WHERE EXTRACT(YEAR FROM registration_date) = 2023;
+
+SELECT city, COUNT(*) AS total_customers
+FROM customers
+GROUP BY city;
