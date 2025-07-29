@@ -94,3 +94,6 @@ WHERE phone LIKE '123%';
 
 SELECT name FROM customers
 ORDER BY name ASC;
+
+SELECT * FROM customers
+WHERE EXTRACT(YEAR FROM registration_date) = 2023;
