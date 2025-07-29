@@ -134,3 +134,6 @@ WHERE email LIKE '%@gmail.com';
 
 SELECT * FROM customers
 WHERE name LIKE 'g%';
+
+SELECT * FROM customers
+WHERE phone IS NULL;
