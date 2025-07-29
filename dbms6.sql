@@ -131,3 +131,6 @@ FETCH FIRST 3 ROWS ONLY;
 
 SELECT * FROM customers
 WHERE email LIKE '%@gmail.com';
+
+SELECT * FROM customers
+WHERE name LIKE 'g%';
