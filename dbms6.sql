@@ -137,3 +137,6 @@ WHERE name LIKE 'g%';
 
 SELECT * FROM customers
 WHERE phone IS NULL;
+
+SELECT name || ' from ' || city AS customer_info
+FROM customers;
