@@ -105,3 +105,6 @@ GROUP BY city;
 SELECT city, MIN(registration_date) AS first_registration
 FROM customers
 GROUP BY city;
+
+SELECT COUNT(DISTINCT city) AS unique_cities
+FROM customers;
