@@ -102,3 +102,7 @@ SELECT T.TaskName, P.ProjectName
 FROM Task T
 JOIN Project P ON T.ProjectID = P.ProjectID;
 
+SELECT T.TaskName, TM.Role
+FROM Task T
+JOIN TeamMember TM ON T.AssignedTo = TM.MemberID;
+
