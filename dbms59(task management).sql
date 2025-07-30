@@ -116,3 +116,8 @@ FROM TeamMember TM
 LEFT JOIN Task T ON TM.MemberID = T.AssignedTo
 WHERE T.AssignedTo IS NULL;
 
+SELECT TM.Name, COUNT(T.TaskID) AS TotalTasks
+FROM TeamMember TM
+LEFT JOIN Task T ON TM.MemberID = T.AssignedTo
+GROUP BY TM.Name;
+
