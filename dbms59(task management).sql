@@ -176,3 +176,8 @@ FROM Project
 WHERE ProjectID NOT IN (
     SELECT ProjectID FROM Task WHERE AssignedTo IS NULL
 );
+
+SELECT DISTINCT TM.Role
+FROM Task T
+JOIN TeamMember TM ON T.AssignedTo = TM.MemberID
+WHERE T.ProjectID = 101;
