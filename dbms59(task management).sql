@@ -153,3 +153,8 @@ FROM Task T
 JOIN Project P ON T.ProjectID = P.ProjectID
 JOIN TeamMember TM ON T.AssignedTo = TM.MemberID
 WHERE P.ProjectName = 'E-Commerce App';
+
+SELECT T.TaskName
+FROM Task T
+JOIN TeamMember TM ON T.AssignedTo = TM.MemberID
+WHERE TM.Role <> 'Developer';
