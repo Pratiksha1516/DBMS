@@ -94,4 +94,7 @@ SELECT COUNT(*) AS UnassignedTaskCount
 FROM Task
 WHERE AssignedTo IS NULL;
 
+SELECT Name, Role 
+FROM TeamMember 
+ORDER BY Name;
 
