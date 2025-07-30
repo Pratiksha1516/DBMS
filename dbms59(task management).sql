@@ -170,3 +170,9 @@ FROM TeamMember
 WHERE MemberID IN (
     SELECT AssignedTo FROM Task WHERE ProjectID = 101
 );
+
+SELECT ProjectName
+FROM Project
+WHERE ProjectID NOT IN (
+    SELECT ProjectID FROM Task WHERE AssignedTo IS NULL
+);
