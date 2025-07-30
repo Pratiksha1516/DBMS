@@ -127,3 +127,8 @@ JOIN Task T ON P.ProjectID = T.ProjectID
 GROUP BY P.ProjectName
 ORDER BY COUNT(T.TaskID) DESC
 LIMIT 1;
+
+SELECT Role, COUNT(*) AS Count
+FROM TeamMember
+GROUP BY Role;
+
