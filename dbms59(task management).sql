@@ -111,3 +111,8 @@ FROM Project P
 LEFT JOIN Task T ON P.ProjectID = T.ProjectID
 GROUP BY P.ProjectName;
 
+SELECT TM.Name
+FROM TeamMember TM
+LEFT JOIN Task T ON TM.MemberID = T.AssignedTo
+WHERE T.AssignedTo IS NULL;
+
