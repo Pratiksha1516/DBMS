@@ -164,3 +164,9 @@ WHERE Role IN ('Developer', 'Tester');
 
 SELECT * FROM Task
 WHERE TaskName LIKE 'Create%';
+
+SELECT DISTINCT Name
+FROM TeamMember
+WHERE MemberID IN (
+    SELECT AssignedTo FROM Task WHERE ProjectID = 101
+);
