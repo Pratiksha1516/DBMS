@@ -98,3 +98,7 @@ SELECT Name, Role
 FROM TeamMember 
 ORDER BY Name;
 
+SELECT T.TaskName, P.ProjectName
+FROM Task T
+JOIN Project P ON T.ProjectID = P.ProjectID;
+
