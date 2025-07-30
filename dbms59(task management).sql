@@ -158,3 +158,6 @@ SELECT T.TaskName
 FROM Task T
 JOIN TeamMember TM ON T.AssignedTo = TM.MemberID
 WHERE TM.Role <> 'Developer';
+
+SELECT * FROM TeamMember
+WHERE Role IN ('Developer', 'Tester');
