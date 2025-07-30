@@ -191,3 +191,8 @@ WHERE MemberID IN (
     ORDER BY COUNT(*) DESC
     LIMIT 1
 );
+
+SELECT T.TaskName, TM.Role
+FROM Task T
+JOIN TeamMember TM ON T.AssignedTo = TM.MemberID
+WHERE T.ProjectID = 102;
