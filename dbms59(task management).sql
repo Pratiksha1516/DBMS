@@ -132,3 +132,7 @@ SELECT Role, COUNT(*) AS Count
 FROM TeamMember
 GROUP BY Role;
 
+SELECT TM.Role, COUNT(T.TaskID) AS TaskCount
+FROM Task T
+JOIN TeamMember TM ON T.AssignedTo = TM.MemberID
+GROUP BY TM.Role;
