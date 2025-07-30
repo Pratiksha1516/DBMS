@@ -121,3 +121,9 @@ FROM TeamMember TM
 LEFT JOIN Task T ON TM.MemberID = T.AssignedTo
 GROUP BY TM.Name;
 
+SELECT P.ProjectName
+FROM Project P
+JOIN Task T ON P.ProjectID = T.ProjectID
+GROUP BY P.ProjectName
+ORDER BY COUNT(T.TaskID) DESC
+LIMIT 1;
