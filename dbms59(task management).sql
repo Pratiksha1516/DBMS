@@ -161,3 +161,6 @@ WHERE TM.Role <> 'Developer';
 
 SELECT * FROM TeamMember
 WHERE Role IN ('Developer', 'Tester');
+
+SELECT * FROM Task
+WHERE TaskName LIKE 'Create%';
