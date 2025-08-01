@@ -136,3 +136,7 @@ SELECT DISTINCT city FROM payment;
 SELECT customer 
 FROM payment 
 WHERE LOWER(LEFT(customer, 1)) = LOWER(RIGHT(customer, 1));
+
+SELECT mode, city, COUNT(*) AS total 
+FROM payment 
+GROUP BY mode, city;
