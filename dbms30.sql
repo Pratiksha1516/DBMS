@@ -148,3 +148,7 @@ WHERE customer ~* '[aeiou].*[aeiou]';
 SELECT customer 
 FROM payment 
 WHERE customer LIKE '% %';
+
+SELECT * 
+FROM payment 
+WHERE customer_id % 2 = 1;
