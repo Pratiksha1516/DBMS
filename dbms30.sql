@@ -200,3 +200,7 @@ GROUP BY LENGTH(customer);
 SELECT COUNT(*) 
 FROM payment 
 WHERE mode LIKE 'D%';
+
+SELECT mode, AVG(customer_id) AS avg_id 
+FROM payment 
+GROUP BY mode;
