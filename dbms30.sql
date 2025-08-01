@@ -176,3 +176,6 @@ WHERE LENGTH(customer) = (SELECT MAX(LENGTH(customer)) FROM payment);
 
 SELECT customer_id, customer_id * customer_id AS square 
 FROM payment;
+
+SELECT city, SUBSTRING(city FROM 1 FOR 3) AS short_city 
+FROM payment;
