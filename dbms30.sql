@@ -156,3 +156,7 @@ WHERE customer_id % 2 = 1;
 SELECT customer, city 
 FROM payment 
 WHERE LENGTH(city) < 6;
+
+SELECT * 
+FROM payment 
+WHERE mode LIKE '%Card%';
