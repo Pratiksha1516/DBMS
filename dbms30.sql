@@ -152,3 +152,7 @@ WHERE customer LIKE '% %';
 SELECT * 
 FROM payment 
 WHERE customer_id % 2 = 1;
+
+SELECT customer, city 
+FROM payment 
+WHERE LENGTH(city) < 6;
