@@ -165,3 +165,7 @@ SELECT *
 FROM payment 
 ORDER BY customer DESC 
 LIMIT 5;
+
+SELECT * 
+FROM payment 
+WHERE customer_id = (SELECT MIN(customer_id) FROM payment);
