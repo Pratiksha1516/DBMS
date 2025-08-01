@@ -188,3 +188,7 @@ FROM payment;
 
 SELECT RPAD(city, 10, '*') AS padded_city 
 FROM payment;
+
+SELECT customer 
+FROM payment 
+WHERE LENGTH(customer) = 5;
