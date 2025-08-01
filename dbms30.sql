@@ -160,3 +160,8 @@ WHERE LENGTH(city) < 6;
 SELECT * 
 FROM payment 
 WHERE mode LIKE '%Card%';
+
+SELECT * 
+FROM payment 
+ORDER BY customer DESC 
+LIMIT 5;
