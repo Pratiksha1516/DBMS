@@ -185,3 +185,6 @@ FROM payment;
 
 SELECT customer || ' - ' || mode AS details 
 FROM payment;
+
+SELECT RPAD(city, 10, '*') AS padded_city 
+FROM payment;
