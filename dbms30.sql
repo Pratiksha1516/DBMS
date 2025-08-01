@@ -173,3 +173,6 @@ WHERE customer_id = (SELECT MIN(customer_id) FROM payment);
 SELECT * 
 FROM payment 
 WHERE LENGTH(customer) = (SELECT MAX(LENGTH(customer)) FROM payment);
+
+SELECT customer_id, customer_id * customer_id AS square 
+FROM payment;
