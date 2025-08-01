@@ -192,3 +192,7 @@ FROM payment;
 SELECT customer 
 FROM payment 
 WHERE LENGTH(customer) = 5;
+
+SELECT LENGTH(customer) AS name_length, COUNT(*) 
+FROM payment 
+GROUP BY LENGTH(customer);
