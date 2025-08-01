@@ -182,3 +182,6 @@ FROM payment;
 
 SELECT LOWER(city) AS city_lower 
 FROM payment;
+
+SELECT customer || ' - ' || mode AS details 
+FROM payment;
