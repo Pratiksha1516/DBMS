@@ -196,3 +196,7 @@ WHERE LENGTH(customer) = 5;
 SELECT LENGTH(customer) AS name_length, COUNT(*) 
 FROM payment 
 GROUP BY LENGTH(customer);
+
+SELECT COUNT(*) 
+FROM payment 
+WHERE mode LIKE 'D%';
