@@ -144,3 +144,7 @@ GROUP BY mode, city;
 SELECT customer 
 FROM payment 
 WHERE customer ~* '[aeiou].*[aeiou]';
+
+SELECT customer 
+FROM payment 
+WHERE customer LIKE '% %';
