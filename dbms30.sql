@@ -169,3 +169,7 @@ LIMIT 5;
 SELECT * 
 FROM payment 
 WHERE customer_id = (SELECT MIN(customer_id) FROM payment);
+
+SELECT * 
+FROM payment 
+WHERE LENGTH(customer) = (SELECT MAX(LENGTH(customer)) FROM payment);
