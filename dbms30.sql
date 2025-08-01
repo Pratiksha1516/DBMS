@@ -204,3 +204,7 @@ WHERE mode LIKE 'D%';
 SELECT mode, AVG(customer_id) AS avg_id 
 FROM payment 
 GROUP BY mode;
+
+SELECT customer 
+FROM payment 
+WHERE customer NOT ILIKE '%a%';
