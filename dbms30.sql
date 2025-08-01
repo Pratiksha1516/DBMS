@@ -179,3 +179,6 @@ FROM payment;
 
 SELECT city, SUBSTRING(city FROM 1 FOR 3) AS short_city 
 FROM payment;
+
+SELECT LOWER(city) AS city_lower 
+FROM payment;
