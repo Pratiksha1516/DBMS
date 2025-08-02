@@ -139,6 +139,8 @@ LIMIT 1;
 
 SELECT UPPER(NAME) AS city_name_upper FROM CITY;
 
+SELECT INITCAP(DISTRICT) AS formatted_district FROM CITY;
+
 
 
 
