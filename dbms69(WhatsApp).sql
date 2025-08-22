@@ -92,4 +92,11 @@ FROM ChatMembers cm
 JOIN Users u ON cm.UserID = u.UserID
 WHERE cm.ChatID = 201;
 
+SELECT u.Name AS Sender, m.Content, m.SentAt
+FROM Messages m
+JOIN Users u ON m.SenderID = u.UserID
+WHERE m.ChatID = 101
+ORDER BY m.SentAt;
+
+
 
