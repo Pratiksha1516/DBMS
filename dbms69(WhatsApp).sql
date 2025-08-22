@@ -30,3 +30,15 @@ CREATE TABLE Messages (
     FOREIGN KEY (ChatID) REFERENCES Chats(ChatID),
     FOREIGN KEY (SenderID) REFERENCES Users(UserID)
 );
+
+CREATE TABLE MessageStatus (
+    MessageID INT,
+    UserID INT,
+    Status VARCHAR(20),  -- 'sent', 'delivered', 'seen'
+    SeenAt TIMESTAMP,
+    PRIMARY KEY (MessageID, UserID),
+    FOREIGN KEY (MessageID) REFERENCES Messages(MessageID),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+
