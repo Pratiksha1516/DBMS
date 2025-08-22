@@ -48,4 +48,8 @@ INSERT INTO Users (UserID, Name, PhoneNumber, StatusMessage, LastSeen) VALUES
 (4, 'Jenny', '9876500003', 'Chilling', '2025-08-22 10:45:00'),
 (5, 'Sahil', '9876500004', 'On Vacation', '2025-08-21 23:59:00');
 
+INSERT INTO Chats (ChatID, ChatName, IsGroup) VALUES
+(101, NULL, FALSE),  
+(102, NULL, FALSE),   
+(201, 'Friends Group', TRUE);
 
