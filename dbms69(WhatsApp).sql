@@ -100,6 +100,10 @@ SELECT ChatID
 FROM Chats 
 WHERE IsGroup = FALSE;
 
+SELECT ChatID, COUNT(UserID) AS MemberCount
+FROM ChatMembers
+GROUP BY ChatID;
+
 SELECT u.Name AS Sender, m.Content, m.SentAt
 FROM Messages m
 JOIN Users u ON m.SenderID = u.UserID
@@ -130,6 +134,7 @@ WHERE m.SentAt = (
 SELECT COUNT(*) AS GroupMessages
 FROM Messages
 WHERE ChatID = 201;
+
 
 
 
