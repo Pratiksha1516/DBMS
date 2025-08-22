@@ -41,4 +41,11 @@ CREATE TABLE MessageStatus (
     FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
 
+INSERT INTO Users (UserID, Name, PhoneNumber, StatusMessage, LastSeen) VALUES
+(1, 'Pratiksha', '9876543210', 'Busy', '2025-08-21 22:10:00'),
+(2, 'Ranveer', '9876500001', 'Available', '2025-08-22 09:15:00'),
+(3, 'Shree', '9876500002', 'At Work', '2025-08-22 08:30:00'),
+(4, 'Jenny', '9876500003', 'Chilling', '2025-08-22 10:45:00'),
+(5, 'Sahil', '9876500004', 'On Vacation', '2025-08-21 23:59:00');
+
 
