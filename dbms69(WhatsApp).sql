@@ -92,6 +92,10 @@ FROM ChatMembers cm
 JOIN Users u ON cm.UserID = u.UserID
 WHERE cm.ChatID = 201;
 
+SELECT ChatID, ChatName 
+FROM Chats 
+WHERE IsGroup = TRUE;
+
 SELECT u.Name AS Sender, m.Content, m.SentAt
 FROM Messages m
 JOIN Users u ON m.SenderID = u.UserID
@@ -117,6 +121,7 @@ WHERE m.SentAt = (
 SELECT COUNT(*) AS GroupMessages
 FROM Messages
 WHERE ChatID = 201;
+
 
 
 
