@@ -105,5 +105,14 @@ GROUP BY u.Name
 ORDER BY TotalMessages DESC
 LIMIT 1;
 
+SELECT c.ChatID, COALESCE(c.ChatName, 'Personal Chat') AS ChatName,
+       m.Content AS LastMessage, u.Name AS Sender, m.SentAt
+FROM Chats c
+JOIN Messages m ON c.ChatID = m.ChatID
+JOIN Users u ON m.SenderID = u.UserID
+WHERE m.SentAt = (
+   SELECT MAX(m2.SentAt) FROM Messages m2 WHERE m2.ChatID = c.ChatID
+);
+
 
 
