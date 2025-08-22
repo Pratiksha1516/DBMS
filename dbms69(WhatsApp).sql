@@ -114,5 +114,9 @@ WHERE m.SentAt = (
    SELECT MAX(m2.SentAt) FROM Messages m2 WHERE m2.ChatID = c.ChatID
 );
 
+SELECT COUNT(*) AS GroupMessages
+FROM Messages
+WHERE ChatID = 201;
+
 
 
