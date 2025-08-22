@@ -98,5 +98,12 @@ JOIN Users u ON m.SenderID = u.UserID
 WHERE m.ChatID = 101
 ORDER BY m.SentAt;
 
+SELECT u.Name, COUNT(m.MessageID) AS TotalMessages
+FROM Users u
+JOIN Messages m ON u.UserID = m.SenderID
+GROUP BY u.Name
+ORDER BY TotalMessages DESC
+LIMIT 1;
+
 
 
