@@ -73,3 +73,14 @@ INSERT INTO Messages (MessageID, ChatID, SenderID, Content, SentAt) VALUES
 (1006, 201, 3, 'Morning!', '2025-08-22 07:55:00'),
 (1007, 201, 4, 'Hi guys!', '2025-08-22 08:00:00'),
 (1008, 201, 5, 'Hello!!', '2025-08-22 08:10:00');
+
+INSERT INTO MessageStatus (MessageID, UserID, Status, SeenAt) VALUES
+(1001, 2, 'seen', '2025-08-22 09:01:30'),
+(1002, 1, 'seen', '2025-08-22 09:01:45'),
+(1003, 4, 'seen', '2025-08-22 08:41:00'),
+(1004, 3, 'seen', '2025-08-22 08:42:00'),
+(1005, 2, 'seen', '2025-08-22 07:52:00'),
+(1005, 3, 'seen', '2025-08-22 07:53:00'),
+(1005, 4, 'delivered', NULL),
+(1005, 5, 'seen', '2025-08-22 07:54:00');
+
