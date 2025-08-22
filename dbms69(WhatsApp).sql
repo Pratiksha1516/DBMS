@@ -87,4 +87,9 @@ INSERT INTO MessageStatus (MessageID, UserID, Status, SeenAt) VALUES
 SELECT Name, PhoneNumber, StatusMessage, LastSeen 
 FROM Users;
 
+SELECT u.Name, cm.Role
+FROM ChatMembers cm
+JOIN Users u ON cm.UserID = u.UserID
+WHERE cm.ChatID = 201;
+
 
