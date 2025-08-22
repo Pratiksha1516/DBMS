@@ -63,3 +63,13 @@ INSERT INTO ChatMembers (ChatID, UserID, Role) VALUES
 (201, 3, 'member'),
 (201, 4, 'member'),
 (201, 5, 'member');
+
+INSERT INTO Messages (MessageID, ChatID, SenderID, Content, SentAt) VALUES
+(1001, 101, 1, 'Hey Ranveer!', '2025-08-22 09:00:00'),
+(1002, 101, 2, 'Hi Pratiksha! How are you?', '2025-08-22 09:01:00'),
+(1003, 102, 3, 'Hello Jenny!', '2025-08-22 08:35:00'),
+(1004, 102, 4, 'Hey Sahil! Long time no see.', '2025-08-22 08:40:00'),
+(1005, 201, 1, 'Good morning everyone!', '2025-08-22 07:50:00'),
+(1006, 201, 3, 'Morning!', '2025-08-22 07:55:00'),
+(1007, 201, 4, 'Hi guys!', '2025-08-22 08:00:00'),
+(1008, 201, 5, 'Hello!!', '2025-08-22 08:10:00');
