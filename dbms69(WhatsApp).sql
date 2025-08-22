@@ -106,6 +106,11 @@ JOIN Users u ON m.SenderID = u.UserID
 WHERE m.ChatID = 101
 ORDER BY m.SentAt;
 
+SELECT Content, SentAt 
+FROM Messages m
+JOIN Users u ON m.SenderID = u.UserID
+WHERE u.Name = 'Pratiksha';
+
 SELECT u.Name, COUNT(m.MessageID) AS TotalMessages
 FROM Users u
 JOIN Messages m ON u.UserID = m.SenderID
@@ -125,6 +130,7 @@ WHERE m.SentAt = (
 SELECT COUNT(*) AS GroupMessages
 FROM Messages
 WHERE ChatID = 201;
+
 
 
 
