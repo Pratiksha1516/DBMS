@@ -53,3 +53,13 @@ INSERT INTO Chats (ChatID, ChatName, IsGroup) VALUES
 (102, NULL, FALSE),   
 (201, 'Friends Group', TRUE);
 
+INSERT INTO ChatMembers (ChatID, UserID, Role) VALUES
+(101, 1, 'member'),
+(101, 2, 'member'),
+(102, 3, 'member'),
+(102, 4, 'member'),
+(201, 1, 'admin'),
+(201, 2, 'member'),
+(201, 3, 'member'),
+(201, 4, 'member'),
+(201, 5, 'member');
