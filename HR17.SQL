@@ -1,0 +1,41 @@
+CREATE TABLE TRIANGLES(
+	A INT,
+	B INT,
+	C INT
+);
+
+INSERT INTO TRIANGLES(A, B, C) 
+VALUES
+(20, 20, 23),
+(20, 20, 20),
+(20, 21, 22),
+(13, 14, 30);
+
+SELECT * FROM TRIANGLES;
+
+SELECT * 
+FROM TRIANGLES
+WHERE A = B OR B = C OR A = C;
+
+SELECT *
+FROM TRIANGLES
+WHERE A = B AND B = C;
+
+SELECT *
+FROM TRIANGLES
+WHERE A<>B AND B<>C AND A<>C;
+
+SELECT * 
+FROM TRIANGLES
+WHERE A + B > C 
+  AND A + C > B 
+  AND B + C > A;
+
+SELECT 
+    CASE 
+        WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
+        WHEN A = B AND B = C THEN 'Equilateral'
+        WHEN A = B OR B = C OR A = C THEN 'Isosceles'
+        ELSE 'Scalene'
+    END AS Triangle_Type
+FROM TRIANGLES;

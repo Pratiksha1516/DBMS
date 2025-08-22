@@ -1,0 +1,17 @@
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(100),
+    phone VARCHAR(15),
+    city VARCHAR(50),
+    registration_date DATE
+);
+
+INSERT INTO customers VALUES (1, 'abc', 'abc@gmail.com', '1234567890', 'New York', TO_DATE('2022-01-15', 'YYYY-MM-DD'));
+INSERT INTO customers VALUES (2, 'def', 'def@gmail.com', '0987654321', 'Los Angeles', TO_DATE('2021-11-20', 'YYYY-MM-DD'));
+INSERT INTO customers VALUES (3, 'ghi', 'ghi@gmail.com', '1122334455', 'Chicago', TO_DATE('2023-02-10', 'YYYY-MM-DD'));
+
+SELECT * FROM customers 
+WHERE registration_date >= TO_DATE('2022-01-01', 'YYYY-MM-DD');
+
+

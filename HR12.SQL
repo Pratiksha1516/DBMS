@@ -1,0 +1,32 @@
+CREATE TABLE STATION (
+    ID INT primary key,
+    CITY VARCHAR(21),
+    STATE VARCHAR(2),
+    LAT_N INT,
+    LONG_W INT
+);
+
+INSERT INTO STATION (ID, CITY, STATE, LAT_N, LONG_W) VALUES
+(1, 'Los Angeles', 'CA', 34.0522, -118.2437),
+(2, 'New York', 'NY', 40.7128, -74.0060),
+(3, 'Chicago', 'IL', 41.8781, -87.6298),
+(4, 'Houston', 'TX', 29.7604, -95.3698),
+(5, 'Phoenix', 'AZ', 33.4484, -112.0740),
+(6, 'Philadelphia', 'PA', 39.9526, -75.1652),
+(7, 'San Antonio', 'TX', 29.4241, -98.4936),
+(8, 'San Diego', 'CA', 32.7157, -117.1611),
+(9, 'Dallas', 'TX', 32.7767, -96.7970),
+(10, 'San Jose', 'CA', 37.3382, -121.8863);
+
+SELECT ROUND(LONG_W, 4)
+FROM STATION
+WHERE LAT_N = (SELECT MIN(LAT_N) FROM STATION);
+
+SELECT ROUND(LONG_W, 4)
+FROM STATION
+WHERE LAT_N = (SELECT MIN(LAT_N) FROM STATION WHERE LAT_N > 38.7780);
+
+SELECT 
+    ROUND(ABS(MAX(LAT_N) - MIN(LAT_N)) + ABS(MAX(LONG_W) - MIN(LONG_W)), 4) AS Manhattan_Distance
+FROM STATION;
+
