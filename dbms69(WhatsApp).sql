@@ -20,3 +20,13 @@ CREATE TABLE ChatMembers (
     FOREIGN KEY (ChatID) REFERENCES Chats(ChatID),
     FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
+
+CREATE TABLE Messages (
+    MessageID INT PRIMARY KEY,
+    ChatID INT,
+    SenderID INT,
+    Content TEXT,
+    SentAt TIMESTAMP,
+    FOREIGN KEY (ChatID) REFERENCES Chats(ChatID),
+    FOREIGN KEY (SenderID) REFERENCES Users(UserID)
+);
