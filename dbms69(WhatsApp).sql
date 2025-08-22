@@ -84,3 +84,7 @@ INSERT INTO MessageStatus (MessageID, UserID, Status, SeenAt) VALUES
 (1005, 4, 'delivered', NULL),
 (1005, 5, 'seen', '2025-08-22 07:54:00');
 
+SELECT Name, PhoneNumber, StatusMessage, LastSeen 
+FROM Users;
+
+
