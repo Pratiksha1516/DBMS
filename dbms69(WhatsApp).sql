@@ -5,3 +5,9 @@ CREATE TABLE Users (
     StatusMessage VARCHAR(200),
     LastSeen TIMESTAMP
 );
+
+CREATE TABLE Chats (
+    ChatID INT PRIMARY KEY,
+    ChatName VARCHAR(100),   
+    IsGroup BOOLEAN
+);
