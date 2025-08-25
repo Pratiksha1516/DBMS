@@ -88,6 +88,9 @@ SELECT ChatID
 FROM Chats 
 WHERE IsGroup = FALSE;
 
+SELECT MAX(SentAt) AS LatestMessageTime 
+FROM Messages;
+
 SELECT COUNT(*) AS TotalUsers 
 FROM Users;
 
@@ -197,6 +200,7 @@ SELECT u.Name, COUNT(DISTINCT cm.ChatID) AS TotalChats
 FROM Users u
 JOIN ChatMembers cm ON u.UserID = cm.UserID
 GROUP BY u.Name;
+
 
 
 
