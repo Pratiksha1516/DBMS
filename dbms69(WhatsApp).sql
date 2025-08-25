@@ -151,6 +151,12 @@ FROM Messages m
 JOIN Users u ON m.SenderID = u.UserID
 WHERE m.SentAt > '2025-08-22 09:00:00';
 
+SELECT DISTINCT u.Name
+FROM ChatMembers cm
+JOIN Users u ON cm.UserID = u.UserID
+WHERE cm.Role = 'admin';
+
+
 
 
 
