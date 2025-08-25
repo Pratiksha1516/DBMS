@@ -88,6 +88,10 @@ SELECT ChatID
 FROM Chats 
 WHERE IsGroup = FALSE;
 
+SELECT UserID 
+FROM ChatMembers 
+WHERE ChatID = 101;
+
 SELECT ChatName 
 FROM Chats 
 WHERE IsGroup = TRUE;
@@ -190,6 +194,7 @@ SELECT u.Name, COUNT(DISTINCT cm.ChatID) AS TotalChats
 FROM Users u
 JOIN ChatMembers cm ON u.UserID = cm.UserID
 GROUP BY u.Name;
+
 
 
 
