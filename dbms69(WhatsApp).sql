@@ -156,6 +156,13 @@ FROM ChatMembers cm
 JOIN Users u ON cm.UserID = u.UserID
 WHERE cm.Role = 'admin';
 
+SELECT c.ChatID
+FROM Chats c
+WHERE c.IsGroup = FALSE
+AND EXISTS (
+    SELECT 1 FROM Messages m WHERE m.ChatID = c.ChatID
+);
+
 
 
 
