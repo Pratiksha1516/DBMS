@@ -174,6 +174,11 @@ FROM Messages
 GROUP BY EXTRACT(HOUR FROM SentAt)
 ORDER BY Hour;
 
+SELECT u.Name, COUNT(DISTINCT cm.ChatID) AS TotalChats
+FROM Users u
+JOIN ChatMembers cm ON u.UserID = cm.UserID
+GROUP BY u.Name;
+
 
 
 
