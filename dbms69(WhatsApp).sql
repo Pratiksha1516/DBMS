@@ -135,6 +135,7 @@ SELECT COUNT(*) AS GroupMessages
 FROM Messages
 WHERE ChatID = 201;
 
+--
 SELECT c.ChatID, c.ChatName, COUNT(cm.UserID) AS Members
 FROM Chats c
 JOIN ChatMembers cm ON c.ChatID = cm.ChatID
@@ -144,6 +145,12 @@ GROUP BY c.ChatID, c.ChatName;
 SELECT Name, LastSeen
 FROM Users
 ORDER BY LastSeen DESC;
+
+SELECT m.Content, u.Name, m.SentAt
+FROM Messages m
+JOIN Users u ON m.SenderID = u.UserID
+WHERE m.SentAt > '2025-08-22 09:00:00';
+
 
 
 
