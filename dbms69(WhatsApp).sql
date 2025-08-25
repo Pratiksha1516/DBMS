@@ -84,6 +84,10 @@ INSERT INTO MessageStatus (MessageID, UserID, Status, SeenAt) VALUES
 (1005, 4, 'delivered', NULL),
 (1005, 5, 'seen', '2025-08-22 07:54:00');
 
+SELECT ChatID 
+FROM Chats 
+WHERE IsGroup = FALSE;
+
 SELECT ChatName 
 FROM Chats 
 WHERE IsGroup = TRUE;
@@ -182,6 +186,7 @@ SELECT u.Name, COUNT(DISTINCT cm.ChatID) AS TotalChats
 FROM Users u
 JOIN ChatMembers cm ON u.UserID = cm.UserID
 GROUP BY u.Name;
+
 
 
 
