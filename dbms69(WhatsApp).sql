@@ -141,6 +141,11 @@ JOIN ChatMembers cm ON c.ChatID = cm.ChatID
 WHERE c.IsGroup = TRUE
 GROUP BY c.ChatID, c.ChatName;
 
+SELECT Name, LastSeen
+FROM Users
+ORDER BY LastSeen DESC;
+
+
 
 
 
