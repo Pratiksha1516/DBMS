@@ -95,6 +95,10 @@ WHERE IsGroup = TRUE;
 SELECT Name, PhoneNumber, StatusMessage, LastSeen 
 FROM Users;
 
+SELECT Content FROM Messages m
+JOIN Users u ON m.SenderID = u.UserID
+WHERE u.Name = 'Jenny';
+
 SELECT u.Name, cm.Role
 FROM ChatMembers cm
 JOIN Users u ON cm.UserID = u.UserID
@@ -186,6 +190,7 @@ SELECT u.Name, COUNT(DISTINCT cm.ChatID) AS TotalChats
 FROM Users u
 JOIN ChatMembers cm ON u.UserID = cm.UserID
 GROUP BY u.Name;
+
 
 
 
