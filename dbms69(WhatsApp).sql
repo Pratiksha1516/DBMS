@@ -163,6 +163,12 @@ AND EXISTS (
     SELECT 1 FROM Messages m WHERE m.ChatID = c.ChatID
 );
 
+SELECT DISTINCT c.ChatID, COALESCE(c.ChatName, 'Personal Chat') AS ChatName
+FROM Messages m
+JOIN Chats c ON m.ChatID = c.ChatID
+JOIN Users u ON m.SenderID = u.UserID
+WHERE u.Name = 'Ranveer';
+
 
 
 
