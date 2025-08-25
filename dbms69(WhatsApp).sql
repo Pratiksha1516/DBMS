@@ -135,6 +135,13 @@ SELECT COUNT(*) AS GroupMessages
 FROM Messages
 WHERE ChatID = 201;
 
+SELECT c.ChatID, c.ChatName, COUNT(cm.UserID) AS Members
+FROM Chats c
+JOIN ChatMembers cm ON c.ChatID = cm.ChatID
+WHERE c.IsGroup = TRUE
+GROUP BY c.ChatID, c.ChatName;
+
+
 
 
 
