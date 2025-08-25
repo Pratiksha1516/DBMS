@@ -87,6 +87,9 @@ INSERT INTO MessageStatus (MessageID, UserID, Status, SeenAt) VALUES
 SELECT MessageID, ChatID, Content 
 FROM Messages;
 
+SELECT Name, PhoneNumber 
+FROM Users;
+
 SELECT ChatID 
 FROM Chats 
 WHERE IsGroup = FALSE;
@@ -206,6 +209,7 @@ SELECT u.Name, COUNT(DISTINCT cm.ChatID) AS TotalChats
 FROM Users u
 JOIN ChatMembers cm ON u.UserID = cm.UserID
 GROUP BY u.Name;
+
 
 
 
