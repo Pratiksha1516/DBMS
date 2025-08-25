@@ -169,6 +169,11 @@ JOIN Chats c ON m.ChatID = c.ChatID
 JOIN Users u ON m.SenderID = u.UserID
 WHERE u.Name = 'Ranveer';
 
+SELECT EXTRACT(HOUR FROM SentAt) AS Hour, COUNT(*) AS TotalMessages
+FROM Messages
+GROUP BY EXTRACT(HOUR FROM SentAt)
+ORDER BY Hour;
+
 
 
 
