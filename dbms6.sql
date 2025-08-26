@@ -29,3 +29,6 @@ SELECT *
 FROM customers 
 WHERE name LIKE '%a%';
 
+SELECT *
+FROM customers
+WHERE customer_id > 1 AND city = 'Chicago';
