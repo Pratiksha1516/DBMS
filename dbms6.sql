@@ -90,3 +90,11 @@ WHERE LENGTH(phone) <> 10;
 
 SELECT name, city, TO_CHAR(registration_date, 'Month') AS reg_month
 FROM customers;
+
+SELECT customer_id, name, city, registration_date
+FROM (
+    SELECT c.*, 
+           ROW_NUMBER() OVER (PARTITION BY EXTRACT(YEAR FROM registration_date) ORDER BY registration_date ASC) AS rn
+    FROM customers c
+) sub
+WHERE rn = 1;
