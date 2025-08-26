@@ -87,3 +87,6 @@ ORDER BY reg_year;
 SELECT * 
 FROM customers
 WHERE LENGTH(phone) <> 10;
+
+SELECT name, city, TO_CHAR(registration_date, 'Month') AS reg_month
+FROM customers;
