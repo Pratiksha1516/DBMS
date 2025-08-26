@@ -68,3 +68,9 @@ FROM (
     FROM customers c
 ) sub
 WHERE rnk = 1;
+
+SELECT * 
+FROM customers 
+WHERE city IN (
+    SELECT city FROM customers GROUP BY city HAVING COUNT(*) > 1
+);
