@@ -52,3 +52,7 @@ GROUP BY city;
 SELECT * 
 FROM customers
 WHERE registration_date < (SELECT AVG(registration_date) FROM customers);
+
+SELECT * 
+FROM customers
+WHERE LENGTH(name) = (SELECT MAX(LENGTH(name)) FROM customers);
