@@ -45,4 +45,7 @@ SELECT city, MIN(registration_date) AS first_registered
 FROM customers
 GROUP BY city;
 
+SELECT city, COUNT(DISTINCT email) AS unique_emails 
+FROM customers
+GROUP BY city;
 
