@@ -41,3 +41,8 @@ SELECT city, COUNT(*) AS total
 FROM customers 
 GROUP BY city HAVING COUNT(*) > 1;
 
+SELECT city, MIN(registration_date) AS first_registered 
+FROM customers
+GROUP BY city;
+
+
