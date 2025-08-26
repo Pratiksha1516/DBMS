@@ -74,3 +74,7 @@ FROM customers
 WHERE city IN (
     SELECT city FROM customers GROUP BY city HAVING COUNT(*) > 1
 );
+
+SELECT customer_id, name, city, EXTRACT(YEAR FROM registration_date) AS reg_year
+FROM customers
+ORDER BY reg_year;
