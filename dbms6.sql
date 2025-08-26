@@ -78,3 +78,8 @@ WHERE city IN (
 SELECT customer_id, name, city, EXTRACT(YEAR FROM registration_date) AS reg_year
 FROM customers
 ORDER BY reg_year;
+
+SELECT EXTRACT(YEAR FROM registration_date) AS reg_year, COUNT(*) AS total_customers
+FROM customers
+GROUP BY EXTRACT(YEAR FROM registration_date)
+ORDER BY reg_year;
