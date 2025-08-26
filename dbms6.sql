@@ -60,3 +60,11 @@ WHERE LENGTH(name) = (SELECT MAX(LENGTH(name)) FROM customers);
 SELECT customer_id, name, city, registration_date,
        RANK() OVER (ORDER BY registration_date ASC) AS reg_rank
 FROM customers;
+
+SELECT customer_id, name, city, registration_date
+FROM (
+    SELECT c.*, 
+           RANK() OVER (PARTITION BY city ORDER BY registration_date DESC) AS rnk
+    FROM customers c
+) sub
+WHERE rnk = 1;
