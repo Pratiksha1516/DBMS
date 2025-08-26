@@ -18,3 +18,5 @@ SELECT *
 FROM customers 
 WHERE city = 'New York';
 
+SELECT DISTINCT city 
+FROM customers;
