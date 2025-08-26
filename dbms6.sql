@@ -32,3 +32,7 @@ WHERE name LIKE '%a%';
 SELECT *
 FROM customers
 WHERE customer_id > 1 AND city = 'Chicago';
+
+SELECT *
+FROM customers 
+ORDER BY name ASC;
