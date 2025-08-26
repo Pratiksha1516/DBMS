@@ -36,3 +36,8 @@ WHERE customer_id > 1 AND city = 'Chicago';
 SELECT *
 FROM customers 
 ORDER BY name ASC;
+
+SELECT city, COUNT(*) AS total 
+FROM customers 
+GROUP BY city HAVING COUNT(*) > 1;
+
