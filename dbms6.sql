@@ -83,3 +83,7 @@ SELECT EXTRACT(YEAR FROM registration_date) AS reg_year, COUNT(*) AS total_custo
 FROM customers
 GROUP BY EXTRACT(YEAR FROM registration_date)
 ORDER BY reg_year;
+
+SELECT * 
+FROM customers
+WHERE LENGTH(phone) <> 10;
