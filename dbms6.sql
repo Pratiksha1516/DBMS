@@ -49,3 +49,6 @@ SELECT city, COUNT(DISTINCT email) AS unique_emails
 FROM customers
 GROUP BY city;
 
+SELECT * 
+FROM customers
+WHERE registration_date < (SELECT AVG(registration_date) FROM customers);
