@@ -20,3 +20,10 @@ WHERE city = 'New York';
 
 SELECT DISTINCT city 
 FROM customers;
+
+SELECT * 
+FROM customers 
+WHERE registration_date BETWEEN TO_DATE('2021-01-01','YYYY-MM-DD') AND TO_DATE('2022-12-31','YYYY-MM-DD');
+
+
+
