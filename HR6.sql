@@ -39,3 +39,10 @@ SELECT stud_name, subject
 FROM student 
 JOIN Teaching_Assistants 
 ON student.number = Teaching_Assistants.ID;
+
+SELECT stud_name 
+FROM student
+LEFT JOIN Teaching_Assistants 
+ON student.number = Teaching_Assistants.ID
+WHERE subject IS NULL;
+
