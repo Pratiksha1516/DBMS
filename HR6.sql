@@ -80,3 +80,9 @@ SELECT subject, stud_name
 FROM Teaching_Assistants t
 LEFT JOIN student s 
 ON s.number = t.ID;
+
+SELECT subject, COUNT(stud_name) AS total_students
+FROM Teaching_Assistants t
+LEFT JOIN student s 
+ON s.number = t.ID
+GROUP BY subject;
