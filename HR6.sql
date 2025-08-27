@@ -25,3 +25,8 @@ select *
 from student
 inner join Teaching_Assistants
 ON student.number=Teaching_Assistants.ID;
+
+--
+SELECT stud_name, number 
+FROM student
+WHERE sex = 'F';
