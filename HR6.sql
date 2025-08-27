@@ -108,3 +108,6 @@ WHERE subject = 'Maths';
 
 DELETE FROM student
 WHERE stud_name = 'Shree';
+
+SELECT AVG(number) AS avg_number
+FROM student;
