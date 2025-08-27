@@ -94,3 +94,7 @@ WHERE stud_name LIKE 'R%';
 SELECT * 
 FROM student
 WHERE stud_name LIKE '%e';
+
+SELECT stud_name, number 
+FROM student
+WHERE number > 5000;
