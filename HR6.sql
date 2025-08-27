@@ -98,3 +98,6 @@ WHERE stud_name LIKE '%e';
 SELECT stud_name, number 
 FROM student
 WHERE number > 5000;
+
+SELECT DISTINCT subject 
+FROM Teaching_Assistants;
