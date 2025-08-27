@@ -65,3 +65,8 @@ SELECT stud_name, number
 FROM student
 ORDER BY number ASC
 LIMIT 1;
+
+SELECT stud_name, subject 
+FROM student s
+JOIN Teaching_Assistants t 
+ON s.number = t.ID;
