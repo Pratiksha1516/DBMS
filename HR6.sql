@@ -60,3 +60,8 @@ SELECT stud_name, number
 FROM student
 ORDER BY number DESC
 LIMIT 1;
+
+SELECT stud_name, number 
+FROM student
+ORDER BY number ASC
+LIMIT 1;
