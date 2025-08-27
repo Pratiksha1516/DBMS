@@ -75,3 +75,8 @@ SELECT stud_name, subject
 FROM student s
 LEFT JOIN Teaching_Assistants t 
 ON s.number = t.ID;
+
+SELECT subject, stud_name 
+FROM Teaching_Assistants t
+LEFT JOIN student s 
+ON s.number = t.ID;
