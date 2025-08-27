@@ -51,3 +51,7 @@ FROM Teaching_Assistants
 LEFT JOIN student 
 ON student.number = Teaching_Assistants.ID
 WHERE stud_name IS NULL;
+
+SELECT sex, COUNT(*) 
+FROM student
+GROUP BY sex;
