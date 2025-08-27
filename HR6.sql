@@ -55,3 +55,8 @@ WHERE stud_name IS NULL;
 SELECT sex, COUNT(*) 
 FROM student
 GROUP BY sex;
+
+SELECT stud_name, number 
+FROM student
+ORDER BY number DESC
+LIMIT 1;
