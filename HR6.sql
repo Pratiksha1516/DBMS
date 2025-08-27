@@ -34,3 +34,8 @@ WHERE sex = 'F';
 SELECT stud_name 
 FROM student
 WHERE sex = 'M';
+
+SELECT stud_name, subject
+FROM student 
+JOIN Teaching_Assistants 
+ON student.number = Teaching_Assistants.ID;
