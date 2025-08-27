@@ -86,3 +86,7 @@ FROM Teaching_Assistants t
 LEFT JOIN student s 
 ON s.number = t.ID
 GROUP BY subject;
+
+SELECT * 
+FROM student
+WHERE stud_name LIKE 'R%';
