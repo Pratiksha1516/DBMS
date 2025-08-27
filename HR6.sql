@@ -90,3 +90,7 @@ GROUP BY subject;
 SELECT * 
 FROM student
 WHERE stud_name LIKE 'R%';
+
+SELECT * 
+FROM student
+WHERE stud_name LIKE '%e';
