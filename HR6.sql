@@ -105,3 +105,6 @@ FROM Teaching_Assistants;
 UPDATE Teaching_Assistants
 SET subject = 'Mathematics'
 WHERE subject = 'Maths';
+
+DELETE FROM student
+WHERE stud_name = 'Shree';
