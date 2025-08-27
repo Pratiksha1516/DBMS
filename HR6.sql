@@ -111,3 +111,7 @@ WHERE stud_name = 'Shree';
 
 SELECT AVG(number) AS avg_number
 FROM student;
+
+SELECT * 
+FROM Teaching_Assistants
+WHERE subject IN ('Physics', 'Chemistry');
