@@ -101,3 +101,7 @@ WHERE number > 5000;
 
 SELECT DISTINCT subject 
 FROM Teaching_Assistants;
+
+UPDATE Teaching_Assistants
+SET subject = 'Mathematics'
+WHERE subject = 'Maths';
