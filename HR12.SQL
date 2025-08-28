@@ -97,3 +97,6 @@ ORDER BY LONG_W ASC;
 
 SELECT MAX(LAT_N) - MIN(LAT_N) AS Latitude_Difference
 FROM STATION;
+
+SELECT MAX(LONG_W) - MIN(LONG_W) AS Longitude_Difference
+FROM STATION;
