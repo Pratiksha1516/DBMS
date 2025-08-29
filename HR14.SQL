@@ -37,3 +37,6 @@ FROM TRIANGLES
 WHERE A*A + B*B = C*C 
    OR A*A + C*C = B*B 
    OR B*B + C*C = A*A;
+
+SELECT A, B, C, (A + B + C) AS Perimeter
+FROM TRIANGLES;
