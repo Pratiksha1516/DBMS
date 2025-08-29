@@ -40,3 +40,6 @@ WHERE A*A + B*B = C*C
 
 SELECT A, B, C, (A + B + C) AS Perimeter
 FROM TRIANGLES;
+
+SELECT A, B, C, GREATEST(A, B, C) AS LargestSide
+FROM TRIANGLES;
