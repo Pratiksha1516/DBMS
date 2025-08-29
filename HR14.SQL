@@ -65,3 +65,7 @@ WHERE MOD(A,2)=1 AND MOD(B,2)=1 AND MOD(C,2)=1;
 
 SELECT A, B, C, (A + B + C) / 2.0 AS SemiPerimeter
 FROM TRIANGLES;
+
+SELECT *
+FROM TRIANGLES
+WHERE A + B = C OR A + C = B OR B + C = A;
