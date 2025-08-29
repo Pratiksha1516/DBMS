@@ -31,3 +31,9 @@ WHERE A + B > C
   AND A + C > B 
   AND B + C > A;
 
+--
+SELECT * 
+FROM TRIANGLES
+WHERE A*A + B*B = C*C 
+   OR A*A + C*C = B*B 
+   OR B*B + C*C = A*A;
