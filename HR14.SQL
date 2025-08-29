@@ -46,3 +46,7 @@ FROM TRIANGLES;
 
 SELECT A, B, C, LEAST(A, B, C) AS SmallestSide
 FROM TRIANGLES;
+
+SELECT A, B, C, (A + B + C) AS Perimeter
+FROM TRIANGLES
+ORDER BY Perimeter DESC;
