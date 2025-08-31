@@ -111,3 +111,14 @@ WHERE LEAST(A, B, C) > 15;
 SELECT *
 FROM TRIANGLES
 WHERE (A = B OR B = C OR A = C) AND NOT (A = B AND B = C);
+
+SELECT 
+    CASE 
+        WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
+        WHEN A = B AND B = C THEN 'Equilateral'
+        WHEN A = B OR B = C OR A = C THEN 'Isosceles'
+        ELSE 'Scalene'
+    END AS Triangle_Type,
+    COUNT(*) AS Count
+FROM TRIANGLES
+GROUP BY Triangle_Type;
