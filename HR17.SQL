@@ -75,3 +75,9 @@ FROM TRIANGLES
 WHERE A*A + B*B = C*C
    OR A*A + C*C = B*B
    OR B*B + C*C = A*A;
+
+SELECT *
+FROM TRIANGLES
+WHERE C*C > A*A + B*B
+   OR B*B > A*A + C*C
+   OR A*A > B*B + C*C;
