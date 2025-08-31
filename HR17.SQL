@@ -130,3 +130,7 @@ SELECT *, (A + B + C) AS Perimeter
 FROM TRIANGLES
 ORDER BY Perimeter ASC
 LIMIT 1;
+
+SELECT *
+FROM TRIANGLES
+WHERE ABS(A - B) <= 2 OR ABS(B - C) <= 2 OR ABS(A - C) <= 2;
