@@ -69,3 +69,9 @@ WHERE A + B = C OR A + C = B OR B + C = A;
 SELECT A, B, C
 FROM TRIANGLES
 ORDER BY A, B, C;
+
+SELECT *
+FROM TRIANGLES
+WHERE A*A + B*B = C*C
+   OR A*A + C*C = B*B
+   OR B*B + C*C = A*A;
