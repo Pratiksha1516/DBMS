@@ -55,3 +55,9 @@ WHERE A % 2 = 0 AND B % 2 = 0 AND C % 2 = 0;
 SELECT *
 FROM TRIANGLES
 WHERE A % 2 = 1 AND B % 2 = 1 AND C % 2 = 1;
+
+SELECT *
+FROM TRIANGLES
+WHERE (A % 2 = 0 AND B % 2 = 1 AND C % 2 = 1)
+   OR (B % 2 = 0 AND A % 2 = 1 AND C % 2 = 1)
+   OR (C % 2 = 0 AND A % 2 = 1 AND B % 2 = 1);
