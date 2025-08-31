@@ -39,3 +39,7 @@ SELECT
         ELSE 'Scalene'
     END AS Triangle_Type
 FROM TRIANGLES;
+
+--
+SELECT *, GREATEST(A, B, C) AS Max_Side
+FROM TRIANGLES;
