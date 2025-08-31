@@ -99,3 +99,7 @@ SELECT A, B, C,
                (((A+B+C)/2.0) - C)), 2) AS Area
 FROM TRIANGLES
 WHERE A + B > C AND A + C > B AND B + C > A;
+
+SELECT *, (A + B + C) AS Perimeter
+FROM TRIANGLES
+ORDER BY Perimeter DESC;
