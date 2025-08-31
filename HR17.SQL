@@ -134,3 +134,7 @@ LIMIT 1;
 SELECT *
 FROM TRIANGLES
 WHERE ABS(A - B) <= 2 OR ABS(B - C) <= 2 OR ABS(A - C) <= 2;
+
+SELECT AVG(A + B + C) AS Avg_Perimeter
+FROM TRIANGLES
+WHERE A + B > C AND A + C > B AND B + C > A;
