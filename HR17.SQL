@@ -91,3 +91,11 @@ WHERE A*A + B*B > C*C
 SELECT *
 FROM TRIANGLES
 WHERE (A + B + C) % 5 = 0;
+
+SELECT A, B, C,
+    ROUND(SQRT(((A+B+C)/2.0) * 
+               (((A+B+C)/2.0) - A) *
+               (((A+B+C)/2.0) - B) *
+               (((A+B+C)/2.0) - C)), 2) AS Area
+FROM TRIANGLES
+WHERE A + B > C AND A + C > B AND B + C > A;
