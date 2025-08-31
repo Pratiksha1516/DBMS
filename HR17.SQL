@@ -87,3 +87,7 @@ FROM TRIANGLES
 WHERE A*A + B*B > C*C
   AND A*A + C*C > B*B
   AND B*B + C*C > A*A;
+
+SELECT *
+FROM TRIANGLES
+WHERE (A + B + C) % 5 = 0;
