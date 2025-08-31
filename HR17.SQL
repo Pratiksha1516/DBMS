@@ -125,3 +125,8 @@ GROUP BY Triangle_Type;
 
 SELECT MAX(GREATEST(A, B, C)) AS Longest_Side
 FROM TRIANGLES;
+
+SELECT *, (A + B + C) AS Perimeter
+FROM TRIANGLES
+ORDER BY Perimeter ASC
+LIMIT 1;
