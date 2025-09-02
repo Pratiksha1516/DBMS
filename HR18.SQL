@@ -88,3 +88,6 @@ FROM OCCUPATIONS;
 
 SELECT LOWER(Occupation) AS lower_occupation 
 FROM OCCUPATIONS;
+
+SELECT Name, SUBSTR(Occupation,1,3) AS occupation_code 
+FROM OCCUPATIONS;
