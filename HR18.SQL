@@ -85,3 +85,6 @@ ORDER BY first_letter;
 
 SELECT UPPER(Name) AS upper_name 
 FROM OCCUPATIONS;
+
+SELECT LOWER(Occupation) AS lower_occupation 
+FROM OCCUPATIONS;
