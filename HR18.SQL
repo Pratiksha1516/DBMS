@@ -38,3 +38,7 @@ FROM OCCUPATIONS;
 
 SELECT COUNT(DISTINCT Occupation) AS unique_occupations 
 FROM OCCUPATIONS;
+
+SELECT Name
+FROM OCCUPATIONS 
+WHERE Occupation = 'Doctor';
