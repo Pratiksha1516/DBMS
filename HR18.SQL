@@ -96,3 +96,6 @@ SELECT Occupation, COUNT(*) AS total
 FROM OCCUPATIONS
 GROUP BY Occupation
 ORDER BY Occupation;
+
+SELECT CONCAT(Name, ' is a ', Occupation) AS description 
+FROM OCCUPATIONS;
