@@ -91,3 +91,8 @@ FROM OCCUPATIONS;
 
 SELECT Name, SUBSTR(Occupation,1,3) AS occupation_code 
 FROM OCCUPATIONS;
+
+SELECT Occupation, COUNT(*) AS total
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY Occupation;
