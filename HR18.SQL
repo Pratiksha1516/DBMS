@@ -46,3 +46,7 @@ WHERE Occupation = 'Doctor';
 SELECT Name
 FROM OCCUPATIONS 
 WHERE Occupation = 'Actor' ORDER BY Name DESC;
+
+SELECT COUNT(*) AS total_actors 
+FROM OCCUPATIONS 
+WHERE Occupation = 'Actor';
