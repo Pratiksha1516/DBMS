@@ -50,3 +50,9 @@ WHERE Occupation = 'Actor' ORDER BY Name DESC;
 SELECT COUNT(*) AS total_actors 
 FROM OCCUPATIONS 
 WHERE Occupation = 'Actor';
+
+SELECT Occupation, COUNT(*) AS total
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY total DESC
+LIMIT 1;
