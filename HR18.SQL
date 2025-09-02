@@ -82,3 +82,6 @@ SELECT SUBSTR(Name, 1, 1) AS first_letter, COUNT(*) AS total
 FROM OCCUPATIONS
 GROUP BY first_letter
 ORDER BY first_letter;
+
+SELECT UPPER(Name) AS upper_name 
+FROM OCCUPATIONS;
