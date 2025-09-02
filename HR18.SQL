@@ -70,3 +70,11 @@ WHERE Name LIKE 'J%';
 SELECT Name 
 FROM OCCUPATIONS 
 WHERE Name LIKE '%a';
+
+SELECT Name, LENGTH(Name) AS name_length 
+FROM OCCUPATIONS;
+
+SELECT SUBSTR(Name, 1, 1) AS first_letter, COUNT(*) AS total
+FROM OCCUPATIONS
+GROUP BY first_letter
+ORDER BY first_letter;
