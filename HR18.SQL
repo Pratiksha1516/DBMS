@@ -99,3 +99,8 @@ ORDER BY Occupation;
 
 SELECT CONCAT(Name, ' is a ', Occupation) AS description 
 FROM OCCUPATIONS;
+
+SELECT Occupation, COUNT(*) AS total
+FROM OCCUPATIONS
+GROUP BY Occupation
+HAVING COUNT(*) > 2;
