@@ -54,3 +54,6 @@ LIMIT 2;
 
 SELECT DISTINCT Department 
 FROM Employees;
+
+SELECT AVG(Salary) AS Avg_Salary 
+FROM Employees;
