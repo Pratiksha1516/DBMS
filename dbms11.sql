@@ -57,3 +57,6 @@ FROM Employees;
 
 SELECT AVG(Salary) AS Avg_Salary 
 FROM Employees;
+
+SELECT COUNT(*) AS Total_Employees 
+FROM Employees;
