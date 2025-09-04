@@ -27,7 +27,11 @@ WHERE EmployeeID = 3;
 DELETE FROM Employees
 WHERE EmployeeID = 1;
 
-
+--
 SELECT * 
 FROM Employees 
 WHERE Department = 'IT';
+
+SELECT *
+FROM Employees 
+WHERE Salary > 60000;
