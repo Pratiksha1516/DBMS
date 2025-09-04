@@ -99,3 +99,7 @@ FROM Employees
 WHERE Department <> 'HR';
 
 ALTER TABLE Employees ADD JoiningDate DATE;
+
+UPDATE Employees
+SET Salary = Salary * 1.10
+WHERE Department = 'IT';
