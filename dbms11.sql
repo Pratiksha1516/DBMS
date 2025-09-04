@@ -93,3 +93,7 @@ WHERE Name LIKE '%e';
 SELECT *
 FROM Employees
 WHERE Salary BETWEEN 55000 AND 80000;
+
+SELECT *
+FROM Employees
+WHERE Department <> 'HR';
