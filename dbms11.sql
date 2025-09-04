@@ -67,3 +67,7 @@ FROM Employees;
 SELECT Department, SUM(Salary) AS Total_Salary
 FROM Employees
 GROUP BY Department;
+
+SELECT Department, AVG(Salary) AS Avg_Salary
+FROM Employees
+GROUP BY Department;
