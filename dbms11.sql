@@ -81,3 +81,7 @@ FROM Employees
 GROUP BY Department
 ORDER BY Avg_Salary DESC
 LIMIT 1;
+
+SELECT *
+FROM Employees
+WHERE Name LIKE 'A%';
