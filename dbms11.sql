@@ -51,3 +51,6 @@ SELECT *
 FROM Employees 
 ORDER BY Salary DESC 
 LIMIT 2;
+
+SELECT DISTINCT Department 
+FROM Employees;
