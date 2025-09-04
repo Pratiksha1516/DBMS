@@ -71,3 +71,7 @@ GROUP BY Department;
 SELECT Department, AVG(Salary) AS Avg_Salary
 FROM Employees
 GROUP BY Department;
+
+SELECT Department, COUNT(*) AS Emp_Count
+FROM Employees
+GROUP BY Department;
