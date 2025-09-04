@@ -60,3 +60,6 @@ FROM Employees;
 
 SELECT COUNT(*) AS Total_Employees 
 FROM Employees;
+
+SELECT MAX(Salary) AS Highest_Salary 
+FROM Employees;
