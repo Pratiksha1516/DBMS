@@ -39,3 +39,6 @@ WHERE Salary > 60000;
 SELECT *
 FROM Employees 
 WHERE Age < 30;
+
+SELECT Name, Salary 
+FROM Employees;
