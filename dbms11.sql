@@ -63,3 +63,7 @@ FROM Employees;
 
 SELECT MAX(Salary) AS Highest_Salary 
 FROM Employees;
+
+SELECT Department, SUM(Salary) AS Total_Salary
+FROM Employees
+GROUP BY Department;
