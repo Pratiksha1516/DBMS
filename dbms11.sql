@@ -97,3 +97,5 @@ WHERE Salary BETWEEN 55000 AND 80000;
 SELECT *
 FROM Employees
 WHERE Department <> 'HR';
+
+ALTER TABLE Employees ADD JoiningDate DATE;
