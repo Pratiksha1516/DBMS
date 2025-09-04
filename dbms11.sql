@@ -42,3 +42,7 @@ WHERE Age < 30;
 
 SELECT Name, Salary 
 FROM Employees;
+
+SELECT * 
+FROM Employees 
+ORDER BY Salary DESC;
