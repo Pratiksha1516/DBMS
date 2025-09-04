@@ -85,3 +85,7 @@ LIMIT 1;
 SELECT *
 FROM Employees
 WHERE Name LIKE 'A%';
+
+SELECT * 
+FROM Employees 
+WHERE Name LIKE '%e';
