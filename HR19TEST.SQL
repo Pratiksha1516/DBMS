@@ -68,3 +68,8 @@ GROUP BY Gender;
 
 SELECT AVG(Salary) AS AvgSalary
 FROM FacultyInformation;
+
+SELECT S.Name AS Student, F.FacultyID, F.Salary
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID
+WHERE F.Salary = (SELECT MAX(Salary) FROM FacultyInformation);
