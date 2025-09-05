@@ -102,3 +102,7 @@ WHERE F.Gender = 'Female';
 SELECT * 
 FROM FacultyInformation
 ORDER BY Salary DESC;
+
+SELECT S.Name AS Student, F.Salary
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID;
