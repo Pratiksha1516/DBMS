@@ -65,3 +65,6 @@ WHERE F.Salary < 20000;
 SELECT Gender, COUNT(*) AS AdviserCount
 FROM FacultyInformation
 GROUP BY Gender;
+
+SELECT AVG(Salary) AS AvgSalary
+FROM FacultyInformation;
