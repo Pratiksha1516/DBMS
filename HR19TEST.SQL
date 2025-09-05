@@ -119,3 +119,7 @@ WHERE F.Salary BETWEEN 15000 AND 25000;
 SELECT SUM(Salary) AS TotalMaleSalary
 FROM FacultyInformation
 WHERE Gender = 'Male';
+
+SELECT SUM(Salary) AS TotalFemaleSalary
+FROM FacultyInformation
+WHERE Gender = 'Female';
