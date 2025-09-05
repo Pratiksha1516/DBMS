@@ -106,3 +106,7 @@ ORDER BY Salary DESC;
 SELECT S.Name AS Student, F.Salary
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID;
+
+SELECT FacultyID, Salary
+FROM FacultyInformation
+WHERE Salary > (SELECT AVG(Salary) FROM FacultyInformation);
