@@ -115,3 +115,7 @@ SELECT S.Name, F.Salary
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID
 WHERE F.Salary BETWEEN 15000 AND 25000;
+
+SELECT SUM(Salary) AS TotalMaleSalary
+FROM FacultyInformation
+WHERE Gender = 'Male';
