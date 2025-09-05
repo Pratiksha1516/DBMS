@@ -127,3 +127,12 @@ WHERE Gender = 'Female';
 SELECT MAX(Salary) AS SecondHighest
 FROM FacultyInformation
 WHERE Salary < (SELECT MAX(Salary) FROM FacultyInformation);
+
+SELECT S.Name, F.Salary
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID
+WHERE F.Salary = (
+    SELECT MAX(Salary)
+    FROM FacultyInformation
+    WHERE Salary < (SELECT MAX(Salary) FROM FacultyInformation)
+);
