@@ -46,3 +46,8 @@ WHERE
 SELECT S.Roll_Number, S.Name, F.Gender
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID;
+
+SELECT S.Name AS Student, F.FacultyID, F.Gender
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID
+WHERE F.Gender = 'Female';
