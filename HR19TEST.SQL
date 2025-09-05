@@ -88,3 +88,8 @@ SELECT F.FacultyID, COUNT(S.Roll_Number) AS StudentCount
 FROM FacultyInformation F
 LEFT JOIN StudentInformation S ON F.FacultyID = S.Adviser
 GROUP BY F.FacultyID;
+
+SELECT S.Name
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID
+WHERE F.Gender = 'Male';
