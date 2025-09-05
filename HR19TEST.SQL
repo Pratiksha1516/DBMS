@@ -93,3 +93,8 @@ SELECT S.Name
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID
 WHERE F.Gender = 'Male';
+
+SELECT S.Name
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID
+WHERE F.Gender = 'Female';
