@@ -61,3 +61,7 @@ SELECT S.Roll_Number, S.Name
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID
 WHERE F.Salary < 20000;
+
+SELECT Gender, COUNT(*) AS AdviserCount
+FROM FacultyInformation
+GROUP BY Gender;
