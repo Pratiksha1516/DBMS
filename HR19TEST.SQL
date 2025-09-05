@@ -51,3 +51,8 @@ SELECT S.Name AS Student, F.FacultyID, F.Gender
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID
 WHERE F.Gender = 'Female';
+
+SELECT F.FacultyID, F.Salary, S.Name
+FROM FacultyInformation F
+JOIN StudentInformation S ON F.FacultyID = S.Adviser
+WHERE F.Salary > 20000;
