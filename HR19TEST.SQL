@@ -123,3 +123,7 @@ WHERE Gender = 'Male';
 SELECT SUM(Salary) AS TotalFemaleSalary
 FROM FacultyInformation
 WHERE Gender = 'Female';
+
+SELECT MAX(Salary) AS SecondHighest
+FROM FacultyInformation
+WHERE Salary < (SELECT MAX(Salary) FROM FacultyInformation);
