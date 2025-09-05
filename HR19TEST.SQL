@@ -78,3 +78,8 @@ SELECT S.Name, F.FacultyID, F.Salary
 FROM StudentInformation S
 JOIN FacultyInformation F ON S.Adviser = F.FacultyID
 WHERE F.Salary = (SELECT MIN(Salary) FROM FacultyInformation);
+
+SELECT F.FacultyID, F.Gender, F.Salary
+FROM FacultyInformation F
+LEFT JOIN StudentInformation S ON F.FacultyID = S.Adviser
+WHERE S.Adviser IS NULL;
