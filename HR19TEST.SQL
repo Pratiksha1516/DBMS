@@ -41,3 +41,8 @@ ON
 WHERE
 	(F.Gender = 'Male' AND F.Salary > 15000)OR
 	(F.Gender = 'Female' AND F.Salary > 20000);
+
+--
+SELECT S.Roll_Number, S.Name, F.Gender
+FROM StudentInformation S
+JOIN FacultyInformation F ON S.Adviser = F.FacultyID;
