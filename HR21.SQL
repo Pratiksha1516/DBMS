@@ -99,3 +99,5 @@ FROM Employee;
 SELECT employee_id, LOWER(name) AS lower_name 
 FROM Employee;
 
+SELECT employee_id, name, months, salary, (months * salary) AS total_earnings
+FROM Employee;
