@@ -41,3 +41,6 @@ WHERE salary = (SELECT MAX(salary) FROM Employee);
 SELECT name, salary 
 FROM Employee
 WHERE salary = (SELECT MIN(salary) FROM Employee);
+
+SELECT COUNT(*) AS total_employees 
+FROM Employee;
