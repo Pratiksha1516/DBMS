@@ -80,3 +80,4 @@ WHERE months = (SELECT MIN(months) FROM Employee);
 
 SELECT SUM(salary) AS total_salary 
 FROM Employee;
+
