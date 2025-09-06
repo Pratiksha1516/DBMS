@@ -29,3 +29,7 @@ WHERE salary * months = (
     SELECT MAX(salary * months)
     FROM Employee
 );
+
+--
+SELECT * 
+FROM Employee;
