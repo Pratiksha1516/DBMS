@@ -55,3 +55,8 @@ WHERE months > 10;
 SELECT name, salary 
 FROM Employee
 WHERE salary > 3000;
+
+SELECT name, salary 
+FROM Employee
+ORDER BY salary DESC
+LIMIT 3;
