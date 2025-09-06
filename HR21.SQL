@@ -44,3 +44,6 @@ WHERE salary = (SELECT MIN(salary) FROM Employee);
 
 SELECT COUNT(*) AS total_employees 
 FROM Employee;
+
+SELECT AVG(salary) AS avg_salary 
+FROM Employee;
