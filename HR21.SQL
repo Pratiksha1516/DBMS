@@ -73,3 +73,7 @@ ORDER BY months DESC;
 SELECT name, months 
 FROM Employee
 WHERE months = (SELECT MAX(months) FROM Employee);
+
+SELECT name, months 
+FROM Employee
+WHERE months = (SELECT MIN(months) FROM Employee);
