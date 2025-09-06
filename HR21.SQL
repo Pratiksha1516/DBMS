@@ -51,3 +51,7 @@ FROM Employee;
 SELECT name, months 
 FROM Employee
 WHERE months > 10;
+
+SELECT name, salary 
+FROM Employee
+WHERE salary > 3000;
