@@ -92,3 +92,10 @@ WHERE name LIKE '%a';
 SELECT * 
 FROM Employee
 WHERE name LIKE '%o%';
+
+SELECT employee_id, UPPER(name) AS upper_name 
+FROM Employee;
+
+SELECT employee_id, LOWER(name) AS lower_name 
+FROM Employee;
+
