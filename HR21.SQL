@@ -47,3 +47,7 @@ FROM Employee;
 
 SELECT AVG(salary) AS avg_salary 
 FROM Employee;
+
+SELECT name, months 
+FROM Employee
+WHERE months > 10;
