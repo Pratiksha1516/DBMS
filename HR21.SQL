@@ -60,3 +60,8 @@ SELECT name, salary
 FROM Employee
 ORDER BY salary DESC
 LIMIT 3;
+
+SELECT name, salary 
+FROM Employee
+ORDER BY salary ASC
+LIMIT 3;
