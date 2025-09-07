@@ -81,3 +81,11 @@ SELECT 'SetB', SUM(element) FROM setB;
 SELECT 'SetA' AS SetName, AVG(element) AS AvgElement FROM setA
 UNION
 SELECT 'SetB', AVG(element) FROM setB;
+
+SELECT DISTINCT element 
+FROM (
+    SELECT element FROM setA
+    UNION
+    SELECT element FROM setB
+) AS AllElements
+WHERE element % 2 = 0;
