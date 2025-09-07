@@ -89,3 +89,11 @@ FROM (
     SELECT element FROM setB
 ) AS AllElements
 WHERE element % 2 = 0;
+
+SELECT DISTINCT element 
+FROM (
+    SELECT element FROM setA
+    UNION
+    SELECT element FROM setB
+) AS AllElements
+WHERE element % 2 <> 0;
