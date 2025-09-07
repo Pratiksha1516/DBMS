@@ -53,3 +53,7 @@ EXCEPT
 SELECT element FROM setA
 INTERSECT
 SELECT element FROM setB;
+
+SELECT a.element, b.element AS B_match
+FROM setA a
+LEFT JOIN setB b ON a.element = b.element;
