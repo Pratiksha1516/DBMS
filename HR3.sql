@@ -69,3 +69,7 @@ WHERE element IN (SELECT element FROM setB);
 SELECT 'SetA' AS SetName, MAX(element) AS MaxElement FROM setA
 UNION
 SELECT 'SetB', MAX(element) FROM setB;
+
+SELECT 'SetA' AS SetName, MIN(element) AS MinElement FROM setA
+UNION
+SELECT 'SetB', MIN(element) FROM setB;
