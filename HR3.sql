@@ -36,3 +36,8 @@ SELECT element FROM setA;
 SELECT a.element AS A_element, b.element AS B_element
 FROM setA a
 CROSS JOIN setB b;
+
+SELECT element
+FROM setA
+WHERE element = 5
+AND element IN (SELECT element FROM setB);
