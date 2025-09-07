@@ -41,3 +41,7 @@ SELECT element
 FROM setA
 WHERE element = 5
 AND element IN (SELECT element FROM setB);
+
+SELECT 'SetA' AS SetName, COUNT(*) AS Count FROM setA
+UNION
+SELECT 'SetB', COUNT(*) FROM setB;
