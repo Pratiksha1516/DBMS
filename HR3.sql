@@ -45,3 +45,11 @@ AND element IN (SELECT element FROM setB);
 SELECT 'SetA' AS SetName, COUNT(*) AS Count FROM setA
 UNION
 SELECT 'SetB', COUNT(*) FROM setB;
+
+SELECT element FROM setA
+UNION
+SELECT element FROM setB
+EXCEPT
+SELECT element FROM setA
+INTERSECT
+SELECT element FROM setB;
