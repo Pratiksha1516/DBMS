@@ -24,3 +24,8 @@ FROM (
 SELECT element FROM setA
 UNION
 SELECT element FROM setB;
+
+SELECT element FROM setA
+INTERSECT
+SELECT element FROM setB;
+
