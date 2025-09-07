@@ -65,3 +65,7 @@ RIGHT JOIN setB b ON a.element = b.element;
 SELECT COUNT(*) AS CommonCount
 FROM setA
 WHERE element IN (SELECT element FROM setB);
+
+SELECT 'SetA' AS SetName, MAX(element) AS MaxElement FROM setA
+UNION
+SELECT 'SetB', MAX(element) FROM setB;
