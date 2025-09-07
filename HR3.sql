@@ -61,3 +61,7 @@ LEFT JOIN setB b ON a.element = b.element;
 SELECT a.element AS A_match, b.element
 FROM setA a
 RIGHT JOIN setB b ON a.element = b.element;
+
+SELECT COUNT(*) AS CommonCount
+FROM setA
+WHERE element IN (SELECT element FROM setB);
