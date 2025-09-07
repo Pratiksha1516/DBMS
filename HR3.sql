@@ -73,3 +73,7 @@ SELECT 'SetB', MAX(element) FROM setB;
 SELECT 'SetA' AS SetName, MIN(element) AS MinElement FROM setA
 UNION
 SELECT 'SetB', MIN(element) FROM setB;
+
+SELECT 'SetA' AS SetName, SUM(element) AS SumElements FROM setA
+UNION
+SELECT 'SetB', SUM(element) FROM setB;
