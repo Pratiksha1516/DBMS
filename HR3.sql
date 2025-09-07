@@ -97,3 +97,7 @@ FROM (
     SELECT element FROM setB
 ) AS AllElements
 WHERE element % 2 <> 0;
+
+SELECT element, 'SetA' AS Source FROM setA WHERE element > 4
+UNION ALL
+SELECT element, 'SetB' FROM setB WHERE element > 4;
