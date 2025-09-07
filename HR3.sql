@@ -77,3 +77,7 @@ SELECT 'SetB', MIN(element) FROM setB;
 SELECT 'SetA' AS SetName, SUM(element) AS SumElements FROM setA
 UNION
 SELECT 'SetB', SUM(element) FROM setB;
+
+SELECT 'SetA' AS SetName, AVG(element) AS AvgElement FROM setA
+UNION
+SELECT 'SetB', AVG(element) FROM setB;
