@@ -121,3 +121,14 @@ FROM (
 ) AS Combined
 GROUP BY element
 HAVING COUNT(*) = 1;
+
+SELECT 
+    CASE 
+        WHEN NOT EXISTS (
+            SELECT element FROM setA
+            EXCEPT
+            SELECT element FROM setB
+        )
+        THEN 'SetA is subset of SetB'
+        ELSE 'SetA is NOT subset of SetB'
+    END AS Result;
