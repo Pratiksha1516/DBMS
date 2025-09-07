@@ -18,3 +18,9 @@ FROM (
     EXCEPT
     SELECT element FROM setB
 ) AS DifferenceResult;
+
+
+--
+SELECT element FROM setA
+UNION
+SELECT element FROM setB;
