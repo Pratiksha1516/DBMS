@@ -57,3 +57,7 @@ SELECT element FROM setB;
 SELECT a.element, b.element AS B_match
 FROM setA a
 LEFT JOIN setB b ON a.element = b.element;
+
+SELECT a.element AS A_match, b.element
+FROM setA a
+RIGHT JOIN setB b ON a.element = b.element;
