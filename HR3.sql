@@ -102,6 +102,7 @@ SELECT element, 'SetA' AS Source FROM setA WHERE element > 4
 UNION ALL
 SELECT element, 'SetB' FROM setB WHERE element > 4;
 
+
 SELECT element, COUNT(*) AS Occurrences
 FROM (
     SELECT element FROM setA
@@ -110,3 +111,13 @@ FROM (
 ) AS Combined
 GROUP BY element
 HAVING COUNT(*) > 1;
+
+
+SELECT element
+FROM (
+    SELECT element FROM setA
+    UNION ALL
+    SELECT element FROM setB
+) AS Combined
+GROUP BY element
+HAVING COUNT(*) = 1;
