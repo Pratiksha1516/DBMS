@@ -69,3 +69,6 @@ FROM setB;
 
 SELECT AVG(element) AS AvgA 
 FROM setA;
+
+SELECT AVG(element) AS AvgB 
+FROM setB;
