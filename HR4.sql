@@ -15,3 +15,8 @@ insert into setB(element) values
 SELECT COUNT(*)
 FROM setA
 cross join setB;
+
+--
+SELECT element FROM setA
+UNION
+SELECT element FROM setB;
