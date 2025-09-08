@@ -52,3 +52,7 @@ FROM setA FULL OUTER JOIN setB ON setA.element = setB.element;
 SELECT COUNT(*) AS OnlyInA
 FROM setA
 WHERE element NOT IN (SELECT element FROM setB);
+
+SELECT COUNT(*) AS OnlyInB
+FROM setB
+WHERE element NOT IN (SELECT element FROM setA);
