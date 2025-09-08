@@ -72,3 +72,10 @@ FROM setA;
 
 SELECT AVG(element) AS AvgB 
 FROM setB;
+
+SELECT SUM(element) AS TotalSum
+FROM (
+    SELECT element FROM setA
+    UNION ALL
+    SELECT element FROM setB
+) AS Combined;
