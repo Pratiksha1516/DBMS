@@ -45,3 +45,6 @@ FROM setA LEFT JOIN setB ON setA.element = setB.element;
 
 SELECT setA.element AS A, setB.element AS B
 FROM setA RIGHT JOIN setB ON setA.element = setB.element;
+
+SELECT setA.element AS A, setB.element AS B
+FROM setA FULL OUTER JOIN setB ON setA.element = setB.element;
