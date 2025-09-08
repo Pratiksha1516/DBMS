@@ -66,3 +66,6 @@ FROM setA;
 
 SELECT MIN(element) AS MinB
 FROM setB;
+
+SELECT AVG(element) AS AvgA 
+FROM setA;
