@@ -92,3 +92,7 @@ HAVING COUNT(*) > 1;
 SELECT element FROM setA WHERE element > 4
 UNION
 SELECT element FROM setB WHERE element > 4;
+
+SELECT 
+   (SELECT COUNT(*) FROM setA) AS SizeA,
+   (SELECT COUNT(*) FROM setB) AS SizeB;
