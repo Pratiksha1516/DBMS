@@ -35,3 +35,7 @@ SELECT element FROM setA;
 
 SELECT setA.element AS A, setB.element AS B
 FROM setA CROSS JOIN setB;
+
+SELECT setA.element
+FROM setA
+INNER JOIN setB ON setA.element = setB.element;
