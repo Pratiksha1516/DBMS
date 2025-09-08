@@ -88,3 +88,7 @@ FROM (
 ) t
 GROUP BY element
 HAVING COUNT(*) > 1;
+
+SELECT element FROM setA WHERE element > 4
+UNION
+SELECT element FROM setB WHERE element > 4;
