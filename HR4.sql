@@ -79,3 +79,12 @@ FROM (
     UNION ALL
     SELECT element FROM setB
 ) AS Combined;
+
+SELECT element, COUNT(*) AS freq
+FROM (
+    SELECT element FROM setA
+    UNION ALL
+    SELECT element FROM setB
+) t
+GROUP BY element
+HAVING COUNT(*) > 1;
