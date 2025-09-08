@@ -56,3 +56,7 @@ WHERE element NOT IN (SELECT element FROM setB);
 SELECT COUNT(*) AS OnlyInB
 FROM setB
 WHERE element NOT IN (SELECT element FROM setA);
+
+SELECT COUNT(*) AS CommonCount
+FROM setA
+WHERE element IN (SELECT element FROM setB);
