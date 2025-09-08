@@ -32,3 +32,6 @@ SELECT element FROM setB;
 SELECT element FROM setB
 EXCEPT
 SELECT element FROM setA;
+
+SELECT setA.element AS A, setB.element AS B
+FROM setA CROSS JOIN setB;
