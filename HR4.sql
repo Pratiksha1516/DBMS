@@ -60,3 +60,6 @@ WHERE element NOT IN (SELECT element FROM setA);
 SELECT COUNT(*) AS CommonCount
 FROM setA
 WHERE element IN (SELECT element FROM setB);
+
+SELECT MAX(element) AS MaxA
+FROM setA;
