@@ -63,3 +63,6 @@ WHERE element IN (SELECT element FROM setB);
 
 SELECT MAX(element) AS MaxA
 FROM setA;
+
+SELECT MIN(element) AS MinB
+FROM setB;
