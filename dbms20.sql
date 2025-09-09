@@ -60,3 +60,7 @@ LIMIT 1;
 
 DELETE FROM Member  
 WHERE MemberID NOT IN (SELECT DISTINCT MemberID FROM Borrow);
+
+--
+SELECT * FROM Member
+WHERE JoinDate > '2023-01-01';
