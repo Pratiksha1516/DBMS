@@ -121,3 +121,7 @@ JOIN Book b ON br.BookID = b.BookID;
 
 DELETE FROM Book
 WHERE Price < 13;
+
+SELECT Publisher, COUNT(*) AS TotalBooks
+FROM Book
+GROUP BY Publisher;
