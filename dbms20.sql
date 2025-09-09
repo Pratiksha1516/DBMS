@@ -74,3 +74,6 @@ SELECT DISTINCT m.Name
 FROM Member m
 JOIN Borrow br ON m.MemberID = br.MemberID
 WHERE br.ReturnDate IS NULL;
+
+SELECT AVG(Price) AS AverageBookPrice
+FROM Book;
