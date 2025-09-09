@@ -125,3 +125,9 @@ WHERE Price < 13;
 SELECT Publisher, COUNT(*) AS TotalBooks
 FROM Book
 GROUP BY Publisher;
+
+SELECT m.Name, COUNT(br.BookID) AS BorrowedCount
+FROM Borrow br
+JOIN Member m ON br.MemberID = m.MemberID
+GROUP BY m.Name
+HAVING COUNT(br.BookID) > 1;
