@@ -147,3 +147,7 @@ FROM Borrow br
 JOIN Member m ON br.MemberID = m.MemberID
 JOIN Book b ON br.BookID = b.BookID
 WHERE m.Name = 'Ranveer';
+
+UPDATE Member
+SET Email = 'ranveer.new@example.com'
+WHERE Name = 'Ranveer';
