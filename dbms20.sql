@@ -83,3 +83,8 @@ FROM Book
 WHERE Publisher = 'Scribner'
 ORDER BY Price ASC
 LIMIT 1;
+
+SELECT m.Name, b.Title, br.BorrowDate
+FROM Borrow br
+JOIN Member m ON br.MemberID = m.MemberID
+JOIN Book b ON br.BookID = b.BookID;
