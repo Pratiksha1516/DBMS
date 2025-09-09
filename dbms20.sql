@@ -114,3 +114,7 @@ SELECT b.Title,
        END AS Status
 FROM Book b
 LEFT JOIN Borrow br ON b.BookID = br.BookID AND br.ReturnDate IS NULL;
+
+SELECT SUM(b.Price) AS TotalRevenue
+FROM Borrow br
+JOIN Book b ON br.BookID = b.BookID;
