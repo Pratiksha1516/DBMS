@@ -99,3 +99,10 @@ WHERE br.BorrowDate BETWEEN '2024-03-01' AND '2024-03-31';
 
 UPDATE Book
 SET Price = Price * 1.10;
+
+SELECT m.Name, MIN(br.BorrowDate) AS FirstBorrow
+FROM Borrow br
+JOIN Member m ON br.MemberID = m.MemberID
+GROUP BY m.Name
+ORDER BY FirstBorrow ASC
+LIMIT 1;
