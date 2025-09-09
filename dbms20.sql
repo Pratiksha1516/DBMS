@@ -69,3 +69,8 @@ SELECT Title, Price
 FROM Book
 ORDER BY Price DESC
 LIMIT 1;
+
+SELECT DISTINCT m.Name
+FROM Member m
+JOIN Borrow br ON m.MemberID = br.MemberID
+WHERE br.ReturnDate IS NULL;
