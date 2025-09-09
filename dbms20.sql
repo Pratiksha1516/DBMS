@@ -91,3 +91,8 @@ JOIN Book b ON br.BookID = b.BookID;
 
 SELECT COUNT(DISTINCT MemberID) AS ActiveMembers
 FROM Borrow;
+
+SELECT DISTINCT b.Title
+FROM Borrow br
+JOIN Book b ON br.BookID = b.BookID
+WHERE br.BorrowDate BETWEEN '2024-03-01' AND '2024-03-31';
