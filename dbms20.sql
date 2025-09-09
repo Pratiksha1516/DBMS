@@ -96,3 +96,6 @@ SELECT DISTINCT b.Title
 FROM Borrow br
 JOIN Book b ON br.BookID = b.BookID
 WHERE br.BorrowDate BETWEEN '2024-03-01' AND '2024-03-31';
+
+UPDATE Book
+SET Price = Price * 1.10;
