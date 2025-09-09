@@ -131,3 +131,7 @@ FROM Borrow br
 JOIN Member m ON br.MemberID = m.MemberID
 GROUP BY m.Name
 HAVING COUNT(br.BookID) > 1;
+
+SELECT COUNT(*) AS CurrentlyBorrowed
+FROM Borrow
+WHERE ReturnDate IS NULL;
