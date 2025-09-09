@@ -106,3 +106,11 @@ JOIN Member m ON br.MemberID = m.MemberID
 GROUP BY m.Name
 ORDER BY FirstBorrow ASC
 LIMIT 1;
+
+SELECT b.Title,
+       CASE 
+           WHEN br.BookID IS NOT NULL THEN 'Borrowed'
+           ELSE 'Available'
+       END AS Status
+FROM Book b
+LEFT JOIN Borrow br ON b.BookID = br.BookID AND br.ReturnDate IS NULL;
