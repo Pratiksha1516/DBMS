@@ -77,3 +77,9 @@ WHERE br.ReturnDate IS NULL;
 
 SELECT AVG(Price) AS AverageBookPrice
 FROM Book;
+
+SELECT Title, Price
+FROM Book
+WHERE Publisher = 'Scribner'
+ORDER BY Price ASC
+LIMIT 1;
