@@ -64,3 +64,8 @@ WHERE MemberID NOT IN (SELECT DISTINCT MemberID FROM Borrow);
 --
 SELECT * FROM Member
 WHERE JoinDate > '2023-01-01';
+
+SELECT Title, Price
+FROM Book
+ORDER BY Price DESC
+LIMIT 1;
