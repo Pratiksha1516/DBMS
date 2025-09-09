@@ -141,3 +141,9 @@ FROM Borrow br
 JOIN Member m ON br.MemberID = m.MemberID
 JOIN Book b ON br.BookID = b.BookID
 WHERE br.ReturnDate IS NULL;
+
+SELECT b.Title
+FROM Borrow br
+JOIN Member m ON br.MemberID = m.MemberID
+JOIN Book b ON br.BookID = b.BookID
+WHERE m.Name = 'Ranveer';
