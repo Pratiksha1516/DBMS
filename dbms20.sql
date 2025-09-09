@@ -88,3 +88,6 @@ SELECT m.Name, b.Title, br.BorrowDate
 FROM Borrow br
 JOIN Member m ON br.MemberID = m.MemberID
 JOIN Book b ON br.BookID = b.BookID;
+
+SELECT COUNT(DISTINCT MemberID) AS ActiveMembers
+FROM Borrow;
