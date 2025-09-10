@@ -151,3 +151,7 @@ WHERE city = (SELECT city FROM customers WHERE customer_id = 1);
 SELECT customer_id, name, city,
        DENSE_RANK() OVER (PARTITION BY city ORDER BY registration_date) AS city_rank
 FROM customers;
+
+SELECT *
+FROM customers
+WHERE LOWER(RIGHT(name, 1)) IN ('a','e','i','o','u');
