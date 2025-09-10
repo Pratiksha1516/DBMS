@@ -155,3 +155,8 @@ FROM customers;
 SELECT *
 FROM customers
 WHERE LOWER(RIGHT(name, 1)) IN ('a','e','i','o','u');
+
+SELECT customer_id, name,
+       REVERSE(name) AS reversed_name
+FROM customers
+ORDER BY reversed_name;
