@@ -115,3 +115,7 @@ WHERE registration_date IS NOT NULL;
 SELECT * 
 FROM customers
 WHERE SUBSTR(name, 1, 1) = 'a';
+
+SELECT * 
+FROM customers
+WHERE city ILIKE 'l%'; 
