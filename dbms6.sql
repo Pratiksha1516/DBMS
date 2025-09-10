@@ -103,3 +103,7 @@ WHERE rn = 1;
 SELECT * 
 FROM customers
 WHERE city NOT IN ('New York', 'Chicago');
+
+SELECT customer_id, name, email 
+FROM customers
+WHERE LOWER(email) LIKE '%.com';
