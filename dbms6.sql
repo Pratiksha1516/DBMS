@@ -128,3 +128,7 @@ FETCH FIRST 2 ROWS ONLY;
 SELECT * 
 FROM customers
 ORDER BY LENGTH(name) DESC;
+
+SELECT * 
+FROM customers
+ORDER BY city, registration_date;
