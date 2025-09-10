@@ -139,3 +139,7 @@ FROM customers;
 SELECT city, AVG(LENGTH(name)) AS avg_name_length
 FROM customers
 GROUP BY city;
+
+SELECT city, MAX(EXTRACT(DAY FROM registration_date)) AS latest_day
+FROM customers
+GROUP BY city;
