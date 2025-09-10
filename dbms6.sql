@@ -132,3 +132,6 @@ ORDER BY LENGTH(name) DESC;
 SELECT * 
 FROM customers
 ORDER BY city, registration_date;
+
+SELECT COUNT(*) AS total_customers 
+FROM customers;
