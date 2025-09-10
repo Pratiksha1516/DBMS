@@ -107,3 +107,7 @@ WHERE city NOT IN ('New York', 'Chicago');
 SELECT customer_id, name, email 
 FROM customers
 WHERE LOWER(email) LIKE '%.com';
+
+SELECT * 
+FROM customers
+WHERE registration_date IS NOT NULL;
