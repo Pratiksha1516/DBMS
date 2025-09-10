@@ -119,3 +119,8 @@ WHERE SUBSTR(name, 1, 1) = 'a';
 SELECT * 
 FROM customers
 WHERE city ILIKE 'l%'; 
+
+SELECT * 
+FROM customers
+ORDER BY registration_date DESC
+FETCH FIRST 2 ROWS ONLY;
