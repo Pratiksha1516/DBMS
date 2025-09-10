@@ -135,3 +135,7 @@ ORDER BY city, registration_date;
 
 SELECT COUNT(*) AS total_customers 
 FROM customers;
+
+SELECT city, AVG(LENGTH(name)) AS avg_name_length
+FROM customers
+GROUP BY city;
