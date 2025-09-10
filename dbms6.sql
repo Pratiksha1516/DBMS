@@ -111,3 +111,7 @@ WHERE LOWER(email) LIKE '%.com';
 SELECT * 
 FROM customers
 WHERE registration_date IS NOT NULL;
+
+SELECT * 
+FROM customers
+WHERE SUBSTR(name, 1, 1) = 'a';
