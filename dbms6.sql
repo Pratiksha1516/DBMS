@@ -147,3 +147,7 @@ GROUP BY city;
 SELECT *
 FROM customers
 WHERE city = (SELECT city FROM customers WHERE customer_id = 1);
+
+SELECT customer_id, name, city,
+       DENSE_RANK() OVER (PARTITION BY city ORDER BY registration_date) AS city_rank
+FROM customers;
