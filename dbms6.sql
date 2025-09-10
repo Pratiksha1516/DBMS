@@ -165,3 +165,7 @@ SELECT phone, COUNT(*)
 FROM customers
 GROUP BY phone
 HAVING COUNT(*) > 1;
+
+SELECT customer_id,
+       name || ' from ' || city AS customer_label
+FROM customers;
