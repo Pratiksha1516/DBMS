@@ -98,3 +98,8 @@ FROM (
     FROM customers c
 ) sub
 WHERE rn = 1;
+
+--
+SELECT * 
+FROM customers
+WHERE city NOT IN ('New York', 'Chicago');
