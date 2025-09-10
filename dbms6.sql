@@ -124,3 +124,7 @@ SELECT *
 FROM customers
 ORDER BY registration_date DESC
 FETCH FIRST 2 ROWS ONLY;
+
+SELECT * 
+FROM customers
+ORDER BY LENGTH(name) DESC;
