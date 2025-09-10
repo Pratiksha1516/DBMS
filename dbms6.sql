@@ -160,3 +160,8 @@ SELECT customer_id, name,
        REVERSE(name) AS reversed_name
 FROM customers
 ORDER BY reversed_name;
+
+SELECT phone, COUNT(*) 
+FROM customers
+GROUP BY phone
+HAVING COUNT(*) > 1;
