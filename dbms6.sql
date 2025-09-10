@@ -169,3 +169,13 @@ HAVING COUNT(*) > 1;
 SELECT customer_id,
        name || ' from ' || city AS customer_label
 FROM customers;
+
+
+SELECT customer_id, name, registration_date
+FROM (
+    SELECT c.*,
+           ROW_NUMBER() OVER (PARTITION BY EXTRACT(YEAR FROM registration_date) 
+                              ORDER BY registration_date ASC) AS rn
+    FROM customers c
+) sub
+WHERE rn = 1;
