@@ -143,3 +143,7 @@ GROUP BY city;
 SELECT city, MAX(EXTRACT(DAY FROM registration_date)) AS latest_day
 FROM customers
 GROUP BY city;
+
+SELECT *
+FROM customers
+WHERE city = (SELECT city FROM customers WHERE customer_id = 1);
