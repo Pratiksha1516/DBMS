@@ -12,3 +12,11 @@ CREATE TABLE Supplier (
     city VARCHAR(30),
     contact VARCHAR(15)
 );
+
+CREATE TABLE Customer (
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(50),
+    email VARCHAR(50),
+    city VARCHAR(30),
+    phone VARCHAR(15)
+);
