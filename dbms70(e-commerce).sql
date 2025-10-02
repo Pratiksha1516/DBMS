@@ -20,3 +20,10 @@ CREATE TABLE Customer (
     city VARCHAR(30),
     phone VARCHAR(15)
 );
+
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT REFERENCES Customer(customer_id),
+    order_date DATE,
+    total_amount DECIMAL(10,2)
+);
