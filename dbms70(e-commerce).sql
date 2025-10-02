@@ -65,4 +65,11 @@ INSERT INTO Customer (customer_id, customer_name, email, city, phone) VALUES
 (4, 'Jenny', 'jenny@gmail.com', 'Bangalore', '6664445555'),
 (5, 'Shree', 'shree@gmail.com', 'Hyderabad', '9998887777');
 
+INSERT INTO Orders (order_id, customer_id, order_date, total_amount) VALUES
+(1, 1, '2025-09-01', 75000),   -- Ranveer bought iPhone
+(2, 2, '2025-09-05', 98500),   -- Sahil bought Samsung + Jeans
+(3, 3, '2025-09-10', 19500),   -- Pratiksha bought Shoes + Mixer
+(4, 4, '2025-09-15', 40000),   -- Jenny bought LED TV
+(5, 5, '2025-09-20', 8500),    -- Shree bought Chair + Jeans
+(6, 1, '2025-09-25', 115000);  -- Ranveer bought Laptop + Samsung
 
