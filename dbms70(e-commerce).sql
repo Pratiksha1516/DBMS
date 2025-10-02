@@ -106,4 +106,9 @@ FROM Orders o
 JOIN Customer c ON o.customer_id = c.customer_id
 WHERE c.customer_name = 'Ranveer';
 
+SELECT p.product_name, SUM(od.quantity) AS total_sold, SUM(od.subtotal) AS total_revenue
+FROM OrderDetails od
+JOIN Product p ON od.product_id = p.product_id
+GROUP BY p.product_name;
+
 
