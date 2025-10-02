@@ -118,4 +118,10 @@ GROUP BY c.customer_name
 ORDER BY total_spent DESC
 LIMIT 3;
 
+SELECT s.supplier_name, COUNT(ps.product_id) AS product_count
+FROM Supplier s
+JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
+GROUP BY s.supplier_name
+HAVING COUNT(ps.product_id) > 2;
+
 
