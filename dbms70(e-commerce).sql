@@ -85,4 +85,14 @@ INSERT INTO OrderDetails (orderdetail_id, order_id, product_id, quantity, subtot
 (9, 6, 3, 1, 55000),  -- Laptop
 (10, 6, 2, 1, 65000); -- Samsung
 
+INSERT INTO ProductSupplier (ps_id, product_id, supplier_id) VALUES
+(1, 1, 1),  -- iPhone by TechWorld
+(2, 2, 1),  -- Samsung by TechWorld
+(3, 3, 1),  -- HP Laptop by TechWorld
+(4, 7, 1),  -- LED TV by TechWorld
+(5, 4, 2),  -- Nike Shoes by FashionHub
+(6, 5, 2),  -- Jeans by FashionHub
+(7, 6, 3),  -- Mixer by HomeMakers
+(8, 8, 4);  -- Wooden Chair by FurniCraft
+
 
