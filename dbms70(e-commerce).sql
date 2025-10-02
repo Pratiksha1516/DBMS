@@ -58,4 +58,11 @@ INSERT INTO Supplier (supplier_id, supplier_name, city, contact) VALUES
 (3, 'HomeMakers Appliances', 'Bangalore', '9988776655'),
 (4, 'FurniCraft', 'Pune', '9090909090');
 
+INSERT INTO Customer (customer_id, customer_name, email, city, phone) VALUES
+(1, 'Ranveer', 'ranveer@gmail.com', 'Mumbai', '9991112222'),
+(2, 'Sahil', 'sahil@gmail.com', 'Delhi', '8882223333'),
+(3, 'Pratiksha', 'pratiksha@gmail.com', 'Pune', '7773334444'),
+(4, 'Jenny', 'jenny@gmail.com', 'Bangalore', '6664445555'),
+(5, 'Shree', 'shree@gmail.com', 'Hyderabad', '9998887777');
+
 
