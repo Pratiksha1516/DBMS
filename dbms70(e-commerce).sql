@@ -35,3 +35,9 @@ CREATE TABLE OrderDetails (
     quantity INT,
     subtotal DECIMAL(10,2)
 );
+
+CREATE TABLE ProductSupplier (
+    ps_id INT PRIMARY KEY,
+    product_id INT REFERENCES Product(product_id),
+    supplier_id INT REFERENCES Supplier(supplier_id)
+);
