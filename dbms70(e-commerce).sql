@@ -41,3 +41,14 @@ CREATE TABLE ProductSupplier (
     product_id INT REFERENCES Product(product_id),
     supplier_id INT REFERENCES Supplier(supplier_id)
 );
+
+INSERT INTO Product (product_id, product_name, category, price, stock) VALUES
+(1, 'iPhone 15', 'Electronics', 75000, 10),
+(2, 'Samsung Galaxy S23', 'Electronics', 65000, 8),
+(3, 'HP Laptop', 'Electronics', 55000, 5),
+(4, 'Nike Shoes', 'Fashion', 6000, 20),
+(5, 'Levi’s Jeans', 'Fashion', 3500, 30),
+(6, 'Mixer Grinder', 'Home Appliances', 4500, 15),
+(7, 'LED TV', 'Electronics', 40000, 6),
+(8, 'Wooden Chair', 'Furniture', 2500, 12);
+
