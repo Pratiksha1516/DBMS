@@ -73,3 +73,16 @@ INSERT INTO Orders (order_id, customer_id, order_date, total_amount) VALUES
 (5, 5, '2025-09-20', 8500),    -- Shree bought Chair + Jeans
 (6, 1, '2025-09-25', 115000);  -- Ranveer bought Laptop + Samsung
 
+INSERT INTO OrderDetails (orderdetail_id, order_id, product_id, quantity, subtotal) VALUES
+(1, 1, 1, 1, 75000),  -- iPhone
+(2, 2, 2, 1, 65000),  -- Samsung
+(3, 2, 5, 1, 3500),   -- Jeans
+(4, 3, 4, 2, 12000),  -- Shoes (2 qty)
+(5, 3, 6, 1, 4500),   -- Mixer
+(6, 4, 7, 1, 40000),  -- LED TV
+(7, 5, 8, 2, 5000),   -- 2 Chairs
+(8, 5, 5, 1, 3500),   -- Jeans
+(9, 6, 3, 1, 55000),  -- Laptop
+(10, 6, 2, 1, 65000); -- Samsung
+
+
