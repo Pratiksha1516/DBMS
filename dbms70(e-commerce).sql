@@ -27,3 +27,11 @@ CREATE TABLE Orders (
     order_date DATE,
     total_amount DECIMAL(10,2)
 );
+
+CREATE TABLE OrderDetails (
+    orderdetail_id INT PRIMARY KEY,
+    order_id INT REFERENCES Orders(order_id),
+    product_id INT REFERENCES Product(product_id),
+    quantity INT,
+    subtotal DECIMAL(10,2)
+);
