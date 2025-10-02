@@ -124,4 +124,9 @@ JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
 GROUP BY s.supplier_name
 HAVING COUNT(ps.product_id) > 2;
 
+SELECT p.product_name
+FROM Product p
+LEFT JOIN OrderDetails od ON p.product_id = od.product_id
+WHERE od.product_id IS NULL;
+
 
