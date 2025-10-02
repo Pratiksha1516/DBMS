@@ -97,4 +97,8 @@ INSERT INTO ProductSupplier (ps_id, product_id, supplier_id) VALUES
 
 SELECT * FROM Customer;
 
+SELECT product_name, price 
+FROM Product 
+WHERE category = 'Electronics';
+
 
