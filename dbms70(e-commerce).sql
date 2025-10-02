@@ -101,4 +101,9 @@ SELECT product_name, price
 FROM Product 
 WHERE category = 'Electronics';
 
+SELECT o.order_id, o.order_date, o.total_amount
+FROM Orders o
+JOIN Customer c ON o.customer_id = c.customer_id
+WHERE c.customer_name = 'Ranveer';
+
 
