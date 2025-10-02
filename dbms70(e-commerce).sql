@@ -52,3 +52,10 @@ INSERT INTO Product (product_id, product_name, category, price, stock) VALUES
 (7, 'LED TV', 'Electronics', 40000, 6),
 (8, 'Wooden Chair', 'Furniture', 2500, 12);
 
+INSERT INTO Supplier (supplier_id, supplier_name, city, contact) VALUES
+(1, 'TechWorld Pvt Ltd', 'Mumbai', '9876543210'),
+(2, 'FashionHub Ltd', 'Delhi', '9123456780'),
+(3, 'HomeMakers Appliances', 'Bangalore', '9988776655'),
+(4, 'FurniCraft', 'Pune', '9090909090');
+
+
