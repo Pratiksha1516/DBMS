@@ -95,4 +95,6 @@ INSERT INTO ProductSupplier (ps_id, product_id, supplier_id) VALUES
 (7, 6, 3),  -- Mixer by HomeMakers
 (8, 8, 4);  -- Wooden Chair by FurniCraft
 
+SELECT * FROM Customer;
+
 
