@@ -129,6 +129,7 @@ FROM Product p
 LEFT JOIN OrderDetails od ON p.product_id = od.product_id
 WHERE od.product_id IS NULL;
 
+--
 SELECT product_name, stock
 FROM Product
 WHERE stock < 10;
@@ -141,6 +142,11 @@ SELECT product_name, price
 FROM Product
 ORDER BY price DESC
 LIMIT 1;
+
+SELECT order_id, customer_id, order_date, total_amount
+FROM Orders
+WHERE order_date BETWEEN '2025-09-01' AND '2025-09-30';
+
 
 
 
