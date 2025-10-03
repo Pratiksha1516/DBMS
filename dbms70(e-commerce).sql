@@ -129,4 +129,8 @@ FROM Product p
 LEFT JOIN OrderDetails od ON p.product_id = od.product_id
 WHERE od.product_id IS NULL;
 
+SELECT product_name, stock
+FROM Product
+WHERE stock < 10;
+
 
