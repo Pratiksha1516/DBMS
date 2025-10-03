@@ -147,6 +147,14 @@ SELECT order_id, customer_id, order_date, total_amount
 FROM Orders
 WHERE order_date BETWEEN '2025-09-01' AND '2025-09-30';
 
+SELECT category, product_name, price
+FROM Product p
+WHERE price = (
+    SELECT MIN(price) 
+    FROM Product 
+    WHERE category = p.category
+);
+
 
 
 
