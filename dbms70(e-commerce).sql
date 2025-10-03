@@ -180,6 +180,13 @@ FROM Orders o
 JOIN Customer c ON o.customer_id = c.customer_id
 GROUP BY c.customer_name;
 
+SELECT p.product_name, SUM(od.quantity) AS total_quantity
+FROM OrderDetails od
+JOIN Product p ON od.product_id = p.product_id
+GROUP BY p.product_name
+ORDER BY total_quantity DESC
+LIMIT 1;
+
 
 
 
