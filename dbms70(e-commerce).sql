@@ -204,6 +204,14 @@ FROM Product p
 JOIN ProductSupplier ps ON p.product_id = ps.product_id
 JOIN Supplier s ON ps.supplier_id = s.supplier_id;
 
+SELECT c.city, COUNT(o.order_id) AS order_count
+FROM Orders o
+JOIN Customer c ON o.customer_id = c.customer_id
+GROUP BY c.city
+ORDER BY order_count DESC
+LIMIT 2;
+
+
 
 
 
