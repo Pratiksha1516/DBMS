@@ -193,6 +193,12 @@ JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
 JOIN Product p ON ps.product_id = p.product_id
 WHERE p.product_name = 'Samsung Galaxy S23';
 
+SELECT c.customer_name, COUNT(o.order_id) AS total_orders
+FROM Orders o
+JOIN Customer c ON o.customer_id = c.customer_id
+GROUP BY c.customer_name
+HAVING COUNT(o.order_id) > 1;
+
 
 
 
