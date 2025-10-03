@@ -211,6 +211,12 @@ GROUP BY c.city
 ORDER BY order_count DESC
 LIMIT 2;
 
+SELECT p.product_name, COUNT(DISTINCT od.order_id) AS order_count
+FROM OrderDetails od
+JOIN Product p ON od.product_id = p.product_id
+GROUP BY p.product_name
+HAVING COUNT(DISTINCT od.order_id) > 1;
+
 
 
 
