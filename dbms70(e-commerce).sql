@@ -229,6 +229,11 @@ JOIN OrderDetails od ON o.order_id = od.order_id
 GROUP BY o.order_id
 HAVING COUNT(od.product_id) > 1;
 
+SELECT c.customer_name
+FROM Customer c
+LEFT JOIN Orders o ON c.customer_id = o.customer_id
+WHERE o.order_id IS NULL;
+
 
 
 
