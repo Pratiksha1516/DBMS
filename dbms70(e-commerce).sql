@@ -199,6 +199,11 @@ JOIN Customer c ON o.customer_id = c.customer_id
 GROUP BY c.customer_name
 HAVING COUNT(o.order_id) > 1;
 
+SELECT p.product_name, s.supplier_name
+FROM Product p
+JOIN ProductSupplier ps ON p.product_id = ps.product_id
+JOIN Supplier s ON ps.supplier_id = s.supplier_id;
+
 
 
 
