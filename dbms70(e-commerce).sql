@@ -155,6 +155,11 @@ WHERE price = (
     WHERE category = p.category
 );
 
+SELECT city, COUNT(*) AS total_customers
+FROM Customer
+GROUP BY city;
+
+
 
 
 
