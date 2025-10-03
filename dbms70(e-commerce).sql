@@ -133,4 +133,9 @@ SELECT product_name, stock
 FROM Product
 WHERE stock < 10;
 
+SELECT customer_name, email, phone
+FROM Customer
+WHERE city = 'Mumbai';
+
+
 
