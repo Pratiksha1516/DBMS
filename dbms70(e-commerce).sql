@@ -137,5 +137,10 @@ SELECT customer_name, email, phone
 FROM Customer
 WHERE city = 'Mumbai';
 
+SELECT product_name, price
+FROM Product
+ORDER BY price DESC
+LIMIT 1;
+
 
 
