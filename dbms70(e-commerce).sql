@@ -175,6 +175,11 @@ JOIN Product p ON od.product_id = p.product_id
 JOIN Customer c ON o.customer_id = c.customer_id
 WHERE c.customer_name = 'Pratiksha';
 
+SELECT c.customer_name, AVG(o.total_amount) AS avg_order_value
+FROM Orders o
+JOIN Customer c ON o.customer_id = c.customer_id
+GROUP BY c.customer_name;
+
 
 
 
