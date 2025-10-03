@@ -223,6 +223,12 @@ JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
 JOIN OrderDetails od ON ps.product_id = od.product_id
 GROUP BY s.supplier_name;
 
+SELECT o.order_id, COUNT(od.product_id) AS product_count
+FROM Orders o
+JOIN OrderDetails od ON o.order_id = od.order_id
+GROUP BY o.order_id
+HAVING COUNT(od.product_id) > 1;
+
 
 
 
