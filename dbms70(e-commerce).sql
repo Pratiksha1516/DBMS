@@ -159,6 +159,10 @@ SELECT city, COUNT(*) AS total_customers
 FROM Customer
 GROUP BY city;
 
+SELECT supplier_name, city
+FROM Supplier
+ORDER BY city ASC;
+
 
 
 
