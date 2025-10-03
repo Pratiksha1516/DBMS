@@ -187,6 +187,12 @@ GROUP BY p.product_name
 ORDER BY total_quantity DESC
 LIMIT 1;
 
+SELECT s.supplier_name
+FROM Supplier s
+JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
+JOIN Product p ON ps.product_id = p.product_id
+WHERE p.product_name = 'Samsung Galaxy S23';
+
 
 
 
