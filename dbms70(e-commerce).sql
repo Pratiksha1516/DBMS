@@ -163,6 +163,11 @@ SELECT supplier_name, city
 FROM Supplier
 ORDER BY city ASC;
 
+SELECT o.order_id, c.customer_name, o.total_amount
+FROM Orders o
+JOIN Customer c ON o.customer_id = c.customer_id
+WHERE o.total_amount > 50000;
+
 
 
 
