@@ -168,6 +168,13 @@ FROM Orders o
 JOIN Customer c ON o.customer_id = c.customer_id
 WHERE o.total_amount > 50000;
 
+SELECT DISTINCT p.product_name
+FROM Orders o
+JOIN OrderDetails od ON o.order_id = od.order_id
+JOIN Product p ON od.product_id = p.product_id
+JOIN Customer c ON o.customer_id = c.customer_id
+WHERE c.customer_name = 'Pratiksha';
+
 
 
 
