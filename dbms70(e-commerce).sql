@@ -217,6 +217,12 @@ JOIN Product p ON od.product_id = p.product_id
 GROUP BY p.product_name
 HAVING COUNT(DISTINCT od.order_id) > 1;
 
+SELECT s.supplier_name, SUM(od.subtotal) AS revenue
+FROM Supplier s
+JOIN ProductSupplier ps ON s.supplier_id = ps.supplier_id
+JOIN OrderDetails od ON ps.product_id = od.product_id
+GROUP BY s.supplier_name;
+
 
 
 
