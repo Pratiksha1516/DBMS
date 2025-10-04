@@ -19,3 +19,7 @@ from(
 	select element from setB
 ) AS UnionResult;
 
+--
+SELECT element FROM setA
+UNION
+SELECT element FROM setB;
