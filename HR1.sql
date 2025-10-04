@@ -54,3 +54,10 @@ FROM (
     INTERSECT
     SELECT element FROM setB
 ) AS CommonElements;
+
+SELECT COUNT(*) AS only_in_A
+FROM (
+    SELECT element FROM setA
+    EXCEPT
+    SELECT element FROM setB
+) AS UniqueA;
