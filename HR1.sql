@@ -23,3 +23,7 @@ from(
 SELECT element FROM setA
 UNION
 SELECT element FROM setB;
+
+SELECT element FROM setA
+UNION ALL
+SELECT element FROM setB;
