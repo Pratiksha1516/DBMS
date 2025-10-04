@@ -61,3 +61,10 @@ FROM (
     EXCEPT
     SELECT element FROM setB
 ) AS UniqueA;
+
+SELECT COUNT(*) AS only_in_B
+FROM (
+    SELECT element FROM setB
+    EXCEPT
+    SELECT element FROM setA
+) AS UniqueB;
