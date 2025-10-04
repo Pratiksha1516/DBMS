@@ -47,3 +47,10 @@ UNION
 SELECT element FROM setB
 EXCEPT
 SELECT element FROM setA;
+
+SELECT COUNT(*) AS common_count
+FROM (
+    SELECT element FROM setA
+    INTERSECT
+    SELECT element FROM setB
+) AS CommonElements;
