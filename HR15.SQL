@@ -87,3 +87,10 @@ ORDER BY MARKS DESC;
 
 SELECT NAME, SUBSTR(NAME, 1, 3) AS First_Three_Chars
 FROM STUDENTS;
+
+SELECT NAME, MARKS,
+       CASE 
+           WHEN MARKS >= 75 THEN 'Pass'
+           ELSE 'Fail'
+       END AS Result
+FROM STUDENTS;
