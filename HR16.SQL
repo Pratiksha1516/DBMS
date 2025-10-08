@@ -216,3 +216,9 @@ SELECT DISTINCT h.hacker_id, h.name
 FROM Hackers h
 JOIN Submissions s ON h.hacker_id = s.hacker_id
 WHERE s.score = 100;
+
+SELECT c.challenge_id, COUNT(DISTINCT s.hacker_id) AS total_hackers
+FROM Challenges c
+LEFT JOIN Submissions s ON c.challenge_id = s.challenge_id
+GROUP BY c.challenge_id
+ORDER BY total_hackers DESC;
