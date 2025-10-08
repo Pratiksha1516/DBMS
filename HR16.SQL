@@ -204,3 +204,10 @@ FROM Hackers h
 JOIN Submissions s ON h.hacker_id = s.hacker_id
 GROUP BY h.hacker_id, h.name
 ORDER BY max_score DESC;
+
+SELECT c.challenge_id, SUM(s.score) AS total_score
+FROM Challenges c
+JOIN Submissions s ON c.challenge_id = s.challenge_id
+GROUP BY c.challenge_id
+ORDER BY total_score DESC
+LIMIT 1;
