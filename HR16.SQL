@@ -222,3 +222,10 @@ FROM Challenges c
 LEFT JOIN Submissions s ON c.challenge_id = s.challenge_id
 GROUP BY c.challenge_id
 ORDER BY total_hackers DESC;
+
+SELECT h.hacker_id, h.name, ROUND(AVG(s.score), 2) AS avg_score
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+GROUP BY h.hacker_id, h.name
+ORDER BY avg_score DESC
+LIMIT 1;
