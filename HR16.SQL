@@ -174,3 +174,10 @@ JOIN Submissions s ON h.hacker_id = s.hacker_id
 GROUP BY h.hacker_id, h.name
 ORDER BY avg_score DESC;
 
+SELECT h.hacker_id, h.name
+FROM Hackers h
+WHERE h.hacker_id NOT IN (
+    SELECT DISTINCT hacker_id 
+    FROM Submissions 
+    WHERE score > 50
+);
