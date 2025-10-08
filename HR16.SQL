@@ -156,3 +156,9 @@ HAVING COUNT(*) = (
         GROUP BY hacker_id
     ) sub
 );
+
+SELECT DISTINCT h.hacker_id, h.name
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+WHERE s.score > 50
+ORDER BY h.hacker_id;
