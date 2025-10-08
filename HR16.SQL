@@ -119,3 +119,6 @@ SELECT c.challenge_id, h.name AS created_by
 FROM Challenges c
 JOIN Hackers h ON c.hacker_id = h.hacker_id
 ORDER BY c.challenge_id;
+
+SELECT COUNT(*) AS total_hackers 
+FROM Hackers;
