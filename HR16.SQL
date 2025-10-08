@@ -127,3 +127,7 @@ SELECT s.submission_id, h.name, s.score
 FROM Submissions s
 JOIN Hackers h ON s.hacker_id = h.hacker_id
 ORDER BY s.submission_id;
+
+SELECT DISTINCT h.hacker_id, h.name
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id;
