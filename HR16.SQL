@@ -198,3 +198,9 @@ SELECT c.challenge_id
 FROM Challenges c
 LEFT JOIN Submissions s ON c.challenge_id = s.challenge_id
 WHERE s.submission_id IS NULL;
+
+SELECT h.hacker_id, h.name, MAX(s.score) AS max_score
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+GROUP BY h.hacker_id, h.name
+ORDER BY max_score DESC;
