@@ -162,3 +162,8 @@ FROM Hackers h
 JOIN Submissions s ON h.hacker_id = s.hacker_id
 WHERE s.score > 50
 ORDER BY h.hacker_id;
+
+SELECT c.challenge_id, d.score AS difficulty_score
+FROM Challenges c
+JOIN Difficulty d ON c.difficulty_level = d.difficulty_level
+ORDER BY c.challenge_id;
