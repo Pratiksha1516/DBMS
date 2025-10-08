@@ -187,3 +187,9 @@ FROM Challenges c
 LEFT JOIN Submissions s ON c.challenge_id = s.challenge_id
 GROUP BY c.challenge_id
 ORDER BY submission_count DESC;
+
+SELECT DISTINCT h.hacker_id, h.name
+FROM Hackers h
+JOIN Challenges c ON h.hacker_id = c.hacker_id
+JOIN Difficulty d ON c.difficulty_level = d.difficulty_level
+WHERE d.difficulty_level > 4;
