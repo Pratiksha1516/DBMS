@@ -114,3 +114,8 @@ ORDER BY h.hacker_id;
 SELECT name 
 FROM Hackers 
 ORDER BY name ASC;
+
+SELECT c.challenge_id, h.name AS created_by
+FROM Challenges c
+JOIN Hackers h ON c.hacker_id = h.hacker_id
+ORDER BY c.challenge_id;
