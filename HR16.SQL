@@ -167,3 +167,10 @@ SELECT c.challenge_id, d.score AS difficulty_score
 FROM Challenges c
 JOIN Difficulty d ON c.difficulty_level = d.difficulty_level
 ORDER BY c.challenge_id;
+
+SELECT h.hacker_id, h.name, ROUND(AVG(s.score), 2) AS avg_score
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+GROUP BY h.hacker_id, h.name
+ORDER BY avg_score DESC;
+
