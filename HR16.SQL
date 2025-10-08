@@ -110,4 +110,7 @@ JOIN (
 ) s ON h.hacker_id = s.hacker_id
 ORDER BY h.hacker_id;
 
-
+--
+SELECT name 
+FROM Hackers 
+ORDER BY name ASC;
