@@ -181,3 +181,9 @@ WHERE h.hacker_id NOT IN (
     FROM Submissions 
     WHERE score > 50
 );
+
+SELECT c.challenge_id, COUNT(s.submission_id) AS submission_count
+FROM Challenges c
+LEFT JOIN Submissions s ON c.challenge_id = s.challenge_id
+GROUP BY c.challenge_id
+ORDER BY submission_count DESC;
