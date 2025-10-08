@@ -211,3 +211,8 @@ JOIN Submissions s ON c.challenge_id = s.challenge_id
 GROUP BY c.challenge_id
 ORDER BY total_score DESC
 LIMIT 1;
+
+SELECT DISTINCT h.hacker_id, h.name
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+WHERE s.score = 100;
