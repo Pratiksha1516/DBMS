@@ -137,3 +137,9 @@ FROM Hackers h
 LEFT JOIN Challenges c ON h.hacker_id = c.hacker_id
 GROUP BY h.hacker_id, h.name
 ORDER BY total_challenges DESC;
+
+SELECT h.hacker_id, h.name, COUNT(s.submission_id) AS total_submissions
+FROM Hackers h
+LEFT JOIN Submissions s ON h.hacker_id = s.hacker_id
+GROUP BY h.hacker_id, h.name
+ORDER BY total_submissions DESC;
