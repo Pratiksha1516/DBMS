@@ -122,3 +122,8 @@ ORDER BY c.challenge_id;
 
 SELECT COUNT(*) AS total_hackers 
 FROM Hackers;
+
+SELECT s.submission_id, h.name, s.score
+FROM Submissions s
+JOIN Hackers h ON s.hacker_id = h.hacker_id
+ORDER BY s.submission_id;
