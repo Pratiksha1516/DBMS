@@ -141,3 +141,6 @@ ORDER BY Occupation, Name;
 
 SELECT MAX(LENGTH(Name)) AS longest_name_length
 FROM OCCUPATIONS;
+
+SELECT Name, REPLACE(Occupation, 'Professor', 'Teacher') AS updated_occupation
+FROM OCCUPATIONS;
