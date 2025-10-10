@@ -130,3 +130,7 @@ FROM (
 
 
 SELECT ABS((SELECT COUNT(*) FROM setA) - (SELECT COUNT(*) FROM setB)) AS count_difference;
+
+SELECT element
+FROM setA
+WHERE element < (SELECT MIN(element) FROM setB);
