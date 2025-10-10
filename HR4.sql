@@ -127,3 +127,6 @@ FROM (
     UNION ALL
     SELECT element FROM setB
 ) AS combined;
+
+
+SELECT ABS((SELECT COUNT(*) FROM setA) - (SELECT COUNT(*) FROM setB)) AS count_difference;
