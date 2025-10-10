@@ -159,3 +159,10 @@ WHERE rn = 2;
 SELECT SUM(element * 2) AS double_common_sum
 FROM setA
 WHERE element IN (SELECT element FROM setB);
+
+
+SELECT setB.element
+FROM setB
+WHERE setB.element IN (
+    SELECT element + 2 FROM setA
+);
