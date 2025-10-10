@@ -166,3 +166,11 @@ FROM setB
 WHERE setB.element IN (
     SELECT element + 2 FROM setA
 );
+
+
+SELECT element, 'A' AS source
+FROM setA
+UNION ALL
+SELECT element, 'B' AS source
+FROM setB
+ORDER BY element;
