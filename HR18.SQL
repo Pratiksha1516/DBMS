@@ -129,3 +129,8 @@ SELECT Occupation, COUNT(*) AS people_count
 FROM OCCUPATIONS
 GROUP BY Occupation
 HAVING COUNT(*) > 1;
+
+SELECT UPPER(SUBSTR(Name, 1, 1)) AS starting_letter, COUNT(*) AS total
+FROM OCCUPATIONS
+GROUP BY UPPER(SUBSTR(Name, 1, 1))
+ORDER BY total DESC;
