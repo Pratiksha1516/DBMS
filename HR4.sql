@@ -119,3 +119,11 @@ FROM (
     SELECT element FROM setB
 ) AS all_elements
 ORDER BY element;
+
+
+SELECT COUNT(DISTINCT element) AS total_unique_elements
+FROM (
+    SELECT element FROM setA
+    UNION ALL
+    SELECT element FROM setB
+) AS combined;
