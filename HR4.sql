@@ -134,3 +134,11 @@ SELECT ABS((SELECT COUNT(*) FROM setA) - (SELECT COUNT(*) FROM setB)) AS count_d
 SELECT element
 FROM setA
 WHERE element < (SELECT MIN(element) FROM setB);
+
+
+SELECT AVG(element) AS combined_average
+FROM (
+    SELECT element FROM setA
+    UNION
+    SELECT element FROM setB
+) AS all_unique;
