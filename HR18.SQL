@@ -134,3 +134,7 @@ SELECT UPPER(SUBSTR(Name, 1, 1)) AS starting_letter, COUNT(*) AS total
 FROM OCCUPATIONS
 GROUP BY UPPER(SUBSTR(Name, 1, 1))
 ORDER BY total DESC;
+
+SELECT Name, Occupation
+FROM OCCUPATIONS
+ORDER BY Occupation, Name;
