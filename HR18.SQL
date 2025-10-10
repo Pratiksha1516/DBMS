@@ -110,3 +110,6 @@ HAVING COUNT(*) > 2;
 SELECT Name, Occupation
 FROM OCCUPATIONS
 WHERE LENGTH(Occupation) > 6;
+
+SELECT SUM(LENGTH(Name)) AS total_name_characters
+FROM OCCUPATIONS;
