@@ -113,3 +113,8 @@ WHERE LENGTH(Occupation) > 6;
 
 SELECT SUM(LENGTH(Name)) AS total_name_characters
 FROM OCCUPATIONS;
+
+SELECT Occupation, AVG(LENGTH(Name)) AS avg_name_length
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY Occupation;
