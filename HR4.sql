@@ -96,3 +96,12 @@ SELECT element FROM setB WHERE element > 4;
 SELECT 
    (SELECT COUNT(*) FROM setA) AS SizeA,
    (SELECT COUNT(*) FROM setB) AS SizeB;
+
+
+SELECT element
+FROM setA
+WHERE element NOT IN (SELECT element FROM setB)
+UNION
+SELECT element
+FROM setB
+WHERE element NOT IN (SELECT element FROM setA);
