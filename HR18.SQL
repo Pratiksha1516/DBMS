@@ -118,3 +118,6 @@ SELECT Occupation, AVG(LENGTH(Name)) AS avg_name_length
 FROM OCCUPATIONS
 GROUP BY Occupation
 ORDER BY Occupation;
+
+SELECT Name, REVERSE(Name) AS reversed_name
+FROM OCCUPATIONS;
