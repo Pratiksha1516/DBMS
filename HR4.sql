@@ -142,3 +142,15 @@ FROM (
     UNION
     SELECT element FROM setB
 ) AS all_unique;
+
+
+SELECT element
+FROM (
+    SELECT element, ROW_NUMBER() OVER (ORDER BY element DESC) AS rn
+    FROM (
+        SELECT DISTINCT element FROM setA
+        UNION
+        SELECT DISTINCT element FROM setB
+    ) AS unique_elements
+) AS ranked
+WHERE rn = 2;
