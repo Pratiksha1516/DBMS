@@ -138,3 +138,6 @@ ORDER BY total DESC;
 SELECT Name, Occupation
 FROM OCCUPATIONS
 ORDER BY Occupation, Name;
+
+SELECT MAX(LENGTH(Name)) AS longest_name_length
+FROM OCCUPATIONS;
