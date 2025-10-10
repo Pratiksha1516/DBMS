@@ -105,3 +105,17 @@ UNION
 SELECT element
 FROM setB
 WHERE element NOT IN (SELECT element FROM setA);
+
+
+SELECT element,
+       CASE
+           WHEN element IN (SELECT element FROM setA) AND element IN (SELECT element FROM setB) THEN 'Both'
+           WHEN element IN (SELECT element FROM setA) THEN 'Only in A'
+           WHEN element IN (SELECT element FROM setB) THEN 'Only in B'
+       END AS Location
+FROM (
+    SELECT element FROM setA
+    UNION
+    SELECT element FROM setB
+) AS all_elements
+ORDER BY element;
