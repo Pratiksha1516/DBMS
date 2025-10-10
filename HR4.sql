@@ -154,3 +154,8 @@ FROM (
     ) AS unique_elements
 ) AS ranked
 WHERE rn = 2;
+
+
+SELECT SUM(element * 2) AS double_common_sum
+FROM setA
+WHERE element IN (SELECT element FROM setB);
