@@ -104,3 +104,9 @@ SELECT Occupation, COUNT(*) AS total
 FROM OCCUPATIONS
 GROUP BY Occupation
 HAVING COUNT(*) > 2;
+
+
+--
+SELECT Name, Occupation
+FROM OCCUPATIONS
+WHERE LENGTH(Occupation) > 6;
