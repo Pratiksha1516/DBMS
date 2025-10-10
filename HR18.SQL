@@ -121,3 +121,6 @@ ORDER BY Occupation;
 
 SELECT Name, REVERSE(Name) AS reversed_name
 FROM OCCUPATIONS;
+
+SELECT UPPER(SUBSTR(Name, 1, 3)) AS short_name
+FROM OCCUPATIONS;
