@@ -55,3 +55,6 @@ ADD COLUMN state VARCHAR(20);
 UPDATE city1
 SET state = 'Maharashtra'
 WHERE name = 'Sangli';
+
+SELECT * FROM city1
+WHERE CAST(pin AS TEXT) LIKE '2%';
