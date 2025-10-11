@@ -48,3 +48,6 @@ ORDER BY pin DESC;
 SELECT MIN(pin) AS smallest_pin,
        MAX(pin) AS largest_pin
 FROM city1;
+
+ALTER TABLE city1
+ADD COLUMN state VARCHAR(20);
