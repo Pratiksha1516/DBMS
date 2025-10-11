@@ -20,3 +20,6 @@ SELECT * FROM city1;
 UPDATE city1
 SET name = 'Sangli'
 WHERE pin = 123456;
+
+DELETE FROM city1
+WHERE pin = 345678;
