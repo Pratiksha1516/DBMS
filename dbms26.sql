@@ -23,3 +23,6 @@ WHERE pin = 123456;
 
 DELETE FROM city1
 WHERE pin = 345678;
+
+SELECT COUNT(*) AS total_records
+FROM city1;
