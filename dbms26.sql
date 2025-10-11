@@ -51,3 +51,7 @@ FROM city1;
 
 ALTER TABLE city1
 ADD COLUMN state VARCHAR(20);
+
+UPDATE city1
+SET state = 'Maharashtra'
+WHERE name = 'Sangli';
