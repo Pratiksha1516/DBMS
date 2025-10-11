@@ -16,3 +16,7 @@ INSERT INTO city1(pin, name)
 VALUES (345678, 'Sangli');
 
 SELECT * FROM city1;
+
+UPDATE city1
+SET name = 'Sangli'
+WHERE pin = 123456;
