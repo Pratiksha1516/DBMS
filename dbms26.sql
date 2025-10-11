@@ -44,3 +44,7 @@ WHERE pin > 200000;
 
 SELECT * FROM city1
 ORDER BY pin DESC;
+
+SELECT MIN(pin) AS smallest_pin,
+       MAX(pin) AS largest_pin
+FROM city1;
