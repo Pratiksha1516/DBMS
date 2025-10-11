@@ -38,3 +38,6 @@ WHERE name = 'Sangli';
 
 SELECT UPPER(name) AS city_name_uppercase
 FROM city1;
+
+SELECT * FROM city1
+WHERE pin > 200000;
