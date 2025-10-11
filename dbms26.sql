@@ -61,3 +61,5 @@ WHERE CAST(pin AS TEXT) LIKE '2%';
 
 ALTER TABLE city1
 RENAME TO city_details;
+
+DESCRIBE city_details;
