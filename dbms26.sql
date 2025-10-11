@@ -26,3 +26,6 @@ WHERE pin = 345678;
 
 SELECT COUNT(*) AS total_records
 FROM city1;
+
+ALTER TABLE city1
+ADD COLUMN population INT;
