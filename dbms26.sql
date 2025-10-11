@@ -32,3 +32,6 @@ ADD COLUMN population INT;
 
 INSERT INTO city1(pin, name, population)
 VALUES (567890, 'Sangli', 75000);
+
+SELECT * FROM city1
+WHERE name = 'Sangli';
