@@ -41,3 +41,6 @@ FROM city1;
 
 SELECT * FROM city1
 WHERE pin > 200000;
+
+SELECT * FROM city1
+ORDER BY pin DESC;
