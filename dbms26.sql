@@ -10,3 +10,7 @@ VALUES
 INSERT INTO city1(pin, name)
 VALUES
 (234567, 'Sangli');  -- here data is inserted successfully
+
+--
+INSERT INTO city1(pin, name)
+VALUES (345678, 'Sangli');
