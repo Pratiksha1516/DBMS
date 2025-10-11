@@ -14,3 +14,5 @@ VALUES
 --
 INSERT INTO city1(pin, name)
 VALUES (345678, 'Sangli');
+
+SELECT * FROM city1;
