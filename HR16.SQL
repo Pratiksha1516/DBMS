@@ -328,3 +328,9 @@ SELECT h.hacker_id, h.name, COUNT(DISTINCT s.score) AS distinct_scores
 FROM Hackers h
 JOIN Submissions s ON h.hacker_id = s.hacker_id
 GROUP BY h.hacker_id, h.name;
+
+SELECT h.hacker_id, h.name, ROUND(AVG(s.score), 2) AS avg_score_on_created_challenges
+FROM Hackers h
+JOIN Challenges c ON h.hacker_id = c.hacker_id
+JOIN Submissions s ON c.challenge_id = s.challenge_id
+GROUP BY h.hacker_id, h.name;
