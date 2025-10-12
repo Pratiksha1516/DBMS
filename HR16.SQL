@@ -265,3 +265,8 @@ FROM Hackers h
 JOIN Submissions s ON h.hacker_id = s.hacker_id
 GROUP BY h.hacker_id, h.name
 HAVING SUM(s.score) > 200;
+
+SELECT s.hacker_id, s.challenge_id, MAX(s.score) AS best_score
+FROM Submissions s
+GROUP BY s.hacker_id, s.challenge_id
+ORDER BY s.hacker_id, s.challenge_id;
