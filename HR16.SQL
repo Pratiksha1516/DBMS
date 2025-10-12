@@ -318,3 +318,8 @@ JOIN Submissions s ON h.hacker_id = s.hacker_id
 WHERE s.score = 100
 GROUP BY h.hacker_id, h.name
 HAVING COUNT(*) > 1;
+
+SELECT h.hacker_id, h.name
+FROM Hackers h
+JOIN Challenges c ON h.hacker_id = c.hacker_id
+WHERE c.difficulty_level = (SELECT MAX(difficulty_level) FROM Challenges);
