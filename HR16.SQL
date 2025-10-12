@@ -229,3 +229,9 @@ JOIN Submissions s ON h.hacker_id = s.hacker_id
 GROUP BY h.hacker_id, h.name
 ORDER BY avg_score DESC
 LIMIT 1;
+
+--
+SELECT h.hacker_id, h.name
+FROM Hackers h
+LEFT JOIN Challenges c ON h.hacker_id = c.hacker_id
+WHERE c.challenge_id IS NULL;
