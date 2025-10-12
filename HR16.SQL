@@ -270,3 +270,9 @@ SELECT s.hacker_id, s.challenge_id, MAX(s.score) AS best_score
 FROM Submissions s
 GROUP BY s.hacker_id, s.challenge_id
 ORDER BY s.hacker_id, s.challenge_id;
+
+SELECT d.difficulty_level, COUNT(DISTINCT c.hacker_id) AS total_hackers
+FROM Difficulty d
+JOIN Challenges c ON d.difficulty_level = c.difficulty_level
+GROUP BY d.difficulty_level
+ORDER BY d.difficulty_level;
