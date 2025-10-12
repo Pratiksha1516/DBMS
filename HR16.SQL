@@ -334,3 +334,8 @@ FROM Hackers h
 JOIN Challenges c ON h.hacker_id = c.hacker_id
 JOIN Submissions s ON c.challenge_id = s.challenge_id
 GROUP BY h.hacker_id, h.name;
+
+SELECT DISTINCT h.hacker_id, h.name
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+WHERE s.score = 0;
