@@ -339,3 +339,9 @@ SELECT DISTINCT h.hacker_id, h.name
 FROM Hackers h
 JOIN Submissions s ON h.hacker_id = s.hacker_id
 WHERE s.score = 0;
+
+SELECT s.challenge_id, COUNT(*) AS attempts
+FROM Submissions s
+GROUP BY s.challenge_id
+ORDER BY attempts DESC
+LIMIT 1;
