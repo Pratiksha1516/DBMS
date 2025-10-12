@@ -276,3 +276,9 @@ FROM Difficulty d
 JOIN Challenges c ON d.difficulty_level = c.difficulty_level
 GROUP BY d.difficulty_level
 ORDER BY d.difficulty_level;
+
+SELECT d.difficulty_level, ROUND(AVG(s.score), 2) AS avg_score
+FROM Difficulty d
+JOIN Challenges c ON d.difficulty_level = c.difficulty_level
+JOIN Submissions s ON c.challenge_id = s.challenge_id
+GROUP BY d.difficulty_level;
