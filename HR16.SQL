@@ -301,3 +301,8 @@ FROM Difficulty d
 LEFT JOIN Challenges c ON d.difficulty_level = c.difficulty_level
 GROUP BY d.difficulty_level
 ORDER BY d.difficulty_level;
+
+SELECT h.hacker_id, h.name, s.challenge_id, (100 - s.score) AS points_to_perfect
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+WHERE s.score < 100;
