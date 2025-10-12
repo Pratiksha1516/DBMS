@@ -259,3 +259,9 @@ JOIN Submissions s ON h.hacker_id = s.hacker_id
 GROUP BY h.hacker_id, h.name
 ORDER BY total_score DESC
 LIMIT 3;
+
+SELECT h.hacker_id, h.name, SUM(s.score) AS total_score
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+GROUP BY h.hacker_id, h.name
+HAVING SUM(s.score) > 200;
