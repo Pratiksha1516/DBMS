@@ -288,3 +288,10 @@ FROM Challenges c
 JOIN Submissions s ON c.challenge_id = s.challenge_id
 GROUP BY c.challenge_id
 HAVING COUNT(s.submission_id) > 3;
+
+SELECT h.hacker_id, h.name, SUM(s.score) AS total_score
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+GROUP BY h.hacker_id, h.name
+ORDER BY total_score ASC
+LIMIT 1;
