@@ -295,3 +295,9 @@ JOIN Submissions s ON h.hacker_id = s.hacker_id
 GROUP BY h.hacker_id, h.name
 ORDER BY total_score ASC
 LIMIT 1;
+
+SELECT d.difficulty_level, COUNT(c.challenge_id) AS total_challenges
+FROM Difficulty d
+LEFT JOIN Challenges c ON d.difficulty_level = c.difficulty_level
+GROUP BY d.difficulty_level
+ORDER BY d.difficulty_level;
