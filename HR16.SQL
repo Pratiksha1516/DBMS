@@ -323,3 +323,8 @@ SELECT h.hacker_id, h.name
 FROM Hackers h
 JOIN Challenges c ON h.hacker_id = c.hacker_id
 WHERE c.difficulty_level = (SELECT MAX(difficulty_level) FROM Challenges);
+
+SELECT h.hacker_id, h.name, COUNT(DISTINCT s.score) AS distinct_scores
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+GROUP BY h.hacker_id, h.name;
