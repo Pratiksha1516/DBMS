@@ -282,3 +282,9 @@ FROM Difficulty d
 JOIN Challenges c ON d.difficulty_level = c.difficulty_level
 JOIN Submissions s ON c.challenge_id = s.challenge_id
 GROUP BY d.difficulty_level;
+
+SELECT c.challenge_id, COUNT(s.submission_id) AS submission_count
+FROM Challenges c
+JOIN Submissions s ON c.challenge_id = s.challenge_id
+GROUP BY c.challenge_id
+HAVING COUNT(s.submission_id) > 3;
