@@ -252,3 +252,10 @@ FROM Submissions s
 JOIN Hackers h ON s.hacker_id = h.hacker_id
 GROUP BY s.hacker_id, h.name
 HAVING COUNT(DISTINCT challenge_id) = (SELECT COUNT(*) FROM Challenges);
+
+SELECT h.hacker_id, h.name, SUM(s.score) AS total_score
+FROM Hackers h
+JOIN Submissions s ON h.hacker_id = s.hacker_id
+GROUP BY h.hacker_id, h.name
+ORDER BY total_score DESC
+LIMIT 3;
