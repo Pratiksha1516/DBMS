@@ -241,3 +241,8 @@ FROM Challenges c
 JOIN Submissions s ON c.challenge_id = s.challenge_id
 GROUP BY c.challenge_id
 HAVING AVG(s.score) > 50;
+
+SELECT s.hacker_id, s.challenge_id, COUNT(*) AS submission_count
+FROM Submissions s
+GROUP BY s.hacker_id, s.challenge_id
+ORDER BY s.hacker_id, s.challenge_id;
