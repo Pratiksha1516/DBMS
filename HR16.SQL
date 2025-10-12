@@ -246,3 +246,9 @@ SELECT s.hacker_id, s.challenge_id, COUNT(*) AS submission_count
 FROM Submissions s
 GROUP BY s.hacker_id, s.challenge_id
 ORDER BY s.hacker_id, s.challenge_id;
+
+SELECT s.hacker_id, h.name
+FROM Submissions s
+JOIN Hackers h ON s.hacker_id = h.hacker_id
+GROUP BY s.hacker_id, h.name
+HAVING COUNT(DISTINCT challenge_id) = (SELECT COUNT(*) FROM Challenges);
