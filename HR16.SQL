@@ -306,3 +306,8 @@ SELECT h.hacker_id, h.name, s.challenge_id, (100 - s.score) AS points_to_perfect
 FROM Hackers h
 JOIN Submissions s ON h.hacker_id = s.hacker_id
 WHERE s.score < 100;
+
+SELECT DISTINCT c.challenge_id
+FROM Challenges c
+JOIN Submissions s ON c.challenge_id = s.challenge_id
+WHERE s.score = 100;
