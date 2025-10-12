@@ -235,3 +235,9 @@ SELECT h.hacker_id, h.name
 FROM Hackers h
 LEFT JOIN Challenges c ON h.hacker_id = c.hacker_id
 WHERE c.challenge_id IS NULL;
+
+SELECT c.challenge_id, ROUND(AVG(s.score), 2) AS avg_score
+FROM Challenges c
+JOIN Submissions s ON c.challenge_id = s.challenge_id
+GROUP BY c.challenge_id
+HAVING AVG(s.score) > 50;
