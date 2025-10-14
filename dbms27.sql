@@ -42,3 +42,7 @@ WHERE grade = 'A';
 SELECT * 
 FROM student2 
 WHERE marks BETWEEN 80 AND 90;
+
+SELECT * 
+FROM student2 
+WHERE city IN ('Pune', 'Delhi');
