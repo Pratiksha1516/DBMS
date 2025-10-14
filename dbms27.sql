@@ -97,3 +97,12 @@ WHEN marks >= 80 THEN 'Good'
 ELSE 'Average'
 END AS performance
 FROM student2;
+
+SELECT name, city,
+CASE city
+    WHEN 'Pune' THEN 'West'
+    WHEN 'Mumbai' THEN 'West'
+    WHEN 'Delhi' THEN 'North'
+    ELSE 'Unknown'
+END AS region
+FROM student2;
