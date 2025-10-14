@@ -85,3 +85,7 @@ GROUP BY grade;
 SELECT city, AVG(marks) AS avg_marks 
 FROM student2
 GROUP BY city;
+
+SELECT grade, MAX(marks) AS top_score
+FROM student2
+GROUP BY grade;
