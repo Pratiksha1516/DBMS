@@ -65,3 +65,6 @@ ORDER BY grade;
 
 SELECT COUNT(*) AS total_students 
 FROM student2;
+
+SELECT MAX(marks) AS highest_marks 
+FROM student2;
