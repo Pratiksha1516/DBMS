@@ -58,3 +58,7 @@ ORDER BY marks DESC;
 SELECT name, city 
 FROM student2
 ORDER BY city ASC, name DESC;
+
+SELECT *
+FROM student2 
+ORDER BY grade;
