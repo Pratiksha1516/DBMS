@@ -62,3 +62,6 @@ ORDER BY city ASC, name DESC;
 SELECT *
 FROM student2 
 ORDER BY grade;
+
+SELECT COUNT(*) AS total_students 
+FROM student2;
