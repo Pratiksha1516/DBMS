@@ -77,3 +77,7 @@ FROM student2;
 
 SELECT SUM(marks) AS total_marks 
 FROM student2;
+
+SELECT grade, COUNT(*) AS students_per_grade 
+FROM student2 
+GROUP BY grade;
