@@ -110,3 +110,6 @@ FROM student2;
 UPDATE student2 SET grade = 'B'
 WHERE marks
 BETWEEN 70 AND 80;
+
+DELETE FROM student2
+WHERE marks < 70;
