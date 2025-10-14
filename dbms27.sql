@@ -34,3 +34,8 @@ WHERE marks+10 > 100;
 SELECT name, city 
 FROM student2
 WHERE city = 'Mumbai';
+
+SELECT *
+FROM student2 
+WHERE grade = 'A';
+
