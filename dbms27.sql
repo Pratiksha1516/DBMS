@@ -89,3 +89,11 @@ GROUP BY city;
 SELECT grade, MAX(marks) AS top_score
 FROM student2
 GROUP BY grade;
+
+SELECT name, marks,
+CASE
+WHEN marks >= 90 THEN 'Excellent'
+WHEN marks >= 80 THEN 'Good'
+ELSE 'Average'
+END AS performance
+FROM student2;
