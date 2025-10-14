@@ -68,3 +68,6 @@ FROM student2;
 
 SELECT MAX(marks) AS highest_marks 
 FROM student2;
+
+SELECT MIN(marks) AS lowest_marks 
+FROM student2;
