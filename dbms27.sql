@@ -74,3 +74,6 @@ FROM student2;
 
 SELECT AVG(marks) AS average_marks 
 FROM student2;
+
+SELECT SUM(marks) AS total_marks 
+FROM student2;
