@@ -54,3 +54,7 @@ WHERE name LIKE 'c%';
 SELECT * 
 FROM student2 
 ORDER BY marks DESC;
+
+SELECT name, city 
+FROM student2
+ORDER BY city ASC, name DESC;
