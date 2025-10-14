@@ -71,3 +71,6 @@ FROM student2;
 
 SELECT MIN(marks) AS lowest_marks 
 FROM student2;
+
+SELECT AVG(marks) AS average_marks 
+FROM student2;
