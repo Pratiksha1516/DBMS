@@ -50,3 +50,7 @@ WHERE city IN ('Pune', 'Delhi');
 SELECT * 
 FROM student2
 WHERE name LIKE 'c%';
+
+SELECT * 
+FROM student2 
+ORDER BY marks DESC;
