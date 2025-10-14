@@ -46,3 +46,7 @@ WHERE marks BETWEEN 80 AND 90;
 SELECT * 
 FROM student2 
 WHERE city IN ('Pune', 'Delhi');
+
+SELECT * 
+FROM student2
+WHERE name LIKE 'c%';
